@@ -1,10 +1,15 @@
 import React from 'react';
+import Navigation from '../Navigation';
 
 function Header() {
   return (
-    <section>
-      <h1 id="header">Who am I?</h1>
-    </section>
+    <div id="header">
+        <header className='flex'>
+            <h1>Edwin Escobar</h1>
+            <p>Full Stack Web Developer</p>
+        </header>
+        <Navigation></Navigation>
+    </div>
   );
 }
 

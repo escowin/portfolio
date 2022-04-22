@@ -2,9 +2,10 @@ import React from 'react';
 
 function Footer() {
   return (
-    <section>
-      <h1 id="footer">Footer</h1>
-    </section>
+    <footer className='flex'>
+      <h2 id="footer">The React Portfolio</h2>
+      <p>escowinart &copy; 2022</p>
+    </footer>
   );
 }
 
