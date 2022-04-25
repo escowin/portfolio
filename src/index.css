@@ -99,7 +99,7 @@ nav ul li {
 
 /* SECTIONS */
 .sections {
-  padding: 5vw;
+  padding: 5%;
   justify-content: center;
   text-align: center;
 }
@@ -149,21 +149,47 @@ nav ul li {
 /* SUB-SECTION | SOLO WORK & COLLABORATIONS */
 .articles h3 {
   margin: 50px 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--offoffblack);
   border-radius: 40px;
   color: var(--offoffblack);
   text-shadow: 5px 10px 40px var(--offoffblack);
   font-size: 3vh;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  padding: 20px;
+  grid-gap: 50px 25px;
+  width: 100%;
+}
+
+.featured-project {
+  grid-column: 1 / -1;
+  display: flex;
+}
+
+.collaborations {
+  padding: 20px;
 }
 
 .card {
-  display: flex;
   background-color: var(--offoffwhite);
   border-radius: 40px;
   text-align: left;
   padding: 20px;
   box-shadow: 0px 0px 50px var(--offblack);
+}
 
+.non-featured {
+  display: inline-block;
+}
+
+.group-projects {
+  display: flex;
+  margin: 50px 0;
 }
 
 .card-img {
@@ -172,7 +198,7 @@ nav ul li {
 
 .card-img img {
   border-radius: 40px;
-  width: 20vw;
+  width: 100%;
   opacity: 80%;
   transition-duration: 1s;
 }
@@ -189,7 +215,13 @@ nav ul li {
 .card-body h4 {
   border-bottom: 1px solid var(--offoffblack);
   padding: 1vh;
+  font-weight: bolder;
 }
+
 .card-body p {
   padding-top: 1vh;
+}
+
+.text {
+  display: none;
 }
