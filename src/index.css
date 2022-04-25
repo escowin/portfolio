@@ -11,6 +11,7 @@
   --offoffwhite: rgba(230, 230, 230, .6);
   --offblack: rgb(40, 40, 44);
   --offoffblack: rgba(40, 40, 40, .8);
+  --red: rgb(179, 24, 24);
 }
 
 .flex {
@@ -20,6 +21,18 @@
 
 .space-between {
   justify-content: space-between;
+}
+
+/* TEXT ELEMENTS */
+a {
+  text-decoration: none;
+  color: var(--offwhite);
+  transition-duration: 1s;
+}
+
+a:hover {
+  color: var(--red);
+  text-shadow: 10px 5px 15px var(--red);
 }
 
 /* HEADER */
@@ -69,7 +82,6 @@ nav ul li {
 
 nav ul li:hover {
   background-color: var(--offblack);
-  color: rgb(179, 24, 24);
 }
 
 /* PROJECTS */

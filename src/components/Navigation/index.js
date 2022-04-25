@@ -4,9 +4,10 @@ function Navigation() {
   return (
     <nav>
       <ul className='flex'>
-        <li>Solo Work</li>
-        <li>Group Projects</li>
-        <li>GitHub Repo</li>
+        <li><a href="/">Solo Work</a></li>
+        <li><a href="/">Collaborations</a></li>
+        <li><a href="https://github.com/escowin">Github Repo</a></li>
+        <li><a href="/">About</a></li>
       </ul>
     </nav>
   );

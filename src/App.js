@@ -2,17 +2,19 @@ import React from 'react';
 import './index.css';
 import Project from './components/Project';
 import Header from './components/Header';
+import About from './components/About';
 // import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
+      <Header></Header>
       <main>
-        <Header></Header>
+        <About></About>
         <Project></Project>
-        <Footer></Footer>
       </main>
+        <Footer></Footer>
     </div>
   );
 }
