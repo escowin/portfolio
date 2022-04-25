@@ -5,7 +5,8 @@ function Header() {
   return (
     <div id="header">
         <header className='flex'>
-            <h1><a href="/">Edwin m. Escobar</a></h1>
+            <h1><a href="/">Edwin M. Escobar</a></h1>
+            <p>The react portfolio</p>
         </header>
         <Navigation></Navigation>
     </div>
