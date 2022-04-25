@@ -9,8 +9,8 @@ I enjoy working on visuals. React allows me to flex those visual coding muscles.
 
 ## Contact Me
 
-* [Github](https://github.com/escowin) | Where I post all my coding triumphs.
-* [Email](mailto:edwin@escowinart.com) | Contribute to my inbox.
+* [Github](https://github.com/escowin)  | where I post all my coding triumphs.
+* [Email](mailto:edwin@escowinart.com)  | contribute to the inbox.
 
 # Getting Started with Create React App
 
