@@ -5,7 +5,12 @@
 
 ## Description
 
-I enjoy working on visuals. The React Portfolio allows me to flex those visual codiing muscles.
+I enjoy working on visuals. React allows me to flex those visual coding muscles.
+
+## Contact
+
+* [Github](https://github.com/escowin)
+* [Email](mailto:edwin@escowinart.com)
 
 # Getting Started with Create React App
 
