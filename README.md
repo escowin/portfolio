@@ -1,7 +1,7 @@
 # The React Portfolio
 
-[Github Repo](https://github.com/escowin/react-portfolio)
-[Live URL](https://frozen-inlet-09193.herokuapp.com/)
+* [Github Repo](https://github.com/escowin/react-portfolio)
+* [Live URL](https://frozen-inlet-09193.herokuapp.com/)
 
 ## Description
 
