@@ -1,3 +1,10 @@
+# The React Portfolio
+    * [Github Repo](https://github.com/escowin/react-portfolio)
+    * [Live URL](https://frozen-inlet-09193.herokuapp.com/)
+
+## Description
+    I enjoy working on visuals. The React Portfolio allows me to flex those visual codiing muscles.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
