@@ -13,6 +13,7 @@ function About() {
             <ul>
                 <li>I code code thanks to UT - Austin's Coding Bootcamp.</li>
                 <li><a href="https://github.com/escowin" target="_blank" rel="noreferrer noopener">Github Repo</a></li>
+                <li><a href="https://www.linkedin.com/in/escowin/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
                 <li><a href="mailto:edwin@escowinart.com">Email</a></li>
             </ul>
         </article>
