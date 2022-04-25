@@ -91,16 +91,11 @@ nav ul {
 
 nav ul li {
   padding: 10px 20px 10px 20px;
-  background-color: var(--offoffblack);
+  background-color: var(--offblack);
   box-shadow: 10px 10px 30px var(--offoffblack);
   border-radius: 10px;
   transition-duration: 2s;
 }
-
-nav ul li:hover {
-  background-color: var(--offblack);
-}
-
 
 /* SECTIONS */
 .sections {
