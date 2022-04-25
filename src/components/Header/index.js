@@ -5,8 +5,7 @@ function Header() {
   return (
     <div id="header">
         <header className='flex'>
-            <h1><a href="/">Edwin Escobar</a></h1>
-            <p>Full Stack Web Developer</p>
+            <h1><a href="/">Edwin m. Escobar</a></h1>
         </header>
         <Navigation></Navigation>
     </div>

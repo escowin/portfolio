@@ -45,21 +45,31 @@ header {
   position: sticky;
   background-color: var(--offblack);
   box-shadow: 0px 10px 30px var(--offoffblack);
+  justify-content: center;
+  border-radius: 0 0 70px 70px;
 }
 
 header h1 {
   border-right: 1px solid ;
+  border-left: 1px solid ;
 }
 
 header h1, header p, footer h2, footer p {
   padding: 0px 20px;
 }
 
+#footer-container {
+  align-items: center;
+}
+
 footer {
+  margin: .5vw;
   padding: 20px;
   background-color: var(--offblack);
   color: var(--offwhite);
   box-shadow: -10px -10px 30px var(--offoffblack);
+  border-radius: 90px;
+  text-align: center;
 }
 
 /* NAVIGATION */
@@ -84,8 +94,9 @@ nav ul li:hover {
   background-color: var(--offblack);
 }
 
-/* PROJECTS */
-#projects {
+
+/* SECTIONS ABOUT & PROJECTS */
+.sections {
   padding: 5vw;
   justify-content: center;
   text-align: center;

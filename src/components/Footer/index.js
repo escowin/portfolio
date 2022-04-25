@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className='flex'>
-      <h2 id="footer">The React Portfolio</h2>
+    <footer>
+      <h2 id="footer">&mdash; <a href="https://github.com/escowin/react-portfolio">the react portfolio</a> &mdash;</h2>
       <p>escowinart &copy; 2022</p>
     </footer>
   );
