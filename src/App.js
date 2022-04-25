@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import Project from './components/Project';
+import Projects from './components/Projects';
 import Header from './components/Header';
 import About from './components/About';
 // import Navigation from './components/Navigation';
@@ -12,7 +12,7 @@ function App() {
       <Header></Header>
       <main>
         <About></About>
-        <Project></Project>
+        <Projects></Projects>
       </main>
         <Footer></Footer>
     </div>

@@ -39,7 +39,7 @@ a:hover {
   text-shadow: 10px 5px 15px var(--red);
 }
 
-/* HEADER */
+/* HEADER & FOOTER */
 #header {
   color: var(--offwhite);
 }
@@ -79,7 +79,7 @@ footer {
   text-align: center;
 }
 
-/* NAVIGATION */
+/* SUB-SECTION | NAVIGATION */
 nav {
   margin: 10px 0;
 }
@@ -138,8 +138,58 @@ nav ul li {
 
 /* SECTION | PROJECTS */
 #projects h2 {
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--offoffblack);
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: var(--offblack);
+  color: var(--offwhite);
   text-shadow: 5px 10px 40px var(--offoffblack);
+  box-shadow: 0px 0px 20px var(--offblack);
+}
+
+/* SUB-SECTION | SOLO WORK & COLLABORATIONS */
+.articles h3 {
+  margin: 50px 20px;
+  border-bottom: 1px solid var(--offoffblack);
+  border-radius: 40px;
+  color: var(--offoffblack);
+  text-shadow: 5px 10px 40px var(--offoffblack);
+  font-size: 3vh;
+}
+
+.card {
+  display: flex;
+  background-color: var(--offoffwhite);
+  border-radius: 40px;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0px 0px 50px var(--offblack);
+
+}
+
+.card-img {
+  padding: 20px;
+}
+
+.card-img img {
+  border-radius: 40px;
+  width: 20vw;
+  opacity: 80%;
+  transition-duration: 1s;
+}
+
+.card-img img:hover {
+  opacity: 100%;
+  box-shadow: 0px 0px 20px var(--offoffblack);
+}
+
+.card-body {
+  padding: 1vw;
+}
+
+.card-body h4 {
+  border-bottom: 1px solid var(--offoffblack);
+  padding: 1vh;
+}
+.card-body p {
+  padding-top: 1vh;
 }
