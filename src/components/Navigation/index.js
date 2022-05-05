@@ -8,6 +8,7 @@ function Navigation() {
         <li><a href="#solo-work">Solo Work</a></li>
         <li><a href="#collaborations">Collaborations</a></li>
         <li><a href="https://github.com/escowin" target="_blank" rel="noreferrer noopener">Github Repo</a></li>
+        <li><a href="#resume">Resumė</a></li>
       </ul>
     </nav>
   );
