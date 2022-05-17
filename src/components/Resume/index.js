@@ -1,6 +1,7 @@
 import React from "react";
 
-function Projects() {
+
+function Resume() {
   return (
     <>
       <section className="sections" id="resume-header">
