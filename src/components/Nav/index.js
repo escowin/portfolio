@@ -20,12 +20,12 @@ function Nav() {
         <>
             <header id="header">
                 <h1>Edwin m. escobar</h1>
-                <p>The react portfolio</p>
+                <p><a data-testid="link" href="/">The react portfolio</a> <span role="img" aria-label="camera"> 📸</span> </p>
             </header>
             <nav id="navigation">
                 <ul>
                     <li className="nav-link">
-                        <a href="#about">About</a>
+                        <a data-testid="about" href="#about">About</a>
                     </li>
                     <li className="nav-link">
                         <span>Contact</span>
