@@ -1,11 +1,23 @@
 import React from 'react';
-import coverImage from '../../assets/cover/cover.jpg';
+import profilePic from '../../assets/images/profile-pic.jpg';
 
 function About() {
     return (
         <section className='section'>
-            <h1 id="about">who am I?</h1>
-            <img src={coverImage} className="pic" style={{ width: "100%" }} alt="cover" />
+            <h1 className='subheader' id="about">About</h1>
+            <article id='about-container'>            
+                <img
+                 src={profilePic} 
+                 id="profile-pic" 
+                 style={{ width: "25%" }} 
+                 alt="profile pic" 
+                />
+                <div id='about-text'>
+                    <h3>Edwin m. escobar</h3>
+                    <p>Full-stack web developer</p>
+                </div>          
+            </article>
+
         </section>
     );
 }

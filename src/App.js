@@ -1,15 +1,15 @@
 import React from 'react';
-import './App.css';
-import './index.css';
-import About from './components/About';
 import Nav from './components/Nav';
+import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <div>
       <Nav/>
       <main>
-          <About/>
+        <About/>
+        <Projects/>
       </main>
     </div>
   );
