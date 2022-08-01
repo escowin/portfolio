@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-variant: small-caps;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: lighter;
   box-sizing: border-box;
   /* border: 1px solid red; */
@@ -23,21 +24,31 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-#header {
+  align-items: center;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 9999;
   background-color: var(--offblack);
   color: var(--offwhite);
   box-shadow: 0px 10px 30px var(--offoffblack);
-  border-radius: 0 0 70% 70%;
-  padding-bottom: 1vw;
+  border-radius: 0 0 50% 50%;
+  padding-bottom: .5vw;
+}
+
+#header h1 {
+  border-bottom: 1px solid var(--offoffwhite);
+  font-size: 2.25rem;
+}
+
+#header p {
+  font-size: 1.25rem;
+  padding-top: .25vw;
 }
 
 #navigation {
-  padding: 1vw;
+  padding: .75vw 0;
+  font-size: 1.5rem;
 }
 
 #navigation ul {
@@ -49,7 +60,7 @@ header {
 .nav-link {
   background-color: var(--offblack);
   color: var(--offwhite);
-  padding: .5vw 1.5vw;
+  padding: .25vw 1.75vw;
   border-radius: 1rem;
   transition-duration: 1s;
 }
@@ -58,10 +69,6 @@ header {
   color: var(--red);
   box-shadow: 0 5px 25px var(--red);
 }
-/* header h1 {
-  border-right: 1px solid var(--offoffwhite)
-} */
-
 
 .section {
   padding: 5px 10px;
@@ -83,13 +90,10 @@ header {
 /* TEXT ELEMENTS */
 a {
   text-decoration: none;
-  color: var(--offwhite);
+  color: inherit;
   transition-duration: 1s;
 }
 
-section a{
-  color: var(--offblack)
-}
 
 a:hover {
   color: var(--red);
@@ -97,12 +101,8 @@ a:hover {
 }
 
 /* HEADER & FOOTER */
-header h1, header p, footer h2, footer p {
+footer h2, footer p {
   padding: 0px 20px;
-}
-
-header p {
-  font-size: 2.5vh;
 }
 
 #footer-container {

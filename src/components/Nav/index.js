@@ -17,8 +17,11 @@ function Nav() {
     }
 
     return (
-        <header>
-            <h1 id="header">Edwin m. escobar the react portfolio</h1>
+        <>
+            <header id="header">
+                <h1>Edwin m. escobar</h1>
+                <p>The react portfolio</p>
+            </header>
             <nav id="navigation">
                 <ul>
                     <li className="nav-link">
@@ -39,7 +42,7 @@ function Nav() {
                     </li>
                 </ul>
             </nav>
-        </header>
+        </>
     );
 }
 
