@@ -18,6 +18,7 @@ function Nav(props) {
         document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
     
+    // ** pause 20.3.5
     return (
         <>
             <header id="header">
