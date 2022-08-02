@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
-    const catagories = [
-        {
-            name: "Solo work",
-            description: "solo projects",
-        },
-        {
-            name: "Collaborations",
-            description: "collaborative apps"
-        }
-    ];
+// Nav component state lifted to parent component, Apps.js
+function Nav(props) {
+    // category state as an objects array
+    // useState hook gives option to change categories in the future
 
-    function categorySelected(name) {
-        console.log(`${name} clicked`);
-    }
+    // New props cause components to re-render. Although the setter in App.js doesn’t cause its children to re-render, the fact that its prop changed does.
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+    } = props;
 
+    // updates browser tab to reflect selected category. first argument is a callback function, second argument is an array w/ single element.
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentCategory.name);
+    }, [currentCategory]);
+    
     return (
         <>
             <header id="header">
                 <h1>Edwin m. escobar</h1>
-                <p><a data-testid="link" href="/">The react portfolio</a> <span role="img" aria-label="camera"> 📸</span> </p>
+                <p>
+                    <a data-testid="link" href="/">The react portfolio</a> 
+                    <span role="img" aria-label="camera"> 📸</span> oh snap
+                </p>
             </header>
             <nav id="navigation">
                 <ul>
@@ -30,10 +35,14 @@ function Nav() {
                     <li className="nav-link">
                         <span>Contact</span>
                     </li>
-                    {catagories.map((category) => (
-                        <li className="nav-link" key={category.name}>
-                            <span onClick={() => categorySelected(category.name)} >
-                                {category.name}
+                    {categories.map((category) => (
+                        // ${... === ...} gets evaluated, and as long as its true, the second bit of the short circuit && '...' will return
+                        <li
+                         className={`nav-link ${currentCategory.name === category.name && 'navActive'}`}
+                         key={category.name}
+                        >
+                            <span onClick={() => {setCurrentCategory(category)}}>
+                                {capitalizeFirstLetter(category.name)}
                             </span>
                         </li>
                     ))}
