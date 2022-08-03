@@ -1,6 +1,6 @@
 import React from "react";
+import PhotoList from "../PhotoList";
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import photo from "../../assets/images/solo-work/0.jpg";
 
 // hooks
 // - 1. only call hooks from React functions.
@@ -31,23 +31,16 @@ import photo from "../../assets/images/solo-work/0.jpg";
 // 
 // export default ClickCounter;
 
-function Projects(props) {
-    const currentCategory = {
-        name: 'solo work',
-        description: 'solo work i do is here'
-    };
+function Projects({ currentCategory }) {
+    // { destructure } name & description properties from currentCategory
+    const { name, description } = currentCategory;
 
     return (
         <section className="section">
-            <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-            <p>{currentCategory.description}</p>
-            <div className="projects-grid">
-                <img
-                 src={photo} 
-                 alt="css portfolio"
-                 className="project-screenshot"
-                />
-            </div>
+            <h1>{capitalizeFirstLetter(name)}</h1>
+            <p>{description}</p>
+            {/* prop drilling. passing down currentCategory.name as a prop into PhotoList component from Projects. */}
+            <PhotoList category={currentCategory.name} />
         </section>
     );
 }

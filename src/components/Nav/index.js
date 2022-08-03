@@ -18,7 +18,6 @@ function Nav(props) {
         document.title = capitalizeFirstLetter(currentCategory.name);
     }, [currentCategory]);
     
-    // ** pause 20.3.5
     return (
         <>
             <header id="header">
@@ -37,8 +36,8 @@ function Nav(props) {
                         <span>Contact</span>
                     </li>
                     {categories.map((category) => (
-                        // ${... === ...} gets evaluated, and as long as its true, the second bit of the short circuit && '...' will return
                         <li
+                         // evaluates ${... === ...}, and as long as its true, the second bit of the short circuit && '...' will return
                          className={`nav-link ${currentCategory.name === category.name && 'navActive'}`}
                          key={category.name}
                         >

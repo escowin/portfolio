@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-// lift Projects state up to App.js level
 import Projects from './components/Projects';
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
     {
       name: "collaborations",
       description: "collaborative projects"
-    }
+    },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -35,7 +34,7 @@ function App() {
        currentCategory={currentCategory} 
       />
       <main>
-        <Projects/>
+        <Projects currentCategory={currentCategory} />
         <About/>
       </main>
     </div>
