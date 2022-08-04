@@ -2,37 +2,10 @@ import React from "react";
 import PhotoList from "../PhotoList";
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-// hooks
-// - 1. only call hooks from React functions.
-// - 2. only call hooks at the top level. cannot be used inside for loops, nested functions, or conditionals.
-// - use hooks towards top of React component for organizational purposes & to follow above
-
-// ex.
-// import React, { useState } from "react";
-// 
-// function ClickCounter() {
-//     const [count, setCount] = useState(0);
-//    *const [state value, setter] = useState(initial state)
-// 
-//     function increment() {
-//          setCount((prevState)=> )
-//      }
-// 
-// **JSX**
-//     return(
-//         <div>
-//             I've been clicked {count} times
-//                              {state value} <- starts at initial state
-//             <button onClick={increment}>add one</button>
-//              event listener={function}
-//         </div>
-//     )
-// }
-// 
-// export default ClickCounter;
+// pass down props (<App> | <Projects currenCategory={currentCategory}/>)
 
 function Projects({ currentCategory }) {
-    // { destructure } name & description properties from currentCategory
+    // destructure name & description properties from currentCategory
     const { name, description } = currentCategory;
 
     return (

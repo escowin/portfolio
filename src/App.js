@@ -4,7 +4,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 
 function App() {
-  // Projects categories
+  // Nav derived
   const [categories] = useState([
     {
       name: "front-end",

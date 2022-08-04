@@ -1,27 +1,31 @@
 import React, { useState } from "react";
 
-// Projects.Photolist
-// <Components /> are functions that return JSX and may use Hooks.
-// .map() to return JSX a la <Nav/>
-// need to know which category is selected? pass down props. 
+// Passed down props:
+// - App | <Projects currentCategory={currentCategory}/>
+// - ProjectList | <PhotoList category={currentCategory.name}/>
 
 // can now pass (props) or destructure props as ({ category }) (see Projects js:42). props.category value passed down from Projects as currentCategory.name
 const PhotoList = ({ category }) => {
     const [photos] = useState([
         {
-            name: "css-portfolio",
-            category: "front-end",
+            name: "escowin-art",
+            category: "solo-work",
             description: "professional portfolio designed only with html and css.",
         },
         {
             name: "readme-generator",
-            category: "back-end",
+            category: "solo-work",
             description: "built with node.js, generates readme.md's via cli prompts.",
         },
         {
-            name: "react-portfolio",
-            category: "full-stack",
-            description: "portfolio built with react",
+            name: "css-portfolio",
+            category: "solo-work",
+            description: "portfolio built only with html & css",
+        },
+        {
+            name: "smart-home",
+            category: "collaborations",
+            description: "full-stack interactive app",
         },
     ]);
 
