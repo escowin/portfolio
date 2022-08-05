@@ -15,6 +15,7 @@ function About() {
                 <div id='about-text'>
                     <h3>Edwin m. escobar</h3>
                     <p>Full-stack web developer</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sit voluptatem dolorum. Illo perferendis deleniti dolorem deserunt dignissimos adipisci dicta et quisquam distinctio nesciunt? Dignissimos.</p>
                 </div>          
             </article>
 

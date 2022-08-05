@@ -6,7 +6,7 @@
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: lighter;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -19,7 +19,6 @@
 
 /* header */
 header {
-  /* padding: 1vw; */
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -32,23 +31,21 @@ header {
   background-color: var(--offblack);
   color: var(--offwhite);
   box-shadow: 0px 10px 30px var(--offoffblack);
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 45% 45%;
   padding-bottom: .5vw;
 }
 
 #header h1 {
   border-bottom: 1px solid var(--offoffwhite);
-  font-size: 2.25rem;
+  font-size: 1.75rem;
 }
 
 #header p {
-  font-size: 1.25rem;
-  padding-top: .25vw;
+  padding-top: .2vw;
 }
 
 #navigation {
   padding: .75vw 0;
-  font-size: 1.5rem;
 }
 
 #navigation ul {
@@ -60,8 +57,8 @@ header {
 .nav-link {
   background-color: var(--offblack);
   color: var(--offwhite);
-  padding: .25vw 1.75vw;
-  border-radius: 1rem;
+  padding: .1vw 1.5vw;
+  border-radius: .75rem;
   transition-duration: 1s;
 }
 
@@ -80,10 +77,13 @@ header {
 }
 
 .subheader {
+  display: flex;
+  align-items: center;
   padding: .25vw 6vw;
   border-radius: .20rem .20rem 2rem 2rem;
   border-bottom: 1px solid var(--offoffblack);
   text-shadow: 0 0 10px var(--offblack);
+  text-align: center;
 }
 
 /* component.About */
@@ -105,16 +105,17 @@ header {
 
 /* component.Projects */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
 .project-screenshot {
   border-radius: 2.5rem;
-  width: 50%;
-  height: auto;
+  width: 100%;
+  margin: 1vw 0;
 }
 
 /* TEXT ELEMENTS */
@@ -124,27 +125,19 @@ a {
   transition-duration: 1s;
 }
 
-
 a:hover {
   color: var(--red);
   text-shadow: 10px 5px 15px var(--red);
 }
 
-/* HEADER & FOOTER */
-/* footer h2, footer p {
-  padding: 0px 20px;
+@media screen and (min-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1vw;
+  }
 }
 
-#footer-container {
-  align-items: center;
+@media screen and (min-width: 1024px) {
+  /* placeholder */
 }
-
-footer {
-  margin: .5vw;
-  padding: 20px;
-  background-color: var(--offblack);
-  color: var(--offwhite);
-  box-shadow: -10px -10px 30px var(--offoffblack);
-  border-radius: 90px;
-  text-align: center;
-} */

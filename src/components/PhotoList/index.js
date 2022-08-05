@@ -47,21 +47,20 @@ const PhotoList = ({ category }) => {
     const currentPhotos = photos.filter((photo) => photo.category === category);
 
     return (
-        <div>
-            <div className="flex-row">
-                {/* maps over images in PhotoList */}
-                {currentPhotos.map((image, i) => (
-                    <img
-                     // .default where the image has been saved. default must be invoked to render image.
-                     src={require(`../../assets/images/apps/${category}/${i}.jpg`)}
-                     alt={image.name}
-                     className="project-screenshot"
-                     //  key must be unique string. key assigned image's name
-                     key={image.name}
-                    />
-                ))}
-            </div>
+        <div className="projects-grid">
+            {/* maps over images in PhotoList */}
+            {currentPhotos.map((image, i) => (
+                <img
+                    // .default where the image has been saved. default must be invoked to render image.
+                    src={require(`../../assets/images/apps/${category}/${i}.jpg`)}
+                    alt={image.name}
+                    className="project-screenshot"
+                    //  key must be unique string. key assigned image's name
+                    key={image.name}
+                />
+            ))}
         </div>
+
     );
 };
 

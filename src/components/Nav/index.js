@@ -23,8 +23,7 @@ function Nav(props) {
             <header id="header">
                 <h1>Edwin m. escobar</h1>
                 <p>
-                    <a data-testid="link" href="/">The react portfolio</a> 
-                    <span role="img" aria-label="camera"> 📸</span> oh snap
+                    <a data-testid="link" href="/">The react portfolio</a>
                 </p>
             </header>
             <nav id="navigation">

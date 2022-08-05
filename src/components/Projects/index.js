@@ -10,9 +10,8 @@ function Projects({ currentCategory }) {
 
     return (
         <section className="section">
-            <h1>{capitalizeFirstLetter(name)}</h1>
+            <h1 className="subheader">{capitalizeFirstLetter(name)}</h1>
             <p>{description}</p>
-            {/* prop drilling. passing down currentCategory.name as a prop into PhotoList component from Projects. */}
             <PhotoList category={currentCategory.name} />
         </section>
     );
