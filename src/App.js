@@ -7,20 +7,12 @@ function App() {
   // Nav derived
   const [categories] = useState([
     {
-      name: "front-end",
-      description: "front-end html, css, and javascript apps",
-    },
-    {
-      name: "back-end",
-      description: "back-end apps built with node, express, sql, etc",
-    },
-    {
-      name: "full-stack",
-      description: "full-stack skills on display",
+      name: "solo-work",
+      description: "projects built by me",
     },
     {
       name: "collaborations",
-      description: "collaborative projects"
+      description: "team-built apps",
     },
   ]);
 
@@ -34,8 +26,8 @@ function App() {
        currentCategory={currentCategory} 
       />
       <main>
-        <Projects currentCategory={currentCategory} />
         <About/>
+        <Projects currentCategory={currentCategory} />
       </main>
     </div>
   );

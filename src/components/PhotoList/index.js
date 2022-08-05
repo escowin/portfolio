@@ -10,7 +10,7 @@ const PhotoList = ({ category }) => {
         {
             name: "escowin-art",
             category: "solo-work",
-            description: "professional portfolio designed only with html and css.",
+            description: "professional art portfolio",
         },
         {
             name: "readme-generator",
@@ -21,6 +21,16 @@ const PhotoList = ({ category }) => {
             name: "css-portfolio",
             category: "solo-work",
             description: "portfolio built only with html & css",
+        },
+        {
+            name: "raven-home",
+            category: "collaborations",
+            description: "front end widgets",
+        },
+        {
+            name: "auction house",
+            category: "collaborations",
+            description: "mern stack",
         },
         {
             name: "smart-home",
@@ -43,7 +53,7 @@ const PhotoList = ({ category }) => {
                 {currentPhotos.map((image, i) => (
                     <img
                      // .default where the image has been saved. default must be invoked to render image.
-                     src={require(`../../assets/images/${category}/${i}.jpg`).default}
+                     src={require(`../../assets/images/apps/${category}/${i}.jpg`)}
                      alt={image.name}
                      className="project-screenshot"
                      //  key must be unique string. key assigned image's name
@@ -54,6 +64,5 @@ const PhotoList = ({ category }) => {
         </div>
     );
 };
-// ** pause: 20.3.5 | bug, contents of all components do not render **
 
 export default PhotoList;
