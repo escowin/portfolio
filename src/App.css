@@ -42,7 +42,7 @@ header {
   background-color: var(--offblack);
   color: var(--offwhite);
   box-shadow: 0px 10px 30px var(--offoffblack);
-  border-radius: 0 0 35% 35%;
+  border-radius: 0 0 1.5rem 1.5rem;
   padding-bottom: .5vw;
 }
 
@@ -68,9 +68,17 @@ header {
 .nav-link {
   background-color: var(--offblack);
   color: var(--offwhite);
-  padding: .1vw 1.5vw;
-  border-radius: .75rem;
+  padding: .2vw 1.75vw;
+  border-radius: .25rem .25rem .5rem .5rem;
   transition-duration: 1s;
+}
+
+.left-btn {
+  border-bottom-left-radius: .75rem;
+}
+
+.right-btn {
+  border-bottom-right-radius: .75rem;
 }
 
 /* .nav-link:hover {
@@ -141,6 +149,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.project-title , .app-code, .app-description {
   padding: 0 5vw;
 }
 
@@ -149,15 +160,6 @@ header {
   text-align: end;
 }
 
-.app-code {
-  padding: 0 5vw;
-}
-
-.app-description {
-  /* text-transform: none; */
-  padding: 0 5vw 0 5vw;
-  font-weight: 300;
-}
 
 .app-description {
   font-family: 'Raleway', sans-serif;
@@ -175,19 +177,90 @@ a {
   transition-duration: 1s;
 }
 
-/* a:hover {
-  color: var(--red);
-  text-shadow: 10px 5px 15px var(--red);
-} */
-
+/* display.tablet */
 @media screen and (min-width: 768px) {
+  /* component.Nav */
+  header {
+    border-radius: 0 0 10% 25%;
+  }
+
+  .nav-link {
+    padding: .5vw 2.75vw;
+    font-size: 1.25rem;
+    border-radius: .5rem;
+  }
+
+  .left-btn {
+    border-bottom-left-radius: 1rem;
+  }
+  
+  .right-btn {
+    border-bottom-right-radius: 1rem;
+  }
+  /* component.Projects */
   .projects-grid {
-    display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 1vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* placeholder */
+  /* component.Projects */
+  .project {
+    background-color: aqua;
+  }
+
+  .project-screenshot {
+    border-radius: 2rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-title , .app-code, .app-description {
+    padding: 0 2vw;
+  }
+
+  .project-urls {
+    font-size: 1.125rem;
+    text-align: end;
+  }
+
+  .app-description {
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* section */
+
+  .subheader {
+    font-size: 1.75rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+
+  /* about */
+  #about-container {
+    align-items: flex-start;
+  }
+
+  #about-text {
+    margin-top: 2vh;
+  }
+
+  #about-text h3 {
+    font-size: 1.5rem;
+    /* border-bottom: 1px solid var(--offoffwhite); */
+  }
+
+  /* projects */
+  .projects-grid {
+    grid-template-columns: repeat(3, auto);
+  }
+  
 }

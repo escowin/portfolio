@@ -9,24 +9,35 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 const PhotoList = ({ category }) => {
     const [photos] = useState([
         {
-            name: "professional-portfolio",
+            name: "escowin art",
             category: "solo-work",
-            description: "the first iteration of a professional portfolio.",
+            description: "I paint paintings when I'm not coding code.",
+            code: "html, css",
+            repo: "https://github.com/escowin/escowinart",
+            liveurl: "https://escowinart.com/",
+        },
+        {
+            name: "professional portfolio",
+            category: "solo-work",
+            description: "the first iteration of the web dev portfolio built only with front end languages.",
             code: "html, css",
             repo: "https://github.com/escowin/professional-portfolio",
             liveurl: "https://escowin.github.io/professional-portfolio/",
         },
         {
-            name: "coding-quiz",
+            name: "coding quiz",
             category: "solo-work",
-            description: "a quiz powered by vanilla javascript",
+            description: "a quiz powered by vanilla javascript.",
             code: "html, css, javascript",
+            repo: "https://github.com/escowin/coding-quiz",
+            liveurl: "https://escowin.github.io/coding-quiz/",
         },
         {
             name: "readme-generator",
             category: "solo-work",
-            description: "generate a readme.md via command-line prompts",
-            code: "javascript, es6, node.js"
+            description: "generate a readme.md by answering command-line prompts.",
+            code: "javascript, es6, node.js",
+            repo: "https://github.com/escowin/readme-generator",
         },
         {
             name: "raven-home",
@@ -53,7 +64,7 @@ const PhotoList = ({ category }) => {
     const currentPhotos = photos.filter((photo) => photo.category === category);
 
     return (
-        <div className="projects-grid">
+        <article className="projects-grid">
             {/* maps over images in PhotoList */}
             {currentPhotos.map((image, i) => (
                 <div classname="project" key={image.name}>
@@ -70,15 +81,14 @@ const PhotoList = ({ category }) => {
                             {capitalizeFirstLetter(image.name)}
                         </span>
                         <span className="project-urls underline">
-                            <a href={image.repo}>repo</a> - <a href={image.liveurl}>live url</a>
+                            <a href={image.repo} target="_blank" rel="noreferrer noopener">repo</a> - <a href={image.liveurl} target="_blank" rel="noreferrer noopener">live url</a>
                         </span>
                     </h4>
-                 
-                    <p className="app-description">-{capitalizeFirstLetter(image.description)}</p>
                     <p className="app-code">- {image.code}</p>
+                    <p className="app-description">{capitalizeFirstLetter(image.description)}</p>
                 </div>
             ))}
-        </div>
+        </article>
 
     );
 };

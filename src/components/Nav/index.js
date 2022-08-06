@@ -28,7 +28,7 @@ function Nav(props) {
             </header>
             <nav id="navigation">
                 <ul>
-                    <li className="nav-link">
+                    <li className="nav-link left-btn">
                         <a data-testid="about" href="#about">About</a>
                     </li>
                     <li className="nav-link">
@@ -45,8 +45,8 @@ function Nav(props) {
                             </span>
                         </li>
                     ))}
-                    <li className="nav-link">
-                        <a href=".">Resume</a>
+                    <li className="nav-link right-btn">
+                        <a href=".">Resumė</a>
                     </li>
                 </ul>
             </nav>
