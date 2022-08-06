@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   // Nav derived
@@ -19,7 +20,7 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
-    <div>
+    <body>
       <Nav
        categories={categories}
        setCurrentCategory={setCurrentCategory}
@@ -29,7 +30,8 @@ function App() {
         <About/>
         <Projects currentCategory={currentCategory} />
       </main>
-    </div>
+      <Footer/>
+    </body>
   );
 }
 

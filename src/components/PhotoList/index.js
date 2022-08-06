@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 // Passed down props:
 // - App | <Projects currentCategory={currentCategory}/>
@@ -8,19 +9,24 @@ import React, { useState } from "react";
 const PhotoList = ({ category }) => {
     const [photos] = useState([
         {
-            name: "escowin-art",
+            name: "professional-portfolio",
             category: "solo-work",
-            description: "professional art portfolio",
+            description: "the first iteration of a professional portfolio.",
+            code: "html, css",
+            repo: "https://github.com/escowin/professional-portfolio",
+            liveurl: "https://escowin.github.io/professional-portfolio/",
+        },
+        {
+            name: "coding-quiz",
+            category: "solo-work",
+            description: "a quiz powered by vanilla javascript",
+            code: "html, css, javascript",
         },
         {
             name: "readme-generator",
             category: "solo-work",
-            description: "built with node.js, generates readme.md's via cli prompts.",
-        },
-        {
-            name: "css-portfolio",
-            category: "solo-work",
-            description: "portfolio built only with html & css",
+            description: "generate a readme.md via command-line prompts",
+            code: "javascript, es6, node.js"
         },
         {
             name: "raven-home",
@@ -50,14 +56,27 @@ const PhotoList = ({ category }) => {
         <div className="projects-grid">
             {/* maps over images in PhotoList */}
             {currentPhotos.map((image, i) => (
-                <img
-                    // .default where the image has been saved. default must be invoked to render image.
-                    src={require(`../../assets/images/apps/${category}/${i}.jpg`)}
-                    alt={image.name}
-                    className="project-screenshot"
-                    //  key must be unique string. key assigned image's name
-                    key={image.name}
-                />
+                <div classname="project" key={image.name}>
+                    <img
+                        // .default where the image has been saved. default must be invoked to render image.
+                        src={require(`../../assets/images/apps/${category}/${i}.jpg`)}
+                        alt={image.name}
+                        className="project-screenshot"
+                        //  key must be unique string. key assigned image's name
+                        
+                    />
+                    <h4 className="project-title">
+                        <span className="underline">
+                            {capitalizeFirstLetter(image.name)}
+                        </span>
+                        <span className="project-urls underline">
+                            <a href={image.repo}>repo</a> - <a href={image.liveurl}>live url</a>
+                        </span>
+                    </h4>
+                 
+                    <p className="app-description">-{capitalizeFirstLetter(image.description)}</p>
+                    <p className="app-code">- {image.code}</p>
+                </div>
             ))}
         </div>
 

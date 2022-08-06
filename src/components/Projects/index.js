@@ -10,8 +10,8 @@ function Projects({ currentCategory }) {
 
     return (
         <section className="section">
-            <h1 className="subheader">{capitalizeFirstLetter(name)}</h1>
-            <p>{description}</p>
+            <h1 className="subheader">{capitalizeFirstLetter(name)}<span className="description"> {capitalizeFirstLetter(description)}</span></h1>
+            
             <PhotoList category={currentCategory.name} />
         </section>
     );

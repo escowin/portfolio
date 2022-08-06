@@ -21,9 +21,9 @@ function Nav(props) {
     return (
         <>
             <header id="header">
-                <h1>Edwin m. escobar</h1>
+                <h1>The react portfolio</h1>
                 <p>
-                    <a data-testid="link" href="/">The react portfolio</a>
+                    <a data-testid="link" href="/">by edwin m. escobar</a>
                 </p>
             </header>
             <nav id="navigation">
