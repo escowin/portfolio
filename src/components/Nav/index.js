@@ -3,14 +3,12 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 // Nav component state lifted to parent component, Apps.js
 function Nav(props) {
-    // category state as an objects array
-    // useState hook gives option to change categories in the future
-
-    // New props cause components to re-render. Although the setter in App.js doesn’t cause its children to re-render, the fact that its prop changed does.
     const {
         categories = [],
         setCurrentCategory,
         currentCategory,
+        contactSelected,
+        setContactSelected
     } = props;
 
     // updates browser tab to reflect selected category. first argument is a callback function, second argument is an array w/ single element.
@@ -29,18 +27,26 @@ function Nav(props) {
             <nav id="navigation">
                 <ul>
                     <li className="nav-link left-btn">
-                        <a data-testid="about" href="#about">About</a>
+                        <a href="#about" onClick={() => setContactSelected(false)}>
+                            About
+                        </a>
                     </li>
-                    <li className="nav-link">
-                        <span>Contact</span>
+                    <li className={`nav-link ${contactSelected && 'navActive'}`}>
+                        <span onClick={() => setContactSelected(true)}>
+                            Contact
+                        </span>
                     </li>
                     {categories.map((category) => (
                         <li
                          // evaluates ${... === ...}, and as long as its true, the second bit of the short circuit && '...' will return
-                         className={`nav-link ${currentCategory.name === category.name && 'navActive'}`}
+                         className={`nav-link ${currentCategory.name === category.name && !contactSelected && 'navActive'}`}
                          key={category.name}
                         >
-                            <span onClick={() => {setCurrentCategory(category)}}>
+                            <span onClick={() => {
+                                setCurrentCategory(category);
+                                setContactSelected(false);
+                             }}
+                            >
                                 {capitalizeFirstLetter(category.name)}
                             </span>
                         </li>

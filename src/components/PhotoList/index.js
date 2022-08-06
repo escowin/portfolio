@@ -68,20 +68,22 @@ const PhotoList = ({ category }) => {
             {/* maps over images in PhotoList */}
             {currentPhotos.map((image, i) => (
                 <div classname="project" key={image.name}>
-                    <img
+                    <a href={image.liveurl} target="_blank" rel="noreferrer noopener"><img
                         // .default where the image has been saved. default must be invoked to render image.
                         src={require(`../../assets/images/apps/${category}/${i}.jpg`)}
                         alt={image.name}
                         className="project-screenshot"
                         //  key must be unique string. key assigned image's name
                         
-                    />
+                    /></a>
                     <h4 className="project-title">
                         <span className="underline">
-                            {capitalizeFirstLetter(image.name)}
+                            <a href={image.liveurl} target="_blank" rel="noreferrer noopener">
+                                {capitalizeFirstLetter(image.name)}
+                            </a>
                         </span>
                         <span className="project-urls underline">
-                            <a href={image.repo} target="_blank" rel="noreferrer noopener">repo</a> - <a href={image.liveurl} target="_blank" rel="noreferrer noopener">live url</a>
+                            <a href={image.repo} target="_blank" rel="noreferrer noopener">repo</a>
                         </span>
                     </h4>
                     <p className="app-code">- {image.code}</p>
