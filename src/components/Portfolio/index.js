@@ -1,52 +1,54 @@
-function Portfolio(props) {
-  const { selectedPortfolio } = props;
+function Portfolio({ selectedPortfolio }) {
+  const portfolioData = {
+    Frontend: [
+      { project: "frontend 1", description: "description goes here" },
+      {
+        project: "frontend 2",
+        description: "description goes here",
+      },
+      {
+        project: "frontend 3",
+        description: "description goes here but more stuff",
+      },
+    ],
+    Backend: [
+      { project: "backend 1", description: "description goes here" },
+      {
+        project: "backend 2",
+        description: "description goes here",
+      },
+      {
+        project: "backend 3",
+        description: "description goes here but more stuff",
+      },
+    ],
+    Fullstack: [
+      { project: "fullstack 1", description: "description goes here" },
+      {
+        project: "fullstack 2",
+        description: "description goes here",
+      },
+      {
+        project: "fullstack 2",
+        description: "description goes here but more stuff",
+      },
+    ],
+  };
 
-  const frontend = [
-    { project: "frontend 1", description: "description goes here" },
-    {
-      project: "frontend 2",
-      description: "description goes here",
-    },
-    {
-      project: "frontend 3",
-      description: "description goes here but more stuff",
-    },
-  ];
+  console.log(portfolioData[selectedPortfolio]);
 
-  const backend = [
-    { project: "backend 1", description: "description goes here" },
-    {
-      project: "backend 2",
-      description: "description goes here",
-    },
-    {
-      project: "backend 3",
-      description: "description goes here but more stuff",
-    },
-  ];
-
-  const fullstack = [
-    { project: "fullstack 1", description: "description goes here" },
-    {
-      project: "fullstack 2",
-      description: "description goes here",
-    },
-    {
-      project: "fullstack 2",
-      description: "description goes here but more stuff",
-    },
-  ];
-  
-  let portfolioData;
-  if (selectedPortfolio === "Frontend") {
-    portfolioData = frontend;
-  } else if (selectedPortfolio === "Backend") {
-    portfolioData = backend;
-  } else if (selectedPortfolio === "Fullstack") {
-    portfolioData = fullstack;
-  }
-
-  return <section>{portfolioData}</section>;
+  return (
+    // JSX
+    <section>
+      {portfolioData[selectedPortfolio] &&
+        portfolioData[selectedPortfolio].map((item, index) => (
+          <section key={index} id={index}>
+            <h2>{item.project}</h2>
+            <p>{item.description}</p>
+          </section>
+        ))}
+    </section>
+  );
 }
 
 export default Portfolio;

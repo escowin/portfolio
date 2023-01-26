@@ -1,8 +1,4 @@
-// import React, { useEffect } from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
 import "./index.css";
-
-// Nav component state lifted to parent component, Apps.js
 
 function Header(props) {
   const portfolios = ["Frontend", "Backend", "Fullstack"];
