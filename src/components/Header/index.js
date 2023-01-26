@@ -6,6 +6,7 @@ function Header(props) {
   function handleClick(portfolios) {
     props.setSelectedPortfolio(portfolios);
   }
+
   return (
     <header>
       <article id="header">
@@ -14,11 +15,11 @@ function Header(props) {
       </article>
       <nav>
         <ul id="navigation">
-          <li>About</li>
+          <li onClick={() => handleClick("About")}>About</li>
           {portfolios.map((portfolio) => (
             <li onClick={() => handleClick(portfolio)}>{portfolio}</li>
           ))}
-          <li className="nav-link left-btn">Resume</li>
+          <li onClick={() => handleClick("Resume")}>Resume</li>
         </ul>
       </nav>
     </header>
