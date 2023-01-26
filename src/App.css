@@ -17,65 +17,30 @@
   --red: rgb(179, 24, 24);
 }
 
+/* list styles */
+ul {
+  list-style: none;
+}
+
 /* footer */
-body {
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--offwhite);
 }
 
-header, footer {
+footer {
   justify-content: center;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-}
-
-footer {
   padding-top: 2vh;
   margin: 0 .75vw 1vh .75vw;
   border-bottom: 1px solid var(--offoffblack);
   border-radius: 0 0 40px 40px;
   box-shadow: 0 5vh 25px var(--offoffblack);
-}
-
-/* header */
-header {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 9999;
-  background-color: var(--offblack);
-  color: var(--offwhite);
-  box-shadow: 0px 10px 30px var(--offoffblack);
-  border-radius: 0 0 1.5rem 1.5rem;
-  padding-bottom: .5vw;
-}
-
-#header h1 {
-  border-bottom: 1px solid var(--offoffwhite);
-  font-size: 1.75rem;
-}
-
-#header p {
-  padding-top: .2vw;
-}
-
-#navigation {
-  padding: .75vw 0;
-}
-
-#navigation ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
-
-.nav-link {
-  background-color: var(--offblack);
-  color: var(--offwhite);
-  padding: .2vw 1.75vw;
-  border-radius: .25rem .25rem .5rem .5rem;
-  transition-duration: 1s;
 }
 
 .left-btn {
@@ -85,11 +50,6 @@ header {
 .right-btn {
   border-bottom-right-radius: .75rem;
 }
-
-/* .nav-link:hover {
-  color: var(--red);
-  box-shadow: 0 5px 25px var(--red);
-} */
 
 /* sections */
 .section {
@@ -216,17 +176,6 @@ a:hover, .navActive {
 
 /* display.tablet */
 @media screen and (min-width: 768px) {
-  /* component.Nav */
-  header {
-    border-radius: 0 0 10% 25%;
-  }
-
-  .nav-link {
-    padding: .5vw 2.75vw;
-    font-size: 1.25rem;
-    border-radius: .5rem;
-  }
-
   .left-btn {
     border-bottom-left-radius: 1rem;
   }
@@ -269,35 +218,4 @@ a:hover, .navActive {
   .app-description {
     font-family: 'Raleway', sans-serif;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  /* section */
-
-  .subheader {
-    font-size: 1.75rem;
-  }
-  .description {
-    font-size: 1.5rem;
-  }
-
-  /* about */
-  #about-container {
-    align-items: flex-start;
-  }
-
-  #about-text {
-    margin-top: 2vh;
-  }
-
-  #about-text h3 {
-    font-size: 1.5rem;
-    /* border-bottom: 1px solid var(--offoffwhite); */
-  }
-
-  /* projects */
-  .projects-grid {
-    grid-template-columns: repeat(3, 31%);
-  }
-  
 }
