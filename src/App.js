@@ -13,19 +13,20 @@ function App() {
     <div className="body">
       <Header setSelectedPortfolio={setSelectedPortfolio} />
       <main>
-        {selectedPortfolio === "About" ? (
-          <About />
-        ) : selectedPortfolio === "Frontend" ? (
-          <Portfolio selectedPortfolio={selectedPortfolio} />
-        ) : selectedPortfolio === "Backend" ? (
-          <Portfolio selectedPortfolio={selectedPortfolio} />
-        ) : selectedPortfolio === "Fullstack" ? (
-          <Portfolio selectedPortfolio={selectedPortfolio} />
-        ) : selectedPortfolio === "Resume" ? (
-          <Resume />
-        ) : (
-          <div>Please select a portfolio</div>
-        )}
+      {(() => {
+        switch(selectedPortfolio) {
+          case "About":
+            return <About />;
+          case "Frontend":
+          case "Backend":
+          case "Fullstack":
+            return <Portfolio selectedPortfolio={selectedPortfolio} />;
+          case "Resume":
+            return <Resume />;
+          default:
+            return <Portfolio selectedPortfolio={"Frontend"} />;
+        }
+      })()}
       </main>
     </div>
   );

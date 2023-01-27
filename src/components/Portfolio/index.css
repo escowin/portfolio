@@ -1,0 +1,26 @@
+* {
+    /* outline: 1px dotted blue; */
+}
+
+.portfolio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    border-radius: .25rem;
+}
+
+.project-details {
+    color: var(--offwhite);
+    background-color: var(--offblack);
+    border-radius: inherit;
+}

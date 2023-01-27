@@ -17,6 +17,10 @@
   --red: rgb(179, 24, 24);
 }
 
+main {
+  padding: 2%;
+}
+
 /* list styles */
 ul {
   list-style: none;
@@ -52,14 +56,13 @@ footer {
 }
 
 /* sections */
-.section {
+/* .section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding: 5px 10px;
   background-color: var(--offwhite);
-}
+} */
 
 .subheader {
   display: flex;

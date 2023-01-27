@@ -1,36 +1,120 @@
+import './index.css';
+import './portfolio.css';
+
 function Portfolio({ selectedPortfolio }) {
   const portfolioData = {
     Frontend: [
-      { project: "frontend 1", description: "description goes here" },
       {
-        project: "frontend 2",
-        description: "description goes here",
+        name: "Escowin art",
+        id: "escowinart",
+        repo: "https://github.com/escowin/escowinart",
+        liveUrl: "https://escowinart.com/",
+        languages: "js css",
+        libraries: "react",
+        highlight: false,
+        collaboration: false,
       },
       {
-        project: "frontend 3",
-        description: "description goes here but more stuff",
+        name: "Old portfolio",
+        id: "css-portfolio",
+        repo: "https://github.com/escowin/professional-portfolio",
+        liveUrl: "https://escowin.github.io/professional-portfolio",
+        languages: "html css js",
+        dialects: "",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Password generator",
+        id: "password-generator",
+        repo: "https://github.com/escowin/password-generator",
+        liveUrl: "https://escowin.github.io/password-generator/",
+        languages: "html css js",
+        dialects: "",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Coding quiz",
+        id: "coding-quiz",
+        repo: "https://github.com/escowin/coding-quiz",
+        liveUrl: "https://escowin.github.io/coding-quiz/",
+        languages: "html css js",
+        dialects: "",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Weather dashboard",
+        id: "weather-dashboard",
+        repo: "https://github.com/escowin/weather-dashboard",
+        liveUrl: "https://escowin.github.io/weather-dashboard/",
+        languages: "html css js api",
+        dialects: "jquery moment",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Day planner",
+        id: "day-planner",
+        repo: "https://github.com/escowin/day-planner",
+        liveUrl: "https://escowin.github.io/day-planner/",
+        languages: "html css js",
+        dialects: "bootstrap jquery moment",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Bluestrawberry",
+        id: "bluestrawberry",
+        repo: "https://github.com/escowin/bluestrawberry",
+        liveUrl: "https://escowin.github.io/bluestrawberry",
+        languages: "js css",
+        dialects: "react",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Solar weather",
+        id: "solar-weather",
+        repo: "https://github.com/escowin/solar-weather-app",
+        liveUrl: "https://escowin.github.io/solar-weather-app",
+        languages: "html css js api",
+        dialects: "jquery moment",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Raven home",
+        id: "raven-home",
+        repo: "https://github.com/escowin/raven-home",
+        liveUrl: "https://escowin.github.io/RavenclawG-2/",
+        languages: "html css js api",
+        dialects: "backend developer",
+        highlight: false,
+        collaboration: true,
       },
     ],
     Backend: [
-      { project: "backend 1", description: "description goes here" },
+      { name: "backend 1", id: "description goes here" },
       {
-        project: "backend 2",
-        description: "description goes here",
+        name: "backend 2",
+        id: "description goes here",
       },
       {
-        project: "backend 3",
-        description: "description goes here but more stuff",
+        name: "backend 3",
+        id: "description goes here but more stuff",
       },
     ],
     Fullstack: [
-      { project: "fullstack 1", description: "description goes here" },
+      { name: "fullstack 1", id: "description goes here" },
       {
-        project: "fullstack 2",
-        description: "description goes here",
+        name: "fullstack 2",
+        id: "description goes here",
       },
       {
-        project: "fullstack 2",
-        description: "description goes here but more stuff",
+        name: "fullstack 2",
+        id: "description goes here but more stuff",
       },
     ],
   };
@@ -39,13 +123,15 @@ function Portfolio({ selectedPortfolio }) {
 
   return (
     // JSX
-    <section>
+    <section className="portfolio-wrapper">
       {portfolioData[selectedPortfolio] &&
         portfolioData[selectedPortfolio].map((item, index) => (
-          <section key={index} id={index}>
-            <h2>{item.project}</h2>
-            <p>{item.description}</p>
-          </section>
+          <article key={index} id={item.id} className="project">
+            <div className="project-details">
+              <h2>{item.name}</h2>
+              <p>{item.id}</p>
+            </div>
+          </article>
         ))}
     </section>
   );
