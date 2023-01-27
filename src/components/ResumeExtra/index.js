@@ -53,14 +53,11 @@ function Extracurricular() {
       year: 2009,
       role: "Teach and learn in korea scholar",
       details: "English as a second language instructor",
-      event:
-        "The ministry of education, science & technology,<span className='mobile-hide'></span><br className='small-laptop mobile-show print-hide' />republic of korea",
+      event: "The ministry of education science & technology republic of korea",
       location: "남상초등학교",
       id: "talk",
     },
   ];
-
-  const eventHtml = extracurriculars[extracurriculars.length - 1].event;
 
   return (
     <>
@@ -75,11 +72,7 @@ function Extracurricular() {
                 <p className="details">{extra.details}</p>
               </div>
               <div className="right-text">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: extra.id === "talk" ? eventHtml : extra.event,
-                  }}
-                ></p>
+                <p>{extra.event}</p>
                 <p className="details">{extra.location}</p>
               </div>
             </div>

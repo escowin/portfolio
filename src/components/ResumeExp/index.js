@@ -78,7 +78,7 @@ function Experience() {
         {experience.map((exp, i) => (
           <article className="row" key={exp.company}>
             <div>
-              <p className="year">{exp.year}</p>
+              <p>{exp.year}</p>
               <p className="exp">{exp.duration}</p>
             </div>
             <div className="text-wrapper">

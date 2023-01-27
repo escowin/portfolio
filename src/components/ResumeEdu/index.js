@@ -32,7 +32,7 @@ function Education() {
       <section className="section" id="education">
         {education.map((edu) => (
           <article key={edu.id} className="row">
-            <p className="year">{edu.year}</p>
+            <p>{edu.year}</p>
             <div className="text-wrapper">
               <div className="left-text">
                 <p>{edu.degree}</p>
