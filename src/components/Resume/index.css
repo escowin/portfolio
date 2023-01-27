@@ -1,3 +1,65 @@
+/* resume main */
+#resume-body {
+    padding: 1rem;
+    font-weight: 500;
+}
+.center {
+    text-align: center;
+}
+
+.right, .right-text {
+    text-align: end;
+}
+
+/* resume main */
+.resume-subhead {
+    border-top: 2px solid var(--offblack);
+    border-bottom: 2px solid var(--offblack);
+    border-left: 2px solid var(--offblack);
+    text-indent: 1%;
+    padding: 10px;
+}
+
+/* subsection formatting*/
+.section {
+    border-right: 2px solid var(--offblack);
+    padding: 1rem 0 1rem 0;
+}
+
+.row {
+    display: flex;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: .25vh;
+    padding-bottom: .25vh;
+}
+
+/* all columns */
+#resume-header article, .left-text, .right-text {
+    flex-grow: 1;
+}
+
+/* left columns */
+.year {
+    width: auto;
+}
+
+/* right columns */
+.skillset {
+    word-spacing: .75rem;
+}
+
+.text-wrapper {
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 1%;
+}
+
+.text-wrapper {
+    display: inherit;
+}
+
+
 
 /* span classes */
 .print {
@@ -26,6 +88,11 @@
     font-size: .65rem;
     text-align: end;
     color: rgba(40, 40, 44, .75);
+}
+
+/* exp typography */
+#experience .details {
+    text-transform: lowercase;
 }
 
 /* display.print */
@@ -82,3 +149,60 @@
         padding-bottom: .15vh;
     }
 }
+
+
+/* display.small-laptop */
+@media screen and (max-width: 1024px) {
+    .small-laptop {
+        display: block;
+    }
+
+    #skills .row {
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+}
+
+/* display.mobile */
+@media screen and (max-width: 500px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .section {
+        padding: 2vw 0;
+    }
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2vw;
+    }
+
+    .right-text {
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    .left-text, #endeavors .right-text .details {
+        font-size: .8rem;
+        padding-left: 2vw;
+    }
+    
+    #experience .left-text, #education .left-text, #endeavors .left-text {
+        order: 2;
+    }
+
+    #education .details, #experience .right-text .details {
+        display: none;
+    }
+
+    #education .left-text {
+        font-size: .8rem;
+    }
+
+    #education .right-text {
+        font-size: 1rem;
+    }
+}
+

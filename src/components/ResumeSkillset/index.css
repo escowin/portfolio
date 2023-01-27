@@ -1,0 +1,7 @@
+#skills {
+    display: grid;
+    grid-template-columns: repeat(1, auto 1fr);
+    gap: .25rem 1rem;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
