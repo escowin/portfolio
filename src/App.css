@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Lexend+Mega:wght@200&family=Raleway:wght@100&display=swap');
 
 * {
   margin: 0;
@@ -61,14 +61,6 @@ footer {
 
 /* sections */
 
-/* .description {
-  font-size: 1rem;
-  margin-left: 2vw;
-  padding: 0 1vw;
-  border-left: 1px solid var(--offoffwhite);
-  margin-bottom: .25vh;
-} */
-
 /* component.About */
 .app-description {
   font-family: 'Raleway', sans-serif;
@@ -82,63 +74,21 @@ footer {
   justify-content: center;
 }
 
-.btn {
-  background-color: var(--offblack);
-  color: var(--offwhite);
-  border-radius: .5rem;
-  padding: .75vw 3vw;
-  font-size: 1.5rem;
-}
-
 /* TEXT ELEMENTS */
 .underline {
   border-bottom: 1px solid var(--offoffwhite);
   flex-grow: 1;
 }
 
-
-/* display.tablet */
-@media screen and (min-width: 768px) {
-  .left-btn {
-    border-bottom-left-radius: 1rem;
-  }
-  
-  .right-btn {
-    border-bottom-right-radius: 1rem;
-  }
-  /* component.Projects */
-  .projects-grid {
-    grid-template-columns: repeat(2, auto);
-  }
+li {
+  transition: color 1s;
 }
 
-@media screen and (min-width: 1024px) {
-  /* component.Projects */
-  .project {
-    background-color: aqua;
-  }
-
-  .project-screenshot {
-    border-radius: 2rem;
-  }
-
-  .project-title {
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .project-title , .app-code, .app-description {
-    padding: 0 2vw;
-  }
-
-  .project-urls {
-    font-size: 1.125rem;
-    text-align: end;
-  }
-
-  .app-description {
-    font-family: 'Raleway', sans-serif;
-  }
+li:hover {
+  color: red;
 }
+
+.selected {
+  color: red;
+}
+

@@ -219,7 +219,13 @@ function Portfolio({ selectedPortfolio }) {
           <article key={index} id={item.id} className="project">
             <div className="project-details">
               <h2>{item.name}</h2>
-              <h3>Repo · Live url</h3>
+              <h3 className="project-links">
+                <span onClick={() => window.open(item.repo)}>Repo</span>
+                {item.liveUrl && (
+                  <span onClick={() => window.open(item.liveUrl)}> · Live url
+                  </span>
+                )}
+              </h3>
               <p>{item.languages}</p>
               <p>{item.dialects}</p>
             </div>

@@ -29,10 +29,10 @@ function Education() {
   return (
     <>
       <h2 className="resume-subhead">Education</h2>
-      <section className="section" id="education">
+      <section className="resume-section" id="education">
         {education.map((edu) => (
           <article key={edu.id} className="row">
-            <p className="year">{edu.year}</p>
+            <p>{edu.year}</p>
             <div className="text-wrapper">
               <div className="left-text">
                 <p>{edu.degree}</p>

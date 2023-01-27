@@ -2,7 +2,7 @@ import "./index.css";
 
 function Skillset() {
   const skillset = {
-    languages: ["html", "css", "javascript", "json", "ruby", "sql"],
+    languages: ["html", "css", "javascript", "ruby", "sql"],
     libraries: {
       css: ["bootstrap"],
       js: [
@@ -29,7 +29,6 @@ function Skillset() {
       "mongodb",
       "postgresql",
       "sqlite",
-      "mongodb\u2009atlas",
     ],
     paradigms: [
       "mvc",
@@ -79,16 +78,10 @@ function Skillset() {
   return (
     <>
       <h2 className="resume-subhead">Technical skills</h2>
-      <section className="section" id="skills">
+      <section className="resume-section" id="skills">
         <p>Languages</p> <p className="skillset">{languages}</p>
-        <p>Frameworks</p>{" "}
-        <p className="skillset">
-          {jsFrameworks} {rubyFrameworks}
-        </p>
-        <p>Libraries</p>{" "}
-        <p className="skillset">
-          {cssLibraries} {jsLibraries}
-        </p>
+        <p>Frameworks</p> <p className="skillset">{jsFrameworks} {rubyFrameworks}</p>
+        <p>Libraries</p> <p className="skillset">{cssLibraries} {jsLibraries}</p>
         <p>Databases</p> <p className="skillset">{databases}</p>
         <p>Paradigms</p> <p className="skillset">{paradigms}</p>
         <p>Tools</p> <p className="skillset">{tools}</p>

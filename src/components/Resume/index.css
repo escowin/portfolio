@@ -1,78 +1,53 @@
-/* resume main */
-#resume-body {
-    padding: 1rem;
-    font-weight: 500;
-}
-.center {
-    text-align: center;
+/* display toggles */
+.display-print {
+    display: none;
 }
 
-.right, .right-text {
-    text-align: end;
+.display-lg {
+    display: none;
 }
 
-/* resume main */
+
+/* typography */
+.resume-subhead,
+.resume-section {
+    font-family: 'Lexend Mega', Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+}
+
+/* resume sections */
 .resume-subhead {
-    border-top: 2px solid var(--offblack);
-    border-bottom: 2px solid var(--offblack);
-    border-left: 2px solid var(--offblack);
-    text-indent: 1%;
-    padding: 10px;
+    border: 2px solid var(--offblack);
+    border-right: none;
+    padding: .5rem .75rem;
 }
 
 /* subsection formatting*/
-.section {
+.resume-section {
     border-right: 2px solid var(--offblack);
-    padding: 1rem 0 1rem 0;
+    padding: 2vw 0 2vw 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: .25vh;
 }
 
 .row {
-    display: flex;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    padding-top: .25vh;
-    padding-bottom: .25vh;
-}
-
-/* all columns */
-#resume-header article, .left-text, .right-text {
-    flex-grow: 1;
-}
-
-/* left columns */
-.year {
-    width: auto;
+    display: grid;
+    grid-template-columns: 15vw auto;
+    gap: 1rem;
 }
 
 /* right columns */
-.skillset {
-    word-spacing: .75rem;
-}
-
 .text-wrapper {
     justify-content: space-between;
     flex-grow: 1;
-    padding-left: 1%;
-}
-
-.text-wrapper {
     display: inherit;
-}
-
-
-
-/* span classes */
-.print {
-    display: none;
 }
 
 .bold {
     font-weight: 600;
 }
 
-.year {
-    font-weight: 600;
-}
 .details {
     padding-left: 2%;
     color: rgba(40, 40, 44, .8);
@@ -95,13 +70,51 @@
     text-transform: lowercase;
 }
 
+/* sections */
+.right-text {
+    text-align: start;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-text {
+    font-size: 1rem;
+    text-align: start;
+}
+
+.left-text, #endeavors .right-text .details {
+    font-size: .8rem;
+    padding-left: 2vw;
+}
+
+#experience .left-text, #education .left-text, #endeavors .left-text {
+    order: 2;
+}
+
+#education .left-text {
+    font-size: .8rem;
+}
+
+#education .right-text {
+    font-size: 1rem;
+}
+
 /* display.print */
 @media print {
+    /* hide */
+    .display-screen {
+        display: none
+    }
+
     header, footer, .email {
         display: none;
     }
 
-    .print {
+    /* show */
+    .display-print {
         display: inherit;
     }
     
@@ -127,7 +140,7 @@
         align-items: flex-start;
     }
 
-    .section {
+    .resume-section {
         padding: .85rem 0 .85rem 0;
     }
 
@@ -152,7 +165,7 @@
 
 
 /* display.small-laptop */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .small-laptop {
         display: block;
     }
@@ -162,47 +175,3 @@
         grid-template-columns: 15% 85%;
     }
 }
-
-/* display.mobile */
-@media screen and (max-width: 500px) {
-    .mobile-hide {
-        display: none;
-    }
-
-    .section {
-        padding: 2vw 0;
-    }
-
-    .text-wrapper {
-        display: flex;
-        flex-direction: column;
-        padding-left: 2vw;
-    }
-
-    .right-text {
-        font-size: 1rem;
-        text-align: start;
-    }
-
-    .left-text, #endeavors .right-text .details {
-        font-size: .8rem;
-        padding-left: 2vw;
-    }
-    
-    #experience .left-text, #education .left-text, #endeavors .left-text {
-        order: 2;
-    }
-
-    #education .details, #experience .right-text .details {
-        display: none;
-    }
-
-    #education .left-text {
-        font-size: .8rem;
-    }
-
-    #education .right-text {
-        font-size: 1rem;
-    }
-}
-

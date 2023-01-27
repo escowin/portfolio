@@ -1,7 +1,3 @@
-* {
-    /* outline: 1px dotted blue; */
-}
-
 .portfolio-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,17 +21,73 @@
     border-radius: inherit;
 }
 
-.project-details h2, .project-details h3 {
+.project-details h2,
+.project-details h3 {
     padding-left: .25rem;
 }
 
 .project-details h2 {
+    font-weight: 600;
+    width: fit-content;
+    border-bottom: 1px solid var(--gray);
     font-size: 1.5rem;
 }
 
+.project-links span {
+    transition: color 1s;
+}
+
+.project-links span:hover {
+    color: red;
+}
+
 .project-details p {
-    color: var(--gray);
     padding: 0 .75rem;
     word-spacing: .25rem;
     font-size: .95rem;
+}
+/* display.tablet */
+@media screen and (min-width: 768px) {
+    .left-btn {
+        border-bottom-left-radius: 1rem;
+    }
+
+    .right-btn {
+        border-bottom-right-radius: 1rem;
+    }
+
+    /* component.Projects */
+    .projects-grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* component.Projects */
+    .project-screenshot {
+        border-radius: 2rem;
+    }
+
+    .project-title {
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-title,
+    .app-code,
+    .app-description {
+        padding: 0 2vw;
+    }
+
+    .project-urls {
+        font-size: 1.125rem;
+        text-align: end;
+    }
+
+    .app-description {
+        font-family: 'Raleway', sans-serif;
+    }
 }

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import './index.css'
+import "./index.css";
 
 function ResumeHeader() {
   const data = {
@@ -26,28 +26,35 @@ function ResumeHeader() {
 
   return (
     <section id="resume-header">
-      <article className="left mobile-hide">
+      <article className="left">
         <p onClick={handleLinkedInClick}>
-        <FontAwesomeIcon icon={faLinkedin} /> linkedin
-          <span className="print">.com/in/escowin</span>
+          <FontAwesomeIcon icon={faLinkedin} />
+          <span className="display-lg"> linkedin</span>
+          <span className="display-print">.com/in/escowin</span>
         </p>
         <p onClick={handleGithubClick}>
-        <FontAwesomeIcon icon={faGithub} /> github
-          <span className="print">.com/escowin</span>
+          <FontAwesomeIcon icon={faGithub} />
+          <span className="display-lg">github</span>
+          <span className="display-print">.com/escowin</span>
         </p>
       </article>
+
       <article className="center">
-        <h2>{data.name}</h2>
-        <h3 onClick={handlePortfolioClick}>{data.occupation}</h3>
+        <h2>
+          <span className="display-screen">Resume</span>
+          <span className="display-print">{data.name}</span>
+        </h2>
+        <h3 className="display-print" onClick={handlePortfolioClick}>{data.occupation}</h3>
       </article>
-      <article className="right mobile-hide">
+
+      <article className="right">
         <p>
-          {data.location}
+          <span className="display-lg">{data.location}</span>
           <FontAwesomeIcon icon={faLocationDot} />
         </p>
         <p onClick={handleEmailClick}>
-          <span className="print-hide">e-mail </span>
-          <span className="print">{data.links.email}</span>
+          <span className="display-lg">e-mail</span>
+          <span className="display-print">{data.links.email}</span>
           <FontAwesomeIcon icon={faEnvelope} />
         </p>
       </article>
