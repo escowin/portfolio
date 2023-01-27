@@ -1,5 +1,5 @@
-import './index.css';
-import './portfolio.css';
+import "./index.css";
+import "./portfolio.css";
 
 function Portfolio({ selectedPortfolio }) {
   const portfolioData = {
@@ -10,8 +10,8 @@ function Portfolio({ selectedPortfolio }) {
         repo: "https://github.com/escowin/escowinart",
         liveUrl: "https://escowinart.com/",
         languages: "js css",
-        libraries: "react",
-        highlight: false,
+        dialects: "react",
+        highlight: true,
         collaboration: false,
       },
       {
@@ -89,47 +89,139 @@ function Portfolio({ selectedPortfolio }) {
         id: "raven-home",
         repo: "https://github.com/escowin/raven-home",
         liveUrl: "https://escowin.github.io/RavenclawG-2/",
-        languages: "html css js api",
-        dialects: "backend developer",
+        languages: "frontend api project",
+        dialects: "javascript developer",
         highlight: false,
         collaboration: true,
       },
     ],
     Backend: [
-      { name: "backend 1", id: "description goes here" },
       {
-        name: "backend 2",
-        id: "description goes here",
+        name: "Team profile generator",
+        id: "team-profile-generator",
+        repo: "https://github.com/escowin/team-profile-generator",
+        liveUrl: null,
+        languages: "oop · js css",
+        dialects: "node inquirer jest",
+        highlight: false,
+        collaboration: false,
       },
       {
-        name: "backend 3",
-        id: "description goes here but more stuff",
+        name: "Portfolio generator",
+        id: "portfolio-generator",
+        repo: "https://github.com/escowin/portfolio-generator",
+        liveUrl: null,
+        languages: "js css",
+        dialects: "node inquirer",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Readme generator",
+        id: "readme-generator",
+        repo: "https://github.com/escowin/readme-generator",
+        liveUrl: null,
+        languages: "js",
+        dialects: "node inquirer",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Social network api",
+        id: "social-network",
+        repo: "https://github.com/escowin/social-network",
+        liveUrl: null,
+        languages: "js mongodb",
+        dialects: "node express mongoose",
+        highlight: true,
+        collaboration: false,
       },
     ],
     Fullstack: [
-      { name: "fullstack 1", id: "description goes here" },
       {
-        name: "fullstack 2",
-        id: "description goes here",
+        name: "Note taker",
+        id: "note-taker",
+        repo: "https://github.com/escowin/note-taker",
+        liveUrl: null,
+        languages: "js css html",
+        dialects: "node express bootstrap",
+        highlight: false,
+        collaboration: false,
       },
       {
-        name: "fullstack 2",
-        id: "description goes here but more stuff",
+        name: "Cms blog",
+        id: "cms-blog",
+        repo: "https://github.com/escowin/cms-blog",
+        liveUrl: null,
+        languages: "js css mysql",
+        dialects: "node express handlebars sequelize",
+        highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "VVH Financial",
+        id: "vvh-financial",
+        repo: "https://github.com/escowin/vvh-financial",
+        liveUrl: null,
+        languages: "js css mysql",
+        dialects: "node express handlebars sequelize",
+        highlight: true,
+        collaboration: false,
+      },
+      {
+        name: "Smart home",
+        id: "smart-home",
+        repo: "https://github.com/escowin/smart-home",
+        liveUrl: "https://young-earth-27956.herokuapp.com/",
+        languages: "mern project",
+        dialects: "frontend lead",
+        highlight: false,
+        collaboration: true,
+      },
+      {
+        name: "Auction house",
+        id: "auction-house",
+        repo: "https://github.com/escowin/auction-house",
+        liveUrl: "https://stormy-fjord-57144.herokuapp.com/",
+        languages: "mvc project",
+        dialects: "frontend lead",
+        highlight: false,
+        collaboration: true,
+      },
+      {
+        name: "Address book",
+        id: "address-book",
+        repo: "https://github.com/escowin/address-book-escobar-edwin",
+        liveUrl: null,
+        languages: "ruby postgresql",
+        dialects: "rails bootstrap",
+        highlight: false,
+        collaboration: false,
       },
     ],
   };
 
-  console.log(portfolioData[selectedPortfolio]);
+  const portfolioDataRandomized = portfolioData[selectedPortfolio].sort(
+    () => Math.random() - 0.5
+  );
+  const highlightedData = portfolioDataRandomized.filter(
+    (item) => item.highlight === true
+  );
+  const nonHighlightedData = portfolioDataRandomized.filter(
+    (item) => item.highlight !== true
+  );
+  const modifiedPortfolio = [...highlightedData, ...nonHighlightedData];
 
   return (
-    // JSX
     <section className="portfolio-wrapper">
-      {portfolioData[selectedPortfolio] &&
-        portfolioData[selectedPortfolio].map((item, index) => (
+      {modifiedPortfolio &&
+        modifiedPortfolio.map((item, index) => (
           <article key={index} id={item.id} className="project">
             <div className="project-details">
               <h2>{item.name}</h2>
-              <p>{item.id}</p>
+              <h3>Repo · Live url</h3>
+              <p>{item.languages}</p>
+              <p>{item.dialects}</p>
             </div>
           </article>
         ))}

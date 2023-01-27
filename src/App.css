@@ -11,9 +11,9 @@
 
 :root {
   --offwhite: rgb(230, 230, 230);
-  --offoffwhite: rgba(230, 230, 230, .6);
+  --gray: rgba(230, 230, 230, .6);
   --offblack: rgb(40, 40, 44);
-  --offoffblack: rgba(40, 40, 40, .8);
+  --overlay: rgba(40, 40, 40, .9);
   --red: rgb(179, 24, 24);
 }
 

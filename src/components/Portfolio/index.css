@@ -5,13 +5,13 @@
 .portfolio-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: .9rem;
 }
 
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-start;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -21,6 +21,21 @@
 
 .project-details {
     color: var(--offwhite);
-    background-color: var(--offblack);
+    background-color: var(--overlay);
     border-radius: inherit;
+}
+
+.project-details h2, .project-details h3 {
+    padding-left: .25rem;
+}
+
+.project-details h2 {
+    font-size: 1.5rem;
+}
+
+.project-details p {
+    color: var(--gray);
+    padding: 0 .75rem;
+    word-spacing: .25rem;
+    font-size: .95rem;
 }

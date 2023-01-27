@@ -1,4 +1,4 @@
-/* screenshots */
+/* screenshots | solo */
 #address-book {
     background-image: url('../../assets/images/small/address-book.jpg');
 }
@@ -10,17 +10,16 @@
     background-image: url('../../assets/images/small/coding-quiz.jpg');
 }
 
+#css-portfolio {
+    background-image: url('../../assets/images/small/css-portfolio.jpg');
+}
+
 #day-planner {
     background-image: url('../../assets/images/small/day-planner.jpg');
 }
 
 #escowinart {
     background-image: url('../../assets/images/small/escowinart.jpg');
-}
-
-
-#css-portfolio {
-    background-image: url('../../assets/images/small/css-portfolio.jpg');
 }
 
 #note-taker {
@@ -59,17 +58,15 @@
     background-image: url('../../assets/images/small/weather-dashboard.jpg');
 }
 
-#raven-home {
-    background-image: url('../../assets/images/small/raven-home.jpg');
-}
-
-/* screenshots.collabs */
-/* #smart-home {
-    background-image: url('../../assets/images/app-smart-home.jpg');
-}
-
-
-
+/* screenshots | collaborations */
 #auction-house {
-    background-image: url('../../assets/images/app-auction-house.jpg');
-} */
+    background-image: url('../../assets/images/large/auction-house.jpg');
+}
+
+#raven-home {
+    background-image: url('../../assets/images/large/raven-home.jpg');
+}
+
+#smart-home {
+    background-image: url('../../assets/images/large/smart-home.jpg');
+}
