@@ -1,0 +1,84 @@
+
+/* span classes */
+.print {
+    display: none;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.year {
+    font-weight: 600;
+}
+.details {
+    padding-left: 2%;
+    color: rgba(40, 40, 44, .8);
+    font-size: smaller;
+}
+
+.role {
+    list-style-type: '･ ';
+    padding-left: 2rem;
+}
+
+.exp {
+    font-size: .65rem;
+    text-align: end;
+    color: rgba(40, 40, 44, .75);
+}
+
+/* display.print */
+@media print {
+    header, footer, .email {
+        display: none;
+    }
+
+    .print {
+        display: inherit;
+    }
+    
+    .print-hide {
+        display: none;
+    }
+
+    #resume-header {
+        padding-bottom: 1rem;
+    }
+
+    #resume-header .right {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    #resume-footer {
+        padding: .5rem 0;
+    }
+    
+    .text-wrapper {
+        align-items: flex-start;
+    }
+
+    .section {
+        padding: .85rem 0 .85rem 0;
+    }
+
+    #skills {
+        gap: .2rem 1rem;
+    }
+
+    #skills .row {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    #skills .left-text {
+        width: 10vw;
+    }
+
+    .row {
+        padding-top: .15vh;
+        padding-bottom: .15vh;
+    }
+}
