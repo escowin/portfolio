@@ -78,7 +78,7 @@ function Skillset() {
   return (
     <>
       <h2 className="resume-subhead">Technical skills</h2>
-      <section className="section" id="skills">
+      <section className="resume-section" id="skills">
         <p>Languages</p> <p className="skillset">{languages}</p>
         <p>Frameworks</p> <p className="skillset">{jsFrameworks} {rubyFrameworks}</p>
         <p>Libraries</p> <p className="skillset">{cssLibraries} {jsLibraries}</p>

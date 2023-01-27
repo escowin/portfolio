@@ -1,10 +1,14 @@
 import "./index.css";
+import React, { useState } from 'react';
+
 
 function Header(props) {
   const portfolios = ["Frontend", "Backend", "Fullstack"];
+  const [selected, setSelected] = useState(null);
 
-  function handleClick(portfolios) {
-    props.setSelectedPortfolio(portfolios);
+  function handleClick(portfolio) {
+    props.setSelectedPortfolio(portfolio);
+    setSelected(portfolio);
   }
 
   return (
@@ -15,11 +19,11 @@ function Header(props) {
       </article>
       <nav>
         <ul id="navigation">
-          <li onClick={() => handleClick("About")}>About</li>
+          <li onClick={() => handleClick("About")} className={'About' === selected ? 'selected' : ''}>About</li>
           {portfolios.map((portfolio, index) => (
-            <li key={index} onClick={() => handleClick(portfolio)}>{portfolio}</li>
+            <li key={index} onClick={() => handleClick(portfolio)} className={portfolio === selected ? 'selected' : ''}>{portfolio}</li>
           ))}
-          <li onClick={() => handleClick("Resume")}>Resume</li>
+          <li onClick={() => handleClick("Resume")} className={'Resume' === selected ? 'selected' : ''}>Resume</li>
         </ul>
       </nav>
     </header>

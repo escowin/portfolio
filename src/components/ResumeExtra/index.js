@@ -62,7 +62,7 @@ function Extracurricular() {
   return (
     <>
       <h2 className="resume-subhead">Extracurricular activities</h2>
-      <section className="section" id="endeavors">
+      <section className="resume-section" id="endeavors">
         {extracurriculars.map((extra) => (
           <article key={extra.id} className="row">
             <p className="year">{extra.year}</p>

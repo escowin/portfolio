@@ -10,7 +10,7 @@
 
 /* typography */
 .resume-subhead,
-.section {
+.resume-section {
     font-family: 'Lexend Mega', Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
 }
@@ -23,7 +23,7 @@
 }
 
 /* subsection formatting*/
-.section {
+.resume-section {
     border-right: 2px solid var(--offblack);
     padding: 2vw 0 2vw 2vw;
     display: flex;
@@ -140,7 +140,7 @@
         align-items: flex-start;
     }
 
-    .section {
+    .resume-section {
         padding: .85rem 0 .85rem 0;
     }
 

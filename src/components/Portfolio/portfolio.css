@@ -2,6 +2,7 @@
 #address-book {
     background-image: url('../../assets/images/small/address-book.jpg');
 }
+
 #bluestrawberry {
     background-image: url('../../assets/images/small/bluestrawberry.jpg');
 }
@@ -69,4 +70,160 @@
 
 #smart-home {
     background-image: url('../../assets/images/large/smart-home.jpg');
+}
+
+@media screen and (min-width: 768px) {
+
+    /* screenshots | solo */
+    #address-book {
+        background-image: url('../../assets/images/medium/address-book.jpg');
+    }
+
+    /* #bluestrawberry {
+        background-image: url('../../assets/images/medium/bluestrawberry.jpg');
+    } */
+
+    #coding-quiz {
+        background-image: url('../../assets/images/medium/coding-quiz.jpg');
+    }
+
+    /* #css-portfolio {
+        background-image: url('../../assets/images/medium/css-portfolio.jpg');
+    } */
+
+    /* #day-planner {
+        background-image: url('../../assets/images/medium/day-planner.jpg');
+    } */
+
+    /* #escowinart {
+        background-image: url('../../assets/images/medium/escowinart.jpg');
+    } */
+
+    #note-taker {
+        background-image: url('../../assets/images/medium/note-taker.jpg');
+    }
+
+    /* #password-generator {
+        background-image: url('../../assets/images/medium/password-generator.jpg');
+    } */
+
+    #portfolio-generator {
+        background-image: url('../../assets/images/medium/portfolio-generator.jpg');
+    }
+
+    /* #readme-generator {
+        background-image: url('../../assets/images/medium/readme-generator.jpg');
+    } */
+
+    /* #social-network {
+        background-image: url('../../assets/images/medium/social-network-api.jpg');
+    } */
+
+    /* #solar-weather {
+        background-image: url('../../assets/images/medium/solar-weather.jpg');
+    } */
+
+    #team-profile-generator {
+        background-image: url('../../assets/images/medium/team-profile-generator.jpg');
+    }
+
+    #vvh-financial {
+        background-image: url('../../assets/images/medium/vvh-financial.jpg');
+    }
+
+    #weather-dashboard {
+        background-image: url('../../assets/images/medium/weather-dashboard.jpg');
+    }
+
+    /* screenshots | collaborations */
+    /* #auction-house {
+        background-image: url('../../assets/images/medium/auction-house.jpg');
+    } */
+
+    /* #raven-home {
+        background-image: url('../../assets/images/medium/raven-home.jpg');
+    } */
+
+    /* #smart-home {
+        background-image: url('../../assets/images/medium/smart-home.jpg');
+    } */
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* screenshots | solo */
+    #address-book {
+        background-image: url('../../assets/images/large/address-book.jpg');
+    }
+
+    #bluestrawberry {
+        background-image: url('../../assets/images/large/bluestrawberry.jpg');
+    }
+
+    #coding-quiz {
+        background-image: url('../../assets/images/large/coding-quiz.jpg');
+    }
+
+    #css-portfolio {
+        background-image: url('../../assets/images/large/css-portfolio.jpg');
+    }
+
+    #day-planner {
+        background-image: url('../../assets/images/large/day-planner.jpg');
+    }
+
+    #escowinart {
+        background-image: url('../../assets/images/large/escowinart.jpg');
+    }
+
+    #note-taker {
+        background-image: url('../../assets/images/large/note-taker.jpg');
+    }
+
+    #password-generator {
+        background-image: url('../../assets/images/large/password-generator.jpg');
+    }
+
+    #portfolio-generator {
+        background-image: url('../../assets/images/large/portfolio-generator.jpg');
+    }
+
+    #readme-generator {
+        background-image: url('../../assets/images/large/readme-generator.jpg');
+    }
+
+    #social-network {
+        background-image: url('../../assets/images/large/social-network-api.jpg');
+    }
+
+    #solar-weather {
+        background-image: url('../../assets/images/large/solar-weather.jpg');
+    }
+
+    #team-profile-generator {
+        background-image: url('../../assets/images/large/team-profile-generator.jpg');
+    }
+
+    #vvh-financial {
+        background-image: url('../../assets/images/large/vvh-financial.jpg');
+    }
+
+    #weather-dashboard {
+        background-image: url('../../assets/images/large/weather-dashboard.jpg');
+    }
+
+    /* screenshots | collaborations */
+    #auction-house {
+        background-image: url('../../assets/images/large/auction-house.jpg');
+    }
+
+    #raven-home {
+        background-image: url('../../assets/images/large/raven-home.jpg');
+    }
+
+    #smart-home {
+        background-image: url('../../assets/images/large/smart-home.jpg');
+    }
+
 }

@@ -74,7 +74,7 @@ function Experience() {
   return (
     <>
       <h2 className="resume-subhead">Professional experience</h2>
-      <section className="section" id="experience">
+      <section className="resume-section" id="experience">
         {experience.map((exp, i) => (
           <article className="row" key={exp.company}>
             <div>
