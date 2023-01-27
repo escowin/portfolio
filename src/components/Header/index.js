@@ -16,8 +16,8 @@ function Header(props) {
       <nav>
         <ul id="navigation">
           <li onClick={() => handleClick("About")}>About</li>
-          {portfolios.map((portfolio) => (
-            <li onClick={() => handleClick(portfolio)}>{portfolio}</li>
+          {portfolios.map((portfolio, index) => (
+            <li key={index} onClick={() => handleClick(portfolio)}>{portfolio}</li>
           ))}
           <li onClick={() => handleClick("Resume")}>Resume</li>
         </ul>

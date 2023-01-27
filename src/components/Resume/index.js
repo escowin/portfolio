@@ -1,13 +1,23 @@
-import React from "react";
+import "./index.css";
+
+import ResumeHeader from "../ResumeHeader";
+import ResumeFooter from "../ResumeFooter";
+import Skillet from "../ResumeSkillset";
+import Experience from "../ResumeExp";
+import Education from "../ResumeEdu";
+import Extracurricular from "../ResumeExtra";
 
 function Resume() {
-    return (
-        <section>
-            <article>
-                <h2>Resume</h2>
-            </article>
-        </section>
-    );
+  return (
+    <>
+      <ResumeHeader />
+      <Skillet />
+      <Experience />
+      <Education />
+      <Extracurricular />
+      <ResumeFooter />
+    </>
+  );
 }
 
 export default Resume;
