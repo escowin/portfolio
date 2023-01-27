@@ -1,33 +1,34 @@
-import React from "react";
-import Contact from "../Contact";
+import "./index.css";
 import profilePic from "../../assets/images/profile-pic.jpg";
-import './index.css';
+
+import Contact from "../Contact";
 
 function About() {
   return (
-    <section className="section">
-      <h2 className="subheader" id="about">
-        About <span className="description">Edwin m. escobar</span>
-      </h2>
-      <article id="about-container">
-        <img
-          src={profilePic}
-          id="profile-pic"
-          style={{ width: "25%" }}
-          alt="profile pic"
-        />
-        <div id="about-text">
-          <h3>Full-stack web developer</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sit
-            voluptatem dolorum. Illo perferendis deleniti dolorem deserunt
-            dignissimos adipisci dicta et quisquam distinctio nesciunt?
-            Dignissimos.
-          </p>
-        </div>
+    <section className="section" id="about">
+      <article>
+        <img src={profilePic} id="profile-pic" alt="profile pic" />
+      </article>
+      <article id="profile-text">
+        <h2>Edwin m. escobar</h2>
+        <Contact />
       </article>
 
-      <Contact/>
+      <article id="bio">
+        <p>
+          I specialize in MERN stack application development, utilizing my
+          background in fine arts to create visually striking frontend design.
+        </p>
+
+        <p>
+          As an entry-level professional, I am eager to pursue new opportunities
+          for professional development and growth in my career. With that in
+          mind, I am actively seeking immediate employment opportunities here in
+          Austin, TX.
+        </p>
+
+        <p>Gauge my skillset through my portfolio.</p>
+      </article>
     </section>
   );
 }

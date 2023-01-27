@@ -1,0 +1,20 @@
+#contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: .75rem;
+    gap: .25rem;
+}
+
+.icon {
+    /* font-size: 1.25rem; */
+    width: fit-content;
+    display: flex;
+    /* gap: .25rem; */
+}
+
+.icon svg {
+    width: 2rem;
+    font-size: 1.25rem;
+
+}

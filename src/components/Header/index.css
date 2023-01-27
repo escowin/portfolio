@@ -22,7 +22,7 @@ nav {
 }
 
 #header h1 {
-    border-bottom: 1px solid var(--offoffwhite);
+    border-bottom: 1px solid var(--gray);
     font-size: 1.75rem;
 }
 

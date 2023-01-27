@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: lighter;
   box-sizing: border-box;
   /* border: 1px solid red; */
@@ -14,6 +13,7 @@
   --gray: rgba(230, 230, 230, .6);
   --offblack: rgb(40, 40, 44);
   --overlay: rgba(40, 40, 40, .9);
+  --dark-accent: rgb(145, 145, 145);
   --red: rgb(179, 24, 24);
 }
 
@@ -32,6 +32,8 @@ ul {
   flex-direction: column;
   min-height: 100vh;
   background-color: var(--offwhite);
+  font-family: 'Alegreya Sans SC', sans-serif;
+
 }
 
 footer {
@@ -56,80 +58,16 @@ footer {
 }
 
 /* sections */
-/* .section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5px 10px;
-  background-color: var(--offwhite);
-} */
 
-.subheader {
-  display: flex;
-  align-items: flex-end;
-  padding: .25vw 6vw;
-  border-radius: .20rem .20rem .75rem 2rem;
-  border-bottom: 1px solid var(--offoffblack);
-  text-shadow: 5px 0 .75rem  var(--offoffblack);
-  margin-bottom: 1.25vh;
-}
-
-.description {
+/* .description {
   font-size: 1rem;
   margin-left: 2vw;
   padding: 0 1vw;
   border-left: 1px solid var(--offoffwhite);
   margin-bottom: .25vh;
-}
+} */
 
 /* component.About */
-#about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#profile-pic {
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px var(--offblack);
-  margin: 1rem;
-}
-
-#about-text {
-  text-align: left;
-}
-
-/* component.Projects */
-.projects-grid {
-  display: grid;
-  /* grid-template-columns: auto; */
-  justify-content: center;
-  grid-gap: 5vh
-}
-
-.project-screenshot {
-  border-radius: 2.5rem;
-  width: 100%;
-  margin-top: 1vw;
-  transition-duration: 1s;
-}
-
-.project-title {
-  font-size: 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.project-title , .app-code, .app-description {
-  padding: 0 5vw;
-}
-
-.project-urls {
-  font-size: 1.125rem;
-  text-align: end;
-}
-
 .app-description {
   font-family: 'Raleway', sans-serif;
 }
@@ -156,26 +94,6 @@ footer {
   flex-grow: 1;
 }
 
-a {
-  text-decoration: none;
-  font-family: inherit;
-  color: inherit;
-  transition-duration: 1s;
-}
-
-a:hover, .navActive {
-  color: var(--red);
-  text-shadow: 0 0 .25vw var(--red);
-}
-
-.navActive:hover {
-  box-shadow: 0 1vh 1.5vw var(--offoffblack);
-}
-
-
-.project-screenshot:hover {
-  box-shadow: 0 0 1.5vw var(--red);
-}
 
 /* display.tablet */
 @media screen and (min-width: 768px) {
