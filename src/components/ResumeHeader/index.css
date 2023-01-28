@@ -1,15 +1,13 @@
 #resume-header {
     display: flex;
+    justify-content: center;
     padding-bottom: 2vh;
 }
 
-.left, .right {
-    display: none;
-}
-
 .center {
-    text-align: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
 }
 
 .center .display-screen {
@@ -20,4 +18,70 @@
 /* fa icons */
 svg {
     width: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #resume-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 2vh;
+    }
+    
+    .left, .center, .right {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+    
+    .left {
+        align-items: flex-start;
+    }
+    
+    .center {
+        align-items: center;
+    }
+    
+    .right {
+        align-items: flex-end;
+    }
+}
+
+@media print {
+    #resume-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: .75rem;
+    }
+    
+    .left, .center, .right {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    }
+
+    .left {
+        align-items: flex-start;
+    }
+    
+    .center {
+        align-items: center;
+        gap: 0;
+    }
+    
+    .right {
+        align-items: flex-end;
+    }
+
+    #location {
+        order: 2;
+    }
+
+    #resume-header p {
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        width: 1.75rem;
+    }
 }

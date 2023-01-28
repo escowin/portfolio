@@ -1,3 +1,5 @@
+import './index.css';
+
 function Experience() {
   const experience = [
     {
@@ -92,10 +94,10 @@ function Experience() {
                 </ul>
               </div>
               <div className="right-text">
-                <p onClick={() => window.open(exp.url, "_blank")}>
+                <p className="link" onClick={() => window.open(exp.url, "_blank")}>
                   {exp.company}
                 </p>
-                <p className="details">{exp.location}</p>
+                <p className="details display-lg display-print">{exp.location}</p>
               </div>
             </div>
           </article>

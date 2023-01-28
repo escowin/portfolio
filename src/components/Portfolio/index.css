@@ -1,16 +1,18 @@
-.portfolio-wrapper {
+.portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .9rem;
 }
 
+.highlight {
+    grid-column: span 2;
+}
+
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background-size: cover;
     background-position: center;
-    width: 100%;
     height: 40vh;
     border-radius: .25rem;
 }
@@ -18,7 +20,7 @@
 .project-details {
     color: var(--offwhite);
     background-color: var(--overlay);
-    border-radius: inherit;
+    border-radius: .25rem .25rem 0 0;
 }
 
 .project-details h2,
@@ -44,50 +46,16 @@
 .project-details p {
     padding: 0 .75rem;
     word-spacing: .25rem;
-    font-size: .95rem;
 }
-/* display.tablet */
+
 @media screen and (min-width: 768px) {
-    .left-btn {
-        border-bottom-left-radius: 1rem;
-    }
-
-    .right-btn {
-        border-bottom-right-radius: 1rem;
-    }
-
-    /* component.Projects */
-    .projects-grid {
-        grid-template-columns: repeat(2, auto);
+    .portfolio {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 1024px) {
-
-    /* component.Projects */
-    .project-screenshot {
-        border-radius: 2rem;
-    }
-
-    .project-title {
-        font-size: 1.25rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .project-title,
-    .app-code,
-    .app-description {
-        padding: 0 2vw;
-    }
-
-    .project-urls {
-        font-size: 1.125rem;
-        text-align: end;
-    }
-
-    .app-description {
-        font-family: 'Raleway', sans-serif;
+    .portfolio {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

@@ -2,6 +2,7 @@ import "./index.css";
 import "./portfolio.css";
 
 function Portfolio({ selectedPortfolio }) {
+  // projects are either frontend, backend, or fullstack apps.
   const portfolioData = {
     Frontend: [
       {
@@ -19,7 +20,7 @@ function Portfolio({ selectedPortfolio }) {
         id: "css-portfolio",
         repo: "https://github.com/escowin/professional-portfolio",
         liveUrl: "https://escowin.github.io/professional-portfolio",
-        languages: "html css js",
+        languages: "js css html",
         dialects: "",
         highlight: false,
         collaboration: false,
@@ -29,7 +30,7 @@ function Portfolio({ selectedPortfolio }) {
         id: "password-generator",
         repo: "https://github.com/escowin/password-generator",
         liveUrl: "https://escowin.github.io/password-generator/",
-        languages: "html css js",
+        languages: "js css html",
         dialects: "",
         highlight: false,
         collaboration: false,
@@ -39,7 +40,7 @@ function Portfolio({ selectedPortfolio }) {
         id: "coding-quiz",
         repo: "https://github.com/escowin/coding-quiz",
         liveUrl: "https://escowin.github.io/coding-quiz/",
-        languages: "html css js",
+        languages: "js css html",
         dialects: "",
         highlight: false,
         collaboration: false,
@@ -49,7 +50,7 @@ function Portfolio({ selectedPortfolio }) {
         id: "weather-dashboard",
         repo: "https://github.com/escowin/weather-dashboard",
         liveUrl: "https://escowin.github.io/weather-dashboard/",
-        languages: "html css js api",
+        languages: "js css html api",
         dialects: "jquery moment",
         highlight: false,
         collaboration: false,
@@ -59,7 +60,7 @@ function Portfolio({ selectedPortfolio }) {
         id: "day-planner",
         repo: "https://github.com/escowin/day-planner",
         liveUrl: "https://escowin.github.io/day-planner/",
-        languages: "html css js",
+        languages: "js css html",
         dialects: "bootstrap jquery moment",
         highlight: false,
         collaboration: false,
@@ -79,7 +80,7 @@ function Portfolio({ selectedPortfolio }) {
         id: "solar-weather",
         repo: "https://github.com/escowin/solar-weather-app",
         liveUrl: "https://escowin.github.io/solar-weather-app",
-        languages: "html css js api",
+        languages: "js css html api",
         dialects: "jquery moment",
         highlight: false,
         collaboration: false,
@@ -201,33 +202,37 @@ function Portfolio({ selectedPortfolio }) {
     ],
   };
 
+  // the selected portfolio prop determines which portfolio will be randomized into a new array.
   const portfolioDataRandomized = portfolioData[selectedPortfolio].sort(
     () => Math.random() - 0.5
   );
+  // this new randomized array is then split into two arrays.
   const highlightedData = portfolioDataRandomized.filter(
-    (item) => item.highlight === true
+    (project) => project.highlight === true
   );
   const nonHighlightedData = portfolioDataRandomized.filter(
-    (item) => item.highlight !== true
+    (project) => project.highlight !== true
   );
+  // these arrays are then recombined, highlighted projects appear first
   const modifiedPortfolio = [...highlightedData, ...nonHighlightedData];
 
+  // this final array is mapped. each project object's properties are plugged in where needed within the article element. highlighted projects receive the additional 'highlight' class attribute.
   return (
-    <section className="portfolio-wrapper">
+    <section className="portfolio">
       {modifiedPortfolio &&
-        modifiedPortfolio.map((item, index) => (
-          <article key={index} id={item.id} className="project">
+        modifiedPortfolio.map((project, index) => (
+          <article key={index} id={project.id} className={`project ${project.highlight ? 'highlight' : ''}`}>
             <div className="project-details">
-              <h2>{item.name}</h2>
+              <h2>{project.name}</h2>
               <h3 className="project-links">
-                <span onClick={() => window.open(item.repo)}>Repo</span>
-                {item.liveUrl && (
-                  <span onClick={() => window.open(item.liveUrl)}> · Live url
+                <span onClick={() => window.open(project.repo)}>Repo</span>
+                {project.liveUrl && (
+                  <span onClick={() => window.open(project.liveUrl)}> · Live url
                   </span>
                 )}
               </h3>
-              <p>{item.languages}</p>
-              <p>{item.dialects}</p>
+              <p>{project.languages}</p>
+              <p>{project.dialects}</p>
             </div>
           </article>
         ))}

@@ -1,3 +1,5 @@
+import './index.css';
+
 function Extracurricular() {
   const extracurriculars = [
     {
@@ -28,7 +30,7 @@ function Extracurricular() {
       year: 2017,
       role: "Mountaineer",
       details:
-        "Mount wilson, cucamonga peak, mt baldy, san bernardino peak, san jacinto, san gorgonio",
+        "Cucamonga peak, mt baldy, mt wilson, san bernardino peak, san jacinto, san gorgonio",
       event: "Socal six-pack of peaks",
       location: "Southern California",
       id: "socal",
@@ -53,7 +55,7 @@ function Extracurricular() {
       year: 2009,
       role: "Teach and learn in korea scholar",
       details: "English as a second language instructor",
-      event: "The ministry of education science & technology republic of korea",
+      event: "The ministry of education, science & technology, republic of korea",
       location: "남상초등학교",
       id: "talk",
     },
@@ -62,7 +64,7 @@ function Extracurricular() {
   return (
     <>
       <h2 className="resume-subhead">Extracurricular activities</h2>
-      <section className="resume-section" id="endeavors">
+      <section className="resume-section" id="extracurricular">
         {extracurriculars.map((extra) => (
           <article key={extra.id} className="row">
             <p className="year">{extra.year}</p>

@@ -1,0 +1,30 @@
+.exp {
+    font-size: .75rem;
+    color: rgba(40, 40, 44, .75);
+}
+
+/* exp typography */
+#experience .details {
+    text-transform: lowercase;
+}
+
+@media screen and (min-width:768px) {
+
+    #experience .text-wrapper {
+        display: grid;
+        grid-template-columns: auto 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #experience .text-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media print {
+    #experience .text-wrapper {
+        display: grid;
+        grid-template-columns: auto 22%;
+    }
+}

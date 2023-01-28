@@ -1,8 +1,10 @@
+import './index.css';
+
 function Education() {
   const education = [
     {
       year: 2022,
-      degree: "Coding bootcamp, Certificate of completion",
+      degree: "Professional education, Certificate of completion",
       major: "full-stack web development",
       school: "University of texas at austin",
       location: "Austin, TX",
@@ -36,11 +38,11 @@ function Education() {
             <div className="text-wrapper">
               <div className="left-text">
                 <p>{edu.degree}</p>
-                <p className="details">{edu.major}</p>
+                <p className="details display-md display-print">{edu.major}</p>
               </div>
               <div className="right-text">
                 <p>{edu.school}</p>
-                <p className="details">{edu.location}</p>
+                <p className="details display-md display-print">{edu.location}</p>
               </div>
             </div>
           </article>
