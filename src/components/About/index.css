@@ -37,3 +37,30 @@
         width: 25vw;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    * {
+        /* outline: 1px dotted blue; */
+    }
+
+    #about {
+        gap: 1rem .5rem;
+    }
+
+    #profile-pic-wrapper {
+        grid-row: span 2;
+    }
+
+    #profile-pic {
+        width: 15vw;
+    }
+
+    #bio {
+        grid-column: span 1;
+    }
+
+    #profile-text h2 {
+        margin-top: 1rem;
+        width: 30vw;
+    }
+}

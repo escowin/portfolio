@@ -7,14 +7,20 @@
 }
 
 .icon {
-    /* font-size: 1.25rem; */
     width: fit-content;
     display: flex;
-    /* gap: .25rem; */
 }
 
 .icon svg {
     width: 2rem;
     font-size: 1.25rem;
 
+}
+
+@media screen and (min-width: 1024px) {
+    #contact-links {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
 }

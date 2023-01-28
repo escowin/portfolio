@@ -6,7 +6,7 @@ import Contact from "../Contact";
 function About() {
   return (
     <section className="section" id="about">
-      <article>
+      <article id="profile-pic-wrapper">
         <img src={profilePic} id="profile-pic" alt="profile pic" />
       </article>
       <article id="profile-text">
@@ -16,15 +16,14 @@ function About() {
 
       <article id="bio">
         <p>
-          I'm a MERN stack developer. I utilize my fine arts background & web
-          dev knowledgeto create aesthetically responsive applications.
+          MERN stack developer with a fine arts background. I like coding
+          responsively aesthetic apps.
         </p>
 
         <p>
-          As a recent graduate, I am eager to pursue new opportunities for
-          career development and growth. With that in mind, I am
-          actively seeking immediate employment here in Austin,
-          TX.
+          Eager to pursue new opportunities for professional growth and
+          development. With that in mind, I am actively seeking immediate
+          employment here in Austin, TX.
         </p>
 
         <p>Take a look at my portfolio to evaluate my skillset.</p>
