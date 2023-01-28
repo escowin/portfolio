@@ -3,16 +3,31 @@
     display: none;
 }
 
-.display-lg {
+.display-md {
     display: none;
 }
 
+.display-lg {
+    display: none;
+}
 
 /* typography */
 .resume-subhead,
 .resume-section {
     font-family: 'Lexend Mega', Verdana, Geneva, Tahoma, sans-serif;
     font-variant: small-caps;
+}
+
+.resume-section li:hover {
+    color: inherit;
+}
+
+.link {
+    transition: color 1s;
+}
+
+.link:hover {
+    color: red;
 }
 
 /* resume sections */
@@ -25,7 +40,7 @@
 /* subsection formatting*/
 .resume-section {
     border-right: 2px solid var(--offblack);
-    padding: 2vw 0 2vw 2vw;
+    padding: 2vw 1vw 2vw 2vw;
     display: flex;
     flex-direction: column;
     gap: .25vh;
@@ -37,13 +52,6 @@
     gap: 1rem;
 }
 
-/* right columns */
-.text-wrapper {
-    justify-content: space-between;
-    flex-grow: 1;
-    display: inherit;
-}
-
 .bold {
     font-weight: 600;
 }
@@ -51,7 +59,6 @@
 .details {
     padding-left: 2%;
     color: rgba(40, 40, 44, .8);
-    font-size: smaller;
 }
 
 .role {
@@ -59,119 +66,93 @@
     padding-left: 2rem;
 }
 
-.exp {
-    font-size: .65rem;
-    text-align: end;
-    color: rgba(40, 40, 44, .75);
-}
-
-/* exp typography */
-#experience .details {
-    text-transform: lowercase;
-}
-
 /* sections */
-.right-text {
-    text-align: start;
-}
-
 .text-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.right-text {
-    font-size: 1rem;
-    text-align: start;
-}
-
-.left-text, #endeavors .right-text .details {
-    font-size: .8rem;
-    padding-left: 2vw;
-}
-
-#experience .left-text, #education .left-text, #endeavors .left-text {
+.left-text {
+    display: flex;
+    flex-direction: column;
     order: 2;
 }
 
-#education .left-text {
-    font-size: .8rem;
+.right-text {
+    text-align: start;
 }
 
-#education .right-text {
-    font-size: 1rem;
+@media screen and (min-width: 768px) {
+    .display-md {
+        display: contents;
+    }
+
+    .row {
+        grid-template-columns: 8.5vw auto;
+        gap: .25rem;
+    }
+
+    .left-text {
+        order: inherit;
+    }
+
+    .right-text {
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .display-lg {
+        display: contents;
+    }
+
+    .resume-section {
+        padding: 1vw;
+    }
+
+    .row {
+        grid-template-columns: 4rem auto;
+    }
+
+    .left-text {
+        font-size: .9rem;
+    }
 }
 
 /* display.print */
 @media print {
-    /* hide */
+    /* display toggle */
     .display-screen {
         display: none
     }
 
-    header, footer, .email {
+    header, footer {
         display: none;
     }
 
-    /* show */
     .display-print {
         display: inherit;
     }
-    
-    .print-hide {
-        display: none;
-    }
 
-    #resume-header {
-        padding-bottom: 1rem;
-    }
-
-    #resume-header .right {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-    }
-
-    #resume-footer {
-        padding: .5rem 0;
-    }
-    
-    .text-wrapper {
-        align-items: flex-start;
-    }
-
+    /* sections */
     .resume-section {
-        padding: .85rem 0 .85rem 0;
-    }
-
-    #skills {
-        gap: .2rem 1rem;
-    }
-
-    #skills .row {
-        display: grid;
-        grid-template-columns: 20% 80%;
-    }
-
-    #skills .left-text {
-        width: 10vw;
+        padding: .85rem;
     }
 
     .row {
-        padding-top: .15vh;
-        padding-bottom: .15vh;
-    }
-}
-
-
-/* display.small-laptop */
-@media screen and (min-width: 1024px) {
-    .small-laptop {
-        display: block;
+        grid-template-columns: 5rem auto;
+        gap: .5rem;
     }
 
-    #skills .row {
-        display: grid;
-        grid-template-columns: 15% 85%;
+    .left-text {
+        order: inherit;
+    }
+
+    .right-text {
+        text-align: end;
+    }
+
+    .details {
+        font-size: smaller;
     }
 }

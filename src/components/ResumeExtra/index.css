@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+
+    #extracurricular .text-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #extracurricular .left-text {
+        flex-grow: 1;
+        min-width: 40%;
+    }
+
+    #extracurricular .right-text {
+        min-width: 35%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    #extracurricular .left-text {
+        min-width: revert;
+    }
+
+    #extracurricular .right-text {
+        min-width: revert;
+    }
+}
+
+@media print {
+    #extracurricular .text-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #extracurricular .left-text {
+        flex-grow: 1;
+        min-width: 40%;
+    }
+}

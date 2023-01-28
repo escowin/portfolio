@@ -4,13 +4,15 @@
     gap: .9rem;
 }
 
+.highlight {
+    grid-column: span 2;
+}
+
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     background-size: cover;
     background-position: center;
-    width: 100%;
     height: 40vh;
     border-radius: .25rem;
 }
@@ -18,7 +20,7 @@
 .project-details {
     color: var(--offwhite);
     background-color: var(--overlay);
-    border-radius: inherit;
+    border-radius: .25rem .25rem 0 0;
 }
 
 .project-details h2,
@@ -49,10 +51,6 @@
 @media screen and (min-width: 768px) {
     .portfolio {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .highlight {
-        grid-column: span 2;
     }
 }
 
