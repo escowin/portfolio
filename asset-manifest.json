@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.11f31327.css",
-    "main.js": "/portfolio/static/js/main.7d353b05.js",
+    "main.css": "/portfolio/static/css/main.e6bf5a79.css",
+    "main.js": "/portfolio/static/js/main.6b3f83fc.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.ccb79549185dbb2ebec8.jpg",
     "static/media/bluestrawberry.jpg": "/portfolio/static/media/bluestrawberry.20375edf224c7662c26e.jpg",
     "static/media/portfolio-generator.jpg": "/portfolio/static/media/portfolio-generator.c9e0b1fe95aff0b7e21e.jpg",
     "static/media/css-portfolio.jpg": "/portfolio/static/media/css-portfolio.83b7ebcb26e000636064.jpg",
-    "static/media/escowinart.jpg": "/portfolio/static/media/escowinart.4005c23d322737a5c125.jpg",
+    "static/media/escowinart.jpg": "/portfolio/static/media/escowinart.2af92923c93ec9acbef2.jpg",
     "static/media/weather-dashboard.jpg": "/portfolio/static/media/weather-dashboard.0858762db0b33e2345ad.jpg",
     "static/media/day-planner.jpg": "/portfolio/static/media/day-planner.4a1b8fb721bfef418749.jpg",
     "static/media/vvh-financial.jpg": "/portfolio/static/media/vvh-financial.6e69f34a79e82eb24557.jpg",
@@ -23,12 +23,12 @@
     "static/media/auction-house.jpg": "/portfolio/static/media/auction-house.6cf9f9983b765a488959.jpg",
     "static/media/note-taker.jpg": "/portfolio/static/media/note-taker.c990a85d8d39e3d51568.jpg",
     "index.html": "/portfolio/index.html",
-    "main.11f31327.css.map": "/portfolio/static/css/main.11f31327.css.map",
-    "main.7d353b05.js.map": "/portfolio/static/js/main.7d353b05.js.map",
+    "main.e6bf5a79.css.map": "/portfolio/static/css/main.e6bf5a79.css.map",
+    "main.6b3f83fc.js.map": "/portfolio/static/js/main.6b3f83fc.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11f31327.css",
-    "static/js/main.7d353b05.js"
+    "static/css/main.e6bf5a79.css",
+    "static/js/main.6b3f83fc.js"
   ]
 }
