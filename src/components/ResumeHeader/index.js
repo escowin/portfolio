@@ -41,7 +41,7 @@ function ResumeHeader() {
 
       <article className="center">
         <h2>
-          <span className="display-screen">Resume</span>
+          <span className="display-screen">Resumė</span>
           <span className="display-print">{data.name}</span>
         </h2>
         <h3 className="display-print link" onClick={handlePortfolioClick}>{data.occupation}</h3>

@@ -1,7 +1,23 @@
+#education .right-text .details {
+    display: none;
+}
+
+.degree {
+    padding-left: 1rem;
+}
+
 @media screen and (min-width: 768px) {
     #education .text-wrapper {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    #education .right-text .details {
+        display: initial;
+    }
+
+    .degree {
+        padding-left: 0;
     }
 }
 
@@ -9,5 +25,14 @@
     #education .text-wrapper {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    #education .right-text .details {
+        display: initial;
+    }
+
+    .degree {
+        padding-left: 0;
+        display: flex;
     }
 }
