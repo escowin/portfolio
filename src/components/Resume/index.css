@@ -136,11 +136,11 @@
 
     /* sections */
     .resume-section {
-        padding: .85rem;
+        padding: .75rem .85rem;
     }
 
     .row {
-        grid-template-columns: 5rem auto;
+        grid-template-columns: 4rem auto;
         gap: .5rem;
     }
 

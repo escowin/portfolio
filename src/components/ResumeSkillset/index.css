@@ -1,13 +1,14 @@
 #skills {
     display: grid;
     grid-template-columns: repeat(1, auto 1fr);
-    gap: .25rem 1rem;
+    gap: .5rem 1rem;
     word-spacing: .5rem;
 }
 
 @media print {
+
     #skills {
-        gap: .15rem 1rem;
+        gap: .0 1rem;
     }
 
     .skillset {
