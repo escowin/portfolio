@@ -23,7 +23,7 @@ function Header(props) {
           {portfolios.map((portfolio, index) => (
             <li key={index} onClick={() => handleClick(portfolio)} className={portfolio === selected ? 'selected' : ''}>{portfolio}</li>
           ))}
-          <li onClick={() => handleClick("Resume")} className={'Resume' === selected ? 'selected' : ''}>Resume</li>
+          <li onClick={() => handleClick("Resume")} className={'Resume' === selected ? 'selected' : ''}>Resumė</li>
         </ul>
       </nav>
     </header>

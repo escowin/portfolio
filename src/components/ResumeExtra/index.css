@@ -1,3 +1,12 @@
+#extracurricular .details {
+    display: none;
+}
+
+#extracurricular .left-text {
+    padding-left: 1rem;
+}
+
+
 @media screen and (min-width: 768px) {
 
     #extracurricular .text-wrapper {
@@ -8,15 +17,19 @@
     #extracurricular .left-text {
         flex-grow: 1;
         min-width: 40%;
+        padding-left: 0;
     }
 
     #extracurricular .right-text {
         min-width: 35%;
     }
+
+    #extracurricular .left-text .details {
+        display: initial;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    
     #extracurricular .left-text {
         min-width: revert;
     }
@@ -24,6 +37,7 @@
     #extracurricular .right-text {
         min-width: revert;
     }
+
 }
 
 @media print {
@@ -34,6 +48,11 @@
 
     #extracurricular .left-text {
         flex-grow: 1;
-        min-width: 40%;
+        min-width: 45%;
+        padding-left: 0;
+
+    }
+    #extracurricular .details {
+        display: initial;
     }
 }

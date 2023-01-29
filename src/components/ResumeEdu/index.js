@@ -4,7 +4,8 @@ function Education() {
   const education = [
     {
       year: 2022,
-      degree: "Professional education, Certificate of completion",
+      level: "Professional education",
+      degree: "Certificate of completion",
       major: "full-stack web development",
       school: "University of texas at austin",
       location: "Austin, TX",
@@ -12,7 +13,8 @@ function Education() {
     },
     {
       year: 2015,
-      degree: "Undergraduate, Bachelor of fine arts",
+      level: "Undergraduate",
+      degree: "Bachelor of fine arts",
       major: "illustration, screenwriting",
       school: "California state university, fullerton",
       location: "Fullerton, CA",
@@ -20,7 +22,8 @@ function Education() {
     },
     {
       year: 2011,
-      degree: "Undergraduate, Associate of arts",
+      level: "Undergraduate",
+      degree: "Associate of arts",
       major: "fine arts",
       school: "Orange coast college",
       location: "Costa Mesa, CA",
@@ -37,7 +40,7 @@ function Education() {
             <p>{edu.year}</p>
             <div className="text-wrapper">
               <div className="left-text">
-                <p>{edu.degree}</p>
+                <p className='degree'>{edu.level}<span className="display-md display-print">, {edu.degree}</span></p>
                 <p className="details display-md display-print">{edu.major}</p>
               </div>
               <div className="right-text">

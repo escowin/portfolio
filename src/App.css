@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Lexend+Mega:wght@200&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Alegreya+Sans+SC:wght@100&family=Lexend+Mega:wght@200&family=Raleway:wght@100&display=swap');
 
 * {
   margin: 0;
@@ -14,6 +14,13 @@
   --overlay: rgba(40, 40, 40, .9);
   --dark-accent: rgb(145, 145, 145);
   --red: rgb(179, 24, 24);
+}
+
+
+/* Hides the scrollbar on the x-axis */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* optional: just to make sure it's invisible */
 }
 
 main {
@@ -34,7 +41,6 @@ ul {
   min-height: 100vh;
   background-color: var(--offwhite);
   font-family: 'Alegreya Sans SC', sans-serif;
-
 }
 
 footer {
