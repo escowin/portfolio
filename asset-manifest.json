@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4ca47e5d.css",
-    "main.js": "/portfolio/static/js/main.6b3f83fc.js",
+    "main.css": "/portfolio/static/css/main.73dba484.css",
+    "main.js": "/portfolio/static/js/main.4335d247.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.ccb79549185dbb2ebec8.jpg",
     "static/media/bluestrawberry.jpg": "/portfolio/static/media/bluestrawberry.20375edf224c7662c26e.jpg",
     "static/media/portfolio-generator.jpg": "/portfolio/static/media/portfolio-generator.c9e0b1fe95aff0b7e21e.jpg",
     "static/media/css-portfolio.jpg": "/portfolio/static/media/css-portfolio.83b7ebcb26e000636064.jpg",
-    "static/media/escowinart.jpg": "/portfolio/static/media/escowinart.2af92923c93ec9acbef2.jpg",
+    "static/media/escowinart.jpg": "/portfolio/static/media/escowinart.524339c777f9c43e6c1d.jpg",
     "static/media/weather-dashboard.jpg": "/portfolio/static/media/weather-dashboard.0858762db0b33e2345ad.jpg",
     "static/media/day-planner.jpg": "/portfolio/static/media/day-planner.4a1b8fb721bfef418749.jpg",
     "static/media/vvh-financial.jpg": "/portfolio/static/media/vvh-financial.6e69f34a79e82eb24557.jpg",
+    "static/media/employee-tracker.jpg": "/portfolio/static/media/employee-tracker.0dbd489ffe0a4afa7acb.jpg",
     "static/media/address-book.jpg": "/portfolio/static/media/address-book.7187fa779c6f2ce85dad.jpg",
     "static/media/readme-generator.jpg": "/portfolio/static/media/readme-generator.2d161807c9875eb78188.jpg",
     "static/media/raven-home.jpg": "/portfolio/static/media/raven-home.8d913568db0523fa427c.jpg",
@@ -24,12 +25,12 @@
     "static/media/auction-house.jpg": "/portfolio/static/media/auction-house.6cf9f9983b765a488959.jpg",
     "static/media/note-taker.jpg": "/portfolio/static/media/note-taker.c990a85d8d39e3d51568.jpg",
     "index.html": "/portfolio/index.html",
-    "main.4ca47e5d.css.map": "/portfolio/static/css/main.4ca47e5d.css.map",
-    "main.6b3f83fc.js.map": "/portfolio/static/js/main.6b3f83fc.js.map",
+    "main.73dba484.css.map": "/portfolio/static/css/main.73dba484.css.map",
+    "main.4335d247.js.map": "/portfolio/static/js/main.4335d247.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ca47e5d.css",
-    "static/js/main.6b3f83fc.js"
+    "static/css/main.73dba484.css",
+    "static/js/main.4335d247.js"
   ]
 }
