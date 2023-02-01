@@ -16,17 +16,16 @@ function About() {
 
       <article id="bio">
         <p>
-          MERN stack developer with a fine arts background. I like coding
+          I'm a MERN stack developer with a fine arts background. I like to code
           responsively aesthetic apps.
         </p>
 
         <p>
-          Eager to pursue new opportunities for professional growth and
-          development. With that in mind, I am actively seeking immediate
-          employment here in Austin, TX.
+          Currently pursuing new opportunities for professional growth &
+          development by seeking employment here in Austin, TX.
         </p>
 
-        <p>Take a look at my portfolio to evaluate my skillset.</p>
+        <p>Browse my portfolio to assess my abilities.</p>
       </article>
     </section>
   );

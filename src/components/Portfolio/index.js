@@ -128,6 +128,16 @@ function Portfolio({ selectedPortfolio }) {
         collaboration: false,
       },
       {
+        name: "Employee tracker",
+        id: "employee-tracker",
+        repo: "https://github.com/escowin/employee-tracker",
+        liveUrl: null,
+        languages: "js mysql",
+        dialects: "node express inquirer",
+        highlight: false,
+        collaboration: false,
+      },
+      {
         name: "Social network api",
         id: "social-network",
         repo: "https://github.com/escowin/social-network",

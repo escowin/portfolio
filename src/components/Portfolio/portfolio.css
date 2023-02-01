@@ -23,8 +23,13 @@
     background-image: url('../../assets/images/small/day-planner.jpg');
 }
 
+#employee-tracker {
+    background-image: url('../../assets/images/small/employee-tracker.jpg');
+}
+
+/* highlight uses larger screenshot */
 #escowinart {
-    background-image: url('../../assets/images/small/escowinart.jpg');
+    background-image: url('../../assets/images/large/escowinart.jpg');
 }
 
 #note-taker {
@@ -103,6 +108,10 @@
         background-image: url('../../assets/images/medium/day-planner.jpg');
     } */
 
+    #employee-tracker {
+        background-image: url('../../assets/images/medium/employee-tracker.jpg');
+    }
+    
     #escowinart {
         background-image: url('../../assets/images/medium/escowinart.jpg');
     }
@@ -183,6 +192,10 @@
 
     #day-planner {
         background-image: url('../../assets/images/large/day-planner.jpg');
+    }
+
+    #employee-tracker {
+        background-image: url('../../assets/images/large/employee-tracker.jpg');
     }
 
     #escowinart {
