@@ -10,7 +10,6 @@ function Skillset() {
         "day",
         "handlebars",
         "inquirer",
-        "jest",
         "jquery",
         "redux",
         "sequelize",
@@ -19,7 +18,7 @@ function Skillset() {
       ],
     },
     frameworks: {
-      js: ["node", "express", "react"],
+      js: ["node", "express", "jest", "react"],
       ruby: ["rails"],
     },
     databases: [
@@ -44,6 +43,7 @@ function Skillset() {
     tools: [
       "api",
       "git",
+      "jwt",
       "npm",
       "heroku",
       "insomnia",
