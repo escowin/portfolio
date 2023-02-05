@@ -7,7 +7,7 @@ function Education() {
       level: "Professional education",
       degree: "Certificate of completion",
       major: "full-stack web development",
-      school: "University of texas at austin",
+      school: "The university of texas at austin",
       location: "Austin, TX",
       id: "uta",
     },

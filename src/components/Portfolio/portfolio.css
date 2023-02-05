@@ -52,8 +52,8 @@
     background-image: url('../../assets/images/small/social-network-api.jpg');
 }
 
-#solar-weather {
-    background-image: url('../../assets/images/small/solar-weather.jpg');
+#helios {
+    background-image: url('../../assets/images/small/helios.jpg');
 }
 
 #team-profile-generator {
@@ -136,8 +136,8 @@
         background-image: url('../../assets/images/medium/social-network-api.jpg');
     } */
 
-    /* #solar-weather {
-        background-image: url('../../assets/images/medium/solar-weather.jpg');
+    /* #helios {
+        background-image: url('../../assets/images/medium/helios.jpg');
     } */
 
     #team-profile-generator {
@@ -222,8 +222,8 @@
         background-image: url('../../assets/images/large/social-network-api.jpg');
     }
 
-    #solar-weather {
-        background-image: url('../../assets/images/large/solar-weather.jpg');
+    #helios {
+        background-image: url('../../assets/images/large/helios.jpg');
     }
 
     #team-profile-generator {

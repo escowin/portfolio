@@ -22,7 +22,7 @@ function About() {
 
         <p>
           Currently pursuing new opportunities for professional growth &
-          development by seeking employment here in Austin, TX.
+          development here in Austin, TX.
         </p>
 
         <p>Browse my portfolio to assess my abilities.</p>

@@ -12,7 +12,7 @@ function Extracurricular() {
     },
     {
       year: 2022,
-      role: "ACE Tutor",
+      role: "ACE tutor",
       details: "U.S. history tutor, art club head, weightlifting coach",
       event: "Austin can academy",
       location: "Austin, TX",
