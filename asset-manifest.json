@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.965dfd07.css",
-    "main.js": "/portfolio/static/js/main.ed26599c.js",
+    "main.js": "/portfolio/static/js/main.64dd1b86.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.ccb79549185dbb2ebec8.jpg",
     "static/media/bluestrawberry.jpg": "/portfolio/static/media/bluestrawberry.20375edf224c7662c26e.jpg",
     "static/media/portfolio-generator.jpg": "/portfolio/static/media/portfolio-generator.c9e0b1fe95aff0b7e21e.jpg",
     "static/media/css-portfolio.jpg": "/portfolio/static/media/css-portfolio.83b7ebcb26e000636064.jpg",
     "static/media/escowinart.jpg": "/portfolio/static/media/escowinart.524339c777f9c43e6c1d.jpg",
+    "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.cf36dd91f14333702bb7.jpg",
     "static/media/weather-dashboard.jpg": "/portfolio/static/media/weather-dashboard.0858762db0b33e2345ad.jpg",
     "static/media/day-planner.jpg": "/portfolio/static/media/day-planner.4a1b8fb721bfef418749.jpg",
     "static/media/vvh-financial.jpg": "/portfolio/static/media/vvh-financial.6e69f34a79e82eb24557.jpg",
@@ -26,11 +26,11 @@
     "static/media/note-taker.jpg": "/portfolio/static/media/note-taker.c990a85d8d39e3d51568.jpg",
     "index.html": "/portfolio/index.html",
     "main.965dfd07.css.map": "/portfolio/static/css/main.965dfd07.css.map",
-    "main.ed26599c.js.map": "/portfolio/static/js/main.ed26599c.js.map",
+    "main.64dd1b86.js.map": "/portfolio/static/js/main.64dd1b86.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.965dfd07.css",
-    "static/js/main.ed26599c.js"
+    "static/js/main.64dd1b86.js"
   ]
 }
