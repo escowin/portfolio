@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.965dfd07.css",
-    "main.js": "/portfolio/static/js/main.64dd1b86.js",
+    "main.css": "/portfolio/static/css/main.6196e307.css",
+    "main.js": "/portfolio/static/js/main.09477904.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/bluestrawberry.jpg": "/portfolio/static/media/bluestrawberry.20375edf224c7662c26e.jpg",
     "static/media/portfolio-generator.jpg": "/portfolio/static/media/portfolio-generator.c9e0b1fe95aff0b7e21e.jpg",
@@ -20,17 +20,18 @@
     "static/media/helios.jpg": "/portfolio/static/media/helios.4c997977ee0db2f9fd69.jpg",
     "static/media/team-profile-generator.jpg": "/portfolio/static/media/team-profile-generator.3ac1c4b17443bb55c21d.jpg",
     "static/media/social-network-api.jpg": "/portfolio/static/media/social-network-api.741b9255cd9c13468471.jpg",
+    "static/media/fantastic-umbrella.jpg": "/portfolio/static/media/fantastic-umbrella.9a33f4b97436259f44c9.jpg",
     "static/media/smart-home.jpg": "/portfolio/static/media/smart-home.79e05096ab84691e4bf9.jpg",
     "static/media/password-generator.jpg": "/portfolio/static/media/password-generator.fe29d07d9c9649c72fa8.jpg",
     "static/media/auction-house.jpg": "/portfolio/static/media/auction-house.6cf9f9983b765a488959.jpg",
     "static/media/note-taker.jpg": "/portfolio/static/media/note-taker.c990a85d8d39e3d51568.jpg",
     "index.html": "/portfolio/index.html",
-    "main.965dfd07.css.map": "/portfolio/static/css/main.965dfd07.css.map",
-    "main.64dd1b86.js.map": "/portfolio/static/js/main.64dd1b86.js.map",
+    "main.6196e307.css.map": "/portfolio/static/css/main.6196e307.css.map",
+    "main.09477904.js.map": "/portfolio/static/js/main.09477904.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.965dfd07.css",
-    "static/js/main.64dd1b86.js"
+    "static/css/main.6196e307.css",
+    "static/js/main.09477904.js"
   ]
 }
