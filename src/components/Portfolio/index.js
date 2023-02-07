@@ -138,6 +138,16 @@ function Portfolio({ selectedPortfolio }) {
         collaboration: false,
       },
       {
+        name: "Fantastic umbrella",
+        id: "fantastic-umbrella",
+        repo: "https://github.com/escowin/fantastic-umbrella",
+        liveUrl: null,
+        languages: "js mysql",
+        dialects: "node express sequelize",
+        highlight: false,
+        collaboration: false,
+      },
+      {
         name: "Social network api",
         id: "social-network",
         repo: "https://github.com/escowin/social-network",

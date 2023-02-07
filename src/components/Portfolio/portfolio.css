@@ -32,6 +32,10 @@
     background-image: url('../../assets/images/large/escowinart.jpg');
 }
 
+#fantastic-umbrella {
+    background-image: url('../../assets/images/small/fantastic-umbrella.jpg');
+}
+
 #note-taker {
     background-image: url('../../assets/images/small/note-taker.jpg');
 }
@@ -114,6 +118,10 @@
     
     #escowinart {
         background-image: url('../../assets/images/medium/escowinart.jpg');
+    }
+
+    #fantastic-umbrella {
+        background-image: url('../../assets/images/medium/fantastic-umbrella.jpg');
     }
 
     #note-taker {
@@ -200,6 +208,10 @@
 
     #escowinart {
         background-image: url('../../assets/images/large/escowinart.jpg');
+    }
+
+    #fantastic-umbrella {
+        background-image: url('../../assets/images/large/fantastic-umbrella.jpg');
     }
 
     #note-taker {
