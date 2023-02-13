@@ -36,6 +36,10 @@
     background-image: url('../../assets/images/small/fantastic-umbrella.jpg');
 }
 
+#meal-prep {
+    background-image: url('../../assets/images/small/meal-prep.jpg');
+}
+
 #note-taker {
     background-image: url('../../assets/images/small/note-taker.jpg');
 }
@@ -124,6 +128,10 @@
         background-image: url('../../assets/images/medium/fantastic-umbrella.jpg');
     }
 
+    #meal-prep {
+        background-image: url('../../assets/images/medium/meal-prep.jpg');
+    }
+    
     #note-taker {
         background-image: url('../../assets/images/medium/note-taker.jpg');
     }
@@ -214,6 +222,10 @@
         background-image: url('../../assets/images/large/fantastic-umbrella.jpg');
     }
 
+    #meal-prep {
+        background-image: url('../../assets/images/large/meal-prep.jpg');
+    }
+    
     #note-taker {
         background-image: url('../../assets/images/large/note-taker.jpg');
     }

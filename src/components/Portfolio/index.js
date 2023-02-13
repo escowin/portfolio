@@ -157,6 +157,16 @@ function Portfolio({ selectedPortfolio }) {
         highlight: true,
         collaboration: false,
       },
+      {
+        name: "Meal prep",
+        id: "meal-prep",
+        repo: "https://github.com/escowin/meal-prep",
+        liveUrl: null,
+        languages: "js css",
+        dialects: "node inquirer",
+        highlight: false,
+        collaboration: false,
+      },
     ],
     Fullstack: [
       {
