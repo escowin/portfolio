@@ -2,7 +2,7 @@ import "./index.css";
 
 function Skillset() {
   const skillset = {
-    languages: ["html", "css", "javascript", "ruby", "sql"],
+    languages: ["html", "css", "javascript", "ruby", "sql", "graphql"],
     libraries: {
       css: ["bootstrap"],
       js: [
@@ -24,7 +24,6 @@ function Skillset() {
     databases: [
       "jawsdb",
       "mysql",
-      "graphql",
       "mongodb",
       "postgresql",
       "sqlite",
