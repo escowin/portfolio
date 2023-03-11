@@ -5,12 +5,12 @@ function Experience() {
     {
       company: "2U | edX boot camps",
       code: "fullstack web development",
-      duration: "present",
       location: "Austin, TX",
       url: "https://2u.com/",
+      endYear: 0,
       roles: [
         {
-          title: "Instructional specialist",
+          title: "instructional specialist",
           year: 2022,
           description: [
             "Fullstack web dev teaching assistant at rice university.",
@@ -19,13 +19,13 @@ function Experience() {
           ],
         },
         {
-          title: "Central grader",
+          title: "central grader",
           year: 2023,
           description: ["stuff"],
         },
         {
-          title: "Learning assistant",
-          year: "2023",
+          title: "learning assistant",
+          year: 2023,
           description: ["other stuff"],
         },
       ],
@@ -34,11 +34,11 @@ function Experience() {
       company: "Vvh financial",
       code: "javascript node express handlebars bcrypt sequelize mysql css",
       location: "Dallas, TX",
-      duration: "3 months",
       url: "https://github.com/escowin/vvh-financial",
+      endYear: 2022,
       roles: [
         {
-          title: "Site developer",
+          title: "site developer",
           year: 2022,
           description: [
             "Constructed a secure MVC app with protected REST API, session management, and encryption.",
@@ -50,62 +50,55 @@ function Experience() {
     },
     {
       company: "Escowin art",
-      duration: "present",
       location: "Austin, TX",
       url: "https://escowinart.com",
       code: "react css adobe\u2009cc corel\u2009painter",
+      endYear: 0,
       roles: [
         {
-          title: "Artist",
-          year: 2012,
-          description: [""],
+          title: "artist",
+          year: 2020,
+          description: ["Established fine art sole proprietorship."],
         },
         {
-          title: "Site developer",
-          year: 2020,
+          title: "graphic novelist",
+          year: 2021,
           description: [
-            "Established a sole proprietorship to sell art in Austin. The website serves as my portfolio and business card.",
+            "Authored & published graphic novel blue strawberry.",
+            "Painted artwork using Corel Painter.",
+            "Formatted files for print using Adobe Suite",
+          ],
+        },
+        {
+          title: "site developer",
+          year: 2021,
+          description: [
+            "Built e-commerce art gallery",
             "Enhanced website performance by using React.js to develop a SPA.",
             "Constructed a database to enable e-commerce functionality through Stripe transactions.",
           ],
         },
       ],
     },
-    {
-      company: "Blue strawberry",
-      duration: "5 years",
-      location: "Austin, TX",
-      url: "https://escowin.github.io/bluestrawberry/",
-      code: "react css adobe\u2009suite corel\u2009painter",
-      roles: [
-        {
-          title: "React developer, graphic novelist",
-          year: 2017,
-          description: [
-            "Wrote and illustrated a dialogue-less hero's journey narrative.",
-            "Drew the artwork with Corel Painter and formatted the files with Adobe Suite.",
-            "Constructed site with React.js to facilitate data scaling and performance optimization.",
-          ],
-        },
-      ],
-    },
   ];
 
-  function duration(data) {
-    console.log(typeof data)
-    let current = new Date().getFullYear()
-    // console.log(`${current} - ${data}`)
+  function duration(startYear, endYear) {
+    let current = new Date().getFullYear();
+    const present = endYear - startYear;
 
-    if (data === current) {
-      return `present`
-    } else {
-      const duration = current - data
-
+    if (endYear === 0) {
+      const duration = current - startYear;
       if (duration > 1) {
-        return `${duration} years`
+        return `${duration} years`;
       }
-      return `1 year`
+      return `1 year`;
     }
+
+    if (present <= 1) {
+      return `1 year`;
+    }
+
+    return `${present} years`;
   }
 
   return (
@@ -114,36 +107,36 @@ function Experience() {
       <section className="resume-section" id="experience">
         {experience.map((exp, i) => (
           // company
-            <article key={i} className="company-wrapper">
-              {/* left | positions */}
-                <div className="positions">
-                  {exp.roles.reverse().map((role, j) => (
-                    <div key={j} className="position-wrapper">
-                      <p className="year">{role.year}</p>
-                      <p className="title">{role.title}</p>
-                      <ul className="description">
-                        {role.description.map((sentence, k) => (
-                          <li key={k}>{sentence}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+          <article key={i} className="company-wrapper">
+            {/* left | positions */}
+            <div className="positions">
+              {exp.roles.reverse().map((role, j) => (
+                <div key={j} className="position">
+                  <p className="year">{role.year}</p>
+                  <p className="title">· {role.title}</p>
+                  <ul className="description">
+                    {role.description.map((sentence, k) => (
+                      <li key={k}>{sentence}</li>
+                    ))}
+                  </ul>
                 </div>
+              ))}
+            </div>
 
-                {/* right | company details */}
-                <div className="company-details">
-                  <h3
-                    className="link company"
-                    onClick={() => window.open("/", "_blank")}
-                  >
-                    {exp.company}
-                  </h3>
-                  <p>{duration(exp.roles[0].year)}</p>
-                  <p className="details display-lg display-print">
-                    {exp.location}
-                  </p>
-                </div>
-            </article>
+            {/* right | company details */}
+            <div className="company-details">
+              <h3
+                className="link company"
+                onClick={() => window.open("/", "_blank")}
+              >
+                {exp.company}
+              </h3>
+              <p className="duration">
+                {duration(exp.roles[exp.roles.length - 1].year, exp.endYear)}
+              </p>
+              <p className="details display-lg display-print">{exp.location}</p>
+            </div>
+          </article>
         ))}
       </section>
     </>

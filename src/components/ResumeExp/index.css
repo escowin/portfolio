@@ -10,32 +10,40 @@
 #experience {
     gap: 1rem;
 }
+
 .company-wrapper {
     display: flex;
     flex-direction: column-reverse;
 
 }
 
-.company {
-    max-width: 75%;
-
-
+.company-details {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
 }
 
-.position-wrapper {
+.duration {
+    width: 4.125rem;
+}
+
+
+.position {
     display: grid;
     gap: 0 1rem;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 4.125rem 1fr;
     grid-template-areas: 
     "a b"
     "a c";
 }
 
-.position-wrapper .year {
+.position .year {
     grid-row: span 2;
 }
 
-.description li {
+.position li {
     padding-left: 1rem;
     font-size: 85%;
     color: var(--accent-color);
