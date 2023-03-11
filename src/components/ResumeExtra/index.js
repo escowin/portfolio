@@ -5,7 +5,7 @@ function Extracurricular() {
     {
       year: 2023,
       role: "Texas rowing club athelete",
-      details: "Mens novice single, mens masters-b straight pair",
+      details: "Third place, mens masters aa-c single",
       event: "The heart of texas regatta",
       location: "Austin, TX",
       id: "trc",
