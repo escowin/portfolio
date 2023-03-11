@@ -25,7 +25,7 @@ function App() {
           case "Resume":
             return <Resume />;
           default:
-            return <CoverLetter />;
+            return <Resume />;
         }
       })()}
       </main>

@@ -21,17 +21,13 @@ function Experience() {
         {
           title: "Learning assistant",
           year: "2023",
-          description: [
-            ""
-          ],
+          description: [""],
         },
         {
           title: "Central grader",
           year: "2023",
-          description: [
-            ""
-          ],
-        }
+          description: [""],
+        },
       ],
     },
     {
@@ -43,13 +39,13 @@ function Experience() {
       roles: [
         {
           title: "Site developer",
-          start: "2022",
+          year: "2022",
           description: [
             "Constructed a secure MVC app with protected REST API, session management, and encryption.",
             "Created ORM queries to safeguard SQL database from direct manipulation.",
             "Implemented Handlebars helpers to display employee & client views conditionally.",
           ],
-        }
+        },
       ],
     },
     {
@@ -62,9 +58,7 @@ function Experience() {
         {
           title: "Artist",
           year: "2012",
-          description: [
-            ""
-          ]
+          description: [""],
         },
         {
           title: "Site developer",
@@ -73,9 +67,8 @@ function Experience() {
             "Established a sole proprietorship to sell art in Austin. The website serves as my portfolio and business card.",
             "Enhanced website performance by using React.js to develop a SPA.",
             "Constructed a database to enable e-commerce functionality through Stripe transactions.",
-          ]
-        }
-
+          ],
+        },
       ],
     },
     {
@@ -93,57 +86,55 @@ function Experience() {
             "Drew the artwork with Corel Painter and formatted the files with Adobe Suite.",
             "Constructed site with React.js to facilitate data scaling and performance optimization.",
           ],
-        }
+        },
       ],
-
     },
-    // {
-    //     company: "",
-    //     roles: "",
-    //     year: "",
-    //     duration: "",
-    //     location: "",
-    //     code: "",
-    //     description: [
-    //         "",
-    //         "",
-    //     ]
-    // },
   ];
+
+  console.log(
+    experience.map((exp, i) => {
+      return exp.roles.map((role, j) => {
+        console.log(role.year);
+      });
+    })
+  );
 
   return (
     <>
       <h2 className="resume-subhead">Professional experience</h2>
       <section className="resume-section" id="experience">
         {experience.map((exp, i) => (
-          <article className="row" key={exp.company}>
-            <div>
-              <p>{exp.year}</p>
-              <p className="exp">{exp.duration}</p>
-            </div>
-            <div className="text-wrapper">
-              <div className="left-text">
-                <p className="position">{exp.role}</p>
-                <p className="details">{exp.code}</p>
-                <ul className="role details">
-                  {exp.description.map((desc, i) => (
-                    <li key={`${exp.company}${i}`}>{desc}</li>
-                  ))}
-                </ul>
+          <>
+            <article key={i}>
+              {/* year & position box */}
+              <div>
+                <p></p>
+                <p className="exp"></p>
               </div>
-              <div className="right-text">
-                <p
-                  className="link"
-                  onClick={() => window.open(exp.url, "_blank")}
-                >
-                  {exp.company}
-                </p>
-                <p className="details display-lg display-print">
-                  {exp.location}
-                </p>
+              <div className="text-wrapper">
+                <div className="left-text">
+                  {/* <p className="positions"></p>
+                  <p className="details"></p>
+                  <ul className="role details">
+                    {exp.description.map((desc, i) => (
+                      <li key={`${exp.company}${i}`}>{desc}</li>
+                    ))}
+                  </ul> */}
+                </div>
+                <div className="right-text">
+                  <p
+                    className="link"
+                    onClick={() => window.open("/", "_blank")}
+                  >
+                    {exp.company}
+                  </p>
+                  <p className="details display-lg display-print">
+                    {exp.location}
+                  </p>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </>
         ))}
       </section>
     </>

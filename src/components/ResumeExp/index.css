@@ -2,7 +2,9 @@
     font-size: .75rem;
     color: rgba(40, 40, 44, .75);
 }
-
+* {
+    outline: dotted 1px blue
+}
 /* exp typography */
 #experience .details {
     text-transform: lowercase;
