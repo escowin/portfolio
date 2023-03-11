@@ -11,7 +11,7 @@ function Experience() {
       roles: [
         {
           title: "Instructional specialist",
-          year: "2022",
+          year: 2022,
           description: [
             "Fullstack web dev teaching assistant at rice university.",
             "Assisted students with coursework during office hours.",
@@ -20,7 +20,7 @@ function Experience() {
         },
         {
           title: "Central grader",
-          year: "2023",
+          year: 2023,
           description: ["stuff"],
         },
         {
@@ -39,7 +39,7 @@ function Experience() {
       roles: [
         {
           title: "Site developer",
-          year: "2022",
+          year: 2022,
           description: [
             "Constructed a secure MVC app with protected REST API, session management, and encryption.",
             "Created ORM queries to safeguard SQL database from direct manipulation.",
@@ -57,12 +57,12 @@ function Experience() {
       roles: [
         {
           title: "Artist",
-          year: "2012",
+          year: 2012,
           description: [""],
         },
         {
           title: "Site developer",
-          year: "2020",
+          year: 2020,
           description: [
             "Established a sole proprietorship to sell art in Austin. The website serves as my portfolio and business card.",
             "Enhanced website performance by using React.js to develop a SPA.",
@@ -80,7 +80,7 @@ function Experience() {
       roles: [
         {
           title: "React developer, graphic novelist",
-          year: "2017",
+          year: 2017,
           description: [
             "Wrote and illustrated a dialogue-less hero's journey narrative.",
             "Drew the artwork with Corel Painter and formatted the files with Adobe Suite.",
@@ -90,6 +90,23 @@ function Experience() {
       ],
     },
   ];
+
+  function duration(data) {
+    console.log(typeof data)
+    let current = new Date().getFullYear()
+    // console.log(`${current} - ${data}`)
+
+    if (data === current) {
+      return `present`
+    } else {
+      const duration = current - data
+
+      if (duration > 1) {
+        return `${duration} years`
+      }
+      return `1 year`
+    }
+  }
 
   return (
     <>
@@ -121,6 +138,7 @@ function Experience() {
                   >
                     {exp.company}
                   </h3>
+                  <p>{duration(exp.roles[0].year)}</p>
                   <p className="details display-lg display-print">
                     {exp.location}
                   </p>
