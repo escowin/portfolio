@@ -13,20 +13,20 @@ function Experience() {
           title: "Instructional specialist",
           year: "2022",
           description: [
-            "Completed administrative and grading tasks on behalf of the instructor at Rice University.",
+            "Fullstack web dev teaching assistant at rice university.",
             "Assisted students with coursework during office hours.",
             "Recorded and uploaded Zoom classes to LMS.",
           ],
         },
         {
-          title: "Learning assistant",
-          year: "2023",
-          description: [""],
-        },
-        {
           title: "Central grader",
           year: "2023",
-          description: [""],
+          description: ["stuff"],
+        },
+        {
+          title: "Learning assistant",
+          year: "2023",
+          description: ["other stuff"],
         },
       ],
     },
@@ -91,50 +91,41 @@ function Experience() {
     },
   ];
 
-  console.log(
-    experience.map((exp, i) => {
-      return exp.roles.map((role, j) => {
-        console.log(role.year);
-      });
-    })
-  );
-
   return (
     <>
       <h2 className="resume-subhead">Professional experience</h2>
       <section className="resume-section" id="experience">
         {experience.map((exp, i) => (
-          <>
-            <article key={i}>
-              {/* year & position box */}
-              <div>
-                <p></p>
-                <p className="exp"></p>
-              </div>
-              <div className="text-wrapper">
-                <div className="left-text">
-                  {/* <p className="positions"></p>
-                  <p className="details"></p>
-                  <ul className="role details">
-                    {exp.description.map((desc, i) => (
-                      <li key={`${exp.company}${i}`}>{desc}</li>
-                    ))}
-                  </ul> */}
+          // company
+            <article key={i} className="company-wrapper">
+              {/* left | positions */}
+                <div className="positions">
+                  {exp.roles.reverse().map((role, j) => (
+                    <div key={j} className="position-wrapper">
+                      <p className="year">{role.year}</p>
+                      <p className="title">{role.title}</p>
+                      <ul className="description">
+                        {role.description.map((sentence, k) => (
+                          <li key={k}>{sentence}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
-                <div className="right-text">
-                  <p
-                    className="link"
+
+                {/* right | company details */}
+                <div className="company-details">
+                  <h3
+                    className="link company"
                     onClick={() => window.open("/", "_blank")}
                   >
                     {exp.company}
-                  </p>
+                  </h3>
                   <p className="details display-lg display-print">
                     {exp.location}
                   </p>
                 </div>
-              </div>
             </article>
-          </>
         ))}
       </section>
     </>

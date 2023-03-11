@@ -1,13 +1,45 @@
-.exp {
-    font-size: .75rem;
-    color: rgba(40, 40, 44, .75);
+:root {
+    --accent-color: rgba(40, 40, 44, .75);
 }
 * {
-    outline: dotted 1px blue
+    /* outline: dotted 1px blue */
 }
+
 /* exp typography */
-#experience .details {
-    text-transform: lowercase;
+
+#experience {
+    gap: 1rem;
+}
+.company-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.company {
+    max-width: 75%;
+
+
+}
+
+.position-wrapper {
+    display: grid;
+    gap: 0 1rem;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "a b"
+    "a c";
+}
+
+.position-wrapper .year {
+    grid-row: span 2;
+}
+
+.description li {
+    padding-left: 1rem;
+    font-size: 85%;
+    color: var(--accent-color);
+    /* font-variant: normal; */
 }
 
 @media screen and (min-width:768px) {
