@@ -10,8 +10,7 @@
 
 .company-wrapper {
     display: flex;
-    flex-direction: column-reverse;
-
+    flex-direction: column;
 }
 
 .company-details {
@@ -52,14 +51,12 @@
         grid-template-areas: "a b c";
     }
 
-    .duration {
-        grid-area: a;
-    }
-
     .company {
         grid-area: b;
     }
-
+    .duration {
+        grid-area: a;
+    }
     .location {
         grid-area: c;
         text-align: end;
@@ -74,4 +71,21 @@
     }
 }
 
-@media print {}
+@media print {
+    .company-details {
+        display: grid;
+        grid-template-columns: auto 1fr 8rem;
+        grid-template-areas: "a b c";
+    }
+
+    .company {
+        grid-area: b;
+    }
+    .duration {
+        grid-area: a;
+    }
+    .location {
+        grid-area: c;
+        text-align: end;
+    }
+}

@@ -108,22 +108,8 @@ function Experience() {
       <h2 className="resume-subhead">Professional experience</h2>
       <section className="resume-section" id="experience">
         {experience.map((exp, i) => (
-          // company
+          // company row
           <article key={i} className="company-wrapper">
-            <div className="positions">
-              {exp.roles.reverse().map((role, j) => (
-                <div key={j} className="position">
-                  <p className="year">{role.year}</p>
-                  <p className="title">· {role.title}</p>
-                  <ul className="description">
-                    {role.description.map((sentence, k) => (
-                      <li key={k}>{sentence}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-
             <div className="company-details">
               <h3
                 className="link company"
@@ -137,6 +123,21 @@ function Experience() {
               <p className="duration">
                 {duration(exp.roles[exp.roles.length - 1].year, exp.endYear)}
               </p>
+            </div>
+
+            {/* positions row */}
+            <div className="positions">
+              {exp.roles.reverse().map((role, j) => (
+                <div key={j} className="position">
+                  <p className="year">{role.year}</p>
+                  <p className="title">· {role.title}</p>
+                  <ul className="description">
+                    {role.description.map((sentence, k) => (
+                      <li key={k}>{sentence}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </article>
         ))}

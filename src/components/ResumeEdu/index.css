@@ -6,6 +6,9 @@
     padding-left: 1rem;
 }
 
+.major {
+    font-size: 85%;
+}
 @media screen and (min-width: 768px) {
     .school-details {
         display: grid;
@@ -27,15 +30,20 @@
 }
 
 @media print {
-    #education .text-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
+    .school-details {
+        display: grid;
+        grid-template-columns: 1fr 8rem;
+        align-items: center;
     }
 
-    #education .right-text .details {
-        display: initial;
+    .school-details p {
+        text-align: end;
     }
+    
 
+    .major {
+        padding-left: 1rem;
+    }
     .degree {
         padding-left: 0;
         display: flex;

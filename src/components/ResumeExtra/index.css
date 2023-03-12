@@ -34,18 +34,18 @@
 }
 
 @media print {
-    #extracurricular .text-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     #extracurricular .left-text {
-        flex-grow: 1;
-        min-width: 45%;
-        padding-left: 0;
+        display: grid;
+        grid-template-columns: 1fr 15rem;
 
     }
     #extracurricular .details {
-        display: initial;
+        text-align: end;
+        display: block;
+    }
+
+    #extracurricular .right-text {
+        text-align: start;
     }
 }

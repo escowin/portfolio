@@ -15,7 +15,7 @@ function Education() {
       year: 2015,
       level: "Undergraduate",
       degree: "bachelor of fine arts",
-      major: "illustration and screenwriting",
+      major: "illustration",
       school: "California state university, fullerton",
       location: "Fullerton, CA",
       id: "csuf",

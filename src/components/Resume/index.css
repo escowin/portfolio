@@ -2,6 +2,10 @@
     --border: 1px solid var(--offblack)
 }
 
+* {
+    /* outline: 1px dotted blue; */
+}
+
 /* display toggles */
 .display-print {
     display: none;
