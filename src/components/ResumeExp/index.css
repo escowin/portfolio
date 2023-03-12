@@ -1,9 +1,6 @@
 :root {
     --accent-color: rgba(40, 40, 44, .75);
 }
-* {
-    /* outline: dotted 1px blue */
-}
 
 /* exp typography */
 
@@ -29,14 +26,13 @@
     width: 4.125rem;
 }
 
-
 .position {
     display: grid;
     gap: 0 1rem;
     grid-template-columns: 4.125rem 1fr;
-    grid-template-areas: 
-    "a b"
-    "a c";
+    grid-template-areas:
+        "a b"
+        "a c";
 }
 
 .position .year {
@@ -47,26 +43,35 @@
     padding-left: 1rem;
     font-size: 85%;
     color: var(--accent-color);
-    /* font-variant: normal; */
 }
 
 @media screen and (min-width:768px) {
-
-    #experience .text-wrapper {
+    .company-details {
         display: grid;
-        grid-template-columns: auto 30%;
+        grid-template-columns: auto 1fr 8rem;
+        grid-template-areas: "a b c";
+    }
+
+    .duration {
+        grid-area: a;
+    }
+
+    .company {
+        grid-area: b;
+    }
+
+    .location {
+        grid-area: c;
+        text-align: end;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    #experience .text-wrapper {
-        grid-template-columns: auto auto;
+    .year {
+        padding-top: .13rem;
+        padding-left: .125rem;
+        font-size: 85%;
     }
 }
 
-@media print {
-    #experience .text-wrapper {
-        display: grid;
-        grid-template-columns: auto 22%;
-    }
-}
+@media print {}

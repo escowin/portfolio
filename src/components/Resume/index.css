@@ -1,3 +1,7 @@
+:root {
+    --border: 1px solid var(--offblack)
+}
+
 /* display toggles */
 .display-print {
     display: none;
@@ -32,14 +36,14 @@
 
 /* resume sections */
 .resume-subhead {
-    border: 2px solid var(--offblack);
+    border: var(--border);
     border-right: none;
     padding: .5rem .75rem;
 }
 
 /* subsection formatting*/
 .resume-section {
-    border-right: 2px solid var(--offblack);
+    border-right: var(--border);
     padding: 2vw 1vw 2vw 2vw;
     display: flex;
     flex-direction: column;
@@ -75,28 +79,31 @@
 .left-text {
     display: flex;
     flex-direction: column;
-    order: 2;
 }
 
 .right-text {
     text-align: start;
+    padding-left: 1rem;
 }
 
 @media screen and (min-width: 768px) {
     .display-md {
-        display: contents;
+        display: inline-block;
     }
 
     .row {
         grid-template-columns: 8.5vw auto;
-        gap: .25rem;
+        gap: 1rem;
     }
+
 
     .left-text {
-        order: inherit;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: flex-end;
     }
 
-    .right-text {
+    .left-text p {
         text-align: end;
     }
 }

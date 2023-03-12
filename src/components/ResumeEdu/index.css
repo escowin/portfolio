@@ -7,13 +7,18 @@
 }
 
 @media screen and (min-width: 768px) {
-    #education .text-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
+    .school-details {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: flex-end;
     }
 
-    #education .right-text .details {
-        display: initial;
+    .school-details .details {
+        text-align: end;
+    }
+
+    .major {
+        padding-left: 1rem;
     }
 
     .degree {

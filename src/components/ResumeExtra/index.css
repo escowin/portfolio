@@ -2,15 +2,13 @@
     display: none;
 }
 
-#extracurricular .left-text {
-    padding-left: 1rem;
+#extracurricular .right-text {
+    font-size: 85%;
 }
-
 
 @media screen and (min-width: 768px) {
 
     #extracurricular .text-wrapper {
-        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -18,10 +16,6 @@
         flex-grow: 1;
         min-width: 40%;
         padding-left: 0;
-    }
-
-    #extracurricular .right-text {
-        min-width: 35%;
     }
 
     #extracurricular .left-text .details {
@@ -37,7 +31,6 @@
     #extracurricular .right-text {
         min-width: revert;
     }
-
 }
 
 @media print {

@@ -58,22 +58,24 @@ function Experience() {
         {
           title: "artist",
           year: 2020,
-          description: ["Established fine art sole proprietorship."],
+          description: [
+            "Established sole proprietorship to sell fine art in Austin.",
+          ],
         },
         {
           title: "graphic novelist",
           year: 2021,
           description: [
-            "Authored & published graphic novel blue strawberry.",
+            "Authored dialogue-less psychological noir 'blue strawberry'.",
             "Painted artwork using Corel Painter.",
-            "Formatted files for print using Adobe Suite",
+            "Used Adobe Suite to format files for digital & print",
           ],
         },
         {
           title: "site developer",
           year: 2021,
           description: [
-            "Built e-commerce art gallery",
+            "Built website to facilitate e-commerce",
             "Enhanced website performance by using React.js to develop a SPA.",
             "Constructed a database to enable e-commerce functionality through Stripe transactions.",
           ],
@@ -108,7 +110,6 @@ function Experience() {
         {experience.map((exp, i) => (
           // company
           <article key={i} className="company-wrapper">
-            {/* left | positions */}
             <div className="positions">
               {exp.roles.reverse().map((role, j) => (
                 <div key={j} className="position">
@@ -123,18 +124,19 @@ function Experience() {
               ))}
             </div>
 
-            {/* right | company details */}
             <div className="company-details">
               <h3
                 className="link company"
-                onClick={() => window.open("/", "_blank")}
+                onClick={() => window.open(exp.url, "_blank")}
               >
                 {exp.company}
               </h3>
+              <p className="details location display-md display-print">
+                {exp.location}
+              </p>
               <p className="duration">
                 {duration(exp.roles[exp.roles.length - 1].year, exp.endYear)}
               </p>
-              <p className="details display-lg display-print">{exp.location}</p>
             </div>
           </article>
         ))}
