@@ -2,11 +2,6 @@
     --accent-color: rgba(40, 40, 44, .75);
 }
 
-/* exp typography */
-
-#experience {
-    gap: 1rem;
-}
 
 .company-wrapper {
     display: flex;
@@ -43,6 +38,7 @@
     font-size: 85%;
     color: var(--accent-color);
 }
+
 
 @media screen and (min-width:768px) {
     .company-details {

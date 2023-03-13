@@ -4,16 +4,15 @@ function Experience() {
   const experience = [
     {
       company: "2U | edX boot camps",
-      code: "fullstack web development",
       location: "Austin, TX",
       url: "https://2u.com/",
       endYear: 0,
       roles: [
         {
-          title: "instructional specialist",
+          title: "teacher's assistant",
           year: 2022,
+          code: "fullstack web development",
           description: [
-            "Fullstack web dev teaching assistant at rice university.",
             "Assisted students with coursework during office hours.",
             "Recorded and uploaded Zoom classes to LMS.",
           ],
@@ -21,24 +20,26 @@ function Experience() {
         {
           title: "central grader",
           year: 2023,
+          code: "fullstack web development",
           description: ["stuff"],
         },
         {
           title: "learning assistant",
           year: 2023,
+          code: "fullstack web development",
           description: ["other stuff"],
         },
       ],
     },
     {
       company: "Vvh financial",
-      code: "javascript node express handlebars bcrypt sequelize mysql css",
       location: "Dallas, TX",
       url: "https://github.com/escowin/vvh-financial",
       endYear: 2022,
       roles: [
         {
           title: "site developer",
+          code: "node fullstack",
           year: 2022,
           description: [
             "Constructed a secure MVC app with protected REST API, session management, and encryption.",
@@ -52,32 +53,30 @@ function Experience() {
       company: "Escowin art",
       location: "Austin, TX",
       url: "https://escowinart.com",
-      code: "react css adobe\u2009cc corel\u2009painter",
       endYear: 0,
       roles: [
-        {
-          title: "artist",
-          year: 2020,
-          description: [
-            "Established sole proprietorship to sell fine art in Austin.",
-          ],
-        },
+        // {
+        //   title: "artist",
+        //   year: 2020,
+        //   description: [
+        //     "Established sole proprietorship to sell fine art in Austin.",
+        //   ],
+        // },
         {
           title: "graphic novelist",
-          year: 2021,
+          year: 2020,
+          code: "adobe\u2009cc corel\u2009painter",
           description: [
-            "Authored dialogue-less psychological noir 'blue strawberry'.",
-            "Painted artwork using Corel Painter.",
-            "Used Adobe Suite to format files for digital & print",
+            "Authored & published psychological noir 'blue strawberry'.",
           ],
         },
         {
           title: "site developer",
           year: 2021,
+          code: "mern",
           description: [
-            "Built website to facilitate e-commerce",
-            "Enhanced website performance by using React.js to develop a SPA.",
-            "Constructed a database to enable e-commerce functionality through Stripe transactions.",
+            "Built website with React.js to serve as a business card",
+            "Incorporated MERN stack to facilitate e-commerce",
           ],
         },
       ],
@@ -117,6 +116,7 @@ function Experience() {
               >
                 {exp.company}
               </h3>
+              
               <p className="details location display-md display-print">
                 {exp.location}
               </p>
@@ -130,7 +130,7 @@ function Experience() {
               {exp.roles.reverse().map((role, j) => (
                 <div key={j} className="position">
                   <p className="year">{role.year}</p>
-                  <p className="title">· {role.title}</p>
+                  <p className="title">· {role.title} <code>{role.code}</code></p>
                   <ul className="description">
                     {role.description.map((sentence, k) => (
                       <li key={k}>{sentence}</li>
