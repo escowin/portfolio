@@ -9,25 +9,32 @@ function Experience() {
       endYear: 0,
       roles: [
         {
-          title: "teacher's assistant",
+          title: "teacher's assistant, rice university",
           year: 2022,
           code: "fullstack web development",
           description: [
+            "Alleviated instructor's workload by grading student projects and handling technical tasks.",
             "Assisted students with coursework during office hours.",
-            "Recorded and uploaded Zoom classes to LMS.",
+            "Used GitLab, Zoom, Canvas, and Slack to ensure seamless delivery of course material.",
           ],
         },
         {
           title: "central grader",
           year: 2023,
           code: "fullstack web development",
-          description: ["stuff"],
+          description: [
+            "Ensured academic integrity by checking for plagiarism in submitted assignments, promoting fair evaluation practices.",
+            "Upheld Company & University grading standards while providing constructive timely feedback to students.",
+          ],
         },
         {
           title: "learning assistant",
           year: 2023,
           code: "fullstack web development",
-          description: ["other stuff"],
+          description: [
+            "Assisted students with troubleshooting Full Stack Flex assignments guiding towards independent problem-solving",
+            "Collaborated with coworkers to optimize the student learning experience and provide consistent feedback",
+          ],
         },
       ],
     },
@@ -55,19 +62,14 @@ function Experience() {
       url: "https://escowinart.com",
       endYear: 0,
       roles: [
-        // {
-        //   title: "artist",
-        //   year: 2020,
-        //   description: [
-        //     "Established sole proprietorship to sell fine art in Austin.",
-        //   ],
-        // },
         {
           title: "graphic novelist",
           year: 2020,
           code: "adobe\u2009cc corel\u2009painter",
           description: [
-            "Authored & published psychological noir 'blue strawberry'.",
+            "Created, wrote, and illustrated a graphic novel entitled 'Blue Strawberry'.",
+            "Utilized Corel Painter to produce the artwork and bring the story to life.",
+            "Utilized Adobe Creative Cloud to format files, establish page layouts, and optimize color modes for print and digital",
           ],
         },
         {
@@ -75,8 +77,9 @@ function Experience() {
           year: 2021,
           code: "mern",
           description: [
-            "Built website with React.js to serve as a business card",
-            "Incorporated MERN stack to facilitate e-commerce",
+            "Established a sole proprietorship in Austin specializing in fine art sales.",
+            "Developed and launched a website using React to serve as a digital business card.",
+            "Expanded website functionality by incorporating the full MERN stack, enabling e-commerce capabilities.",
           ],
         },
       ],
@@ -116,7 +119,7 @@ function Experience() {
               >
                 {exp.company}
               </h3>
-              
+
               <p className="details location display-md display-print">
                 {exp.location}
               </p>
@@ -130,7 +133,9 @@ function Experience() {
               {exp.roles.reverse().map((role, j) => (
                 <div key={j} className="position">
                   <p className="year">{role.year}</p>
-                  <p className="title">· {role.title} <code>{role.code}</code></p>
+                  <p className="title">
+                    · {role.title} <code>{role.code}</code>
+                  </p>
                   <ul className="description">
                     {role.description.map((sentence, k) => (
                       <li key={k}>{sentence}</li>
