@@ -2,6 +2,9 @@
     display: none;
 }
 
+.education-details {
+    font-size: 85%;
+}
 .degree {
     padding-left: 1rem;
 }

@@ -13,9 +13,9 @@ function Experience() {
           year: 2022,
           code: "fullstack web development",
           description: [
-            "Alleviated instructor's workload by grading student projects and handling technical tasks.",
+            "Alleviated instructor's workload, handling technical tasks & grading student projects.",
             "Assisted students with coursework during office hours.",
-            "Used GitLab, Zoom, Canvas, and Slack to ensure seamless delivery of course material.",
+            "Used gitlab, zoom, canvas, and slack to ensure seamless delivery of course material.",
           ],
         },
         {
@@ -24,7 +24,7 @@ function Experience() {
           code: "fullstack web development",
           description: [
             "Ensured academic integrity by checking for plagiarism in submitted assignments, promoting fair evaluation practices.",
-            "Upheld Company & University grading standards while providing constructive timely feedback to students.",
+            "Upheld partnered-university grading standards while providing constructive timely feedback to students.",
           ],
         },
         {
@@ -32,8 +32,8 @@ function Experience() {
           year: 2023,
           code: "fullstack web development",
           description: [
-            "Assisted students with troubleshooting Full Stack Flex assignments guiding towards independent problem-solving",
-            "Collaborated with coworkers to optimize the student learning experience and provide consistent feedback",
+            "Assisted students with assignments guiding towards independent problem-solving.",
+            "Optimized student troubleshooting experience through coworker collaboration.",
           ],
         },
       ],
@@ -49,9 +49,9 @@ function Experience() {
           code: "node fullstack",
           year: 2022,
           description: [
-            "Constructed a secure MVC app with protected REST API, session management, and encryption.",
-            "Created ORM queries to safeguard SQL database from direct manipulation.",
-            "Implemented Handlebars helpers to display employee & client views conditionally.",
+            "Developed a secure mvc app with protected rest api, session management, and encryption.",
+            "Utilized sequelize orm to safeguard mysql database from direct user manipulation.",
+            "Utilized handlebars to conditionally render employee & client views.",
           ],
         },
       ],
@@ -67,9 +67,9 @@ function Experience() {
           year: 2020,
           code: "adobe\u2009cc corel\u2009painter",
           description: [
-            "Created, wrote, and illustrated a graphic novel entitled 'Blue Strawberry'.",
-            "Utilized Corel Painter to produce the artwork and bring the story to life.",
-            "Utilized Adobe Creative Cloud to format files, establish page layouts, and optimize color modes for print and digital",
+            "Wrote, illustrated, and published 'blue strawberry' graphic novel.",
+            "Utilized corel painter to draw the artwork.",
+            "Utilized adobe cc to format files and optimize color modes.",
           ],
         },
         {
@@ -77,9 +77,9 @@ function Experience() {
           year: 2021,
           code: "mern",
           description: [
-            "Established a sole proprietorship in Austin specializing in fine art sales.",
-            "Developed and launched a website using React to serve as a digital business card.",
-            "Expanded website functionality by incorporating the full MERN stack, enabling e-commerce capabilities.",
+            "Established a sole proprietorship in austin specializing in fine art sales.",
+            "Developed website using react to serve as a digital business card.",
+            "Utilized mern stack to enable e-commerce site capabilities.",
           ],
         },
       ],
@@ -90,6 +90,7 @@ function Experience() {
     let current = new Date().getFullYear();
     const present = endYear - startYear;
 
+    console.log(startYear)
     if (endYear === 0) {
       const duration = current - startYear;
       if (duration > 1) {
@@ -102,6 +103,7 @@ function Experience() {
       return `1 year`;
     }
 
+    console.log(endYear)
     return `${present} years`;
   }
 
@@ -124,7 +126,7 @@ function Experience() {
                 {exp.location}
               </p>
               <p className="duration">
-                {duration(exp.roles[exp.roles.length - 1].year, exp.endYear)}
+                {duration(exp.roles[0].year, exp.endYear)}
               </p>
             </div>
 

@@ -2,7 +2,6 @@
     --accent-color: rgba(40, 40, 44, .75);
 }
 
-
 .company-wrapper {
     display: flex;
     flex-direction: column;
@@ -39,6 +38,15 @@
     color: var(--accent-color);
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    list-style: armenian;
+}
+
+.title code {
+    padding-left: 1rem;
+}
 
 @media screen and (min-width:768px) {
     .company-details {
@@ -50,9 +58,11 @@
     .company {
         grid-area: b;
     }
+
     .duration {
         grid-area: a;
     }
+
     .location {
         grid-area: c;
         text-align: end;
@@ -65,9 +75,14 @@
         padding-left: .125rem;
         font-size: 85%;
     }
+
+    .description {
+        padding-right: 8rem;
+    }
 }
 
 @media print {
+
     .company-details {
         display: grid;
         grid-template-columns: auto 1fr 8rem;
@@ -77,11 +92,21 @@
     .company {
         grid-area: b;
     }
+
     .duration {
         grid-area: a;
     }
+
     .location {
         grid-area: c;
         text-align: end;
+    }
+
+    .description {
+        padding-right: 6rem;
+    }
+
+    .link:hover {
+        color: inherit;
     }
 }

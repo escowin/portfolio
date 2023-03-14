@@ -5,7 +5,6 @@ function Education() {
     {
       year: 2022,
       level: "Professional education",
-      degree: "certificate of completion",
       major: "full-stack web development",
       school: "The university of texas at austin",
       location: "Austin, TX",
@@ -14,21 +13,19 @@ function Education() {
     {
       year: 2015,
       level: "Undergraduate",
-      degree: "bachelor of fine arts",
       major: "illustration",
       school: "California state university, fullerton",
       location: "Fullerton, CA",
       id: "csuf",
     },
-    {
-      year: 2011,
-      level: "Undergraduate",
-      degree: "associate of arts",
-      major: "fine arts",
-      school: "Orange coast college",
-      location: "Costa Mesa, CA",
-      id: "occ",
-    },
+    // {
+    //   year: 2011,
+    //   level: "Undergraduate",
+    //   major: "fine arts",
+    //   school: "Orange coast college",
+    //   location: "Costa Mesa, CA",
+    //   id: "occ",
+    // },
   ];
 
   return (
@@ -49,10 +46,9 @@ function Education() {
                 <p className="degree">
                   · {edu.level}
                   <span className="display-md display-print">
-                    , {edu.degree}
+                    , {edu.major}
                   </span>
                 </p>
-                <p className="major display-md display-print">{edu.major}</p>
               </div>
             </div>
           </article>

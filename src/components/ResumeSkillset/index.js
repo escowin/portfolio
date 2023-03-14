@@ -2,7 +2,7 @@ import "./index.css";
 
 function Skillset() {
   const skillset = {
-    languages: ["html", "css", "javascript", "ruby", "sql", "graphql"],
+    languages: ["javascript",  "graphql", "sql", "css", "html", "ruby",],
     libraries: {
       css: ["bootstrap"],
       js: [
@@ -46,14 +46,12 @@ function Skillset() {
       "npm",
       "heroku",
       "insomnia",
-      "adobe\u2009cc",
-      "corel\u2009painter",
+      "apollo\u2009graphql",
       "wordpress",
-      // "vscode",
     ],
   };
 
-  const languages = skillset.languages.sort().toString().replace(/,/g, " ");
+  const languages = skillset.languages.toString().replace(/,/g, " ");
   const jsFrameworks = skillset.frameworks.js
     .sort()
     .toString()
@@ -71,7 +69,7 @@ function Skillset() {
     .toString()
     .replace(/,/g, " ");
   const databases = skillset.databases.sort().toString().replace(/,/g, " ");
-  const paradigms = skillset.paradigms.sort().toString().replace(/,/g, " ");
+  // const paradigms = skillset.paradigms.sort().toString().replace(/,/g, " ");
   const tools = skillset.tools.toString().replace(/,/g, " ");
 
   return (
@@ -82,7 +80,7 @@ function Skillset() {
         <p>Frameworks</p> <p className="skillset">{jsFrameworks} {rubyFrameworks}</p>
         <p>Libraries</p> <p className="skillset">{cssLibraries} {jsLibraries}</p>
         <p>Databases</p> <p className="skillset">{databases}</p>
-        <p>Paradigms</p> <p className="skillset">{paradigms}</p>
+        {/* <p>Paradigms</p> <p className="skillset">{paradigms}</p> */}
         <p>Tools</p> <p className="skillset">{tools}</p>
       </section>
     </>

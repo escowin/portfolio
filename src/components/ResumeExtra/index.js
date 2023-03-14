@@ -26,25 +26,25 @@ function Extracurricular() {
     //   event: "Socal six-pack of peaks challenge",
     //   location: "Tranverse ranges, CA",
     // },
-    {
-      year: 2012,
-      role: "Finer things club founder",
-      event: "California state university, fullerton",
-      location: "Fullerton, CA",
-    },
-    {
-      year: 2010,
-      role: "World passport instructor",
-      event: "The ministry of education of taiwan",
-      location: "聖功女子高級中學",
-    },
-    {
-      year: 2009,
-      role: "Teach and learn in korea scholar",
-      event:
-        "The ministry of education of the republic of korea",
-      location: "남상초등학교",
-    },
+    // {
+    //   year: 2012,
+    //   role: "Finer things club founder",
+    //   event: "California state university, fullerton",
+    //   location: "Fullerton, CA",
+    // },
+    // {
+    //   year: 2010,
+    //   role: "World passport instructor",
+    //   event: "The ministry of education of taiwan",
+    //   location: "聖功女子高級中學",
+    // },
+    // {
+    //   year: 2009,
+    //   role: "Teach and learn in korea scholar",
+    //   event:
+    //     "The ministry of education of the republic of korea",
+    //   location: "남상초등학교",
+    // },
   ];
 
   return (
