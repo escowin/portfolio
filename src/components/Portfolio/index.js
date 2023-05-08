@@ -180,13 +180,13 @@ function Portfolio({ selectedPortfolio }) {
         collaboration: false,
       },
       {
-        name: "Cms blog",
-        id: "cms-blog",
-        repo: "https://github.com/escowin/cms-blog",
+        name: "Fitness logbook",
+        id: "fitness-logbook",
+        repo: "https://github.com/escowin/fitness-logbook",
         liveUrl: null,
         languages: "js css mysql",
         dialects: "node express handlebars sequelize",
-        highlight: false,
+        highlight: true,
         collaboration: false,
       },
       {
@@ -196,7 +196,7 @@ function Portfolio({ selectedPortfolio }) {
         liveUrl: null,
         languages: "js css mysql",
         dialects: "node express handlebars sequelize",
-        highlight: true,
+        highlight: false,
         collaboration: false,
       },
       {

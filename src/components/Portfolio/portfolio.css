@@ -7,10 +7,6 @@
     background-image: url('../../assets/images/small/bluestrawberry.jpg');
 }
 
-#cms-blog {
-    background-image: url('../../assets/images/small/cms-blog.jpg');
-}
-
 #coding-quiz {
     background-image: url('../../assets/images/small/coding-quiz.jpg');
 }
@@ -27,13 +23,18 @@
     background-image: url('../../assets/images/small/employee-tracker.jpg');
 }
 
-/* highlight uses larger screenshot */
+/* highlighted frontend project */
 #escowinart {
     background-image: url('../../assets/images/large/escowinart.jpg');
 }
 
 #fantastic-umbrella {
     background-image: url('../../assets/images/small/fantastic-umbrella.jpg');
+}
+
+/* highlighted fullstack project */
+#fitness-logbook {
+    background-image: url('../../assets/images/medium/fitness-logbook.jpg');
 }
 
 #meal-prep {
@@ -100,20 +101,12 @@
         background-image: url('../../assets/images/medium/bluestrawberry.jpg');
     } */
 
-    #cms-blog {
-        background-image: url('../../assets/images/medium/cms-blog.jpg');
-    }
-
     #coding-quiz {
         background-image: url('../../assets/images/medium/coding-quiz.jpg');
     }
 
     /* #css-portfolio {
         background-image: url('../../assets/images/medium/css-portfolio.jpg');
-    } */
-
-    /* #day-planner {
-        background-image: url('../../assets/images/medium/day-planner.jpg');
     } */
 
     #employee-tracker {
@@ -126,6 +119,10 @@
 
     #fantastic-umbrella {
         background-image: url('../../assets/images/medium/fantastic-umbrella.jpg');
+    }
+
+    #fitness-logbook {
+        background-image: url('../../assets/images/medium/fitness-logbook.jpg');
     }
 
     #meal-prep {
@@ -194,10 +191,6 @@
         background-image: url('../../assets/images/large/bluestrawberry.jpg');
     }
 
-    #cms-blog {
-        background-image: url('../../assets/images/large/cms-blog.jpg');
-    }
-
     #coding-quiz {
         background-image: url('../../assets/images/large/coding-quiz.jpg');
     }
@@ -220,6 +213,10 @@
 
     #fantastic-umbrella {
         background-image: url('../../assets/images/large/fantastic-umbrella.jpg');
+    }
+
+    #fitness-logbook {
+        background-image: url('../../assets/images/large/fitness-logbook.jpg');
     }
 
     #meal-prep {

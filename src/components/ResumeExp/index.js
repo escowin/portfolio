@@ -11,11 +11,11 @@ function Experience() {
         {
           title: "teacher's assistant, rice university",
           year: 2022,
-          code: "fullstack web development",
+          code: "git, insomnia, apollo graphql, github, zoom, slack",
           description: [
-            "Alleviated instructor's workload, handling technical tasks & grading student projects.",
+            "Completed administrative and grading tasks on behalf of the instructor.",
             "Assisted students with coursework during office hours.",
-            "Used gitlab, zoom, canvas, and slack to ensure seamless delivery of course material.",
+            "Utlized gitlab, zoom, canvas, and slack to ensure seamless delivery of course material.",
           ],
         },
         {
@@ -90,7 +90,6 @@ function Experience() {
     let current = new Date().getFullYear();
     const present = endYear - startYear;
 
-    console.log(startYear)
     if (endYear === 0) {
       const duration = current - startYear;
       if (duration > 1) {
@@ -103,7 +102,6 @@ function Experience() {
       return `1 year`;
     }
 
-    console.log(endYear)
     return `${present} years`;
   }
 
