@@ -1,32 +1,8 @@
+import portfolioData from "../../assets/data";
 import "./index.css";
 
 function Education() {
-  const education = [
-    {
-      year: 2022,
-      level: "Professional education",
-      major: "full-stack web development",
-      school: "The university of texas at austin",
-      location: "Austin, TX",
-      id: "uta",
-    },
-    {
-      year: 2015,
-      level: "Undergraduate",
-      major: "illustration",
-      school: "California state university, fullerton",
-      location: "Fullerton, CA",
-      id: "csuf",
-    },
-    // {
-    //   year: 2011,
-    //   level: "Undergraduate",
-    //   major: "fine arts",
-    //   school: "Orange coast college",
-    //   location: "Costa Mesa, CA",
-    //   id: "occ",
-    // },
-  ];
+  const education = portfolioData.education;
 
   return (
     <>
