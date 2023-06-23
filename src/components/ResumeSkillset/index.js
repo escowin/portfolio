@@ -7,13 +7,13 @@ function Skillset() {
       css: ["bootstrap"],
       js: [
         "bcrypt",
-        "day",
-        "handlebars",
-        "inquirer",
+        // "day",
+        // "handlebars",
+        // "inquirer",
         "jquery",
         "redux",
-        "sequelize",
-        "mongoose",
+        // "sequelize",
+        // "mongoose",
         "webpack",
       ],
     },
@@ -42,12 +42,12 @@ function Skillset() {
     tools: [
       "api",
       "git",
-      "jwt",
+      // "jwt",
       "npm",
       "heroku",
       "insomnia",
       "apollo\u2009graphql",
-      "wordpress",
+      // "wordpress",
     ],
   };
 
