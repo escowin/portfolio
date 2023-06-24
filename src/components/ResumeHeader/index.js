@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
+import resume from "../../assets/data/edwin-escobar-resume.pdf";
 import "./index.css";
 
 function ResumeHeader() {
@@ -24,6 +24,18 @@ function ResumeHeader() {
   const handleEmailClick = () =>
     window.open(`mailto:${data.links.email}`, "_blank");
 
+  const downloadResume = () => {
+    fetch(resume)
+      .then((response) => response.blob())
+      .then((myBlob) => {
+        const objectUrl = URL.createObjectURL(myBlob);
+        const link = document.createElement("a");
+        link.href = objectUrl;
+        link.download = "edwin-escobar-resume.pdf";
+        link.click();
+      });
+  };
+
   return (
     <section id="resume-header">
       <article className="left display-lg">
@@ -41,10 +53,14 @@ function ResumeHeader() {
 
       <article className="center">
         <h2>
-          <span className="display-screen">Resumė</span>
+          <span className="display-screen" onClick={downloadResume}>
+            Resumė
+          </span>
           <span className="display-print">{data.name}</span>
         </h2>
-        <h3 className="display-print link" onClick={handlePortfolioClick}>{data.occupation}</h3>
+        <h3 className="display-print link" onClick={handlePortfolioClick}>
+          {data.occupation}
+        </h3>
       </article>
 
       <article className="right display-lg">
