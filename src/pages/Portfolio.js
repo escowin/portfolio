@@ -1,6 +1,6 @@
-import portfolioData from "../../assets/data";
-import "./index.css";
-import "./portfolio.css";
+import portfolioData from "../assets/data";
+import "../assets/css/portfolio.css";
+import "../assets/css/applications.css";
 
 function Portfolio({ selectedPortfolio }) {
   // portfolio consists of frontend, backend, and fullstack applications

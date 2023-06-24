@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 
 import Header from "./components/Header";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
 // import CoverLetter from "./components/CoverLetter";
 
 function App() {

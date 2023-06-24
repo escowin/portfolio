@@ -1,7 +1,6 @@
-import "./index.css";
-import profilePic from "../../assets/images/profile-pic.jpg";
-
-import Contact from "../Contact";
+import "../assets/css/about.css";
+import profilePic from "../assets/images/profile-pic.jpg";
+import Contact from "../components/Contact";
 
 function About() {
   return (
