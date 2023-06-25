@@ -2,10 +2,10 @@ import "../assets/css/resume.css";
 
 import ResumeHeader from "../components/ResumeHeader";
 import ResumeFooter from "../components/ResumeFooter";
-import Skillet from "../components/ResumeSkillset";
-import Experience from "../components/ResumeExp";
-import Education from "../components/ResumeEdu";
-import Extracurricular from "../components/ResumeExtra";
+import Skillet from "../components/Skillset";
+import Experience from "../components/Experience";
+import Education from "../components/Education";
+import Extracurricular from "../components/Extracurricular";
 
 function Resume() {
   return (

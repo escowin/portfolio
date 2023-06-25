@@ -15,6 +15,16 @@
     font-weight: 600;
 }
 
+.center h2 {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.center .display-screen svg {
+    height: .5rem;
+}
+
 /* fa icons */
 svg {
     width: 1.25rem;

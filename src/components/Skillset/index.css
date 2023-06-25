@@ -3,6 +3,7 @@
     grid-template-columns: repeat(1, auto 1fr);
     gap: .5rem 1rem;
     word-spacing: .5rem;
+    align-items: baseline;
 }
 
 @media print {

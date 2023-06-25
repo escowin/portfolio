@@ -120,6 +120,11 @@
     .left-text {
         font-size: .9rem;
     }
+
+    .year {
+        font-size: 85%;
+        padding: .25rem 0 0 .85rem;
+    }
 }
 
 /* display.print */
@@ -159,4 +164,8 @@
         font-size: smaller;
     }
 
+    .year {
+        font-size: 85%;
+        padding: .25rem 0 0 .85rem;
+    }
 }

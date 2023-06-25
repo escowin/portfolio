@@ -11,8 +11,15 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
     gap: 1rem;
+}
+
+.company {
+    display: flex;
+    align-items: baseline;
+    width: max-content;
+    flex-direction: column;
 }
 
 .duration {
@@ -44,10 +51,6 @@
     list-style: armenian;
 }
 
-.title code {
-    padding-left: 1rem;
-}
-
 @media screen and (min-width:768px) {
     .company-details {
         display: grid;
@@ -57,6 +60,8 @@
 
     .company {
         grid-area: b;
+        flex-direction: row;
+        gap: 1rem;
     }
 
     .duration {
@@ -70,12 +75,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .year {
-        padding-top: .13rem;
-        padding-left: .125rem;
-        font-size: 85%;
-    }
-
     .description {
         padding-right: 8rem;
     }
@@ -85,7 +84,7 @@
 
     .company-details {
         display: grid;
-        grid-template-columns: auto 1fr 8rem;
+        grid-template-columns: auto auto 1fr;
         grid-template-areas: "a b c";
     }
 

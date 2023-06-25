@@ -3,7 +3,7 @@ import "./index.css";
 
 function Experience() {
   const experience = portfolioData.experience;
-  
+
   function duration(startYear, endYear) {
     let current = new Date().getFullYear();
     const present = endYear - startYear;
@@ -31,11 +31,14 @@ function Experience() {
           // company row
           <article key={i} className="company-wrapper">
             <div className="company-details">
-              <h3
-                className="link company"
-                onClick={() => window.open(exp.url, "_blank")}
-              >
-                {exp.company}
+              <h3 className="company">
+                <span
+                  className="link"
+                  onClick={() => window.open(exp.url, "_blank")}
+                >
+                  {exp.company}
+                </span>
+                <code>{exp.code}</code>
               </h3>
 
               <p className="details location display-md display-print">
@@ -52,9 +55,7 @@ function Experience() {
               {[...exp.roles].reverse().map((role, j) => (
                 <div key={j} className="position">
                   <p className="year">{role.year}</p>
-                  <p className="title">
-                    · {role.title} <code>{role.code}</code>
-                  </p>
+                  <p className="title">· {role.title}</p>
                   <ul className="description">
                     {role.description.map((sentence, k) => (
                       <li key={k}>{sentence}</li>

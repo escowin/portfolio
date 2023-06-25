@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import resume from "../../assets/data/edwin-escobar-resume.pdf";
+import resume from "../../assets/files/edwin-escobar-resume.pdf";
 import "./index.css";
 
 function ResumeHeader() {
@@ -53,9 +53,10 @@ function ResumeHeader() {
 
       <article className="center">
         <h2>
-          <span className="display-screen" onClick={downloadResume}>
+          <span className="display-screen">
             Resumė
           </span>
+          <FontAwesomeIcon className="link display-screen" onClick={downloadResume} icon={faDownload}/>
           <span className="display-print">{data.name}</span>
         </h2>
         <h3 className="display-print link" onClick={handlePortfolioClick}>
