@@ -1,15 +1,17 @@
 import "../assets/css/about.css";
 import profilePic from "../assets/images/profile-pic.jpg";
 import Contact from "../components/Contact";
+import portfolioData from "../assets/data";
 
 function About() {
+  const { name } = portfolioData.info;
   return (
     <section className="section" id="about">
       <article id="profile-pic-wrapper">
         <img src={profilePic} id="profile-pic" alt="profile pic" />
       </article>
       <article id="profile-text">
-        <h2>Edwin m. escobar</h2>
+        <h2>{name}</h2>
         <Contact />
       </article>
 

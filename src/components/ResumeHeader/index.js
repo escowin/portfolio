@@ -2,20 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import resume from "../../assets/files/edwin-escobar-resume.pdf";
+import portfolioData from "../../assets/data";
 import "./index.css";
 
 function ResumeHeader() {
-  const data = {
-    name: "Edwin m. escobar",
-    occupation: "Software engineer",
-    links: {
-      email: "edwin@escowinart.com",
-      github: "https://github.com/escowin",
-      linkedin: "https://www.linkedin.com/in/escowin/",
-      portfolio: "https://escowin.github.io/portfolio",
-    },
-    location: "Austin, TX",
-  };
+  const data = portfolioData.info;
 
   const handleLinkedInClick = () => window.open(data.links.linkedin, "_blank");
   const handleGithubClick = () => window.open(data.links.github, "_blank");

@@ -420,6 +420,17 @@ const portfolioData = {
       },
     ],
   },
+  info: {
+    name: "Edwin m. escobar",
+    occupation: "Software engineer",
+    links: {
+      email: "edwin@escowinart.com",
+      github: "https://github.com/escowin",
+      linkedin: "https://www.linkedin.com/in/escowin/",
+      portfolio: "https://escowin.github.io/portfolio",
+    },
+    location: "Austin, TX",
+  }
 };
 
 export default portfolioData;

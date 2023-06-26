@@ -2,13 +2,10 @@ import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import portfolioData from "../../assets/data";
 
 function Contact() {
-  const contact = {
-    email: "edwin@escowinart.com",
-    github: "https://github.com/escowin",
-    linkedin: "https://linkedin.com/in/escowin",
-  };
+  const contact = portfolioData.info.contact;
 
   return (
     <ul id="contact-links">

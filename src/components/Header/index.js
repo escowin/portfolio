@@ -1,8 +1,9 @@
+import React, { useState } from "react";
+import portfolioData from "../../assets/data";
 import "./index.css";
-import React, { useState } from 'react';
-
 
 function Header(props) {
+  const { name, occupation } = portfolioData.info;
   const portfolios = ["Frontend", "Backend", "Fullstack"];
   const [selected, setSelected] = useState(null);
 
@@ -14,16 +15,32 @@ function Header(props) {
   return (
     <header>
       <article id="header">
-        <h1>Edwin m. escobar</h1>
-        <p>software engineer</p>
+        <h1>{name}</h1>
+        <p>{occupation}</p>
       </article>
       <nav>
         <ul id="navigation">
-          <li onClick={() => handleClick("About")} className={'About' === selected ? 'selected' : ''}>About</li>
+          <li
+            onClick={() => handleClick("About")}
+            className={"About" === selected ? "selected" : ""}
+          >
+            About
+          </li>
           {portfolios.map((portfolio, index) => (
-            <li key={index} onClick={() => handleClick(portfolio)} className={portfolio === selected ? 'selected' : ''}>{portfolio}</li>
+            <li
+              key={index}
+              onClick={() => handleClick(portfolio)}
+              className={portfolio === selected ? "selected" : ""}
+            >
+              {portfolio}
+            </li>
           ))}
-          <li onClick={() => handleClick("Resume")} className={'Resume' === selected ? 'selected' : ''}>Resumė</li>
+          <li
+            onClick={() => handleClick("Resume")}
+            className={"Resume" === selected ? "selected" : ""}
+          >
+            Resumė
+          </li>
         </ul>
       </nav>
     </header>
