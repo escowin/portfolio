@@ -430,6 +430,11 @@ const portfolioData = {
       portfolio: "https://escowin.github.io/portfolio",
     },
     location: "Austin, TX",
+    bio: [
+      "I'm a MERN stack developer with a fine arts background. I like to code responsively aesthetic apps.",
+      "Currently pursuing new opportunities for professional growth & development here in Austin, TX.",
+      "Browse my portfolio to assess my abilities."
+    ]
   }
 };
 
