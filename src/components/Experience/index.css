@@ -90,6 +90,8 @@
 
     .company {
         grid-area: b;
+        flex-direction: row;
+        gap: 1rem;
     }
 
     .duration {

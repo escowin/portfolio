@@ -10,7 +10,7 @@ function Skillset() {
   const cssLibraries = skillset.libraries.css.sort().join(" ");
   const jsLibraries = skillset.libraries.js.sort().join(" ");
   const databases = skillset.databases.sort().join(" ");
-  // const paradigms = skillset.paradigms.sort().join(' ');
+  const paradigms = skillset.paradigms.sort().join(' ');
   const tools = skillset.tools.join(" ");
 
   return (
@@ -27,7 +27,7 @@ function Skillset() {
           {cssLibraries} {jsLibraries}
         </p>
         <p>Databases</p> <p className="skillset">{databases}</p>
-        {/* <p>Paradigms</p> <p className="skillset">{paradigms}</p> */}
+        <p>Paradigms</p> <p className="skillset">{paradigms}</p>
         <p>Tools</p> <p className="skillset">{tools}</p>
       </section>
     </>

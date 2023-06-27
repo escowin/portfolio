@@ -9,10 +9,11 @@
 @media print {
 
     #skills {
-        gap: .0 1rem;
+        gap: .15rem 1rem;
+        font-size: 95%;
     }
 
     .skillset {
-        font-size: .9rem;
+        /* font-size: .9rem; */
     }
 }
