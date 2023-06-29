@@ -6,14 +6,22 @@
     align-items: baseline;
 }
 
+@media screen and (min-width: 1024px) {
+    #skills {
+        grid-template-columns: auto 1fr;
+    }
+}
+
 @media print {
 
     #skills {
         gap: .15rem 1rem;
         font-size: 95%;
+        /* grid-template-columns: auto 1fr; */
     }
 
-    .skillset {
-        /* font-size: .9rem; */
+    .skill-type {
+        /* text-indent: .5rem; */
+        text-align: end ;
     }
 }

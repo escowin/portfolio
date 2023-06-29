@@ -63,13 +63,13 @@ const portfolioData = {
       location: "Dallas, TX",
       url: "https://github.com/escowin/vvh-financial",
       endYear: 2022,
-      code: "node express handlebars bcrypt sequelize sql",
+      code: "express node bcrypt sequelize mysql handlebars",
       roles: [
         {
-          title: "site developer",
+          title: "app developer",
           year: 2022,
           description: [
-            "Engineered a robust MVC application for an estate planning firm, incorporating advanced security measures such as protected REST API, session management, and encryption to ensure data confidentiality and integrity.",
+            "Engineered a robust mvc application for an estate planning firm, incorporating advanced security measures such as protected rest api, session management, and encryption to ensure data confidentiality and integrity.",
           ],
         },
       ],
@@ -145,26 +145,33 @@ const portfolioData = {
     // },
   ],
   skillset: {
-    languages: ["javascript", "graphql", "sql", "css", "html", "ruby"],
+    languages: [
+      "javascript",
+      "graphql",
+      "sql",
+      "handlebars",
+      "html",
+      "css",
+      "ruby",
+    ],
     libraries: {
       css: ["bootstrap"],
       js: [
-        "bcrypt",
-        // "day",
-        // "handlebars",
-        // "inquirer",
         "jquery",
-        "redux",
-        "sequelize",
         "mongoose",
+        "sequelize",
+        "redux",
+        "bcrypt",
         "webpack",
+        // "day",
+        // "inquirer",
       ],
     },
     frameworks: {
-      js: ["node", "express", "jest", "react"],
+      js: ["express", "node", "react", "jest"],
       ruby: ["rails"],
     },
-    databases: ["jawsdb", "mysql", "mongodb", "postgresql", "sqlite"],
+    databases: ["mongodb", "mysql", "postgresql", "sqlite", "jawsdb"],
     paradigms: [
       "mvc",
       "oop",
@@ -183,7 +190,7 @@ const portfolioData = {
       "npm",
       "heroku",
       "insomnia",
-      "apollo\u2009graphql",
+      "apollo\u2009sandbox",
       // "wordpress",
     ],
   },
@@ -436,9 +443,9 @@ const portfolioData = {
     bio: [
       "I'm a MERN stack developer with a fine arts background. I like to code responsively aesthetic apps.",
       "Currently pursuing new opportunities for professional growth & development here in Austin, TX.",
-      "Browse my portfolio to assess my abilities."
-    ]
-  }
+      "Browse my portfolio to assess my abilities.",
+    ],
+  },
 };
 
 export default portfolioData;
