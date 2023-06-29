@@ -1,7 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import portfolioData from "../assets/data";
 import "../assets/css/portfolio.css";
 import "../assets/css/applications.css";
-
+import {
+  faDatabase,
+  faCode,
+  faShareNodes,
+} from "@fortawesome/free-solid-svg-icons";
 function Portfolio({ selectedPortfolio }) {
   // portfolio consists of frontend, backend, and fullstack applications
   const portfolio = portfolioData.applications;
@@ -25,18 +30,40 @@ function Portfolio({ selectedPortfolio }) {
     <section className="portfolio">
       {modifiedPortfolio &&
         modifiedPortfolio.map((project, index) => (
-          <article key={index} id={project.id} className={`project ${project.highlight ? 'highlight' : ''}`}>
+          <article
+            key={index}
+            id={project.id}
+            className={`project ${project.highlight ? "highlight" : ""}`}
+          >
             <div className="project-details">
               <h2>{project.name}</h2>
               <h3 className="project-links">
                 <span onClick={() => window.open(project.repo)}>Repo</span>
                 {project.liveUrl && (
-                  <span onClick={() => window.open(project.liveUrl)}> · Live url
+                  <span onClick={() => window.open(project.liveUrl)}>
+                    {" "}
+                    · Live url
                   </span>
                 )}
               </h3>
-              <p>{project.languages}</p>
-              <p>{project.dialects}</p>
+              <p>
+                <FontAwesomeIcon icon={faCode} /> {project.languages}
+              </p>
+              {project.dialects ? (
+                <p>
+                  <FontAwesomeIcon icon={faShareNodes} /> {project.dialects}
+                </p>
+              ) : (
+                ""
+              )}
+              {project.database ? (
+                <p>
+                  <FontAwesomeIcon icon={faDatabase} /> {project.database}
+                </p>
+              ) : (
+                ""
+              )}
+              {}
             </div>
           </article>
         ))}
