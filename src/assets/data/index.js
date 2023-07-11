@@ -45,7 +45,7 @@ const portfolioData = {
           title: "central grader",
           year: 2023,
           description: [
-            "Efficiently graded student applications while delivering personalized feedback to support individual student growth.",
+            "Efficiently graded student software application assignments in a timely manner while delivering in-depth personalized feedback to support individual growth.",
           ],
         },
         {
@@ -112,12 +112,12 @@ const portfolioData = {
       event: "Austin can academy",
       location: "Austin, TX",
     },
-    {
-      year: 2021,
-      role: "Creative action teaching artist",
-      event: "Hart elementary",
-      location: "Austin, TX",
-    },
+    // {
+    //   year: 2021,
+    //   role: "Creative action teaching artist",
+    //   event: "Hart elementary",
+    //   location: "Austin, TX",
+    // },
     // {
     //   year: 2017,
     //   role: "Cucamonga peak, mt baldy, mt wilson, san bernardino peak, san jacinto, san gorgonio",
@@ -381,7 +381,7 @@ const portfolioData = {
         languages: "js css sql",
         dialects: "node express sequelize handlebars",
         database: "mysql",
-        highlight: true,
+        highlight: false,
         collaboration: false,
       },
       {
@@ -426,6 +426,17 @@ const portfolioData = {
         dialects: "rails bootstrap",
         database: "postgresql",
         highlight: false,
+        collaboration: false,
+      },
+      {
+        name: "Job tracker",
+        id: "job-tracker",
+        repo: "https://github.com/escowin/job-tracker",
+        liveUrl: null,
+        languages: "graphql js css",
+        dialects: "mongoose express react node jwt bcrypt",
+        database: "mongodb",
+        highlight: true,
         collaboration: false,
       },
     ],

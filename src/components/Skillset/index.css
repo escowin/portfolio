@@ -19,9 +19,8 @@
         font-size: 95%;
         /* grid-template-columns: auto 1fr; */
     }
-
+    
     .skill-type {
-        /* text-indent: .5rem; */
-        text-align: end ;
+        text-indent: .5rem;
     }
 }

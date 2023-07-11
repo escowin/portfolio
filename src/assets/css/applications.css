@@ -32,9 +32,13 @@
     background-image: url('../../assets/images/small/fantastic-umbrella.jpg');
 }
 
-/* highlighted fullstack project */
 #fitness-logbook {
-    background-image: url('../../assets/images/medium/fitness-logbook.jpg');
+    background-image: url('../../assets/images/small/fitness-logbook.jpg');
+}
+
+/* highlighted fullstack project */
+#job-tracker {
+    background-image: url('../../assets/images/medium/job-tracker.jpg');
 }
 
 #meal-prep {
@@ -112,7 +116,7 @@
     #employee-tracker {
         background-image: url('../../assets/images/medium/employee-tracker.jpg');
     }
-    
+
     #escowinart {
         background-image: url('../../assets/images/medium/escowinart.jpg');
     }
@@ -125,10 +129,15 @@
         background-image: url('../../assets/images/medium/fitness-logbook.jpg');
     }
 
+    /* highlighted fullstack project */
+    #job-tracker {
+        background-image: url('../../assets/images/medium/job-tracker.jpg');
+    }
+
     #meal-prep {
         background-image: url('../../assets/images/medium/meal-prep.jpg');
     }
-    
+
     #note-taker {
         background-image: url('../../assets/images/medium/note-taker.jpg');
     }
@@ -219,10 +228,15 @@
         background-image: url('../../assets/images/large/fitness-logbook.jpg');
     }
 
+    /* highlighted fullstack project */
+    #job-tracker {
+        background-image: url('../../assets/images/large/job-tracker.jpg');
+    }
+
     #meal-prep {
         background-image: url('../../assets/images/large/meal-prep.jpg');
     }
-    
+
     #note-taker {
         background-image: url('../../assets/images/large/note-taker.jpg');
     }
