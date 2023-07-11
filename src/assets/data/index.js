@@ -444,7 +444,7 @@ const portfolioData = {
   info: {
     name: "Edwin m. escobar",
     occupation: "Software engineer",
-    links: {
+    contact: {
       email: "edwin@escowinart.com",
       github: "https://github.com/escowin",
       linkedin: "https://www.linkedin.com/in/escowin/",

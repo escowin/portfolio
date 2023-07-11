@@ -6,6 +6,7 @@ import portfolioData from "../../assets/data";
 
 function Contact() {
   const contact = portfolioData.info.contact;
+  console.log(contact)
 
   return (
     <ul id="contact-links">

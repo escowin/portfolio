@@ -8,12 +8,12 @@ import "./index.css";
 function ResumeHeader() {
   const data = portfolioData.info;
 
-  const handleLinkedInClick = () => window.open(data.links.linkedin, "_blank");
-  const handleGithubClick = () => window.open(data.links.github, "_blank");
+  const handleLinkedInClick = () => window.open(data.contact.linkedin, "_blank");
+  const handleGithubClick = () => window.open(data.contact.github, "_blank");
   const handlePortfolioClick = () =>
-    window.open(data.links.portfolio, "_blank");
+    window.open(data.contact.portfolio, "_blank");
   const handleEmailClick = () =>
-    window.open(`mailto:${data.links.email}`, "_blank");
+    window.open(`mailto:${data.contact.email}`, "_blank");
 
   const downloadResume = () => {
     fetch(resume)
@@ -62,7 +62,7 @@ function ResumeHeader() {
         </p>
         <p className="link" id="email" onClick={handleEmailClick}>
           <span className="display-lg">e-mail </span>
-          <span className="display-print">{data.links.email} </span>
+          <span className="display-print">{data.contact.email} </span>
           <FontAwesomeIcon icon={faEnvelope} />
         </p>
       </article>
