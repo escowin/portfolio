@@ -444,13 +444,13 @@ const portfolioData = {
   info: {
     name: "Edwin m. escobar",
     occupation: "Software engineer",
-    contact: {
-      email: "edwin@escowinart.com",
-      github: "https://github.com/escowin",
-      linkedin: "https://www.linkedin.com/in/escowin/",
-      portfolio: "https://escowin.github.io/portfolio",
-    },
-    location: "Austin, TX",
+    links: [
+      { icon: "faLocationDot", string: "Austin, TX" },
+      { icon: "faInbox", string: "edwin@escowinart.com" },
+      { icon: "faGrip", string: "https://escowin.github.io/portfolio" },
+      { icon: "faGithub", string: "https://github.com/escowin" },
+      { icon: "faLinkedin", string: "https://linkedin.com/in/escowin" },
+    ],
     bio: [
       "I'm a MERN stack developer with a fine arts background. I like to code responsively aesthetic apps.",
       "Currently pursuing new opportunities for professional growth & development here in Austin, TX.",

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faInbox, faLocationDot, faGrip } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import resume from "../../assets/files/edwin-escobar-resume.pdf";
 import portfolioData from "../../assets/data";
@@ -7,6 +7,11 @@ import "./index.css";
 
 function ResumeHeader() {
   const data = portfolioData.info;
+  const icons = [faLocationDot, faInbox, faGrip, faGithub, faLinkedin]
+  console.log(data.links)
+  const links = [];
+  // plan: swap data.links[i] `icon` string value with matching `icons` array variable. push this new object in `links` array.
+  // map `links` array inide the JSX return
 
   const handleLinkedInClick = () => window.open(data.contact.linkedin, "_blank");
   const handleGithubClick = () => window.open(data.contact.github, "_blank");
@@ -29,7 +34,7 @@ function ResumeHeader() {
 
   return (
     <section id="resume-header">
-      <article className="left display-lg">
+      {/* <article className="left display-lg">
         <p className="link" onClick={handleLinkedInClick}>
           <FontAwesomeIcon icon={faLinkedin} />
           <span className="display-lg display-print"> linkedin</span>
@@ -65,7 +70,7 @@ function ResumeHeader() {
           <span className="display-print">{data.contact.email} </span>
           <FontAwesomeIcon icon={faEnvelope} />
         </p>
-      </article>
+      </article> */}
     </section>
   );
 }
