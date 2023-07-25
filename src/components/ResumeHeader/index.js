@@ -25,22 +25,26 @@ function ResumeHeader() {
   }
 
   function formatLink(link) {
+    // formats string for aesthetic appeal
     if (link.includes("https://")) {
       if (link.includes(".com")) {
-        return "escowin"
+        return "escowin";
       }
-      return  link.replace("https://", "")
+      return link.replace("https://", "");
     }
-    return link
+    return link;
   }
 
-  // const handleLinkedInClick = () =>
-  //   window.open(data.contact.linkedin, "_blank");
-  // const handleGithubClick = () => window.open(data.contact.github, "_blank");
-  // const handlePortfolioClick = () =>
-  //   window.open(data.contact.portfolio, "_blank");
-  // const handleEmailClick = () =>
-  //   window.open(`mailto:${data.contact.email}`, "_blank");
+  function handleClickedLink(link) {
+    console.log(link);
+    // URL & email strings behave as true links
+    if (link.includes("https://")) {
+      window.open(link, "_blank");
+    }
+    if (link.includes("@")) {
+      window.open(`mailto:${link}`, "_blank");
+    }
+  };
 
   // const downloadResume = () => {
   //   fetch(resume)
@@ -62,9 +66,11 @@ function ResumeHeader() {
       </article>
       <article id="links">
         {links.map((link, i) => (
-          <p key={i}>
+          <p key={i} onClick={() => handleClickedLink(link.string)}>
             <FontAwesomeIcon icon={link.icon} />
-            <span className="display-lg display-print"> {formatLink(link.string)}</span>
+            <span className="display-lg display-print">
+              {formatLink(link.string)}
+            </span>
           </p>
         ))}
       </article>
