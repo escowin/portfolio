@@ -24,7 +24,15 @@ function ResumeHeader() {
     links.push(updatedLink);
   }
 
-  // map `links` array inide the JSX return
+  function formatLink(link) {
+    if (link.includes("https://")) {
+      if (link.includes(".com")) {
+        return "escowin"
+      }
+      return  link.replace("https://", "")
+    }
+    return link
+  }
 
   // const handleLinkedInClick = () =>
   //   window.open(data.contact.linkedin, "_blank");
@@ -56,7 +64,7 @@ function ResumeHeader() {
         {links.map((link, i) => (
           <p key={i}>
             <FontAwesomeIcon icon={link.icon} />
-            <span className="display-lg display-print"> {link.string}</span>
+            <span className="display-lg display-print"> {formatLink(link.string)}</span>
           </p>
         ))}
       </article>
