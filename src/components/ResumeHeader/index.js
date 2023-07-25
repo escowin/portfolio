@@ -8,9 +8,17 @@ import "./index.css";
 function ResumeHeader() {
   const data = portfolioData.info;
   const icons = [faLocationDot, faInbox, faGrip, faGithub, faLinkedin]
-  console.log(data.links)
-  const links = [];
-  // plan: swap data.links[i] `icon` string value with matching `icons` array variable. push this new object in `links` array.
+  let links = [];
+
+  for (let i = 0; i < data.links.length; i++) {
+    // used to match index of `icons` with that of `data.links`
+    const iconIndex = i;
+    // new object is composed of an updated `icon` property, while retaining the other properties of the `data.link` object
+    const updatedLink = { icon: icons[iconIndex], ...data.links[i] }
+    console.log(updatedLink)
+    links.push(updatedLink)
+  }
+  console.log(links);
   // map `links` array inide the JSX return
 
   const handleLinkedInClick = () => window.open(data.contact.linkedin, "_blank");
