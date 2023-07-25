@@ -1,28 +1,37 @@
-#resume-header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2vh;
-}
+/* * {
+    outline: 1px dotted blue;
+} */
 
-.center {
+#resume-header {
     display: flex;
     flex-direction: column;
     gap: .25rem;
 }
 
-.center .display-screen {
-    font-size: 2rem;
-    font-weight: 600;
+#screen-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
 }
 
-.center h2 {
+#links {
+    border-top: 1px solid var(--offblack);
+    border-right: 1px solid var(--offblack);
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+    padding: .5rem 1vw;
+}
+
+#links p:nth-child(1) {
+    display: none;
+}
+
+#resume-header p {
     display: flex;
     align-items: center;
-    gap: .5rem;
-}
-
-.center .display-screen svg {
-    height: .5rem;
 }
 
 /* fa icons */
@@ -30,65 +39,40 @@ svg {
     width: 1.25rem;
 }
 
-@media screen and (min-width: 1024px) {
-    #resume-header {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding-bottom: 2vh;
-    }
-    
-    .left, .center, .right {
-        display: flex;
-        flex-direction: column;
-        gap: .25rem;
-    }
-    
-    .left {
-        align-items: flex-start;
-    }
-    
-    .center {
-        align-items: center;
-    }
-    
-    .right {
-        align-items: flex-end;
+@media screen and (min-width: 768px) {
+    #links p:nth-child(1) {
+        display: inherit;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    #screen-details {
+        padding: 0 1vw;
+    }
+
+}
+
 @media print {
-    #resume-header {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding-bottom: .75rem;
+    @import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap');
+
+    #screen-details {
+        display: none;
     }
-    
-    .left, .center, .right {
+
+    #links p:nth-child(1) {
+        display: inherit;
+    }
+
+    #print-details {
         display: flex;
-        flex-direction: column;
-        gap: .25rem;
+        align-items: baseline;
+        gap: 1rem;
+        padding: 0 1rem;
+        font-size: 1.5rem;
     }
 
-    .left {
-        align-items: flex-start;
-    }
-    
-    .center {
-        align-items: center;
-        gap: 0;
-    }
-    
-    .right {
-        align-items: flex-end;
-    }
-
-    #location {
-        order: 2;
-    }
-
-    #resume-header p {
-        display: flex;
-        align-items: center;
+    #links {
+        padding: .5rem 1rem;
     }
 
     svg {

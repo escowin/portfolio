@@ -44,7 +44,7 @@ function ResumeHeader() {
     if (link.includes("@")) {
       window.open(`mailto:${link}`, "_blank");
     }
-  };
+  }
 
   // const downloadResume = () => {
   //   fetch(resume)
@@ -60,15 +60,25 @@ function ResumeHeader() {
 
   return (
     <section id="resume-header">
-      <article id="details">
+      <article id="print-details" className="display-print">
         <h2>{data.name}</h2>
         <p>{data.occupation}</p>
       </article>
+
+      <article id="screen-details" className="display-screen">
+        <h2>Resume</h2>
+        <FontAwesomeIcon className="link" icon={faDownload} />
+      </article>
+
       <article id="links">
         {links.map((link, i) => (
-          <p key={i} onClick={() => handleClickedLink(link.string)}>
+          <p
+            key={i}
+            className="link"
+            onClick={() => handleClickedLink(link.string)}
+          >
             <FontAwesomeIcon icon={link.icon} />
-            <span className="display-lg display-print">
+            <span className="display-md display-print">
               {formatLink(link.string)}
             </span>
           </p>
