@@ -46,17 +46,18 @@ function ResumeHeader() {
     }
   }
 
-  // const downloadResume = () => {
-  //   fetch(resume)
-  //     .then((response) => response.blob())
-  //     .then((myBlob) => {
-  //       const objectUrl = URL.createObjectURL(myBlob);
-  //       const link = document.createElement("a");
-  //       link.href = objectUrl;
-  //       link.download = "edwin-escobar-resume.pdf";
-  //       link.click();
-  //     });
-  // };
+  // downloadable blob accessible from viewing resume from portfolio
+  const downloadResume = () => {
+    fetch(resume)
+      .then((response) => response.blob())
+      .then((myBlob) => {
+        const objectUrl = URL.createObjectURL(myBlob);
+        const link = document.createElement("a");
+        link.href = objectUrl;
+        link.download = "edwin-escobar-resume.pdf";
+        link.click();
+      });
+  };
 
   return (
     <section id="resume-header">
@@ -67,7 +68,11 @@ function ResumeHeader() {
 
       <article id="screen-details" className="display-screen">
         <h2>Resume</h2>
-        <FontAwesomeIcon className="link" icon={faDownload} />
+        <FontAwesomeIcon
+          className="link"
+          icon={faDownload}
+          onClick={downloadResume}
+        />
       </article>
 
       <article id="links">
