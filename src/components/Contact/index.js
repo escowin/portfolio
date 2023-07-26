@@ -19,15 +19,22 @@ function Contact() {
     const updatedContact = { ...contacts[i], icon: icons[iconIndex] };
     modifiedContacts.push(updatedContact);
   }
-  
+
   function formatLink(string) {
     if (string.includes("@")) {
       // email strings are identified by the common '@' char
-      return "email"
+      return "email";
     } else {
       // domain names are returned by seperating out the url string
-      return string.split('//')[1].split('.')[0]
+      return string.split("//")[1].split(".")[0];
     }
+  }
+
+  function handleClick(string) {
+    // strings are identified to determine how arguments are set
+    string.includes("@")
+      ? window.open(`mailto:${string}`, "_blank")
+      : window.open(string, "_blank");
   }
 
   // mapping the array's objects reduces the need to write repeating code
@@ -37,7 +44,9 @@ function Contact() {
         <li
           key={i}
           className="icon"
-          onClick={() => window.open(contact.string, "_blank")}
+          onClick={() => {
+            handleClick(contact.string);
+          }}
         >
           <FontAwesomeIcon icon={contact.icon} />
           <span> {formatLink(contact.string)}</span>
