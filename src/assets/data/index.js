@@ -144,6 +144,9 @@ const portfolioData = {
     //   location: "남상초등학교",
     // },
   ],
+  knowledge: [
+
+  ],
   skillset: {
     languages: [
       "javascript",

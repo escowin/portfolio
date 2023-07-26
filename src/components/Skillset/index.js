@@ -5,7 +5,7 @@ import {
   faGear,
   faShapes,
   faShareNodes,
-  faBars
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import portfolioData from "../../assets/data";
 import "./index.css";
@@ -13,21 +13,30 @@ import "./index.css";
 function Skillset() {
   const skillset = portfolioData.skillset;
 
-  const languages = skillset.languages.join(" ");
-  const jsFrameworks = skillset.frameworks.js.join(" ");
-  const rubyFrameworks = skillset.frameworks.ruby.sort().join(" ");
-  const cssLibraries = skillset.libraries.css.sort().join(" ");
-  const jsLibraries = skillset.libraries.js.join(" ");
-  const databases = skillset.databases.join(" ");
-  const paradigms = skillset.paradigms.sort().join(" ");
-  const tools = skillset.tools.join(" ");
+  const knowledge = [
+    { icon: faCode, skill: skillset.languages.join(" ") },
+    {
+      icon: faShareNodes,
+      skill: `${skillset.frameworks.js.join(" ")} ${skillset.frameworks.ruby}`,
+    },
+    {
+      icon: faBars,
+      skill: `${skillset.libraries.js.join(" ")} ${skillset.libraries.css.join(
+        " "
+      )}`,
+    },
+    { icon: faDatabase, skill: skillset.databases.join(" ") },
+    { icon: faShapes, skill: skillset.paradigms.sort().join(" ") },
+    { icon: faGear, skill: skillset.tools.join(" ") },
+  ];
 
+  console.log(knowledge);
   // note: use array iteration to eliminate the return's unneccesary hardcoded pattern
   return (
     <>
       <h2 className="resume-subhead">Technical skills</h2>
       <section className="resume-section" id="skills">
-        <p className="skill-type">
+        {/* <p className="skill-type">
           <FontAwesomeIcon icon={faCode} />
           <span className="display-lg"> Languages</span>
         </p>
@@ -60,7 +69,7 @@ function Skillset() {
           <FontAwesomeIcon icon={faGear} />
           <span className="display-lg"> Tools</span>
         </p>
-        <p className="skillset">{tools}</p>
+        <p className="skillset">{tools}</p> */}
       </section>
     </>
   );
