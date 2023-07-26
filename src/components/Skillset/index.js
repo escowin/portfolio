@@ -22,6 +22,7 @@ function Skillset() {
   const paradigms = skillset.paradigms.sort().join(" ");
   const tools = skillset.tools.join(" ");
 
+  // note: use array iteration to eliminate the return's unneccesary hardcoded pattern
   return (
     <>
       <h2 className="resume-subhead">Technical skills</h2>
