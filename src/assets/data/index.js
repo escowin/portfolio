@@ -144,9 +144,7 @@ const portfolioData = {
     //   location: "남상초등학교",
     // },
   ],
-  knowledge: [
-
-  ],
+  knowledge: [],
   skillset: {
     languages: [
       "javascript",
@@ -157,23 +155,18 @@ const portfolioData = {
       "css",
       "ruby",
     ],
-    libraries: {
-      css: ["bootstrap"],
-      js: [
-        "jquery",
-        "mongoose",
-        "sequelize",
-        "redux",
-        "bcrypt",
-        "webpack",
-        // "day",
-        // "inquirer",
-      ],
-    },
-    frameworks: {
-      js: ["express", "node", "react", "jest"],
-      ruby: ["rails"],
-    },
+    libraries: [
+      "mongoose",
+      "sequelize",
+      "redux",
+      "jquery",
+      "bcrypt",
+      "webpack",
+      // "day",
+      // "inquirer",
+      "bootstrap",
+    ],
+    frameworks: ["express", "react", "node", "jest", "rails"],
     databases: ["mongodb", "mysql", "postgresql", "sqlite", "jawsdb"],
     paradigms: [
       "mvc",

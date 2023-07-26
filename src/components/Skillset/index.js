@@ -14,20 +14,32 @@ function Skillset() {
   const skillset = portfolioData.skillset;
 
   const knowledge = [
-    { icon: faCode, skill: skillset.languages.join(" ") },
     {
+      skill: "Languages",
+      icon: faCode,
+      tech: skillset.languages.join(" "),
+    },
+    {
+      skill: "Frameworks",
       icon: faShareNodes,
-      skill: `${skillset.frameworks.js.join(" ")} ${skillset.frameworks.ruby}`,
+      tech: skillset.frameworks.join(" "),
     },
     {
+      skill: "Libraries",
       icon: faBars,
-      skill: `${skillset.libraries.js.join(" ")} ${skillset.libraries.css.join(
-        " "
-      )}`,
+      tech: skillset.libraries.join(" "),
     },
-    { icon: faDatabase, skill: skillset.databases.join(" ") },
-    { icon: faShapes, skill: skillset.paradigms.sort().join(" ") },
-    { icon: faGear, skill: skillset.tools.join(" ") },
+    {
+      skill: "Databases",
+      icon: faDatabase,
+      tech: skillset.databases.join(" "),
+    },
+    {
+      skill: "Paradigms",
+      icon: faShapes,
+      tech: skillset.paradigms.sort().join(" "),
+    },
+    { skill: "Tools", icon: faGear, tech: skillset.tools.join(" ") },
   ];
 
   console.log(knowledge);
