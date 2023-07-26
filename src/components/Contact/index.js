@@ -21,13 +21,11 @@ function Contact() {
   }
 
   function formatLink(string) {
-    if (string.includes("@")) {
-      // email strings are identified by the common '@' char
-      return "email";
-    } else {
-      // domain names are returned by seperating out the url string
-      return string.split("//")[1].split(".")[0];
-    }
+    // email strings are identified by '@' char.
+    return string.includes("@")
+      ? "email"
+      : // domain names are returned by seperating out the url string
+        string.split("//")[1].split(".")[0];
   }
 
   function handleClick(string) {
