@@ -5,12 +5,19 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import portfolioData from "../../assets/data";
 
 function Contact() {
-  const contact = portfolioData.info.contact;
-  console.log(contact)
+  // contacts array is composed of socials & email based on the shared '.com' string value
+  let contacts = [];
+  portfolioData.info.links.forEach(link => {
+    if (link.string.includes(".com")) {
+      console.log(link)
+      contacts.push(link)
+    }
+  })
+  console.log(contacts)
 
   return (
     <ul id="contact-links">
-      <li
+      {/* <li
         className="icon"
         onClick={() => window.open(contact.github, "_blank")}
       >
@@ -31,7 +38,7 @@ function Contact() {
       >
         <FontAwesomeIcon icon={faEnvelope} />
         <span> email</span>
-      </li>
+      </li> */}
     </ul>
   );
 }
