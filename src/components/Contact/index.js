@@ -5,19 +5,15 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import portfolioData from "../../assets/data";
 
 function Contact() {
-  let contacts = [];
   let modifiedContacts = [];
-  // `icons` array matches index order of corresponding `contacts` array
+  // contacts array is composed of objects which share the '.com' string value
+  const contacts = portfolioData.info.links.filter((link) =>
+    link.string.includes(".com")
+  );
+  // variables in this array match the index order of corresponding objects in `contacts`
   const icons = [faInbox, faGithub, faLinkedin];
 
-  // contacts array is now composed of socials & email based on the shared '.com' string value
-  portfolioData.info.links.forEach((link) => {
-    if (link.string.includes(".com")) {
-      contacts.push(link);
-    }
-  });
-
-  // `modifiedContacts` is composed of objects that retain properties of `contacts` objects, but with a modified `icon` property using the icon variable.
+  // `modifiedContacts` is now composed of objects that retain properties of `contacts` objects, but with a modified `icon` property using the icon variable.
   for (let i = 0; i < contacts.length; i++) {
     const iconIndex = i;
     const updatedContact = { ...contacts[i], icon: icons[iconIndex] };
