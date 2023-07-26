@@ -19,7 +19,16 @@ function Contact() {
     const updatedContact = { ...contacts[i], icon: icons[iconIndex] };
     modifiedContacts.push(updatedContact);
   }
-  console.log(modifiedContacts);
+  
+  function formatLink(string) {
+    if (string.includes("@")) {
+      // email strings are identified by the common '@' char
+      return "email"
+    } else {
+      // domain names are returned by seperating out the url string
+      return string.split('//')[1].split('.')[0]
+    }
+  }
 
   // mapping the array's objects reduces the need to write repeating code
   return (
@@ -31,7 +40,7 @@ function Contact() {
           onClick={() => window.open(contact.string, "_blank")}
         >
           <FontAwesomeIcon icon={contact.icon} />
-          <span> {contact.string}</span>
+          <span> {formatLink(contact.string)}</span>
         </li>
       ))}
     </ul>
