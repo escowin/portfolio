@@ -9,18 +9,12 @@ function Experience() {
     const present = endYear - startYear;
 
     if (endYear === 0) {
+      // duration value determines which template literal is returned
       const duration = current - startYear;
-      if (duration > 1) {
-        return `${duration} years`;
-      }
-      return `1 year`;
+      return duration > 1 ? `${duration} years` : `1 year`;
     }
 
-    if (present <= 1) {
-      return `1 year`;
-    }
-
-    return `${present} years`;
+    return present <= 1 ? `1 year` : `${present} years`;
   }
 
   return (
