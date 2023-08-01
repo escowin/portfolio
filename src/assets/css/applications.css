@@ -65,8 +65,8 @@
     background-image: url('../../assets/images/small/social-network-api.jpg');
 }
 
-#helios {
-    background-image: url('../../assets/images/small/helios.jpg');
+#sun-tracker {
+    background-image: url('../../assets/images/small/sun-tracker.jpg');
 }
 
 #team-profile-generator {
@@ -158,8 +158,8 @@
         background-image: url('../../assets/images/medium/social-network-api.jpg');
     } */
 
-    /* #helios {
-        background-image: url('../../assets/images/medium/helios.jpg');
+    /* #sun-tracker {
+        background-image: url('../../assets/images/medium/sun-tracker.jpg');
     } */
 
     #team-profile-generator {
@@ -257,8 +257,8 @@
         background-image: url('../../assets/images/large/social-network-api.jpg');
     }
 
-    #helios {
-        background-image: url('../../assets/images/large/helios.jpg');
+    #sun-tracker {
+        background-image: url('../../assets/images/large/sun-tracker.jpg');
     }
 
     #team-profile-generator {

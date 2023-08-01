@@ -52,7 +52,7 @@ const portfolioData = {
           title: "learning assistant",
           year: 2023,
           description: [
-            "Troubleshot and guided students in real time with application development whenever they encountered errors.",
+            "Troubleshot and guided students in real time with application development when encountering errors.",
             "Provided timely feedback that guided students towards solutions without directly giving them the answers, fostering critical thinking skills.",
           ],
         },
@@ -79,13 +79,13 @@ const portfolioData = {
       location: "Austin, TX",
       url: "https://escowinart.com",
       endYear: 0,
-      code: "react adobeꞏcc corelꞏpainter",
+      code: "react adobe.cc corel.painter",
       roles: [
         {
           title: "graphic novelist",
           year: 2020,
           description: [
-            "Authored, illustrated, and self-published the visually captivating  'blue strawberry'.",
+            "Authored, illustrated, and self-published the award winning graphic novel 'Blue Strawberry'.",
           ],
         },
         {
@@ -144,7 +144,6 @@ const portfolioData = {
     //   location: "남상초등학교",
     // },
   ],
-  knowledge: [],
   skillset: {
     languages: [
       "javascript",
@@ -261,12 +260,12 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Helios",
-        id: "helios",
-        repo: "https://github.com/escowin/helios",
-        liveUrl: "https://escowin.github.io/helios",
-        languages: "js css html api",
-        dialects: "jquery moment",
+        name: "Sun tracker",
+        id: "sun-tracker",
+        repo: "https://github.com/escowin/sun-tracker",
+        liveUrl: "https://escowin.github.io/sun-tracker",
+        languages: "js css html",
+        dialects: "pwa webpack jquery moment",
         database: "api",
         highlight: false,
         collaboration: false,
@@ -451,6 +450,7 @@ const portfolioData = {
       "I'm a MERN stack developer with a fine arts background. I like to code responsively aesthetic apps.",
       "Currently pursuing new opportunities for professional growth & development here in Austin, TX.",
       "Browse my portfolio to assess my abilities.",
+      "I believe in adhering to DRY principles. Whenever hardcoded patterns emerge, I do stuff to not make that happen. Say something about agile "
     ],
   },
 };

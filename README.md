@@ -2,7 +2,7 @@
 # portfolio
 
 ## Description
-[Repo](https://github.com/escowin/portfolio)
+* [Repo](https://github.com/escowin/portfolio)
 * [Live URL](https://escowin.github.io/portfolio)
 
 Built a portfolio with React. Exercising my ability to use state, hooks, and props to create an aesthetically responsive SPA.
@@ -18,12 +18,6 @@ Built a portfolio with React. Exercising my ability to use state, hooks, and pro
 Run the following command to install necessary dependencies:
 ```
 $ npm i;
-```
-
-## Test
-Run the following command to run tests:
-```
-
 ```
 
 ## Code
