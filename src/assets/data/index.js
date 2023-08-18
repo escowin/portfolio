@@ -201,15 +201,15 @@ const portfolioData = {
         highlight: true,
         collaboration: false,
       },
-      {
-        name: "Old portfolio",
-        id: "css-portfolio",
-        repo: "https://github.com/escowin/professional-portfolio",
-        liveUrl: "https://escowin.github.io/professional-portfolio",
-        languages: "js css html",
-        highlight: false,
-        collaboration: false,
-      },
+      // {
+      //   name: "Old portfolio",
+      //   id: "css-portfolio",
+      //   repo: "https://github.com/escowin/professional-portfolio",
+      //   liveUrl: "https://escowin.github.io/professional-portfolio",
+      //   languages: "js css html",
+      //   highlight: false,
+      //   collaboration: false,
+      // },
       {
         name: "Password generator",
         id: "password-generator",
@@ -265,7 +265,7 @@ const portfolioData = {
         repo: "https://github.com/escowin/sun-tracker",
         liveUrl: "https://escowin.github.io/sun-tracker",
         languages: "js css html",
-        dialects: "pwa webpack jquery moment",
+        dialects: "node webpack dayjs jquery jest",
         database: "api",
         highlight: false,
         collaboration: false,
@@ -281,6 +281,14 @@ const portfolioData = {
         highlight: false,
         collaboration: true,
       },
+      {
+        name: "Ratio calculator",
+        id: "ratio-calculator",
+        repo: "https://github.com/escowin/ratio-calculator",
+        liveUrl: "https://escowin.github.io/ratio-calculator",
+        languages: "js css html",
+        dialects: "node webpack jest"
+      }
     ],
     Backend: [
       {

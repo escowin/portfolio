@@ -1,4 +1,4 @@
-/* screenshots | solo */
+/* solo applications */
 #address-book {
     background-image: url('../../assets/images/small/address-book.jpg');
 }
@@ -23,7 +23,7 @@
     background-image: url('../../assets/images/small/employee-tracker.jpg');
 }
 
-/* highlighted frontend project */
+/* highlight */
 #escowinart {
     background-image: url('../../assets/images/large/escowinart.jpg');
 }
@@ -36,7 +36,6 @@
     background-image: url('../../assets/images/small/fitness-logbook.jpg');
 }
 
-/* highlighted fullstack project */
 #job-tracker {
     background-image: url('../../assets/images/medium/job-tracker.jpg');
 }
@@ -55,6 +54,10 @@
 
 #portfolio-generator {
     background-image: url('../../assets/images/small/portfolio-generator.jpg');
+}
+
+#ratio-calculator {
+    background-image: url('../../assets/images/large/ratio-calculator.jpg');
 }
 
 #readme-generator {
@@ -81,7 +84,7 @@
     background-image: url('../../assets/images/small/weather-dashboard.jpg');
 }
 
-/* screenshots | collaborations */
+/* collaborative applications */
 #auction-house {
     background-image: url('../../assets/images/large/auction-house.jpg');
 }
@@ -142,10 +145,6 @@
         background-image: url('../../assets/images/medium/note-taker.jpg');
     }
 
-    /* #password-generator {
-        background-image: url('../../assets/images/medium/password-generator.jpg');
-    } */
-
     #portfolio-generator {
         background-image: url('../../assets/images/medium/portfolio-generator.jpg');
     }
@@ -158,9 +157,9 @@
         background-image: url('../../assets/images/medium/social-network-api.jpg');
     } */
 
-    /* #sun-tracker {
+    #sun-tracker {
         background-image: url('../../assets/images/medium/sun-tracker.jpg');
-    } */
+    }
 
     #team-profile-generator {
         background-image: url('../../assets/images/medium/team-profile-generator.jpg');
