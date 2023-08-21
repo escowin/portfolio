@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.db4086f9.css",
-    "main.js": "/portfolio/static/js/main.eab7208f.js",
+    "main.css": "/portfolio/static/css/main.d3e5dc1b.css",
+    "main.js": "/portfolio/static/js/main.7f807ccf.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/bluestrawberry.jpg": "/portfolio/static/media/bluestrawberry.20375edf224c7662c26e.jpg",
     "static/media/portfolio-generator.jpg": "/portfolio/static/media/portfolio-generator.c9e0b1fe95aff0b7e21e.jpg",
     "static/media/edwin-escobar-resume.pdf": "/portfolio/static/media/edwin-escobar-resume.aebc143fcaf3756e3da1.pdf",
     "static/media/css-portfolio.jpg": "/portfolio/static/media/css-portfolio.83b7ebcb26e000636064.jpg",
-    "static/media/escowinart.jpg": "/portfolio/static/media/escowinart.524339c777f9c43e6c1d.jpg",
+    "static/media/escowinart.jpg": "/portfolio/static/media/escowinart.2af92923c93ec9acbef2.jpg",
     "static/media/profile-pic.jpg": "/portfolio/static/media/profile-pic.cf36dd91f14333702bb7.jpg",
     "static/media/meal-prep.jpg": "/portfolio/static/media/meal-prep.c395abbc93a6504276d5.jpg",
     "static/media/weather-dashboard.jpg": "/portfolio/static/media/weather-dashboard.0858762db0b33e2345ad.jpg",
@@ -30,12 +30,12 @@
     "static/media/note-taker.jpg": "/portfolio/static/media/note-taker.c990a85d8d39e3d51568.jpg",
     "static/media/ratio-calculator.jpg": "/portfolio/static/media/ratio-calculator.d3c6defa8bd234d817f9.jpg",
     "index.html": "/portfolio/index.html",
-    "main.db4086f9.css.map": "/portfolio/static/css/main.db4086f9.css.map",
-    "main.eab7208f.js.map": "/portfolio/static/js/main.eab7208f.js.map",
+    "main.d3e5dc1b.css.map": "/portfolio/static/css/main.d3e5dc1b.css.map",
+    "main.7f807ccf.js.map": "/portfolio/static/js/main.7f807ccf.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db4086f9.css",
-    "static/js/main.eab7208f.js"
+    "static/css/main.d3e5dc1b.css",
+    "static/js/main.7f807ccf.js"
   ]
 }
