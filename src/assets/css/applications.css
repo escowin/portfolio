@@ -23,9 +23,8 @@
     background-image: url('../../assets/images/small/employee-tracker.jpg');
 }
 
-/* highlight */
 #escowinart {
-    background-image: url('../../assets/images/large/escowinart.jpg');
+    background-image: url('../../assets/images/small/escowinart.jpg');
 }
 
 #fantastic-umbrella {
@@ -69,7 +68,7 @@
 }
 
 #sun-tracker {
-    background-image: url('../../assets/images/small/sun-tracker.jpg');
+    background-image: url('../../assets/images/large/sun-tracker.jpg');
 }
 
 #team-profile-generator {
@@ -111,10 +110,6 @@
     #coding-quiz {
         background-image: url('../../assets/images/medium/coding-quiz.jpg');
     }
-
-    /* #css-portfolio {
-        background-image: url('../../assets/images/medium/css-portfolio.jpg');
-    } */
 
     #employee-tracker {
         background-image: url('../../assets/images/medium/employee-tracker.jpg');

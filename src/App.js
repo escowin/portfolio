@@ -25,7 +25,7 @@ function App() {
           case "Resume":
             return <Resume />;
           default:
-            return <Portfolio selectedPortfolio={"Frontend"} />;
+            return <About />;
         }
       })()}
       </main>
