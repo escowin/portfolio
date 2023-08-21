@@ -7,6 +7,7 @@ import {
   faCode,
   faShareNodes,
 } from "@fortawesome/free-solid-svg-icons";
+
 function Portfolio({ selectedPortfolio }) {
   // portfolio consists of frontend, backend, and fullstack applications
   const portfolio = portfolioData.applications;
@@ -28,8 +29,7 @@ function Portfolio({ selectedPortfolio }) {
   // this final array is mapped. each project object's properties are plugged in where needed within the article element. highlighted projects receive the additional 'highlight' class attribute.
   return (
     <section className="portfolio">
-      {modifiedPortfolio &&
-        modifiedPortfolio.map((project, index) => (
+      {modifiedPortfolio.map((project, index) => (
           <article
             key={index}
             id={project.id}
