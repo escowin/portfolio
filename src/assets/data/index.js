@@ -250,7 +250,7 @@ const portfolioData = {
         liveUrl: "https://escowin.github.io/ratio-calculator",
         languages: "js css html",
         dialects: "node webpack jest",
-        database: "cache-storage",
+        database: "cache-storage local-storage",
         highlight: false,
       },
       {

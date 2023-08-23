@@ -145,7 +145,7 @@
     }
 
     #ratio-calculator {
-        background-image: url('../../assets/images/large/ratio-calculator.jpg');
+        background-image: url('../../assets/images/medium/ratio-calculator.jpg');
     }
 
     /* #readme-generator {
@@ -245,6 +245,10 @@
 
     #portfolio-generator {
         background-image: url('../../assets/images/large/portfolio-generator.jpg');
+    }
+
+    #ratio-calculator {
+        background-image: url('../../assets/images/large/ratio-calculator.jpg');
     }
 
     #readme-generator {
