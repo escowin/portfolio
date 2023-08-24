@@ -37,7 +37,7 @@ const portfolioData = {
           title: "teacher's assistant, rice university",
           year: 2022,
           description: [
-            "Completed administrative and grading tasks on behalf of the instructor.",
+            "Completed administrative and grading tasks on instructor's behalf.",
             "Assisted students with coursework during office hours.",
           ],
         },
@@ -45,15 +45,14 @@ const portfolioData = {
           title: "central grader",
           year: 2023,
           description: [
-            "Recorded material with senior staff for South African employee onboarding.",
             "Efficiently graded student software application assignments in a timely manner while delivering in-depth personalized feedback to support individual growth.",
+            "Produced employee onboarding material with senior staff",
           ],
         },
         {
           title: "learning assistant",
           year: 2023,
           description: [
-            "Recorded employee onboarding material for South African branch.",
             "Troubleshot and guided students in real time with application development when encountering errors.",
             "Provided timely feedback that guided students towards solutions without directly giving them the answers, fostering critical thinking skills.",
           ],
@@ -71,7 +70,7 @@ const portfolioData = {
           title: "app developer",
           year: 2022,
           description: [
-            "Engineered a robust mvc application for an estate planning firm, incorporating advanced security measures such as protected rest api, session management, and encryption to ensure data confidentiality and integrity.",
+            "Engineered a robust mvc application through protected rest api, session management, and encryption security measures to ensure data confidentiality and integrity.",
           ],
         },
       ],
@@ -453,7 +452,7 @@ const portfolioData = {
     ],
     bio: [
       "I'm a MERN stack developer with a fine arts background. I like to code responsively aesthetic apps.",
-      "The throughline in my work is adhering to DRY (Don't Repeat Yourself) principles, ensuring efficiency by eliminating reduancies and enhancing codebase clarity. Simultaneously, I prioritize a robust separation of concerns to create a coherent framework, while also ensuring a meticulous Git workflow. This involves employing well-structured branches and meaningful commits, harmonizing with the overarching theme of codebase clarity and streamlined development.",
+      "The throughline in my work is adhering to DRY principles, ensuring efficiency by eliminating reduancies and enhancing codebase clarity. Simultaneously, I prioritize a robust separation of concerns to create a coherent framework, while also ensuring a meticulous Git workflow. This involves employing well-structured branches and meaningful commits, harmonizing with the overarching theme of codebase clarity and streamlined development.",
       "Within a collaborative environment, I've maintained this efficiency through AGILE development practices utilizing Scrum & Kanban methodologies",
       "Currently, my primary objective is to explore new opportunities that align with my aspiration to advance my tech career as a software engineer here in Austin, TX.",
     ],
