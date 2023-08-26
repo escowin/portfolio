@@ -27,3 +27,6 @@ yarn-error.log*
 **/CoverLetter
 roles.md
 package-lock.json
+
+References.js
+references.css

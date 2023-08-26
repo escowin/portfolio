@@ -1,195 +1,4 @@
 const portfolioData = {
-  education: [
-    {
-      year: 2022,
-      level: "Professional education",
-      major: "full-stack web development",
-      school: "The university of texas at austin",
-      location: "Austin, TX",
-      id: "uta",
-    },
-    {
-      year: 2015,
-      level: "Undergraduate",
-      major: "illustration",
-      school: "California state university, fullerton",
-      location: "Fullerton, CA",
-      id: "csuf",
-    },
-    // {
-    //   year: 2011,
-    //   level: "Undergraduate",
-    //   major: "fine arts",
-    //   school: "Orange coast college",
-    //   location: "Costa Mesa, CA",
-    //   id: "occ",
-    // },
-  ],
-  experience: [
-    {
-      company: "2U | edX boot camps",
-      location: "Austin, TX",
-      url: "https://2u.com/",
-      endYear: 0,
-      code: "gitlab slack zoom canvas fullstack-flex",
-      roles: [
-        {
-          title: "teacher's assistant, rice university",
-          year: 2022,
-          description: [
-            "Completed administrative and grading tasks on instructor's behalf.",
-            "Assisted students with coursework during office hours.",
-          ],
-        },
-        {
-          title: "central grader",
-          year: 2023,
-          description: [
-            "Efficiently graded student software application assignments in a timely manner while delivering in-depth personalized feedback to support individual growth.",
-            "Produced employee onboarding material with senior staff",
-          ],
-        },
-        {
-          title: "learning assistant",
-          year: 2023,
-          description: [
-            "Troubleshot and guided students in real time with application development when encountering errors.",
-            "Provided timely feedback that guided students towards solutions without directly giving them the answers, fostering critical thinking skills.",
-          ],
-        },
-      ],
-    },
-    {
-      company: "Vvh financial",
-      location: "Dallas, TX",
-      url: "https://github.com/escowin/vvh-financial",
-      endYear: 2022,
-      code: "express node bcrypt sequelize mysql handlebars",
-      roles: [
-        {
-          title: "app developer",
-          year: 2022,
-          description: [
-            "Engineered a robust mvc application through protected rest api, session management, and encryption security measures to ensure data confidentiality and integrity.",
-          ],
-        },
-      ],
-    },
-    {
-      company: "Escowin art",
-      location: "Austin, TX",
-      url: "https://escowinart.com",
-      endYear: 0,
-      code: "react adobe.cc corel.painter",
-      roles: [
-        {
-          title: "graphic novelist",
-          year: 2020,
-          description: [
-            "Authored, illustrated, and self-published the award winning graphic novel 'Blue Strawberry'.",
-          ],
-        },
-        {
-          title: "site developer",
-          year: 2021,
-          description: [
-            "Founded and operated a sole proprietorship in austin, focusing on the sale of fine art.",
-            "Designed and developed a professional website utilizing React, serving as an interactive digital business card.",
-          ],
-        },
-      ],
-    },
-  ],
-  extracurriculars: [
-    {
-      year: 2023,
-      role: "3rd place, mens masters aa-c single",
-      event: "The heart of texas regatta",
-      location: "Austin, TX",
-    },
-    {
-      year: 2022,
-      role: "ACE tutor",
-      event: "Austin can academy",
-      location: "Austin, TX",
-    },
-    // {
-    //   year: 2021,
-    //   role: "Creative action teaching artist",
-    //   event: "Hart elementary",
-    //   location: "Austin, TX",
-    // },
-    // {
-    //   year: 2017,
-    //   role: "Cucamonga peak, mt baldy, mt wilson, san bernardino peak, san jacinto, san gorgonio",
-    //   event: "Socal six-pack of peaks challenge",
-    //   location: "Tranverse ranges, CA",
-    // },
-    // {
-    //   year: 2012,
-    //   role: "Finer things club founder",
-    //   event: "California state university, fullerton",
-    //   location: "Fullerton, CA",
-    // },
-    // {
-    //   year: 2010,
-    //   role: "World passport instructor",
-    //   event: "The ministry of education of taiwan",
-    //   location: "聖功女子高級中學",
-    // },
-    // {
-    //   year: 2009,
-    //   role: "Teach and learn in korea scholar",
-    //   event:
-    //     "The ministry of education of the republic of korea",
-    //   location: "남상초등학교",
-    // },
-  ],
-  skillset: {
-    languages: [
-      "javascript",
-      "graphql",
-      "sql",
-      "handlebars",
-      "html",
-      "css",
-      "ruby",
-    ],
-    libraries: [
-      "mongoose",
-      "sequelize",
-      "redux",
-      "jquery",
-      "bcrypt",
-      "webpack",
-      // "day",
-      // "inquirer",
-      "bootstrap",
-    ],
-    frameworks: ["express", "react", "node", "jest", "rails"],
-    databases: ["mongodb", "mysql", "postgresql", "sqlite", "jawsdb"],
-    paradigms: [
-      "mvc",
-      "oop",
-      "orm",
-      // "odm",
-      "pwa",
-      "rwd",
-      "spa",
-      "tdd",
-      "nosql",
-    ],
-    tools: [
-      "git",
-      "api",
-      "jwt",
-      "npm",
-      "heroku",
-      "insomnia",
-      "apollo\u2009sandbox",
-      // "wordpress",
-    ],
-  },
   applications: {
     Frontend: [
       {
@@ -440,6 +249,151 @@ const portfolioData = {
       },
     ],
   },
+  education: [
+    {
+      year: 2022,
+      level: "Professional education",
+      major: "full-stack web development",
+      school: "The university of texas at austin",
+      location: "Austin, TX",
+      id: "uta",
+    },
+    {
+      year: 2015,
+      level: "Undergraduate",
+      major: "illustration",
+      school: "California state university, fullerton",
+      location: "Fullerton, CA",
+      id: "csuf",
+    },
+    // {
+    //   year: 2011,
+    //   level: "Undergraduate",
+    //   major: "fine arts",
+    //   school: "Orange coast college",
+    //   location: "Costa Mesa, CA",
+    //   id: "occ",
+    // },
+  ],
+  experience: [
+    {
+      company: "2U \u00B7 edX boot camps",
+      location: "Austin, TX",
+      url: "https://2u.com/",
+      endYear: 0,
+      code: "fullstack.flex gitlab slack zoom canvas",
+      roles: [
+        {
+          title: "teacher's assistant, rice university",
+          year: 2022,
+          description: [
+            "Completed administrative and grading tasks on instructor's behalf.",
+            "Assisted students with fullstack web development coursework during office hours.",
+          ],
+        },
+        {
+          title: "central grader",
+          year: 2023,
+          description: [
+            "Swiftly evaluated student software assignments, offering personalized feedback for individual progress.",
+            "Produced employee onboarding material with senior staff.",
+          ],
+        },
+        {
+          title: "learning assistant",
+          year: 2023,
+          description: [
+            "Provided real-time troubleshooting, swiftly identifying errors, and guiding solutions through course concepts to promote critical thinking.",
+          ],
+        },
+      ],
+    },
+    {
+      company: "Vvh financial",
+      location: "Dallas, TX",
+      url: "https://github.com/escowin/vvh-financial",
+      endYear: 2022,
+      code: "express node bcrypt sequelize mysql handlebars",
+      roles: [
+        {
+          title: "app developer",
+          year: 2022,
+          description: [
+            "Engineered robust mvc applications through protected rest api, session management, and encryption security measures to ensure data confidentiality and integrity.",
+          ],
+        },
+      ],
+    },
+    {
+      company: "Escowin art",
+      location: "Austin, TX",
+      url: "https://escowinart.com",
+      endYear: 0,
+      code: "react adobe.cc corel.painter",
+      roles: [
+        {
+          title: "graphic novelist",
+          year: 2020,
+          description: [
+            "Authored, illustrated, and self-published tech-noir graphic novel 'Blue strawberry'.",
+          ],
+        },
+        {
+          title: "site developer",
+          year: 2021,
+          description: [
+            "Founded and operated a sole proprietorship in austin, focusing on the sale of fine art.",
+            "Designed and developed a professional website utilizing React, serving as an interactive digital business card.",
+          ],
+        },
+      ],
+    },
+  ],
+  extracurriculars: [
+    {
+      year: 2023,
+      role: "3rd place, mens masters aa-c single",
+      event: "The heart of texas regatta",
+      location: "Austin, TX",
+    },
+    {
+      year: 2022,
+      role: "ACE tutor",
+      event: "Austin can academy",
+      location: "Austin, TX",
+    },
+    // {
+    //   year: 2021,
+    //   role: "Creative action teaching artist",
+    //   event: "Hart elementary",
+    //   location: "Austin, TX",
+    // },
+    // {
+    //   year: 2017,
+    //   role: "Cucamonga peak, mt baldy, mt wilson, san bernardino peak, san jacinto, san gorgonio",
+    //   event: "Socal six-pack of peaks challenge",
+    //   location: "Tranverse ranges, CA",
+    // },
+    // {
+    //   year: 2012,
+    //   role: "Finer things club founder",
+    //   event: "California state university, fullerton",
+    //   location: "Fullerton, CA",
+    // },
+    // {
+    //   year: 2010,
+    //   role: "World passport instructor",
+    //   event: "The ministry of education of taiwan",
+    //   location: "聖功女子高級中學",
+    // },
+    // {
+    //   year: 2009,
+    //   role: "Teach and learn in korea scholar",
+    //   event:
+    //     "The ministry of education of the republic of korea",
+    //   location: "남상초등학교",
+    // },
+  ],
   info: {
     name: "Edwin m. escobar",
     occupation: "Software engineer",
@@ -455,6 +409,51 @@ const portfolioData = {
       "The throughline in my work is adhering to DRY principles, ensuring efficiency by eliminating reduancies and enhancing codebase clarity. Simultaneously, I prioritize a robust separation of concerns to create a coherent framework, while also ensuring a meticulous Git workflow. This involves employing well-structured branches and meaningful commits, harmonizing with the overarching theme of codebase clarity and streamlined development.",
       "Within a collaborative environment, I've maintained this efficiency through AGILE development practices utilizing Scrum & Kanban methodologies",
       "Currently, my primary objective is to explore new opportunities that align with my aspiration to advance my tech career as a software engineer here in Austin, TX.",
+    ],
+  },
+  skillset: {
+    languages: [
+      "javascript",
+      "graphql",
+      "sql",
+      "handlebars",
+      "html",
+      "css",
+      "ruby",
+    ],
+    libraries: [
+      "mongoose",
+      "sequelize",
+      "redux",
+      "jquery",
+      "bcrypt",
+      "webpack",
+      // "day",
+      // "inquirer",
+      "bootstrap",
+    ],
+    frameworks: ["express", "react", "node", "jest", "rails"],
+    databases: ["mongodb", "mysql", "postgresql", "sqlite", "jawsdb"],
+    paradigms: [
+      "mvc",
+      "oop",
+      "orm",
+      // "odm",
+      "pwa",
+      "rwd",
+      "spa",
+      "tdd",
+      "nosql",
+    ],
+    tools: [
+      "git",
+      "api",
+      "jwt",
+      "npm",
+      "heroku",
+      "insomnia",
+      "apollo\u2009sandbox",
+      // "wordpress",
     ],
   },
 };
