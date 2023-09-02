@@ -7,6 +7,7 @@ import {
   faCode,
   faShareNodes,
 } from "@fortawesome/free-solid-svg-icons";
+import { formatName } from "../utils/helpers";
 
 function Portfolio({ selectedPortfolio }) {
   // portfolio consists of frontend, backend, and fullstack applications
@@ -36,7 +37,7 @@ function Portfolio({ selectedPortfolio }) {
             className={`project ${project.highlight ? "highlight" : ""}`}
           >
             <div className="project-details">
-              <h2>{project.name}</h2>
+              <h2>{formatName(project.id)}</h2>
               <h3 className="project-links">
                 <span onClick={() => window.open(project.repo)}>Repo</span>
                 {project.liveUrl && (

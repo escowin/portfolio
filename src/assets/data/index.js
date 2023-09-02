@@ -2,7 +2,6 @@ const portfolioData = {
   applications: {
     Frontend: [
       {
-        name: "Bluestrawberry",
         id: "bluestrawberry",
         repo: "https://github.com/escowin/bluestrawberry",
         liveUrl: "https://escowin.github.io/bluestrawberry",
@@ -12,28 +11,25 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Coding quiz",
         id: "coding-quiz",
         repo: "https://github.com/escowin/coding-quiz",
         liveUrl: "https://escowin.github.io/coding-quiz/",
         languages: "js css html",
-        database: "local-storage",
+        database: "localstorage",
         highlight: false,
         collaboration: false,
       },
       {
-        name: "Day planner",
         id: "day-planner",
         repo: "https://github.com/escowin/day-planner",
         liveUrl: "https://escowin.github.io/day-planner/",
         languages: "js css html",
-        dialects: "bootstrap jquery moment",
-        database: "local-storage",
+        dialects: "jquery moment bootstrap",
+        database: "localstorage",
         highlight: false,
         collaboration: false,
       },
       {
-        name: "Escowin art",
         id: "escowinart",
         repo: "https://github.com/escowin/escowinart",
         liveUrl: "https://escowinart.com/",
@@ -52,17 +48,15 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Ratio calculator",
         id: "ratio-calculator",
         repo: "https://github.com/escowin/ratio-calculator",
         liveUrl: "https://escowin.github.io/ratio-calculator",
         languages: "js css html",
         dialects: "node webpack jest",
-        database: "cache-storage local-storage",
+        database: "indexeddb",
         highlight: false,
       },
       {
-        name: "Raven home",
         id: "raven-home",
         repo: "https://github.com/escowin/RavenclawG-2",
         liveUrl: "https://escowin.github.io/RavenclawG-2/",
@@ -73,31 +67,28 @@ const portfolioData = {
         collaboration: true,
       },
       {
-        name: "Sun tracker",
         id: "sun-tracker",
         repo: "https://github.com/escowin/sun-tracker",
         liveUrl: "https://escowin.github.io/sun-tracker",
         languages: "js css html",
         dialects: "node webpack jest dayjs jquery",
-        database: "api cache-storage",
+        database: "api indexeddb",
         highlight: true,
         collaboration: false,
       },
       {
-        name: "Weather dashboard",
         id: "weather-dashboard",
         repo: "https://github.com/escowin/weather-dashboard",
         liveUrl: "https://escowin.github.io/weather-dashboard/",
         languages: "js css html",
         dialects: "jquery moment",
-        database: "api local-storage",
+        database: "api localstorage",
         highlight: false,
         collaboration: false,
       },
     ],
     Backend: [
       {
-        name: "Employee tracker",
         id: "employee-tracker",
         repo: "https://github.com/escowin/employee-tracker",
         liveUrl: null,
@@ -108,7 +99,6 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Fantastic umbrella",
         id: "fantastic-umbrella",
         repo: "https://github.com/escowin/fantastic-umbrella",
         liveUrl: null,
@@ -129,7 +119,6 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Portfolio generator",
         id: "portfolio-generator",
         repo: "https://github.com/escowin/portfolio-generator",
         liveUrl: null,
@@ -139,7 +128,6 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Readme generator",
         id: "readme-generator",
         repo: "https://github.com/escowin/readme-generator",
         liveUrl: null,
@@ -149,7 +137,6 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Team profile generator",
         id: "team-profile-generator",
         repo: "https://github.com/escowin/team-profile-generator",
         liveUrl: null,
@@ -159,8 +146,7 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Social network api",
-        id: "social-network",
+        id: "social-network-api",
         repo: "https://github.com/escowin/social-network",
         liveUrl: null,
         languages: "js",
@@ -172,7 +158,6 @@ const portfolioData = {
     ],
     Fullstack: [
       {
-        name: "Address book",
         id: "address-book",
         repo: "https://github.com/escowin/address-book-escobar-edwin",
         liveUrl: null,
@@ -183,7 +168,6 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Auction house",
         id: "auction-house",
         repo: "https://github.com/escowin/auction-house",
         liveUrl: "https://stormy-fjord-57144.herokuapp.com/",
@@ -194,7 +178,6 @@ const portfolioData = {
         collaboration: true,
       },
       {
-        name: "Fitness logbook",
         id: "fitness-logbook",
         repo: "https://github.com/escowin/fitness-logbook",
         liveUrl: null,
@@ -205,7 +188,6 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Job tracker",
         id: "job-tracker",
         repo: "https://github.com/escowin/job-tracker",
         liveUrl: null,
@@ -216,17 +198,16 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        name: "Note taker",
         id: "note-taker",
         repo: "https://github.com/escowin/note-taker",
         liveUrl: null,
         languages: "js css html",
         dialects: "node express bootstrap",
+        database: "api",
         highlight: false,
         collaboration: false,
       },
       {
-        name: "Smart home",
         id: "smart-home",
         repo: "https://github.com/escowin/smart-home",
         liveUrl: "https://young-earth-27956.herokuapp.com/",
@@ -237,7 +218,6 @@ const portfolioData = {
         collaboration: true,
       },
       {
-        name: "VVH Financial",
         id: "vvh-financial",
         repo: "https://github.com/escowin/vvh-financial",
         liveUrl: null,
@@ -396,7 +376,7 @@ const portfolioData = {
   ],
   info: {
     name: "Edwin m. escobar",
-    occupation: "Software engineer",
+    occupation: "MERN stack web developer",
     links: [
       { icon: "faLocationDot", string: "Austin, TX" },
       { icon: "faInbox", string: "edwin@escowinart.com" },
