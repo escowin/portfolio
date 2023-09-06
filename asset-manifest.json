@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.31a8064c.css",
-    "main.js": "/portfolio/static/js/main.4dd2e144.js",
+    "main.css": "/portfolio/static/css/main.226c1d37.css",
+    "main.js": "/portfolio/static/js/main.e554e337.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/bluestrawberry.jpg": "/portfolio/static/media/bluestrawberry.20375edf224c7662c26e.jpg",
     "static/media/portfolio-generator.jpg": "/portfolio/static/media/portfolio-generator.c9e0b1fe95aff0b7e21e.jpg",
@@ -22,20 +22,20 @@
     "static/media/fitness-logbook.jpg": "/portfolio/static/media/fitness-logbook.f4b3e1aad7b29f21c499.jpg",
     "static/media/job-tracker.jpg": "/portfolio/static/media/job-tracker.36c1bc14b9f867f7bf6b.jpg",
     "static/media/team-profile-generator.jpg": "/portfolio/static/media/team-profile-generator.3ac1c4b17443bb55c21d.jpg",
+    "static/media/password-generator.jpg": "/portfolio/static/media/password-generator.3aceeb41eda7b82d9906.jpg",
     "static/media/social-network-api.jpg": "/portfolio/static/media/social-network-api.741b9255cd9c13468471.jpg",
     "static/media/fantastic-umbrella.jpg": "/portfolio/static/media/fantastic-umbrella.9a33f4b97436259f44c9.jpg",
     "static/media/smart-home.jpg": "/portfolio/static/media/smart-home.79e05096ab84691e4bf9.jpg",
-    "static/media/password-generator.jpg": "/portfolio/static/media/password-generator.fe29d07d9c9649c72fa8.jpg",
     "static/media/auction-house.jpg": "/portfolio/static/media/auction-house.6cf9f9983b765a488959.jpg",
     "static/media/note-taker.jpg": "/portfolio/static/media/note-taker.c990a85d8d39e3d51568.jpg",
     "static/media/ratio-calculator.jpg": "/portfolio/static/media/ratio-calculator.f3b57ab2957f30ed1ff8.jpg",
     "index.html": "/portfolio/index.html",
-    "main.31a8064c.css.map": "/portfolio/static/css/main.31a8064c.css.map",
-    "main.4dd2e144.js.map": "/portfolio/static/js/main.4dd2e144.js.map",
+    "main.226c1d37.css.map": "/portfolio/static/css/main.226c1d37.css.map",
+    "main.e554e337.js.map": "/portfolio/static/js/main.e554e337.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31a8064c.css",
-    "static/js/main.4dd2e144.js"
+    "static/css/main.226c1d37.css",
+    "static/js/main.e554e337.js"
   ]
 }
