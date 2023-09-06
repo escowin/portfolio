@@ -1,5 +1,5 @@
 import "../assets/css/about.css";
-import profilePic from "../assets/images/profile-pic.jpg";
+import profilePic from "../assets/img/profile-pic.jpg";
 import Contact from "../components/Contact";
 import portfolioData from "../assets/data";
 

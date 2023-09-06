@@ -1,188 +1,192 @@
 /* solo applications */
 #address-book {
-    background-image: url('../../assets/images/small/address-book.jpg');
+    background-image: url('../../assets/img/sm/address-book.jpg');
 }
 
 #bluestrawberry {
-    background-image: url('../../assets/images/small/bluestrawberry.jpg');
+    background-image: url('../../assets/img/sm/bluestrawberry.jpg');
 }
 
 #coding-quiz {
-    background-image: url('../../assets/images/small/coding-quiz.jpg');
+    background-image: url('../../assets/img/sm/coding-quiz.jpg');
 }
 
 #css-portfolio {
-    background-image: url('../../assets/images/small/css-portfolio.jpg');
+    background-image: url('../../assets/img/sm/css-portfolio.jpg');
 }
 
 #day-planner {
-    background-image: url('../../assets/images/small/day-planner.jpg');
+    background-image: url('../../assets/img/sm/day-planner.jpg');
 }
 
 #employee-tracker {
-    background-image: url('../../assets/images/small/employee-tracker.jpg');
+    background-image: url('../../assets/img/sm/employee-tracker.jpg');
 }
 
 #escowinart {
-    background-image: url('../../assets/images/small/escowinart.jpg');
+    background-image: url('../../assets/img/sm/escowinart.jpg');
 }
 
 #fantastic-umbrella {
-    background-image: url('../../assets/images/small/fantastic-umbrella.jpg');
+    background-image: url('../../assets/img/sm/fantastic-umbrella.jpg');
 }
 
 #fitness-logbook {
-    background-image: url('../../assets/images/small/fitness-logbook.jpg');
+    background-image: url('../../assets/img/sm/fitness-logbook.jpg');
 }
 
 #job-tracker {
-    background-image: url('../../assets/images/medium/job-tracker.jpg');
+    background-image: url('../../assets/img/md/job-tracker.jpg');
 }
 
 #meal-prep {
-    background-image: url('../../assets/images/small/meal-prep.jpg');
+    background-image: url('../../assets/img/sm/meal-prep.jpg');
 }
 
 #note-taker {
-    background-image: url('../../assets/images/small/note-taker.jpg');
+    background-image: url('../../assets/img/sm/note-taker.jpg');
 }
 
 #password-generator {
-    background-image: url('../../assets/images/small/password-generator.jpg');
+    background-image: url('../../assets/img/sm/password-generator.jpg');
 }
 
 #portfolio-generator {
-    background-image: url('../../assets/images/small/portfolio-generator.jpg');
+    background-image: url('../../assets/img/sm/portfolio-generator.jpg');
 }
 
 #ratio-calculator {
-    background-image: url('../../assets/images/small/ratio-calculator.jpg');
+    background-image: url('../../assets/img/sm/ratio-calculator.jpg');
 }
 
 #readme-generator {
-    background-image: url('../../assets/images/small/readme-generator.jpg');
+    background-image: url('../../assets/img/sm/readme-generator.jpg');
 }
 
-#social-network {
-    background-image: url('../../assets/images/small/social-network-api.jpg');
+#social-network-api {
+    background-image: url('../../assets/img/sm/social-network-api.jpg');
 }
 
 #sun-tracker {
-    background-image: url('../../assets/images/large/sun-tracker.jpg');
+    background-image: url('../../assets/img/lg/sun-tracker.jpg');
 }
 
 #team-profile-generator {
-    background-image: url('../../assets/images/small/team-profile-generator.jpg');
+    background-image: url('../../assets/img/sm/team-profile-generator.jpg');
 }
 
 #vvh-financial {
-    background-image: url('../../assets/images/small/vvh-financial.jpg');
+    background-image: url('../../assets/img/sm/vvh-financial.jpg');
 }
 
 #weather-dashboard {
-    background-image: url('../../assets/images/small/weather-dashboard.jpg');
+    background-image: url('../../assets/img/sm/weather-dashboard.jpg');
 }
 
 /* collaborative applications */
 #auction-house {
-    background-image: url('../../assets/images/large/auction-house.jpg');
+    background-image: url('../../assets/img/lg/auction-house.jpg');
 }
 
 #raven-home {
-    background-image: url('../../assets/images/large/raven-home.jpg');
+    background-image: url('../../assets/img/lg/raven-home.jpg');
 }
 
 #smart-home {
-    background-image: url('../../assets/images/large/smart-home.jpg');
+    background-image: url('../../assets/img/lg/smart-home.jpg');
 }
 
 @media screen and (min-width: 768px) {
 
     /* screenshots | solo */
     #address-book {
-        background-image: url('../../assets/images/medium/address-book.jpg');
+        background-image: url('../../assets/img/md/address-book.jpg');
     }
 
     /* #bluestrawberry {
-        background-image: url('../../assets/images/medium/bluestrawberry.jpg');
+        background-image: url('../../assets/img/md/bluestrawberry.jpg');
     } */
 
     #coding-quiz {
-        background-image: url('../../assets/images/medium/coding-quiz.jpg');
+        background-image: url('../../assets/img/md/coding-quiz.jpg');
     }
 
     #employee-tracker {
-        background-image: url('../../assets/images/medium/employee-tracker.jpg');
+        background-image: url('../../assets/img/md/employee-tracker.jpg');
     }
 
     #escowinart {
-        background-image: url('../../assets/images/medium/escowinart.jpg');
+        background-image: url('../../assets/img/md/escowinart.jpg');
     }
 
     #fantastic-umbrella {
-        background-image: url('../../assets/images/medium/fantastic-umbrella.jpg');
+        background-image: url('../../assets/img/md/fantastic-umbrella.jpg');
     }
 
     #fitness-logbook {
-        background-image: url('../../assets/images/medium/fitness-logbook.jpg');
+        background-image: url('../../assets/img/md/fitness-logbook.jpg');
     }
 
     /* highlighted fullstack project */
     #job-tracker {
-        background-image: url('../../assets/images/medium/job-tracker.jpg');
+        background-image: url('../../assets/img/md/job-tracker.jpg');
     }
 
     #meal-prep {
-        background-image: url('../../assets/images/medium/meal-prep.jpg');
+        background-image: url('../../assets/img/md/meal-prep.jpg');
     }
 
     #note-taker {
-        background-image: url('../../assets/images/medium/note-taker.jpg');
+        background-image: url('../../assets/img/md/note-taker.jpg');
+    }
+
+    #password-generator {
+        background-image: url('../../assets/img/md/password-generator.jpg');
     }
 
     #portfolio-generator {
-        background-image: url('../../assets/images/medium/portfolio-generator.jpg');
+        background-image: url('../../assets/img/md/portfolio-generator.jpg');
     }
 
     #ratio-calculator {
-        background-image: url('../../assets/images/medium/ratio-calculator.jpg');
+        background-image: url('../../assets/img/md/ratio-calculator.jpg');
     }
 
     /* #readme-generator {
-        background-image: url('../../assets/images/medium/readme-generator.jpg');
+        background-image: url('../../assets/img/md/readme-generator.jpg');
     } */
 
     /* #social-network {
-        background-image: url('../../assets/images/medium/social-network-api.jpg');
+        background-image: url('../../assets/img/md/social-network-api.jpg');
     } */
 
     #sun-tracker {
-        background-image: url('../../assets/images/medium/sun-tracker.jpg');
+        background-image: url('../../assets/img/md/sun-tracker.jpg');
     }
 
     #team-profile-generator {
-        background-image: url('../../assets/images/medium/team-profile-generator.jpg');
+        background-image: url('../../assets/img/md/team-profile-generator.jpg');
     }
 
     #vvh-financial {
-        background-image: url('../../assets/images/medium/vvh-financial.jpg');
+        background-image: url('../../assets/img/md/vvh-financial.jpg');
     }
 
     #weather-dashboard {
-        background-image: url('../../assets/images/medium/weather-dashboard.jpg');
+        background-image: url('../../assets/img/md/weather-dashboard.jpg');
     }
 
     /* screenshots | collaborations */
     /* #auction-house {
-        background-image: url('../../assets/images/medium/auction-house.jpg');
+        background-image: url('../../assets/img/md/auction-house.jpg');
     } */
 
     /* #raven-home {
-        background-image: url('../../assets/images/medium/raven-home.jpg');
+        background-image: url('../../assets/img/md/raven-home.jpg');
     } */
 
     /* #smart-home {
-        background-image: url('../../assets/images/medium/smart-home.jpg');
+        background-image: url('../../assets/img/md/smart-home.jpg');
     } */
 
 }
@@ -191,101 +195,101 @@
 
     /* screenshots | solo */
     #address-book {
-        background-image: url('../../assets/images/large/address-book.jpg');
+        background-image: url('../../assets/img/lg/address-book.jpg');
     }
 
     #bluestrawberry {
-        background-image: url('../../assets/images/large/bluestrawberry.jpg');
+        background-image: url('../../assets/img/lg/bluestrawberry.jpg');
     }
 
     #coding-quiz {
-        background-image: url('../../assets/images/large/coding-quiz.jpg');
+        background-image: url('../../assets/img/lg/coding-quiz.jpg');
     }
 
     #css-portfolio {
-        background-image: url('../../assets/images/large/css-portfolio.jpg');
+        background-image: url('../../assets/img/lg/css-portfolio.jpg');
     }
 
     #day-planner {
-        background-image: url('../../assets/images/large/day-planner.jpg');
+        background-image: url('../../assets/img/lg/day-planner.jpg');
     }
 
     #employee-tracker {
-        background-image: url('../../assets/images/large/employee-tracker.jpg');
+        background-image: url('../../assets/img/lg/employee-tracker.jpg');
     }
 
     #escowinart {
-        background-image: url('../../assets/images/large/escowinart.jpg');
+        background-image: url('../../assets/img/lg/escowinart.jpg');
     }
 
     #fantastic-umbrella {
-        background-image: url('../../assets/images/large/fantastic-umbrella.jpg');
+        background-image: url('../../assets/img/lg/fantastic-umbrella.jpg');
     }
 
     #fitness-logbook {
-        background-image: url('../../assets/images/large/fitness-logbook.jpg');
+        background-image: url('../../assets/img/lg/fitness-logbook.jpg');
     }
 
     /* highlighted fullstack project */
     #job-tracker {
-        background-image: url('../../assets/images/large/job-tracker.jpg');
+        background-image: url('../../assets/img/lg/job-tracker.jpg');
     }
 
     #meal-prep {
-        background-image: url('../../assets/images/large/meal-prep.jpg');
+        background-image: url('../../assets/img/lg/meal-prep.jpg');
     }
 
     #note-taker {
-        background-image: url('../../assets/images/large/note-taker.jpg');
+        background-image: url('../../assets/img/lg/note-taker.jpg');
     }
 
     #password-generator {
-        background-image: url('../../assets/images/large/password-generator.jpg');
+        background-image: url('../../assets/img/lg/password-generator.jpg');
     }
 
     #portfolio-generator {
-        background-image: url('../../assets/images/large/portfolio-generator.jpg');
+        background-image: url('../../assets/img/lg/portfolio-generator.jpg');
     }
 
     #ratio-calculator {
-        background-image: url('../../assets/images/large/ratio-calculator.jpg');
+        background-image: url('../../assets/img/lg/ratio-calculator.jpg');
     }
 
     #readme-generator {
-        background-image: url('../../assets/images/large/readme-generator.jpg');
+        background-image: url('../../assets/img/lg/readme-generator.jpg');
     }
 
     #social-network {
-        background-image: url('../../assets/images/large/social-network-api.jpg');
+        background-image: url('../../assets/img/lg/social-network-api.jpg');
     }
 
     #sun-tracker {
-        background-image: url('../../assets/images/large/sun-tracker.jpg');
+        background-image: url('../../assets/img/lg/sun-tracker.jpg');
     }
 
     #team-profile-generator {
-        background-image: url('../../assets/images/large/team-profile-generator.jpg');
+        background-image: url('../../assets/img/lg/team-profile-generator.jpg');
     }
 
     #vvh-financial {
-        background-image: url('../../assets/images/large/vvh-financial.jpg');
+        background-image: url('../../assets/img/lg/vvh-financial.jpg');
     }
 
     #weather-dashboard {
-        background-image: url('../../assets/images/large/weather-dashboard.jpg');
+        background-image: url('../../assets/img/lg/weather-dashboard.jpg');
     }
 
     /* screenshots | collaborations */
     #auction-house {
-        background-image: url('../../assets/images/large/auction-house.jpg');
+        background-image: url('../../assets/img/lg/auction-house.jpg');
     }
 
     #raven-home {
-        background-image: url('../../assets/images/large/raven-home.jpg');
+        background-image: url('../../assets/img/lg/raven-home.jpg');
     }
 
     #smart-home {
-        background-image: url('../../assets/images/large/smart-home.jpg');
+        background-image: url('../../assets/img/lg/smart-home.jpg');
     }
 
 }

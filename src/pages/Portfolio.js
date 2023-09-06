@@ -50,9 +50,9 @@ function Portfolio({ selectedPortfolio }) {
               <p>
                 <FontAwesomeIcon icon={faCode} /> {project.languages}
               </p>
-              {project.dialects ? (
+              {project.libraries ? (
                 <p>
-                  <FontAwesomeIcon icon={faShareNodes} /> {project.dialects}
+                  <FontAwesomeIcon icon={faShareNodes} /> {project.libraries}
                 </p>
               ) : (
                 ""
