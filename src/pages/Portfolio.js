@@ -14,60 +14,57 @@ function Portfolio({ selectedPortfolio }) {
   const portfolio = portfolioData.applications;
 
   // the selected portfolio prop determines which portfolio will be randomized into a new array.
-  const portfolioDataRandomized = portfolio[selectedPortfolio].sort(
-    () => Math.random() - 0.5
-  );
+  const portfolioDataRandomized = portfolio[selectedPortfolio].sort(() => Math.random() - 0.5);
+
   // this new randomized array is then split into two arrays.
-  const highlightedData = portfolioDataRandomized.filter(
-    (project) => project.highlight === true
-  );
-  const nonHighlightedData = portfolioDataRandomized.filter(
-    (project) => project.highlight !== true
-  );
-  // these arrays are then recombined, highlighted projects appear first
+  const highlightedData = portfolioDataRandomized.filter((app) => app.highlight === true);
+  const nonHighlightedData = portfolioDataRandomized.filter((app) => app.highlight !== true);
+
+  // these arrays are then recombined, highlighted apps appear first
   const modifiedPortfolio = [...highlightedData, ...nonHighlightedData];
 
-  // this final array is mapped. each project object's properties are plugged in where needed within the article element. highlighted projects receive the additional 'highlight' class attribute.
+  // this final array is mapped. each app object's properties are plugged in where needed within the article element. highlighted apps receive the additional 'highlight' class attribute.
   return (
     <section className="portfolio">
-      {modifiedPortfolio.map((project, index) => (
-          <article
-            key={index}
-            id={project.id}
-            className={`project ${project.highlight ? "highlight" : ""}`}
-          >
-            <div className="project-details">
-              <h2>{formatName(project.id)}</h2>
-              <h3 className="project-links">
-                <span onClick={() => window.open(project.repo)}>Repo</span>
-                {project.liveUrl && (
-                  <span onClick={() => window.open(project.liveUrl)}>
-                    {" "}
-                    · Live url
-                  </span>
-                )}
-              </h3>
-              <p>
-                <FontAwesomeIcon icon={faCode} /> {project.languages}
-              </p>
-              {project.libraries ? (
-                <p>
-                  <FontAwesomeIcon icon={faShareNodes} /> {project.libraries}
-                </p>
-              ) : (
-                ""
+      {modifiedPortfolio.map((app, index) => (
+        <article
+          key={index}
+          id={app.id}
+          className={`app ${app.highlight ? "highlight" : ""}`}
+        >
+          <div className="app-details">
+            <h2>{formatName(app.id)}</h2>
+            <h3 className="app-links">
+              <span onClick={() => window.open(app.repo)}>Repo</span>
+              {app.liveUrl && (
+                <span onClick={() => window.open(app.liveUrl)}>
+                  {" "}
+                  · Live url
+                </span>
               )}
-              {project.database ? (
-                <p>
-                  <FontAwesomeIcon icon={faDatabase} /> {project.database}
-                </p>
-              ) : (
-                ""
-              )}
-              {}
-            </div>
-          </article>
-        ))}
+            </h3>
+            <FontAwesomeIcon icon={faCode} />
+            <p>{app.languages}</p>
+            {app.libraries ? (
+              <>
+                <FontAwesomeIcon icon={faShareNodes} />
+                <p>{app.libraries}</p>
+              </>
+            ) : (
+              ""
+            )}
+            {app.database ? (
+              <>
+                <FontAwesomeIcon icon={faDatabase} />
+                <p>{app.database}</p>
+              </>
+            ) : (
+              ""
+            )}
+            {}
+          </div>
+        </article>
+      ))}
     </section>
   );
 }

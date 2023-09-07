@@ -8,7 +8,7 @@
     grid-column: span 2;
 }
 
-.project {
+.app {
     display: flex;
     flex-direction: column;
     background-size: cover;
@@ -17,34 +17,42 @@
     border-radius: .25rem;
 }
 
-.project-details {
+.app-details {
     color: var(--offwhite);
     background-color: var(--overlay);
     border-radius: .25rem .25rem 0 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 .5rem;
 }
 
-.project-details h2,
-.project-details h3 {
+.app-details h2,
+.app-details h3 {
     padding-left: .25rem;
+    grid-column: span 2;
 }
 
-.project-details h2 {
+.app-details h2 {
     font-weight: 600;
     width: fit-content;
     border-bottom: 1px solid var(--gray);
     font-size: 1.5rem;
 }
 
-.project-links span {
+.app-details svg {
+    padding-left: .5rem;
+}
+
+.app-links span {
     transition: color 1s;
 }
 
-.project-links span:hover {
+.app-links span:hover {
     color: red;
 }
 
-.project-details p {
-    padding: 0 .75rem;
+.app-details p {
+    padding-right: .5rem;
     word-spacing: .25rem;
 }
 

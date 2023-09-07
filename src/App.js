@@ -25,7 +25,7 @@ function App() {
           case "Resume":
             return <Resume />;
           default:
-            return <About />;
+            return <Portfolio selectedPortfolio="Fullstack" />;
         }
       })()}
       </main>
