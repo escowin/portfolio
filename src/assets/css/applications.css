@@ -152,9 +152,9 @@
         background-image: url('../../assets/img/md/ratio-calculator.jpg');
     }
 
-    /* #readme-generator {
+    #readme-generator {
         background-image: url('../../assets/img/md/readme-generator.jpg');
-    } */
+    }
 
     /* #social-network {
         background-image: url('../../assets/img/md/social-network-api.jpg');
@@ -251,12 +251,12 @@
         background-image: url('../../assets/img/lg/portfolio-generator.jpg');
     }
 
-    #ratio-calculator {
+    /* #ratio-calculator {
         background-image: url('../../assets/img/lg/ratio-calculator.jpg');
-    }
+    } */
 
     #readme-generator {
-        background-image: url('../../assets/img/lg/readme-generator.jpg');
+        background-image: url('../../assets/img/md/readme-generator.jpg');
     }
 
     #social-network {
