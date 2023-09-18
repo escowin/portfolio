@@ -274,15 +274,15 @@ const portfolioData = {
           title: "central grader",
           year: 2023,
           description: [
-            "Swiftly evaluated student software assignments, offering personalized feedback for individual progress.",
-            "Produced employee onboarding material with senior staff.",
+            "Evaluated student software assignments promptly, providing personalized feedback to drive individual progress.",
+            "Collaborated with senior staff to develop comprehensive employee onboarding materials.",
           ],
         },
         {
           title: "learning assistant",
           year: 2023,
           description: [
-            "Provided real-time troubleshooting, swiftly identifying errors, and guiding solutions through course concepts to promote critical thinking.",
+            "Diagnosed and resolved technical issues in real-time, promoting critical thinking and problem-solving skills.",
           ],
         },
       ],
@@ -295,10 +295,12 @@ const portfolioData = {
       code: "express node bcrypt sequelize mysql handlebars",
       roles: [
         {
-          title: "app developer",
+          title: "software developer",
           year: 2022,
           description: [
-            "Engineered robust mvc applications through protected rest api, session management, and encryption security measures to ensure data confidentiality and integrity.",
+            "Developed secure mvc applications with rest api, session management, and data encryption.",
+            "Collaborated with agents to customize app development based on their specific needs.",
+            // "Initiated contracts for future fiscal and web application projects to support company expansion."
           ],
         },
       ],
@@ -308,7 +310,7 @@ const portfolioData = {
       location: "Austin, TX",
       url: "https://escowinart.com",
       endYear: 0,
-      code: "react adobe.cc corel.painter",
+      code: "react css git adobe.cc corel.painter",
       roles: [
         {
           title: "graphic novelist",
