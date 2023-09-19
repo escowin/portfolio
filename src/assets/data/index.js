@@ -189,7 +189,7 @@ const portfolioData = {
       {
         id: "job-tracker",
         repo: "https://github.com/escowin/job-tracker",
-        liveUrl: null,
+        liveUrl: "https://escowin-job-tracker.onrender.com/",
         languages: "graphql js css",
         libraries: "mongoose express react node jwt bcrypt",
         database: "mongodb",
@@ -199,7 +199,7 @@ const portfolioData = {
       {
         id: "note-taker",
         repo: "https://github.com/escowin/note-taker",
-        liveUrl: null,
+        liveUrl: "https://note-taker-wbu7.onrender.com/",
         languages: "js css html",
         libraries: "node express bootstrap",
         database: "api",
