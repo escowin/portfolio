@@ -179,7 +179,7 @@ const portfolioData = {
       {
         id: "fitness-logbook",
         repo: "https://github.com/escowin/fitness-logbook",
-        liveUrl: null,
+        liveUrl: "https://fitness-logbook.onrender.com/",
         languages: "js css sql handlebars",
         libraries: "node express sequelize",
         database: "mysql",
@@ -432,6 +432,7 @@ const portfolioData = {
       "jwt",
       "npm",
       "heroku",
+      "render",
       "insomnia",
       "apollo\u2009sandbox",
       // "wordpress",
