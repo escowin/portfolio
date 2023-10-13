@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
-// import CoverLetter from "./components/CoverLetter";
 
 function App() {
   const [selectedPortfolio, setSelectedPortfolio] = useState("");
