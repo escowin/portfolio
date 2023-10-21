@@ -24,9 +24,11 @@ yarn-error.log*
 
 **/ResumeHeaderB
 
-**/CoverLetter
 roles.md
 package-lock.json
 
 References.js
 references.css
+
+CoverLetter.js
+cover-letter.css
