@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.87cf2e99.css",
-    "main.js": "/portfolio/static/js/main.d974c3ac.js",
+    "main.css": "/portfolio/static/css/main.dee97b4f.css",
+    "main.js": "/portfolio/static/js/main.55301fd4.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/bluestrawberry.jpg": "/portfolio/static/media/bluestrawberry.20375edf224c7662c26e.jpg",
     "static/media/portfolio-generator.jpg": "/portfolio/static/media/portfolio-generator.c9e0b1fe95aff0b7e21e.jpg",
@@ -19,24 +19,25 @@
     "static/media/coding-quiz.jpg": "/portfolio/static/media/coding-quiz.37b1dbc5e58fbbcb6793.jpg",
     "static/media/fitness-logbook.jpg": "/portfolio/static/media/fitness-logbook.f4b3e1aad7b29f21c499.jpg",
     "static/media/job-tracker.jpg": "/portfolio/static/media/job-tracker.36c1bc14b9f867f7bf6b.jpg",
+    "static/media/artist-oeuvre.jpg": "/portfolio/static/media/artist-oeuvre.5dbda374d25f1f4a9e46.jpg",
     "static/media/team-profile-generator.jpg": "/portfolio/static/media/team-profile-generator.3ac1c4b17443bb55c21d.jpg",
+    "static/media/unit-converter.jpg": "/portfolio/static/media/unit-converter.e026fbd8fe6a7f065921.jpg",
     "static/media/password-generator.jpg": "/portfolio/static/media/password-generator.3aceeb41eda7b82d9906.jpg",
     "static/media/social-network-api.jpg": "/portfolio/static/media/social-network-api.741b9255cd9c13468471.jpg",
     "static/media/fantastic-umbrella.jpg": "/portfolio/static/media/fantastic-umbrella.9a33f4b97436259f44c9.jpg",
-    "static/media/unit-converter.jpg": "/portfolio/static/media/unit-converter.0d9c75305f4d5b118948.jpg",
-    "static/media/readme-generator.jpg": "/portfolio/static/media/readme-generator.2fb8e5f5ae06858d74df.jpg",
     "static/media/meal-prep.jpg": "/portfolio/static/media/meal-prep.6e95e24d7a20902bdd3d.jpg",
+    "static/media/readme-generator.jpg": "/portfolio/static/media/readme-generator.2fb8e5f5ae06858d74df.jpg",
     "static/media/smart-home.jpg": "/portfolio/static/media/smart-home.79e05096ab84691e4bf9.jpg",
     "static/media/auction-house.jpg": "/portfolio/static/media/auction-house.6cf9f9983b765a488959.jpg",
     "static/media/note-taker.jpg": "/portfolio/static/media/note-taker.c990a85d8d39e3d51568.jpg",
     "static/media/ratio-calculator.jpg": "/portfolio/static/media/ratio-calculator.3a9fb42cb673369904f0.jpg",
     "index.html": "/portfolio/index.html",
-    "main.87cf2e99.css.map": "/portfolio/static/css/main.87cf2e99.css.map",
-    "main.d974c3ac.js.map": "/portfolio/static/js/main.d974c3ac.js.map",
+    "main.dee97b4f.css.map": "/portfolio/static/css/main.dee97b4f.css.map",
+    "main.55301fd4.js.map": "/portfolio/static/js/main.55301fd4.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87cf2e99.css",
-    "static/js/main.d974c3ac.js"
+    "static/css/main.dee97b4f.css",
+    "static/js/main.55301fd4.js"
   ]
 }
