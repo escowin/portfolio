@@ -3,6 +3,10 @@
     background-image: url('../../assets/img/sm/address-book.jpg');
 }
 
+#artist-oeuvre {
+    background-image: url('../../assets/img/sm/artist-oeuvre.jpg');
+}
+
 #bluestrawberry {
     background-image: url('../../assets/img/sm/bluestrawberry.jpg');
 }
@@ -40,7 +44,7 @@
 }
 
 #meal-prep {
-    background-image: url('../../assets/img/lg/meal-prep.jpg');
+    background-image: url('../../assets/img/sm/meal-prep.jpg');
 }
 
 #note-taker {

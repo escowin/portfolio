@@ -99,13 +99,13 @@ const portfolioData = {
         collaboration: false,
       },
       {
-        id: "fantastic-umbrella",
-        repo: "https://github.com/escowin/fantastic-umbrella",
+        id: "artist-oeuvre",
+        repo: "https://github.com/escowin/artist-oeuvre",
         liveUrl: null,
         languages: "js",
-        libraries: "node express sequelize",
-        database: "mysql",
-        highlight: false,
+        libraries: "node express sequelize jest dotenv bcrypt session",
+        database: "postgresql",
+        highlight: true,
         collaboration: false,
       },
       {
@@ -114,7 +114,7 @@ const portfolioData = {
         liveUrl: null,
         languages: "js css",
         libraries: "node inquirer jest",
-        highlight: true,
+        highlight: false,
         collaboration: false,
       },
       {
@@ -271,28 +271,38 @@ const portfolioData = {
       code: "fullstack.flex gitlab slack zoom canvas",
       roles: [
         {
-          title: "teacher's assistant, rice university",
+          title: "support engineer",
           year: 2022,
           description: [
-            "Completed administrative and grading tasks on instructor's behalf.",
-            "Assisted students with fullstack web development coursework during office hours.",
-          ],
-        },
-        {
-          title: "central grader",
-          year: 2023,
-          description: [
+            "Diagnosed and resolved technical issues in real-time, promoting student critical thinking and problem-solving skills.",
+            "Enhanced efficiency by creating a MERN application to store and utilize solutions for commonly encountered errors, thereby improving response times.",
             "Evaluated student software assignments promptly, providing personalized feedback to drive individual progress.",
-            "Collaborated with senior staff to develop comprehensive employee onboarding materials.",
-          ],
-        },
-        {
-          title: "learning assistant",
-          year: 2023,
-          description: [
-            "Diagnosed and resolved technical issues in real-time, promoting critical thinking and problem-solving skills.",
-          ],
-        },
+            "Collaborated with senior staff to develop comprehensive employee onboarding materials."
+          ]
+        }
+        // {
+        //   title: "instructional specialist",
+        //   year: 2022,
+        //   description: [
+        //     "Completed administrative and grading tasks on instructor's behalf.",
+        //     "Assisted students with fullstack web development coursework during office hours.",
+        //   ],
+        // },
+        // {
+        //   title: "central grader",
+        //   year: 2023,
+        //   description: [
+        //     "Evaluated student software assignments promptly, providing personalized feedback to drive individual progress.",
+        //     "Collaborated with senior staff to develop comprehensive employee onboarding materials.",
+        //   ],
+        // },
+        // {
+        //   title: "learning assistant",
+        //   year: 2023,
+        //   description: [
+        //     "Diagnosed and resolved technical issues in real-time, promoting critical thinking and problem-solving skills.",
+        //   ],
+        // },
       ],
     },
     {
@@ -306,9 +316,9 @@ const portfolioData = {
           title: "software developer",
           year: 2022,
           description: [
-            "Developed secure mvc applications with rest api, session management, and data encryption.",
+            "Developed secure MVC applications with REST API, session management, and encryption for data. confidentiality and integrity.",
             "Collaborated with agents to customize app development based on their specific needs.",
-            // "Initiated contracts for future fiscal and web application projects to support company expansion."
+            "Initiated contracts for future fiscal and web application projects to support company expansion.",
           ],
         },
       ],
@@ -385,7 +395,7 @@ const portfolioData = {
   ],
   info: {
     name: "Edwin m. escobar",
-    occupation: "MERN stack web developer",
+    occupation: "Full-stack web developer",
     links: [
       { icon: "faLocationDot", string: "Austin, TX" },
       { icon: "faInbox", string: "edwin@escowinart.com" },
@@ -394,8 +404,7 @@ const portfolioData = {
       { icon: "faLinkedin", string: "https://linkedin.com/in/escowin" },
     ],
     bio: [
-      "I write scalable dry code because it makes life easier.", 
-      "Troubleshooting application development with various tech stacks has elucidated paths to make this possible through programming automated processes.",
+      "I write secure, scalable, and aesthetically pleasing DRY coded apps using a variety of tech stacks, because it makes life easier & makes me a better programmer in the process.", 
       "Looking for career advancement opportunities that align with my life goal aspirations here in Austin, TX.",
     ],
   },
