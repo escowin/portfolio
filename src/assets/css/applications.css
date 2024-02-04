@@ -11,6 +11,10 @@
     background-image: url('../../assets/img/sm/bluestrawberry.jpg');
 }
 
+#caesar-cipher {
+    background-image: url('../../assets/img/sm/caesar-cipher.jpg');
+}
+
 #coding-quiz {
     background-image: url('../../assets/img/sm/coding-quiz.jpg');
 }
@@ -115,6 +119,10 @@
         background-image: url('../../assets/img/md/bluestrawberry.jpg');
     } */
 
+    #caesar-cipher {
+        background-image: url('../../assets/img/md/caesar-cipher.jpg');
+    }
+
     #coding-quiz {
         background-image: url('../../assets/img/md/coding-quiz.jpg');
     }
@@ -208,6 +216,10 @@
 
     #bluestrawberry {
         background-image: url('../../assets/img/lg/bluestrawberry.jpg');
+    }
+
+    #caesar-cipher {
+        background-image: url('../../assets/img/lg/caesar-cipher.jpg');
     }
 
     #coding-quiz {

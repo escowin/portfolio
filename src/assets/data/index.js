@@ -11,6 +11,15 @@ const portfolioData = {
         collaboration: false,
       },
       {
+        id: "caesar-cipher",
+        repo: "https://github.com/escowin/caesar-cipher",
+        liveUrl: "https://escowin.github.io/caesar-cipher/",
+        languages: "js css html",
+        libraries: "clipboard",
+        highlight: false,
+        collaboration: false,
+      },
+      {
         id: "coding-quiz",
         repo: "https://github.com/escowin/coding-quiz",
         liveUrl: "https://escowin.github.io/coding-quiz/",
@@ -316,7 +325,7 @@ const portfolioData = {
           title: "software developer",
           year: 2022,
           description: [
-            "Developed secure MVC applications with REST API, session management, and encryption for data. confidentiality and integrity.",
+            "Developed a secure MVC web application utilizing REST API, session management, and encryption techniques to ensure the confidentiality and integrity of data stored within the company's database.",
             "Collaborated with agents to customize app development based on their specific needs.",
             "Initiated contracts for future fiscal and web application projects to support company expansion.",
           ],
