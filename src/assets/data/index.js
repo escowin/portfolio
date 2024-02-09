@@ -15,7 +15,7 @@ const portfolioData = {
         repo: "https://github.com/escowin/caesar-cipher",
         liveUrl: "https://escowin.github.io/caesar-cipher/",
         languages: "js css html",
-        libraries: "clipboard",
+        libraries: "clipboard webpack jest",
         highlight: false,
         collaboration: false,
       },
