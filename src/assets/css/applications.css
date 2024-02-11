@@ -1,4 +1,22 @@
-/* solo applications */
+/* palette      frontend            backend             fullstack  
+    red                             artist-ouvre        fitness-logbook
+    orange      sun-tracker           
+    yellow                                              address-book
+    green       ratio-calculator                        note-taker
+    blue        bluestrawberry                          job-tracker
+    violet                                              vvh financial
+    black                           readme-generator
+    white                           meal-prep
+
+                caesar-cipher       employee-tracker
+                coding-quiz         portfolio-generator
+                escowinart          readme-generator
+                password-generator  social-network-api
+                                    team-profile-generator
+                                    unit-converter
+*/
+
+
 #address-book {
     background-image: url('../../assets/img/sm/address-book.jpg');
 }
@@ -17,10 +35,6 @@
 
 #coding-quiz {
     background-image: url('../../assets/img/sm/coding-quiz.jpg');
-}
-
-#css-portfolio {
-    background-image: url('../../assets/img/sm/css-portfolio.jpg');
 }
 
 #day-planner {
@@ -91,23 +105,6 @@
     background-image: url('../../assets/img/sm/unit-converter.jpg');
 }
 
-#weather-dashboard {
-    background-image: url('../../assets/img/sm/weather-dashboard.jpg');
-}
-
-/* collaborative applications */
-#auction-house {
-    background-image: url('../../assets/img/lg/auction-house.jpg');
-}
-
-#raven-home {
-    background-image: url('../../assets/img/lg/raven-home.jpg');
-}
-
-#smart-home {
-    background-image: url('../../assets/img/lg/smart-home.jpg');
-}
-
 @media screen and (min-width: 768px) {
 
     /* screenshots | solo */
@@ -133,10 +130,6 @@
 
     #escowinart {
         background-image: url('../../assets/img/md/escowinart.jpg');
-    }
-
-    #fantastic-umbrella {
-        background-image: url('../../assets/img/md/fantastic-umbrella.jpg');
     }
 
     #fitness-logbook {
@@ -187,23 +180,6 @@
     #vvh-financial {
         background-image: url('../../assets/img/md/vvh-financial.jpg');
     }
-
-    #weather-dashboard {
-        background-image: url('../../assets/img/md/weather-dashboard.jpg');
-    }
-
-    /* screenshots | collaborations */
-    /* #auction-house {
-        background-image: url('../../assets/img/md/auction-house.jpg');
-    } */
-
-    /* #raven-home {
-        background-image: url('../../assets/img/md/raven-home.jpg');
-    } */
-
-    /* #smart-home {
-        background-image: url('../../assets/img/md/smart-home.jpg');
-    } */
 
 }
 
@@ -271,9 +247,9 @@
         background-image: url('../../assets/img/lg/portfolio-generator.jpg');
     }
 
-    /* #ratio-calculator {
+    #ratio-calculator {
         background-image: url('../../assets/img/lg/ratio-calculator.jpg');
-    } */
+    }
 
     #readme-generator {
         background-image: url('../../assets/img/md/readme-generator.jpg');
