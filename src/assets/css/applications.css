@@ -1,17 +1,17 @@
 /* palette      frontend            backend             fullstack  
     red                             artist-ouvre        fitness-logbook
     orange      sun-tracker           
-    yellow                                              address-book
+    yellow      caesar-cipher                           address-book
     green       ratio-calculator                        note-taker
     blue        bluestrawberry                          job-tracker
-    violet                                              vvh financial
-    black                           readme-generator
-    white                           meal-prep
+    violet      password-generator                      vvh financial
+    black       coding-quiz         readme-generator
+    white       escowinart          meal-prep
 
-                caesar-cipher       employee-tracker
-                coding-quiz         portfolio-generator
-                escowinart          readme-generator
-                password-generator  social-network-api
+                                    employee-tracker
+                                    portfolio-generator
+                                    readme-generator
+                                    social-network-api
                                     team-profile-generator
                                     unit-converter
 */
@@ -112,9 +112,9 @@
         background-image: url('../../assets/img/md/address-book.jpg');
     }
 
-    /* #bluestrawberry {
+    #bluestrawberry {
         background-image: url('../../assets/img/md/bluestrawberry.jpg');
-    } */
+    }
 
     #caesar-cipher {
         background-image: url('../../assets/img/md/caesar-cipher.jpg');

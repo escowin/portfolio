@@ -27,11 +27,11 @@ $ npm i;
 
 
 ## Screenshots
-![mobile](./images/small/portfolio.jpg)
+![mobile](./images/portfolio-sm.jpg)
 
-![tablet](./images/medium/portfolio.jpg)
+![tablet](./images/portfolio-md.jpg)
 
-![desktop](./images/large/portfolio.jpg)
+![desktop](./images/portfolio-lg.jpg)
 
 
 ## Author
