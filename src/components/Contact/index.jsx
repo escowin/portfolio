@@ -51,7 +51,7 @@ function Contact() {
               handleClick(contact.string);
             }}
           >
-            <IconComponent className="icon-symbol" size={18} />
+            <IconComponent className="icon-symbol" size={22} />
             <span className="text text--sm"> {formatLink(contact.string)}</span>
           </li>
         );

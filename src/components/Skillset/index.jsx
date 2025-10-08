@@ -28,7 +28,7 @@ function Skillset() {
           return (
             <React.Fragment key={i}>
               <p className="skill-type flex flex--center">
-                <IconComponent className="skill-icon" size={20} />
+                <IconComponent className="skill-icon" size={24} />
                 <span className="text text--lg"> {skill.name}</span>
               </p>
               <p key={skill.name} className="skillset text text--muted">

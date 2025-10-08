@@ -102,8 +102,14 @@
 
 /* Project links with icons */
 .app-links .inline-icon {
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     vertical-align: middle;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.app-links .link:hover .inline-icon {
+    opacity: 1;
 }
 
 /* Project complexity badge */
@@ -135,6 +141,7 @@
 
 .complexity-icon {
     flex-shrink: 0;
+    opacity: 0.9;
 }
 
 .complexity-badge--low {

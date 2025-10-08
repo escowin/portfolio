@@ -33,7 +33,7 @@ function Header(props) {
             onClick={() => handleClick("About")}
             className={`link link--hover ${"About" === selected ? "selected" : ""}`}
           >
-            <User size={16} className="nav-icon" />
+            <User size={20} className="nav-icon" />
             About
           </li>
           {portfolios.map((portfolio, index) => {
@@ -44,7 +44,7 @@ function Header(props) {
                 onClick={() => handleClick(portfolio)}
                 className={`link link--hover ${portfolio === selected ? "selected" : ""}`}
               >
-                <IconComponent size={16} className="nav-icon" />
+                <IconComponent size={20} className="nav-icon" />
                 {portfolio}
               </li>
             );

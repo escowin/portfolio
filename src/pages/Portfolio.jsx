@@ -58,10 +58,10 @@ function Portfolio({ selectedPortfolio }) {
             <div className="app-details overlay">
               <div className="project-header">
                 <div className="project-title-section">
-                  <h2 className="heading heading--secondary">{formatName(app.id)}</h2>
                   {selectedPortfolio !== "Featured" && ProjectTypeIcon && (
-                    <ProjectTypeIcon size={16} className="project-type-icon" />
+                    <ProjectTypeIcon size={24} className="project-type-icon" />
                   )}
+                  <h2 className="heading heading--secondary">{formatName(app.id)}</h2>
                 </div>
                 {app.year && (
                   <span className="project-year text text--sm">{app.year}</span>
@@ -74,13 +74,13 @@ function Portfolio({ selectedPortfolio }) {
             
             <h3 className="app-links text text--sm">
               <span className="link link--hover" onClick={() => window.open(app.repo)}>
-                <Github size={14} className="inline-icon" />
+                <Github size={22} className="inline-icon" />
                 Repo
               </span>
               {app.liveUrl && (
                 <span className="link link--hover" onClick={() => window.open(app.liveUrl)}>
                   {" "}
-                  <ExternalLink size={14} className="inline-icon" />
+                  <ExternalLink size={22} className="inline-icon" />
                   Live url
                 </span>
               )}
@@ -101,9 +101,9 @@ function Portfolio({ selectedPortfolio }) {
               <div className="project-complexity">
                 <span className="complexity-label text text--sm">Complexity:</span>
                 <span className={`complexity-badge complexity-badge--${app.complexity}`}>
-                  {app.complexity === 'low' && <CheckCircle size={12} className="complexity-icon" />}
-                  {app.complexity === 'medium' && <AlertCircle size={12} className="complexity-icon" />}
-                  {app.complexity === 'high' && <XCircle size={12} className="complexity-icon" />}
+                  {app.complexity === 'low' && <CheckCircle size={20} className="complexity-icon" />}
+                  {app.complexity === 'medium' && <AlertCircle size={20} className="complexity-icon" />}
+                  {app.complexity === 'high' && <XCircle size={20} className="complexity-icon" />}
                   {app.complexity}
                 </span>
               </div>
