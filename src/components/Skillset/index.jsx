@@ -20,15 +20,15 @@ function Skillset() {
   // mapping values from the above array retains the pattern without the need to hardcode repeating elements
   return (
     <>
-      <h2 className="resume-subhead">Technical skills</h2>
-      <section className="resume-section" id="skills">
+      <h2 className="heading heading--secondary">Technical skills</h2>
+      <section className="grid" id="skills">
         {knowledge.map((skill, i) => (
           <React.Fragment key={i}>
-            <p className="skill-type">
+            <p className="skill-type flex flex--center">
               <span className="skill-icon">{skill.icon}</span>
-              <span className="display-lg"> {skill.name}</span>
+              <span className="text text--lg"> {skill.name}</span>
             </p>
-            <p key={skill.name} className="skillset">
+            <p key={skill.name} className="skillset text text--muted">
               {skill.tech}
             </p>
           </React.Fragment>

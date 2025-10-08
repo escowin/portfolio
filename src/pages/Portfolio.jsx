@@ -19,43 +19,42 @@ function Portfolio({ selectedPortfolio }) {
 
   // this final array is mapped. each app object's properties are plugged in where needed within the article element. highlighted apps receive the additional 'highlight' class attribute.
   return (
-    <section className="portfolio">
+    <section className="portfolio grid grid--2-col">
       {modifiedPortfolio.map((app, index) => (
         <article
           key={index}
           id={app.id}
-          className={`app ${app.highlight ? "highlight" : ""}`}
+          className={`app card ${app.highlight ? "highlight" : ""}`}
         >
-          <div className="app-details">
-            <h2>{formatName(app.id)}</h2>
-            <h3 className="app-links">
-              <span onClick={() => window.open(app.repo)}>Repo</span>
+          <div className="app-details overlay">
+            <h2 className="heading heading--secondary">{formatName(app.id)}</h2>
+            <h3 className="app-links text text--sm">
+              <span className="link link--hover" onClick={() => window.open(app.repo)}>Repo</span>
               {app.liveUrl && (
-                <span onClick={() => window.open(app.liveUrl)}>
+                <span className="link link--hover" onClick={() => window.open(app.liveUrl)}>
                   {" "}
                   · Live url
                 </span>
               )}
             </h3>
-            <span className="tech-label">Languages:</span>
-            <p>{app.languages}</p>
+            <span className="tech-label text text--sm">Languages:</span>
+            <p className="text text--muted">{app.languages}</p>
             {app.libraries ? (
               <>
-                <span className="tech-label">Libraries:</span>
-                <p>{app.libraries}</p>
+                <span className="tech-label text text--sm">Libraries:</span>
+                <p className="text text--muted">{app.libraries}</p>
               </>
             ) : (
               ""
             )}
             {app.database ? (
               <>
-                <span className="tech-label">Database:</span>
-                <p>{app.database}</p>
+                <span className="tech-label text text--sm">Database:</span>
+                <p className="text text--muted">{app.database}</p>
               </>
             ) : (
               ""
             )}
-            {}
           </div>
         </article>
       ))}

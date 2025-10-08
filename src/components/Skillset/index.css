@@ -1,5 +1,4 @@
 #skills {
-    display: grid;
     grid-template-columns: 4.125rem 1fr;
     gap: .5rem 1rem;
     word-spacing: .5rem;

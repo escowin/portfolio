@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import portfolioData from "../../assets/data";
-import "./index.css";
 
 function Header(props) {
   const { name, occupation } = portfolioData.info;
@@ -15,14 +14,14 @@ function Header(props) {
   return (
     <header>
       <article id="header">
-        <h1>{name}</h1>
-        <p>{occupation}</p>
+        <h1 className="heading heading--primary">{name}</h1>
+        <p className="text text--muted">{occupation}</p>
       </article>
       <nav>
-        <ul id="navigation">
+        <ul id="navigation" className="flex flex--between">
           <li
             onClick={() => handleClick("About")}
-            className={"About" === selected ? "selected" : ""}
+            className={`link link--hover ${"About" === selected ? "selected" : ""}`}
           >
             About
           </li>
@@ -30,14 +29,14 @@ function Header(props) {
             <li
               key={index}
               onClick={() => handleClick(portfolio)}
-              className={portfolio === selected ? "selected" : ""}
+              className={`link link--hover ${portfolio === selected ? "selected" : ""}`}
             >
               {portfolio}
             </li>
           ))}
           {/* <li
             onClick={() => handleClick("Resume")}
-            className={"Resume" === selected ? "selected" : ""}
+            className={`link link--hover ${"Resume" === selected ? "selected" : ""}`}
           >
             Resumė
           </li> */}

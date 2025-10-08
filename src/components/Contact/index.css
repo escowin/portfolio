@@ -1,14 +1,10 @@
 #contact-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-left: .75rem;
     gap: .25rem;
 }
 
 .icon {
     width: fit-content;
-    display: flex;
 }
 
 .icon svg {
@@ -23,8 +19,6 @@
 
 @media screen and (min-width: 1024px) {
     #contact-links {
-        flex-direction: row;
-        justify-content: flex-start;
         gap: 1rem;
     }
 }

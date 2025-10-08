@@ -6,22 +6,22 @@ function Education() {
 
   return (
     <>
-      <h2 className="resume-subhead">Education</h2>
-      <section className="resume-section" id="education">
+      <h2 className="heading heading--secondary">Education</h2>
+      <section className="grid" id="education">
         {education.map((edu) => (
           <article key={edu.id} className="row">
-            <p className="year">{edu.year}</p>
+            <p className="year text text--muted">{edu.year}</p>
             <div className="text-wrapper">
               <div className="school-details">
-                <h3>{edu.school}</h3>
-                <p className="details display-md display-print">
+                <h3 className="heading heading--tertiary">{edu.school}</h3>
+                <p className="details text text--sm display-md display-print">
                   {edu.location}
                 </p>
               </div>
               <div className="education-details">
-                <p className="degree">
+                <p className="degree text">
                   · {edu.level}
-                  <span className="display-md display-print">
+                  <span className="text text--sm display-md display-print">
                     , {edu.major}
                   </span>
                 </p>

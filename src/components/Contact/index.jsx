@@ -39,17 +39,17 @@ function Contact() {
 
   // mapping the array's objects reduces the need to write repeating code
   return (
-    <ul id="contact-links">
+    <ul id="contact-links" className="flex flex--center">
       {modifiedContacts.map((contact, i) => (
         <li
           key={i}
-          className="icon"
+          className="icon link link--hover"
           onClick={() => {
             handleClick(contact.string);
           }}
         >
           <span className="icon-symbol">{contact.icon}</span>
-          <span> {formatLink(contact.string)}</span>
+          <span className="text text--sm"> {formatLink(contact.string)}</span>
         </li>
       ))}
     </ul>

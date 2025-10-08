@@ -8,16 +8,16 @@ function About() {
   return (
     <section className="section" id="about">
       <article id="profile-pic-wrapper">
-        <img src={profilePic} id="profile-pic" alt="profile pic" />
+        <img src={profilePic} id="profile-pic" alt="profile pic" className="rounded--full" />
       </article>
       <article id="profile-text">
-        <h2>{name}</h2>
+        <h2 className="heading heading--secondary">{name}</h2>
         <Contact />
       </article>
 
       <article id="bio">
         {bio.map((text, i) => (
-          <p key={i}>{text}</p>
+          <p key={i} className="text">{text}</p>
         ))}
       </article>
     </section>

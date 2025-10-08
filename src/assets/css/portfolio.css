@@ -1,7 +1,7 @@
 .portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: .9rem;
+    gap: var(--space-md);
 }
 
 .highlight {
@@ -14,52 +14,45 @@
     background-size: cover;
     background-position: center;
     height: 40vh;
-    border-radius: .25rem;
+    border-radius: var(--radius-sm);
 }
 
 .app-details {
     color: var(--offwhite);
     background-color: var(--overlay);
-    border-radius: .25rem .25rem 0 0;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 0 .5rem;
+    gap: 0 var(--space-sm);
 }
 
 .tech-label {
     font-weight: bold;
-    color: var(--accent);
-    font-size: 0.9rem;
+    color: var(--red);
+    font-size: var(--font-size-sm);
 }
 
 .app-details h2,
 .app-details h3 {
-    padding-left: .25rem;
+    padding-left: var(--space-xs);
     grid-column: span 2;
 }
 
-.app-details h2 {
-    font-weight: 600;
-    width: fit-content;
-    border-bottom: 1px solid var(--gray);
-    font-size: 1.5rem;
-}
-
 .app-details svg {
-    padding-left: .5rem;
+    padding-left: var(--space-sm);
 }
 
 .app-links span {
-    transition: color 1s;
+    transition: color 0.3s ease;
 }
 
 .app-links span:hover {
-    color: red;
+    color: var(--red);
 }
 
 .app-details p {
-    padding-right: .5rem;
-    word-spacing: .25rem;
+    padding-right: var(--space-sm);
+    word-spacing: var(--space-xs);
 }
 
 @media screen and (min-width: 768px) {

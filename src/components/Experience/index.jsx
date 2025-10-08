@@ -19,26 +19,26 @@ function Experience() {
 
   return (
     <>
-      <h2 className="resume-subhead">Professional experience</h2>
-      <section className="resume-section" id="experience">
+      <h2 className="heading heading--secondary">Professional experience</h2>
+      <section className="grid" id="experience">
         {experience.map((exp, i) => (
           // company row
           <article key={i} className="company-wrapper">
             <div className="company-details">
-              <h3 className="company">
+              <h3 className="company heading heading--tertiary">
                 <span
-                  className="link"
+                  className="link link--hover"
                   onClick={() => window.open(exp.url, "_blank")}
                 >
                   {exp.company}
                 </span>
-                <code>{exp.code}</code>
+                <code className="text text--sm">{exp.code}</code>
               </h3>
 
-              <p className="details location display-md display-print">
+              <p className="details location text text--sm display-md display-print">
                 {exp.location}
               </p>
-              <p className="duration">
+              <p className="duration text text--muted">
                 {duration(exp.roles[0].year, exp.endYear)}
               </p>
             </div>
@@ -48,11 +48,11 @@ function Experience() {
               {/* spread operator allows .reverse() to work */}
               {[...exp.roles].reverse().map((role, j) => (
                 <div key={j} className="position">
-                  <p className="year">{role.year}</p>
-                  <p className="title">· {role.title}</p>
+                  <p className="year text text--muted">{role.year}</p>
+                  <p className="title text">· {role.title}</p>
                   <ul className="description">
                     {role.description.map((sentence, k) => (
-                      <li key={k}>{sentence}</li>
+                      <li key={k} className="text text--sm">{sentence}</li>
                     ))}
                   </ul>
                 </div>
