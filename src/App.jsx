@@ -17,6 +17,7 @@ function App() {
         switch(selectedPortfolio) {
           case "About":
             return <About />;
+          case "Featured":
           case "Frontend":
           case "Backend":
           case "Fullstack":

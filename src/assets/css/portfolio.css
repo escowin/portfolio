@@ -66,3 +66,60 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* Enhanced project card styles */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-sm);
+}
+
+.project-year {
+    background: var(--red);
+    color: var(--offwhite);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+}
+
+.project-description {
+    margin-bottom: var(--space-sm);
+    font-style: italic;
+    color: var(--gray);
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.tech-category {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.featured-project {
+    border: 2px solid var(--red);
+    box-shadow: var(--shadow-lg);
+}
+
+.featured-project .project-year {
+    background: var(--offwhite);
+    color: var(--red);
+}
+
+/* Responsive adjustments for featured projects */
+@media screen and (min-width: 768px) {
+    .featured-project {
+        min-height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .featured-project {
+        min-height: 45vh;
+    }
+}

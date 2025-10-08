@@ -3,7 +3,7 @@ import portfolioData from "../../assets/data";
 
 function Header(props) {
   const { name, occupation } = portfolioData.info;
-  const portfolios = ["Frontend", "Backend", "Fullstack"];
+  const portfolios = ["Featured", "Frontend", "Backend", "Fullstack"];
   const [selected, setSelected] = useState(null);
 
   function handleClick(portfolio) {
