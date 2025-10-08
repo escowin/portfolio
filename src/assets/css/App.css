@@ -14,7 +14,7 @@ html {
 :root {
   /* Color System */
   --offwhite: rgb(230, 230, 230);
-  --gray: rgba(230, 230, 230, .6);
+  --gray: rgba(230, 230, 230, .75);
   --offblack: rgb(40, 40, 44);
   --overlay: rgba(40, 40, 40, .9);
   --dark-accent: rgb(145, 145, 145);

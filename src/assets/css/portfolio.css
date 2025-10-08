@@ -75,6 +75,18 @@
     margin-bottom: var(--space-sm);
 }
 
+/* Clickable project cards */
+.app.clickable {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.app.clickable:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(179, 24, 24, 0.3);
+}
+
 .project-title-section {
     display: flex;
     align-items: center;

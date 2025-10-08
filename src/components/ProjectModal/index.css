@@ -1,0 +1,315 @@
+/* Project Modal Component Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-md);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background: var(--offblack);
+  border: 1px solid rgba(230, 230, 230, 0.1);
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-xl);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.1);
+  position: sticky;
+  top: 0;
+  background: var(--offblack);
+  z-index: 10;
+}
+
+.project-title-section {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.modal-title {
+  color: var(--offwhite);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-type-icon {
+  color: var(--dark-accent);
+  opacity: 0.8;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+  padding: var(--space-xs);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: var(--offwhite);
+  background: rgba(230, 230, 230, 0.1);
+}
+
+/* Modal Sections */
+.modal-section {
+  padding: var(--space-lg);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.05);
+}
+
+.modal-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  color: var(--offwhite);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-md) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Project Description */
+.project-description {
+  color: var(--gray);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Features List */
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-sm);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--offwhite);
+  font-size: 0.95rem;
+}
+
+.feature-icon {
+  color: var(--complexity-low-text);
+  flex-shrink: 0;
+}
+
+/* Technology Breakdown */
+.tech-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.tech-category {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tech-category-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--offwhite);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tech-category-icon {
+  color: var(--dark-accent);
+}
+
+/* Project Details Grid */
+.project-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.detail-label {
+  color: var(--gray);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-value {
+  color: var(--offwhite);
+  font-size: 1rem;
+}
+
+.complexity-detail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.complexity-icon {
+  flex-shrink: 0;
+}
+
+.complexity-text {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.complexity-text.complexity-low {
+  color: var(--complexity-low-text);
+}
+
+.complexity-text.complexity-medium {
+  color: var(--complexity-medium-text);
+}
+
+.complexity-text.complexity-high {
+  color: var(--complexity-high-text);
+}
+
+/* Action Links */
+.action-links {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.action-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(230, 230, 230, 0.05);
+  border: 1px solid rgba(230, 230, 230, 0.2);
+  border-radius: var(--radius-sm);
+  color: var(--offwhite);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  min-width: 150px;
+  justify-content: center;
+}
+
+.action-link:hover {
+  background: rgba(230, 230, 230, 0.1);
+  border-color: rgba(230, 230, 230, 0.3);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.repo-link:hover {
+  background: rgba(179, 24, 24, 0.1);
+  border-color: rgba(179, 24, 24, 0.3);
+  color: var(--red);
+}
+
+.live-link:hover {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: var(--complexity-low-text);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .modal-overlay {
+    padding: var(--space-sm);
+  }
+  
+  .modal-content {
+    max-height: 95vh;
+  }
+  
+  .modal-header {
+    padding: var(--space-md);
+  }
+  
+  .modal-title {
+    font-size: 1.3rem;
+  }
+  
+  .modal-section {
+    padding: var(--space-md);
+  }
+  
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-links {
+    flex-direction: column;
+  }
+  
+  .action-link {
+    min-width: auto;
+  }
+}
+
+/* Scrollbar Styling */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(230, 230, 230, 0.1);
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(230, 230, 230, 0.3);
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(230, 230, 230, 0.5);
+}

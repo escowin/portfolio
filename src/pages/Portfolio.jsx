@@ -5,6 +5,7 @@ import "../assets/css/applications.css";
 import { formatName } from "../utils/helpers";
 import TechStack from "../components/TechStack";
 import FilterBar from "../components/FilterBar";
+import ProjectModal from "../components/ProjectModal";
 import { filterProjects, sortProjects } from "../utils/projectFilters";
 import { ExternalLink, Github, CheckCircle, AlertCircle, XCircle, Monitor, Server, Layers } from "lucide-react";
 
@@ -22,6 +23,10 @@ function Portfolio({ selectedPortfolio }) {
     sortBy: "",
     sortOrder: "asc"
   });
+  
+  // Modal state
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // For Featured section, collect all highlighted projects from all categories
   // For other sections, maintain the existing highlight logic
@@ -88,6 +93,17 @@ function Portfolio({ selectedPortfolio }) {
     setSortOptions(newSortOptions);
   };
 
+  // Modal handlers
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   // this final array is mapped. each app object's properties are plugged in where needed within the article element. highlighted apps receive the additional 'highlight' class attribute.
   return (
     <>
@@ -107,7 +123,8 @@ function Portfolio({ selectedPortfolio }) {
           <article
             key={index}
             id={app.id}
-            className={`app card ${app.highlight ? "highlight" : ""} ${selectedPortfolio === "Featured" ? "featured-project" : ""}`}
+            className={`app card ${app.highlight ? "highlight" : ""} ${selectedPortfolio === "Featured" ? "featured-project" : ""} clickable`}
+            onClick={() => handleProjectClick(app)}
           >
             <div className="app-details overlay">
               <div className="project-header">
@@ -167,6 +184,14 @@ function Portfolio({ selectedPortfolio }) {
         );
         })}
       </section>
+      
+      {/* Project Modal */}
+      <ProjectModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        category={selectedPortfolio === "Featured" ? selectedProject?.category : selectedPortfolio}
+      />
     </>
   );
 }
