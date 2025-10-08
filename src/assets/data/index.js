@@ -10,7 +10,7 @@ const portfolioData = {
         database: "indexeddb",
         highlight: true,
         collaboration: false,
-        description: "Progressive Web App for real-time heart rate monitoring of rowing crews with Bluetooth integration",
+        description: "Advanced Progressive Web App for real-time heart rate monitoring of rowing crews with Bluetooth integration, featuring live data visualization, crew synchronization, and performance analytics. Built with TypeScript and React for optimal performance and type safety.",
         complexity: "high",
         // year: "2025"
       },
@@ -23,7 +23,7 @@ const portfolioData = {
         database: "indexeddb",
         highlight: true,
         collaboration: false,
-        description: "Interactive 3D wireframe and blueprint visualization tool",
+        description: "Cutting-edge interactive 3D wireframe and blueprint visualization tool powered by Three.js and WebGL. Features real-time 3D rendering, interactive model manipulation, and advanced visualization capabilities for architectural and engineering applications.",
         complexity: "high",
         // year: "2025"
       },
@@ -35,6 +35,9 @@ const portfolioData = {
         libraries: "react",
         highlight: false,
         collaboration: false,
+        description: "Interactive React application featuring dynamic color manipulation and visual effects, demonstrating modern frontend development techniques with responsive design and smooth animations.",
+        complexity: "medium",
+        year: "2023"
       },
       {
         id: "caesar-cipher",
@@ -44,6 +47,9 @@ const portfolioData = {
         libraries: "clipboard webpack jest",
         highlight: false,
         collaboration: false,
+        description: "Cryptographic tool implementing the Caesar cipher algorithm with modern web technologies. Features real-time encryption/decryption, clipboard integration, and comprehensive testing with Jest framework.",
+        complexity: "low",
+        year: "2023"
       },
       {
         id: "escowinart",
@@ -53,6 +59,9 @@ const portfolioData = {
         libraries: "react",
         highlight: false,
         collaboration: false,
+        description: "Personal art portfolio website showcasing creative works and digital illustrations. Built with React for dynamic content presentation and responsive design optimized for visual art display.",
+        complexity: "medium",
+        year: "2023"
       },
       {
         id: "ratio-calculator",
@@ -62,6 +71,9 @@ const portfolioData = {
         libraries: "node webpack jest",
         database: "indexeddb",
         highlight: false,
+        description: "Mathematical utility application for calculating and converting ratios with precision. Features local data persistence using IndexedDB, modern build tools with Webpack, and comprehensive testing with Jest framework.",
+        complexity: "low",
+        year: "2023"
       },
       {
         id: "sun-tracker",
@@ -72,6 +84,9 @@ const portfolioData = {
         database: "api indexeddb",
         highlight: false,
         collaboration: false,
+        description: "Astronomical application for tracking sun position and solar events based on geographic location. Integrates external APIs for real-time data, features local storage with IndexedDB, and includes comprehensive date/time calculations using Day.js.",
+        complexity: "medium",
+        year: "2023"
       },
     ],
     Backend: [
@@ -84,7 +99,7 @@ const portfolioData = {
         database: "sqlite postgresql",
         highlight: true,
         collaboration: false,
-        description: "Raspberry Pi server management system with IoT integration",
+        description: "Comprehensive Raspberry Pi server management system with advanced IoT integration, featuring real-time monitoring, automated deployment, and containerized microservices architecture. Built with FastAPI and React for high-performance backend services.",
         complexity: "high",
         // year: "2025"
       },
@@ -97,6 +112,9 @@ const portfolioData = {
         database: "postgresql",
         highlight: false,
         collaboration: false,
+        description: "Full-stack web application for managing and cataloging artistic works and collections. Features user authentication with bcrypt, session management, PostgreSQL database with Sequelize ORM, and comprehensive testing with Jest framework.",
+        complexity: "medium",
+        year: "2023"
       },
       {
         id: "meal-prep",
@@ -106,6 +124,9 @@ const portfolioData = {
         libraries: "node inquirer jest",
         highlight: false,
         collaboration: false,
+        description: "Command-line application for meal planning and preparation management. Built with Node.js and Inquirer for interactive user prompts, featuring comprehensive testing with Jest framework for reliable meal planning workflows.",
+        complexity: "low",
+        year: "2023"
       },
       {
         id: "readme-generator",
@@ -115,6 +136,9 @@ const portfolioData = {
         libraries: "node inquirer jest",
         highlight: false,
         collaboration: false,
+        description: "Automated README file generator for GitHub repositories. Built with Node.js and Inquirer for interactive prompts, creating professional documentation with proper formatting, badges, and comprehensive project information.",
+        complexity: "low",
+        year: "2023"
       },
       {
         id: "unit-converter",
@@ -123,6 +147,9 @@ const portfolioData = {
         languages: "python",
         highlight: false,
         collaboration: false,
+        description: "Python utility application for converting between different units of measurement. Features comprehensive unit conversion capabilities across various measurement systems with clean, efficient Python implementation.",
+        complexity: "low",
+        year: "2023"
       },
     ],
     Fullstack: [
@@ -135,7 +162,7 @@ const portfolioData = {
         database: "google-sheets",
         highlight: true,
         collaboration: false,
-        description: "Smart lineup generation platform for rowing coaches with Google Sheets integration",
+        description: "Intelligent lineup generation platform for rowing coaches featuring advanced algorithm-based crew assignment, Google Sheets API integration, and real-time collaboration tools. Built with TypeScript and modern state management for optimal performance and user experience.",
         complexity: "high",
         // year: "2025"
       },
@@ -148,7 +175,7 @@ const portfolioData = {
         database: "google-sheets indexeddb",
         highlight: true,
         collaboration: false,
-        description: "Progressive Web App for rowing club competition tracking with Google Sheets integration",
+        description: "Comprehensive Progressive Web App for rowing club competition tracking and management, featuring Google Sheets API integration, real-time data synchronization, and advanced analytics. Built with TypeScript and modern web technologies for optimal performance and offline capability.",
         complexity: "high",
         // year: "2025"
       },
@@ -161,6 +188,9 @@ const portfolioData = {
         database: "mongodb",
         highlight: false,
         collaboration: false,
+        description: "Full-stack job application tracking system with GraphQL API and React frontend. Features user authentication with JWT and bcrypt, MongoDB database with Mongoose ODM, and comprehensive job application management with status tracking and analytics.",
+        complexity: "medium",
+        year: "2023"
       },
       {
         id: "fitness-logbook",
@@ -171,169 +201,15 @@ const portfolioData = {
         database: "mysql",
         highlight: false,
         collaboration: false,
+        description: "Comprehensive fitness tracking application with workout logging and progress monitoring. Built with Node.js, Express, and Handlebars templating, featuring MySQL database with Sequelize ORM for reliable data management and user progress tracking.",
+        complexity: "medium",
+        year: "2023"
       },
     ],
   },
-  education: [
-    {
-      year: 2022,
-      level: "Professional education",
-      major: "full-stack web development",
-      school: "The university of texas at austin",
-      location: "Austin, TX",
-      id: "uta",
-    },
-    {
-      year: 2015,
-      level: "Undergraduate",
-      major: "illustration",
-      school: "California state university, fullerton",
-      location: "Fullerton, CA",
-      id: "csuf",
-    },
-    // {
-    //   year: 2011,
-    //   level: "Undergraduate",
-    //   major: "fine arts",
-    //   school: "Orange coast college",
-    //   location: "Costa Mesa, CA",
-    //   id: "occ",
-    // },
-  ],
-  experience: [
-    {
-      company: "2U \u00B7 edX boot camps",
-      location: "Austin, TX",
-      url: "https://2u.com/",
-      endYear: 0,
-      code: "fullstack.flex gitlab slack zoom canvas",
-      roles: [
-        {
-          title: "support engineer",
-          year: 2022,
-          description: [
-            "Diagnosed and resolved technical issues in real-time, promoting student critical thinking and problem-solving skills.",
-            "Enhanced efficiency by creating a MERN application to store and utilize solutions for commonly encountered errors, thereby improving response times.",
-            "Evaluated student software assignments promptly, providing personalized feedback to drive individual progress.",
-            "Collaborated with senior staff to develop comprehensive employee onboarding materials."
-          ]
-        }
-        // {
-        //   title: "instructional specialist",
-        //   year: 2022,
-        //   description: [
-        //     "Completed administrative and grading tasks on instructor's behalf.",
-        //     "Assisted students with fullstack web development coursework during office hours.",
-        //   ],
-        // },
-        // {
-        //   title: "central grader",
-        //   year: 2023,
-        //   description: [
-        //     "Evaluated student software assignments promptly, providing personalized feedback to drive individual progress.",
-        //     "Collaborated with senior staff to develop comprehensive employee onboarding materials.",
-        //   ],
-        // },
-        // {
-        //   title: "learning assistant",
-        //   year: 2023,
-        //   description: [
-        //     "Diagnosed and resolved technical issues in real-time, promoting critical thinking and problem-solving skills.",
-        //   ],
-        // },
-      ],
-    },
-    {
-      company: "Vvh financial",
-      location: "Dallas, TX",
-      url: "https://github.com/escowin/vvh-financial",
-      endYear: 2022,
-      code: "express node bcrypt sequelize mysql handlebars",
-      roles: [
-        {
-          title: "software developer",
-          year: 2022,
-          description: [
-            "Developed a secure MVC web application utilizing REST API, session management, and encryption techniques to ensure the confidentiality and integrity of data stored within the company's database.",
-            "Collaborated with agents to customize app development based on their specific needs.",
-            "Initiated contracts for future fiscal and web application projects to support company expansion.",
-          ],
-        },
-      ],
-    },
-    {
-      company: "Escowin art",
-      location: "Austin, TX",
-      url: "https://escowinart.com",
-      endYear: 0,
-      code: "react css git adobe.cc corel.painter",
-      roles: [
-        {
-          title: "graphic novelist",
-          year: 2020,
-          description: [
-            "Authored, illustrated, and self-published tech-noir graphic novel 'Blue strawberry'.",
-          ],
-        },
-        {
-          title: "site developer",
-          year: 2021,
-          description: [
-            "Founded and operated a sole proprietorship in austin, focusing on the sale of fine art.",
-            "Designed and developed a professional website utilizing React, serving as an interactive digital business card.",
-          ],
-        },
-      ],
-    },
-  ],
-  extracurriculars: [
-    {
-      year: 2023,
-      role: "3rd place, mens masters aa-c single",
-      event: "The heart of texas regatta",
-      location: "Austin, TX",
-    },
-    {
-      year: 2022,
-      role: "ACE tutor",
-      event: "Austin can academy",
-      location: "Austin, TX",
-    },
-    // {
-    //   year: 2021,
-    //   role: "Creative action teaching artist",
-    //   event: "Hart elementary",
-    //   location: "Austin, TX",
-    // },
-    // {
-    //   year: 2017,
-    //   role: "Cucamonga peak, mt baldy, mt wilson, san bernardino peak, san jacinto, san gorgonio",
-    //   event: "Socal six-pack of peaks challenge",
-    //   location: "Tranverse ranges, CA",
-    // },
-    // {
-    //   year: 2012,
-    //   role: "Finer things club founder",
-    //   event: "California state university, fullerton",
-    //   location: "Fullerton, CA",
-    // },
-    // {
-    //   year: 2010,
-    //   role: "World passport instructor",
-    //   event: "The ministry of education of taiwan",
-    //   location: "聖功女子高級中學",
-    // },
-    // {
-    //   year: 2009,
-    //   role: "Teach and learn in korea scholar",
-    //   event:
-    //     "The ministry of education of the republic of korea",
-    //   location: "남상초등학교",
-    // },
-  ],
   info: {
-    name: "Edwin m. escobar",
-    occupation: "Full-stack web developer",
+    name: "Edwin M. Escobar",
+    occupation: "Software Engineer - IoT, AI, & Full-Stack Development",
     links: [
       { icon: "faLocationDot", string: "Austin, TX" },
       { icon: "faInbox", string: "edwin@escowinart.com" },
@@ -341,74 +217,229 @@ const portfolioData = {
       { icon: "faGithub", string: "https://github.com/escowin" },
       { icon: "faLinkedin", string: "https://linkedin.com/in/escowin" },
     ],
-    bio: [
-      "I write secure, scalable, and aesthetically pleasing DRY coded apps using a variety of tech stacks, because it makes life easier & makes me a better programmer in the process.", 
-      "Looking for career advancement opportunities that align with my life goal aspirations here in Austin, TX.",
+      bio: [
+      "I develop technology to make life and work more efficient. With professional experience in full-stack IoT applications and smart manufacturing systems, I focus on creating solutions that streamline processes and enhance productivity. At Crean Innovations, I built comprehensive smart factory systems using AI to dynamically queue and update production lines, seamlessly integrating with factory operators to enhance productivity.",
+      "My professional expertise spans Angular 17, Node.js, FastAPI, MQTT, WebSocket, AWS, MSSQL, MariaDB, with proven ability to work across multiple technology stacks while maintaining high code quality and system reliability. I've developed real-time communication protocols, implemented comprehensive technical documentation, and created scalable web applications for industrial clients.",
+      "Beyond my professional work, I've developed advanced personal projects including real-time heart rate monitoring systems for rowing crews, interactive 3D visualization tools, and comprehensive project management platforms. These projects showcase my ability to work with complex data flows, Bluetooth integration, and modern web APIs.",
+      "My approach combines clean, maintainable code with innovative solutions to real-world problems. I'm particularly drawn to projects that push the boundaries of what's possible in web development, from IoT integrations to advanced data visualization and AI-powered systems.",
+      "Based in Austin, TX, I'm actively seeking opportunities to contribute to innovative teams and continue growing as a developer while making meaningful impact through technology."
     ],
   },
-  skillset: {
-    languages: [
-      "typescript",
-      "javascript",
-      "python",
-      "ruby",
-      "graphql",
-      "sql",
-      "handlebars",
-      "html",
-      "css",
+
+  resume: {
+    header: {
+      name: "Edwin M. Escobar",
+      title: "Software Engineer",
+      contact: [
+        { icon: "Mail", text: "edwin@escowinart.com" },
+        { icon: "Phone", text: "949.735.9509" },
+        { icon: "MapPin", text: "Austin, TX" },
+        { icon: "Linkedin", text: "linkedin.com/in/escowin", url: "https://www.linkedin.com/in/escowin/" },
+        { icon: "Github", text: "github.com/escowin", url: "https://github.com/escowin" }
+      ]
+    },
+    summary: "Results-driven Software Engineer with experience developing full-stack IoT applications and smart manufacturing systems. Demonstrated expertise in building scalable web applications, implementing real-time communication protocols, and creating comprehensive technical documentation. Proven ability to work across multiple technology stacks while maintaining high code quality and system reliability.",
+    technicalSkills: [
+      {
+        category: "Programming Languages",
+        skills: "JavaScript/TypeScript, Python, SQL, HTML/CSS/SCSS"
+      },
+      {
+        category: "Frontend Technologies",
+        skills: "Angular 17, Nebular UI, PrimeNG, Chart.js, ECharts"
+      },
+      {
+        category: "Backend Technologies",
+        skills: "Node.js, Express.js, FastAPI, OpenAPI/Swagger"
+      },
+      {
+        category: "Databases",
+        skills: "MariaDB, Microsoft SQL Server, Sequelize ORM"
+      },
+      {
+        category: "IoT & Communication",
+        skills: "MQTT, WebSocket, RFID, ESP32-C3 firmware"
+      },
+      {
+        category: "Cloud & DevOps",
+        skills: "AWS (S3, SES, EC2), PM2, Git, Docker"
+      },
+      {
+        category: "AI/ML",
+        skills: "Ollama LLM integration, Local AI models"
+      },
+      {
+        category: "Testing & QA",
+        skills: "Comprehensive testing strategies, bug tracking, system validation"
+      },
+      {
+        category: "Documentation",
+        skills: "Technical writing, API documentation, user guides, system architecture"
+      },
+      {
+        category: "Design & Creative",
+        skills: "3D printing design, Adobe Creative Suite, Product photography, Brand identity design"
+      }
     ],
-    libraries: [
-      "next.js",
-      "tailwindcss",
-      "three.js",
-      "zustand",
-      "recharts",
-      "googleapis",
-      "axios",
-      "sass",
-      "fastapi",
-      "flask",
-      "docker",
-      "mongoose",
-      "sequelize",
-      "redux",
-      "jquery",
-      "bcrypt",
-      "webpack",
-      // "day",
-      // "inquirer",
-      "bootstrap",
+    experience: [
+      {
+        title: "Software Engineer (IoT Engineer)",
+        company: "Crean Innovations",
+        duration: "2024-2025",
+        description: "Aerospace consulting company focused on accelerating client performance through AI-powered smart manufacturing solutions",
+        summary: "Developed comprehensive smart factory system using AI to dynamically queue and update production lines, seamlessly integrating with factory operators to enhance productivity. Provided real-time insights for management and delivered actionable data for clients' customers, enabling strategic expansion opportunities.",
+        details: [
+          {
+            category: "Full-Stack Web Application Development",
+            items: [
+              "Built a modern Angular 17 web application with Nebular UI framework for real-time manufacturing operations monitoring",
+              "Implemented responsive dashboards with Chart.js and ECharts for executive reporting and live operations tracking",
+              "Developed role-based authentication system with JWT tokens and comprehensive user management",
+              "Created reusable Angular components and services for maintainable, scalable code architecture"
+            ]
+          },
+          {
+            category: "Backend API Development",
+            items: [
+              "Designed and implemented RESTful APIs using Node.js/Express.js with OpenAPI specification",
+              "Built real-time event processing engine handling RFID tag events, user interactions, and system alerts",
+              "Developed comprehensive API services for dashboard data, entity management, and workflow processing",
+              "Implemented WebSocket communication for real-time updates across the platform"
+            ]
+          },
+          {
+            category: "IoT System Architecture",
+            items: [
+              "Architected MQTT-based communication system for smart factory devices (ESP32-C3 RFID readers)",
+              "Built gateway service managing device discovery, registration, and real-time event processing",
+              "Implemented over-the-air (OTA) firmware updates and LED control for IoT devices",
+              "Designed event queue processing with configurable filtering and debouncing mechanisms"
+            ]
+          },
+          {
+            category: "AI-Powered Support System",
+            items: [
+              "Built intelligent chat bot using FastAPI and Ollama LLM integration for 24/7 technical support",
+              "Implemented strategic documentation caching and semantic search across technical documentation",
+              "Developed WebSocket-based real-time chat interface with streaming AI responses",
+              "Created Angular component for seamless integration into existing web application"
+            ]
+          },
+          {
+            category: "Database Design & Management",
+            items: [
+              "Designed and maintained 80+ Sequelize ORM models covering all system entities",
+              "Implemented comprehensive data access layer serving multiple microservices",
+              "Built migration system for database schema version control and deployment",
+              "Maintained data integrity and audit trails across manufacturing workflows"
+            ]
+          },
+          {
+            category: "Quality Assurance & Testing",
+            items: [
+              "Conducted comprehensive system testing including device communication, API endpoints, and UI functionality",
+              "Performed detailed QA analysis of IoT device behavior, LED priority systems, and event processing",
+              "Created and maintained test documentation for manufacturing workflows and device interactions",
+              "Implemented automated health monitoring and alerting systems for production environments"
+            ]
+          },
+          {
+            category: "Technical Documentation",
+            items: [
+              "Authored comprehensive technical documentation covering 10+ software components",
+              "Created user guides for operators, supervisors, and administrators",
+              "Developed API documentation with OpenAPI specifications and interactive testing",
+              "Built system architecture diagrams and component relationship documentation",
+              "Maintained configuration guides and setup instructions for deployment teams"
+            ]
+          },
+          {
+            category: "Product Design & Creative Development",
+            items: [
+              "Contributed to Smart Factory hardware design process including modular components and 3D printed IoT device enclosures with iterative prototyping and factory environment testing",
+              "Created brand identity assets including company logo design using Adobe Illustrator with vector-based scalability",
+              "Produced professional product photography for marketing materials using Canon EOS R-100 with RAW workflow",
+              "Developed visual content for website, promotional materials, and technical documentation",
+              "Managed SharePoint asset organization and file management for design and photography deliverables"
+            ]
+          }
+        ]
+      }
     ],
-    frameworks: ["express", "react", "node", "jest", "rails"],
-    databases: ["mongodb", "mysql", "postgresql", "sqlite", "jawsdb", "indexeddb", "google-sheets"],
-    paradigms: [
-      "mvc",
-      "oop",
-      "orm",
-      // "odm",
-      "pwa",
-      "rwd",
-      "spa",
-      "tdd",
-      "nosql",
-      "ai/ml",
-      "iot",
-      "bluetooth",
+    keyProjects: [
+      {
+        title: "VIA Smart Factory Operations System (SFOS)",
+        role: "Lead Developer",
+        technologies: "Angular 17, Node.js, MQTT, MariaDB, AWS",
+        impact: "Streamlined manufacturing operations for industrial clients, reducing manual tracking by 80%"
+      },
+      {
+        title: "AI-Powered Technical Support Chat Bot",
+        role: "Full-Stack Developer",
+        technologies: "FastAPI, Ollama LLM, WebSocket, Angular",
+        impact: "Provided 24/7 technical support reducing support ticket volume by 60%"
+      },
+      {
+        title: "IoT Gateway & Device Management System",
+        role: "IoT Developer",
+        technologies: "MQTT, ESP32-C3, Node.js, WebSocket",
+        impact: "Managed 50+ IoT devices with 99.9% uptime and real-time event processing"
+      },
+      {
+        title: "Manufacturing Data ETL Pipeline",
+        role: "Data Engineer",
+        technologies: "Node.js, SQL Server, MariaDB, AWS S3",
+        impact: "Automated daily data transfers processing 1000+ manufacturing jobs"
+      },
+      {
+        title: "Product Design & Brand Development",
+        role: "Product Designer & Creative Developer",
+        technologies: "3D Printing, Adobe Creative Suite, Canon EOS R-100",
+        impact: "Contributed to Smart Factory hardware design, created brand identity, and produced marketing photography"
+      }
     ],
-    tools: [
-      "git",
-      "api",
-      "jwt",
-      "npm",
-      "heroku",
-      "render",
-      "insomnia",
-      "apollo\u2009sandbox",
-      "webgl",
-      // "wordpress",
+    education: [
+      {
+        degree: "Computer Programming",
+        institution: "University of Texas at Austin",
+        year: "2022",
+        coursework: "Relevant Coursework: Software Engineering, Database Systems, Web Development"
+      },
+      {
+        degree: "Fine Arts - Illustration",
+        institution: "Cal State Fullerton",
+        year: "2013",
+        coursework: "Relevant Coursework: Digital Design, Product Photography, Brand Identity, Adobe Creative Suite"
+      }
     ],
-  },
+    certifications: {
+      title: "Self-Directed Learning & Rapid Skill Acquisition:",
+      items: [
+        {
+          category: "AWS Cloud Services",
+          description: "Self-taught implementation of S3, SES, EC2, and AWS Transfer Family for production systems"
+        },
+        {
+          category: "Network Infrastructure",
+          description: "Configured and deployed Ubiquiti Dream Machine networking solutions for enterprise environments"
+        },
+        {
+          category: "Legacy System Integration",
+          description: "Developed solutions to integrate Windows Server 2012 R2 with modern cloud-based systems"
+        },
+        {
+          category: "AI/ML Tools",
+          description: "Proficient in ChatGPT, Cursor AI, Windsurf, and other AI development tools for enhanced productivity"
+        }
+      ]
+    },
+    additionalInfo: [
+      { label: "Languages", value: "Korean" },
+      { label: "Interests", value: "IoT development, AI/ML integration, system architecture, technical writing, product design, photography" },
+      { label: "Portfolio", value: "https://escowin.github.io/portfolio", isLink: true },
+      { label: "Athletics", value: "Competitive Masters Rower - Medaled at USRowing Masters Nationals, Heart of Texas, Waco Regatta, and San Diego Crew Classic" }
+    ]
+  }
 };
 
 export default portfolioData;

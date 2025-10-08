@@ -10,10 +10,6 @@
 */
 
 
-#address-book {
-    background-image: url('../../assets/img/sm/address-book.jpg');
-}
-
 #artist-oeuvre {
     background-image: url('../../assets/img/sm/artist-oeuvre.jpg');
 }
@@ -26,24 +22,12 @@
     background-image: url('../../assets/img/sm/caesar-cipher.jpg');
 }
 
-#coding-quiz {
-    background-image: url('../../assets/img/sm/coding-quiz.jpg');
-}
-
-#day-planner {
-    background-image: url('../../assets/img/sm/day-planner.jpg');
-}
-
-#employee-tracker {
-    background-image: url('../../assets/img/sm/employee-tracker.jpg');
+#crewssignment {
+    background-image: url('../../assets/img/sm/crewssignment.png');
 }
 
 #escowinart {
     background-image: url('../../assets/img/sm/escowinart.jpg');
-}
-
-#fantastic-umbrella {
-    background-image: url('../../assets/img/sm/fantastic-umbrella.jpg');
 }
 
 #fitness-logbook {
@@ -58,16 +42,8 @@
     background-image: url('../../assets/img/sm/meal-prep.jpg');
 }
 
-#note-taker {
-    background-image: url('../../assets/img/sm/note-taker.jpg');
-}
-
-#password-generator {
-    background-image: url('../../assets/img/sm/password-generator.jpg');
-}
-
-#portfolio-generator {
-    background-image: url('../../assets/img/sm/portfolio-generator.jpg');
+#pi-server {
+    background-image: url('../../assets/img/sm/pi-server.png');
 }
 
 #ratio-calculator {
@@ -78,33 +54,25 @@
     background-image: url('../../assets/img/sm/readme-generator.jpg');
 }
 
-#social-network-api {
-    background-image: url('../../assets/img/sm/social-network-api.jpg');
+#stroke-rate {
+    background-image: url('../../assets/img/sm/stroke-rate.png');
 }
 
 #sun-tracker {
     background-image: url('../../assets/img/lg/sun-tracker.jpg');
 }
 
-#team-profile-generator {
-    background-image: url('../../assets/img/sm/team-profile-generator.jpg');
-}
-
-#vvh-financial {
-    background-image: url('../../assets/img/sm/vvh-financial.jpg');
-}
-
 #unit-converter {
     background-image: url('../../assets/img/sm/unit-converter.jpg');
+}
+
+#wireframe-blueprint {
+    background-image: url('../../assets/img/sm/wireframe-blueprint.png');
 }
 
 @media screen and (min-width: 768px) {
 
     /* screenshots | solo */
-    #address-book {
-        background-image: url('../../assets/img/md/address-book.jpg');
-    }
-
     #bluestrawberry {
         background-image: url('../../assets/img/md/bluestrawberry.jpg');
     }
@@ -113,12 +81,8 @@
         background-image: url('../../assets/img/md/caesar-cipher.jpg');
     }
 
-    #coding-quiz {
-        background-image: url('../../assets/img/md/coding-quiz.jpg');
-    }
-
-    #employee-tracker {
-        background-image: url('../../assets/img/md/employee-tracker.jpg');
+    #crewssignment {
+        background-image: url('../../assets/img/md/crewssignment.png');
     }
 
     #escowinart {
@@ -129,7 +93,6 @@
         background-image: url('../../assets/img/md/fitness-logbook.jpg');
     }
 
-    /* highlighted fullstack project */
     #job-tracker {
         background-image: url('../../assets/img/md/job-tracker.jpg');
     }
@@ -138,16 +101,8 @@
         background-image: url('../../assets/img/md/meal-prep.jpg');
     }
 
-    #note-taker {
-        background-image: url('../../assets/img/md/note-taker.jpg');
-    }
-
-    #password-generator {
-        background-image: url('../../assets/img/md/password-generator.jpg');
-    }
-
-    #portfolio-generator {
-        background-image: url('../../assets/img/md/portfolio-generator.jpg');
+    #pi-server {
+        background-image: url('../../assets/img/md/pi-server.png');
     }
 
     #ratio-calculator {
@@ -158,20 +113,19 @@
         background-image: url('../../assets/img/md/readme-generator.jpg');
     }
 
-    /* #social-network {
-        background-image: url('../../assets/img/md/social-network-api.jpg');
-    } */
-
+    #stroke-rate {
+        background-image: url('../../assets/img/md/stroke-rate.png');
+    }
     #sun-tracker {
         background-image: url('../../assets/img/md/sun-tracker.jpg');
     }
 
-    #team-profile-generator {
-        background-image: url('../../assets/img/md/team-profile-generator.jpg');
+    #unit-converter {
+        background-image: url('../../assets/img/md/unit-converter.jpg');
     }
 
-    #vvh-financial {
-        background-image: url('../../assets/img/md/vvh-financial.jpg');
+    #wireframe-blueprint {
+        background-image: url('../../assets/img/md/wireframe-blueprint.png');
     }
 
 }
@@ -179,10 +133,6 @@
 @media screen and (min-width: 1024px) {
 
     /* screenshots | solo */
-    #address-book {
-        background-image: url('../../assets/img/lg/address-book.jpg');
-    }
-
     #bluestrawberry {
         background-image: url('../../assets/img/lg/bluestrawberry.jpg');
     }
@@ -191,28 +141,16 @@
         background-image: url('../../assets/img/lg/caesar-cipher.jpg');
     }
 
-    #coding-quiz {
-        background-image: url('../../assets/img/lg/coding-quiz.jpg');
+    #crewssignment {
+        background-image: url('../../assets/img/lg/crewssignment.png');
     }
 
-    #css-portfolio {
-        background-image: url('../../assets/img/lg/css-portfolio.jpg');
-    }
-
-    #day-planner {
-        background-image: url('../../assets/img/lg/day-planner.jpg');
-    }
-
-    #employee-tracker {
-        background-image: url('../../assets/img/lg/employee-tracker.jpg');
+    #pi-server {
+        background-image: url('../../assets/img/lg/pi-server.jpg');
     }
 
     #escowinart {
         background-image: url('../../assets/img/lg/escowinart.jpg');
-    }
-
-    #fantastic-umbrella {
-        background-image: url('../../assets/img/lg/fantastic-umbrella.jpg');
     }
 
     #fitness-logbook {
@@ -228,16 +166,8 @@
         background-image: url('../../assets/img/lg/meal-prep.jpg');
     }
 
-    #note-taker {
-        background-image: url('../../assets/img/lg/note-taker.jpg');
-    }
-
-    #password-generator {
-        background-image: url('../../assets/img/lg/password-generator.jpg');
-    }
-
-    #portfolio-generator {
-        background-image: url('../../assets/img/lg/portfolio-generator.jpg');
+    #pi-server {
+        background-image: url('../../assets/img/lg/pi-server.png');
     }
 
     #ratio-calculator {
@@ -248,37 +178,20 @@
         background-image: url('../../assets/img/md/readme-generator.jpg');
     }
 
-    #social-network {
-        background-image: url('../../assets/img/lg/social-network-api.jpg');
+    #stroke-rate {
+        background-image: url('../../assets/img/lg/stroke-rate.png');
     }
 
     #sun-tracker {
         background-image: url('../../assets/img/lg/sun-tracker.jpg');
     }
 
-    #team-profile-generator {
-        background-image: url('../../assets/img/lg/team-profile-generator.jpg');
+    #unit-converter {
+        background-image: url('../../assets/img/lg/unit-converter.jpg');
     }
 
-    #vvh-financial {
-        background-image: url('../../assets/img/lg/vvh-financial.jpg');
-    }
-
-    #weather-dashboard {
-        background-image: url('../../assets/img/lg/weather-dashboard.jpg');
-    }
-
-    /* screenshots | collaborations */
-    #auction-house {
-        background-image: url('../../assets/img/lg/auction-house.jpg');
-    }
-
-    #raven-home {
-        background-image: url('../../assets/img/lg/raven-home.jpg');
-    }
-
-    #smart-home {
-        background-image: url('../../assets/img/lg/smart-home.jpg');
+    #wireframe-blueprint {
+        background-image: url('../../assets/img/lg/wireframe-blueprint.png');
     }
 
 }

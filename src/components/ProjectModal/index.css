@@ -90,6 +90,10 @@
 .modal-section {
   padding: var(--space-lg);
   border-bottom: 1px solid rgba(230, 230, 230, 0.05);
+
+  & .section-title {
+    color: var(--offwhite) !important;
+  }
 }
 
 .modal-section:last-child {

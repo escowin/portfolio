@@ -15,7 +15,7 @@
 .icon-symbol {
     font-size: 1.25rem;
     margin-right: 0.5rem;
-    color: var(--dark-accent);
+    color: var(--offblack);
     transition: color 0.2s ease;
 }
 

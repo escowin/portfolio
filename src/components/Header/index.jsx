@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import portfolioData from "../../assets/data";
-import { User, Star, Monitor, Server, Layers } from "lucide-react";
+import { User, Star, Monitor, Server, Layers, FileText } from "lucide-react";
 
 function Header(props) {
   const { name, occupation } = portfolioData.info;
@@ -65,12 +65,17 @@ function Header(props) {
               </li>
             );
           })}
-          {/* <li
+          <li
             onClick={() => handleClick("Resume")}
             className={`link link--hover ${"Resume" === selected ? "selected" : ""}`}
+            role="menuitem"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && handleClick("Resume")}
+            aria-current={selected === "Resume" ? "page" : undefined}
           >
-            Resumė
-          </li> */}
+            <FileText size={20} className="nav-icon" aria-hidden="true" />
+            Resume
+          </li>
         </ul>
       </nav>
     </header>
