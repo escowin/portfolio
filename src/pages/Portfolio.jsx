@@ -1,13 +1,27 @@
+import React, { useState, useMemo } from "react";
 import portfolioData from "../assets/data";
 import "../assets/css/portfolio.css";
 import "../assets/css/applications.css";
 import { formatName } from "../utils/helpers";
 import TechStack from "../components/TechStack";
+import FilterBar from "../components/FilterBar";
+import { filterProjects, sortProjects } from "../utils/projectFilters";
 import { ExternalLink, Github, CheckCircle, AlertCircle, XCircle, Monitor, Server, Layers } from "lucide-react";
 
 function Portfolio({ selectedPortfolio }) {
   // portfolio consists of frontend, backend, and fullstack applications
   const portfolio = portfolioData.applications;
+  
+  // Filter and sort state
+  const [filters, setFilters] = useState({
+    searchTerm: "",
+    tech: "",
+    complexity: ""
+  });
+  const [sortOptions, setSortOptions] = useState({
+    sortBy: "",
+    sortOrder: "asc"
+  });
 
   // For Featured section, collect all highlighted projects from all categories
   // For other sections, maintain the existing highlight logic
@@ -44,10 +58,48 @@ function Portfolio({ selectedPortfolio }) {
     "Fullstack": Layers
   };
 
+  // Apply filtering and sorting to the portfolio
+  const filteredAndSortedPortfolio = useMemo(() => {
+    let processedPortfolio = modifiedPortfolio;
+    
+    // Apply filters
+    if (filters.searchTerm || filters.tech || filters.complexity) {
+      processedPortfolio = filterProjects(processedPortfolio, filters);
+    }
+    
+    // Apply sorting
+    if (sortOptions.sortBy) {
+      processedPortfolio = sortProjects(processedPortfolio, sortOptions);
+    }
+    
+    return processedPortfolio;
+  }, [modifiedPortfolio, filters, sortOptions]);
+
+  // Filter change handlers
+  const handleFilterChange = (newFilters) => {
+    setFilters(prev => ({ ...prev, ...newFilters }));
+  };
+
+  const handleSearchChange = (searchTerm) => {
+    setFilters(prev => ({ ...prev, searchTerm }));
+  };
+
+  const handleSortChange = (newSortOptions) => {
+    setSortOptions(newSortOptions);
+  };
+
   // this final array is mapped. each app object's properties are plugged in where needed within the article element. highlighted apps receive the additional 'highlight' class attribute.
   return (
-    <section className={`portfolio grid ${selectedPortfolio === "Featured" ? "grid--auto-fit" : "grid--2-col"}`}>
-      {modifiedPortfolio.map((app, index) => {
+    <>
+      <FilterBar
+        onFilterChange={handleFilterChange}
+        onSortChange={handleSortChange}
+        onSearchChange={handleSearchChange}
+        totalProjects={modifiedPortfolio.length}
+        filteredCount={filteredAndSortedPortfolio.length}
+      />
+      <section className={`portfolio grid ${selectedPortfolio === "Featured" ? "grid--auto-fit" : "grid--2-col"}`}>
+        {filteredAndSortedPortfolio.map((app, index) => {
         // For Featured section, use the project's category; for others, use the selected portfolio
         const projectCategory = selectedPortfolio === "Featured" ? app.category : selectedPortfolio;
         const ProjectTypeIcon = projectTypeIcons[projectCategory];
@@ -113,8 +165,9 @@ function Portfolio({ selectedPortfolio }) {
           </div>
         </article>
         );
-      })}
-    </section>
+        })}
+      </section>
+    </>
   );
 }
 
