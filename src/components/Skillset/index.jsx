@@ -1,13 +1,4 @@
 import React, { Fragment } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faDatabase,
-  faGear,
-  faShapes,
-  faShareNodes,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
 import portfolioData from "../../assets/data";
 import "./index.css";
 
@@ -18,12 +9,12 @@ function Skillset() {
 
   // packages destructured arrays into objects with relevant properties
   const knowledge = [
-    { name: "Languages", icon: faCode, tech: languages.join(" ") },
-    { name: "Frameworks", icon: faShareNodes, tech: frameworks.join(" ") },
-    { name: "Libraries", icon: faBars, tech: libraries.join(" ") },
-    { name: "Databases", icon: faDatabase, tech: databases.join(" ") },
-    { name: "Paradigms", icon: faShapes, tech: paradigms.join(" ") },
-    { name: "Tools", icon: faGear, tech: tools.join(" ") },
+    { name: "Languages", icon: "💻", tech: languages.join(" ") },
+    { name: "Frameworks", icon: "⚛️", tech: frameworks.join(" ") },
+    { name: "Libraries", icon: "📚", tech: libraries.join(" ") },
+    { name: "Databases", icon: "🗄️", tech: databases.join(" ") },
+    { name: "Paradigms", icon: "🔧", tech: paradigms.join(" ") },
+    { name: "Tools", icon: "🛠️", tech: tools.join(" ") },
   ];
 
   // mapping values from the above array retains the pattern without the need to hardcode repeating elements
@@ -34,7 +25,7 @@ function Skillset() {
         {knowledge.map((skill, i) => (
           <React.Fragment key={i}>
             <p className="skill-type">
-              <FontAwesomeIcon icon={skill.icon} />
+              <span className="skill-icon">{skill.icon}</span>
               <span className="display-lg"> {skill.name}</span>
             </p>
             <p key={skill.name} className="skillset">

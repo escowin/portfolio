@@ -35,12 +35,12 @@ function Header(props) {
               {portfolio}
             </li>
           ))}
-          <li
+          {/* <li
             onClick={() => handleClick("Resume")}
             className={"Resume" === selected ? "selected" : ""}
           >
             Resumė
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

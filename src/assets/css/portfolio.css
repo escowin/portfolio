@@ -26,6 +26,12 @@
     gap: 0 .5rem;
 }
 
+.tech-label {
+    font-weight: bold;
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+
 .app-details h2,
 .app-details h3 {
     padding-left: .25rem;

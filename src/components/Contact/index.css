@@ -14,7 +14,11 @@
 .icon svg {
     width: 2rem;
     font-size: 1.25rem;
+}
 
+.icon-symbol {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {

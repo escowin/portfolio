@@ -1,7 +1,4 @@
 import "./index.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInbox } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import portfolioData from "../../assets/data";
 
 function Contact() {
@@ -10,13 +7,18 @@ function Contact() {
   const contacts = portfolioData.info.links.filter((link) =>
     link.string.includes(".com")
   );
-  // variables in this array match the index order of corresponding objects in `contacts`
-  const icons = [faInbox, faGithub, faLinkedin];
+  
+  // Map the original icon names to Unicode symbols
+  const iconMap = {
+    'faInbox': '📧',
+    'faGithub': '🐙', 
+    'faLinkedin': '💼'
+  };
 
   // `modifiedContacts` is now composed of objects that retain properties of `contacts` objects, but with a modified `icon` property using the icon variable.
   for (let i = 0; i < contacts.length; i++) {
-    const iconIndex = i;
-    const updatedContact = { ...contacts[i], icon: icons[iconIndex] };
+    const iconSymbol = iconMap[contacts[i].icon] || '📧'; // fallback to email
+    const updatedContact = { ...contacts[i], icon: iconSymbol };
     modifiedContacts.push(updatedContact);
   }
 
@@ -46,7 +48,7 @@ function Contact() {
             handleClick(contact.string);
           }}
         >
-          <FontAwesomeIcon icon={contact.icon} />
+          <span className="icon-symbol">{contact.icon}</span>
           <span> {formatLink(contact.string)}</span>
         </li>
       ))}

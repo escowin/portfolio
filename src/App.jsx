@@ -4,7 +4,7 @@ import "./assets/css/App.css";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume";
+// import Resume from "./pages/Resume";
 
 function App() {
   const [selectedPortfolio, setSelectedPortfolio] = useState("");
@@ -21,8 +21,8 @@ function App() {
           case "Backend":
           case "Fullstack":
             return <Portfolio selectedPortfolio={selectedPortfolio} />;
-          case "Resume":
-            return <Resume />;
+          // case "Resume":
+          //   return <Resume />;
           default:
             return <About />;
         }

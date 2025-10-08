@@ -1,12 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import portfolioData from "../assets/data";
 import "../assets/css/portfolio.css";
 import "../assets/css/applications.css";
-import {
-  faDatabase,
-  faCode,
-  faShareNodes,
-} from "@fortawesome/free-solid-svg-icons";
 import { formatName } from "../utils/helpers";
 
 function Portfolio({ selectedPortfolio }) {
@@ -43,11 +37,11 @@ function Portfolio({ selectedPortfolio }) {
                 </span>
               )}
             </h3>
-            <FontAwesomeIcon icon={faCode} />
+            <span className="tech-label">Languages:</span>
             <p>{app.languages}</p>
             {app.libraries ? (
               <>
-                <FontAwesomeIcon icon={faShareNodes} />
+                <span className="tech-label">Libraries:</span>
                 <p>{app.libraries}</p>
               </>
             ) : (
@@ -55,7 +49,7 @@ function Portfolio({ selectedPortfolio }) {
             )}
             {app.database ? (
               <>
-                <FontAwesomeIcon icon={faDatabase} />
+                <span className="tech-label">Database:</span>
                 <p>{app.database}</p>
               </>
             ) : (

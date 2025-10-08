@@ -12,14 +12,23 @@ import "./index.css";
 
 function ResumeHeader() {
   const data = portfolioData.info;
-  const icons = [faLocationDot, faInbox, faGrip, faGithub, faLinkedin];
+  
+  // Map the original icon names to the actual FontAwesome icon objects
+  const iconMap = {
+    'faLocationDot': faLocationDot,
+    'faInbox': faInbox,
+    'faGrip': faGrip,
+    'faGithub': faGithub,
+    'faLinkedin': faLinkedin
+  };
+  
   let links = [];
 
   for (let i = 0; i < data.links.length; i++) {
-    // used to match index of `icons` with that of `data.links`
-    const iconIndex = i;
+    // Map the original icon name to the actual FontAwesome icon object
+    const iconObject = iconMap[data.links[i].icon] || faInbox; // fallback to inbox
     // new object is composed of an updated `icon` property, while retaining the other properties of the `data.link` object (format must be { ...spread, new key-value})
-    const updatedLink = { ...data.links[i], icon: icons[iconIndex] };
+    const updatedLink = { ...data.links[i], icon: iconObject };
     // this object is then pushed into the `links` array
     links.push(updatedLink);
   }
