@@ -4,7 +4,7 @@ const portfolioData = {
       {
         id: "stroke-rate",
         repo: "https://github.com/escowin/stroke-rate",
-        liveUrl: "https://stroke-rate.escowin.dev",
+        liveUrl: "https://escowin.github.io/stroke-rate",
         languages: "typescript javascript",
         libraries: "react vite zustand recharts",
         database: "indexeddb",
@@ -17,7 +17,7 @@ const portfolioData = {
       {
         id: "wireframe-blueprint",
         repo: "https://github.com/escowin/wireframe-blueprint",
-        liveUrl: "https://wireframe-blueprint.com",
+        liveUrl: "https://escowin.github.io/wireframe-blueprint",
         languages: "typescript javascript",
         libraries: "react three.js webgl",
         database: "indexeddb",
@@ -93,7 +93,7 @@ const portfolioData = {
       {
         id: "pi-server",
         repo: "https://github.com/escowin/pi-server",
-        liveUrl: "https://pi-server.escowin.dev",
+        liveUrl: "https://escowin.github.io/pi-server",
         languages: "python javascript",
         libraries: "fastapi react docker",
         database: "sqlite postgresql",
@@ -156,7 +156,7 @@ const portfolioData = {
       {
         id: "crewssignment",
         repo: "https://github.com/escowin/crewssignment",
-        liveUrl: "https://crewssignment.com",
+        liveUrl: "https://escowinart.duckdns.org/crewssignment",
         languages: "typescript javascript",
         libraries: "react axios zustand googleapis express",
         database: "google-sheets",
@@ -169,7 +169,7 @@ const portfolioData = {
       {
         id: "rowcalibur",
         repo: "https://github.com/escowin/rowcalibur",
-        liveUrl: "https://rowcalibur.com",
+        liveUrl: "https://escowinart.duckdns.org/rowcalibur",
         languages: "typescript javascript",
         libraries: "react vite sass googleapis express",
         database: "google-sheets indexeddb",
@@ -182,7 +182,7 @@ const portfolioData = {
       {
         id: "job-tracker",
         repo: "https://github.com/escowin/job-tracker",
-        liveUrl: "https://escowin-job-tracker.onrender.com/",
+        liveUrl: "https://escowinart.duckdns.org/job-tracker",
         languages: "graphql js css",
         libraries: "mongoose express react node jwt bcrypt",
         database: "mongodb",
@@ -195,7 +195,7 @@ const portfolioData = {
       {
         id: "fitness-logbook",
         repo: "https://github.com/escowin/fitness-logbook",
-        liveUrl: "https://fitness-logbook.onrender.com/",
+        liveUrl: "https://escowinart.duckdns.org/fitness-logbook",
         languages: "js css sql handlebars",
         libraries: "node express sequelize",
         database: "mysql",

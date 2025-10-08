@@ -54,8 +54,12 @@
     background-image: url('../../assets/img/sm/readme-generator.jpg');
 }
 
+#rowcalibur {
+    background-image: url('../../assets/img/lg/rowcalibur.png');
+}
+
 #stroke-rate {
-    background-image: url('../../assets/img/sm/stroke-rate.png');
+    background-image: url('../../assets/img/lg/stroke-rate.png');
 }
 
 #sun-tracker {
@@ -113,9 +117,6 @@
         background-image: url('../../assets/img/md/readme-generator.jpg');
     }
 
-    #stroke-rate {
-        background-image: url('../../assets/img/md/stroke-rate.png');
-    }
     #sun-tracker {
         background-image: url('../../assets/img/md/sun-tracker.jpg');
     }
