@@ -1,10 +1,20 @@
 import React, { useState } from "react";
 import portfolioData from "../../assets/data";
+import { User, Star, Monitor, Server, Layers } from "lucide-react";
 
 function Header(props) {
   const { name, occupation } = portfolioData.info;
   const portfolios = ["Featured", "Frontend", "Backend", "Fullstack"];
   const [selected, setSelected] = useState(null);
+
+  // Icon mapping for navigation items
+  const iconMap = {
+    "About": User,
+    "Featured": Star,
+    "Frontend": Monitor,
+    "Backend": Server,
+    "Fullstack": Layers
+  };
 
   function handleClick(portfolio) {
     props.setSelectedPortfolio(portfolio);
@@ -23,17 +33,22 @@ function Header(props) {
             onClick={() => handleClick("About")}
             className={`link link--hover ${"About" === selected ? "selected" : ""}`}
           >
+            <User size={16} className="nav-icon" />
             About
           </li>
-          {portfolios.map((portfolio, index) => (
-            <li
-              key={index}
-              onClick={() => handleClick(portfolio)}
-              className={`link link--hover ${portfolio === selected ? "selected" : ""}`}
-            >
-              {portfolio}
-            </li>
-          ))}
+          {portfolios.map((portfolio, index) => {
+            const IconComponent = iconMap[portfolio];
+            return (
+              <li
+                key={index}
+                onClick={() => handleClick(portfolio)}
+                className={`link link--hover ${portfolio === selected ? "selected" : ""}`}
+              >
+                <IconComponent size={16} className="nav-icon" />
+                {portfolio}
+              </li>
+            );
+          })}
           {/* <li
             onClick={() => handleClick("Resume")}
             className={`link link--hover ${"Resume" === selected ? "selected" : ""}`}

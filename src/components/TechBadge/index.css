@@ -1,0 +1,157 @@
+/* Technology Badge System */
+.tech-badge {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.025em;
+  transition: all 0.2s ease;
+  cursor: default;
+  white-space: nowrap;
+  border: 2px solid transparent;
+  line-height: 1.2;
+}
+
+/* Badge Sizes */
+.tech-badge--small {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.tech-badge--medium {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+
+.tech-badge--large {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+/* Frontend Technologies - Blue Theme */
+.tech-badge--frontend {
+  background-color: var(--tech-frontend-bg);
+  color: var(--tech-frontend-text);
+  border-color: var(--tech-frontend-border);
+}
+
+.tech-badge--frontend:hover {
+  background-color: var(--tech-frontend-bg-hover);
+  border-color: var(--tech-frontend-border-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Backend Technologies - Green Theme */
+.tech-badge--backend {
+  background-color: var(--tech-backend-bg);
+  color: var(--tech-backend-text);
+  border-color: var(--tech-backend-border);
+}
+
+.tech-badge--backend:hover {
+  background-color: var(--tech-backend-bg-hover);
+  border-color: var(--tech-backend-border-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Database Technologies - Orange Theme */
+.tech-badge--database {
+  background-color: var(--tech-database-bg);
+  color: var(--tech-database-text);
+  border-color: var(--tech-database-border);
+}
+
+.tech-badge--database:hover {
+  background-color: var(--tech-database-bg-hover);
+  border-color: var(--tech-database-border-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Tools Technologies - Purple Theme */
+.tech-badge--tools {
+  background-color: var(--tech-tools-bg);
+  color: var(--tech-tools-text);
+  border-color: var(--tech-tools-border);
+}
+
+.tech-badge--tools:hover {
+  background-color: var(--tech-tools-bg-hover);
+  border-color: var(--tech-tools-border-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Cloud Technologies - Yellow Theme */
+.tech-badge--cloud {
+  background-color: var(--tech-cloud-bg);
+  color: var(--tech-cloud-text);
+  border-color: var(--tech-cloud-border);
+}
+
+.tech-badge--cloud:hover {
+  background-color: var(--tech-cloud-bg-hover);
+  border-color: var(--tech-cloud-border-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Language Technologies - Red Theme */
+.tech-badge--language {
+  background-color: var(--tech-language-bg);
+  color: var(--tech-language-text);
+  border-color: var(--tech-language-border);
+}
+
+.tech-badge--language:hover {
+  background-color: var(--tech-language-bg-hover);
+  border-color: var(--tech-language-border-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .tech-badge {
+    font-size: var(--font-size-sm);
+    padding: var(--space-xs) var(--space-sm);
+    font-weight: 600;
+  }
+  
+  .tech-badge--small {
+    font-size: 0.75rem;
+    padding: 0.125rem var(--space-xs);
+  }
+  
+  .tech-badge--large {
+    font-size: var(--font-size-base);
+    padding: var(--space-sm) var(--space-md);
+  }
+}
+
+/* Badge Container */
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.tech-badges--centered {
+  justify-content: center;
+}
+
+.tech-badges--spaced {
+  gap: var(--space-md);
+}
+
+.tech-badges--compact {
+  gap: var(--space-xs);
+}

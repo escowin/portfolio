@@ -2,6 +2,8 @@ import portfolioData from "../assets/data";
 import "../assets/css/portfolio.css";
 import "../assets/css/applications.css";
 import { formatName } from "../utils/helpers";
+import TechStack from "../components/TechStack";
+import { ExternalLink, Github, CheckCircle, AlertCircle, XCircle, Monitor, Server, Layers } from "lucide-react";
 
 function Portfolio({ selectedPortfolio }) {
   // portfolio consists of frontend, backend, and fullstack applications
@@ -35,67 +37,81 @@ function Portfolio({ selectedPortfolio }) {
     modifiedPortfolio = [...highlightedData, ...nonHighlightedData];
   }
 
+  // Project type icon mapping
+  const projectTypeIcons = {
+    "Frontend": Monitor,
+    "Backend": Server,
+    "Fullstack": Layers
+  };
+
   // this final array is mapped. each app object's properties are plugged in where needed within the article element. highlighted apps receive the additional 'highlight' class attribute.
   return (
     <section className={`portfolio grid ${selectedPortfolio === "Featured" ? "grid--auto-fit" : "grid--2-col"}`}>
-      {modifiedPortfolio.map((app, index) => (
-        <article
-          key={index}
-          id={app.id}
-          className={`app card ${app.highlight ? "highlight" : ""} ${selectedPortfolio === "Featured" ? "featured-project" : ""}`}
-        >
-          <div className="app-details overlay">
-            <div className="project-header">
-              <h2 className="heading heading--secondary">{formatName(app.id)}</h2>
-              {app.year && (
-                <span className="project-year text text--sm">{app.year}</span>
-              )}
-            </div>
+      {modifiedPortfolio.map((app, index) => {
+        const ProjectTypeIcon = selectedPortfolio !== "Featured" ? projectTypeIcons[selectedPortfolio] : null;
+        return (
+          <article
+            key={index}
+            id={app.id}
+            className={`app card ${app.highlight ? "highlight" : ""} ${selectedPortfolio === "Featured" ? "featured-project" : ""}`}
+          >
+            <div className="app-details overlay">
+              <div className="project-header">
+                <div className="project-title-section">
+                  <h2 className="heading heading--secondary">{formatName(app.id)}</h2>
+                  {selectedPortfolio !== "Featured" && ProjectTypeIcon && (
+                    <ProjectTypeIcon size={16} className="project-type-icon" />
+                  )}
+                </div>
+                {app.year && (
+                  <span className="project-year text text--sm">{app.year}</span>
+                )}
+              </div>
             
             {app.description && (
               <p className="project-description text text--sm">{app.description}</p>
             )}
             
             <h3 className="app-links text text--sm">
-              <span className="link link--hover" onClick={() => window.open(app.repo)}>Repo</span>
+              <span className="link link--hover" onClick={() => window.open(app.repo)}>
+                <Github size={14} className="inline-icon" />
+                Repo
+              </span>
               {app.liveUrl && (
                 <span className="link link--hover" onClick={() => window.open(app.liveUrl)}>
                   {" "}
-                  · Live url
+                  <ExternalLink size={14} className="inline-icon" />
+                  Live url
                 </span>
               )}
             </h3>
             
-            <div className="tech-stack">
-              <div className="tech-category">
-                <span className="tech-label text text--sm">Languages:</span>
-                <p className="text text--muted">{app.languages}</p>
-              </div>
-              
-              {app.libraries && (
-                <div className="tech-category">
-                  <span className="tech-label text text--sm">Libraries:</span>
-                  <p className="text text--muted">{app.libraries}</p>
-                </div>
-              )}
-              
-              {app.database && (
-                <div className="tech-category">
-                  <span className="tech-label text text--sm">Database:</span>
-                  <p className="text text--muted">{app.database}</p>
-                </div>
-              )}
-              
-              {app.complexity && (
-                <div className="tech-category">
-                  <span className="tech-label text text--sm">Complexity:</span>
-                  <p className="text text--muted">{app.complexity}</p>
-                </div>
-              )}
+            <div className="tech-stack tech-stack--compact">
+              <TechStack
+                languages={app.languages}
+                libraries={app.libraries}
+                database={app.database}
+                size="small"
+                showLabels={false}
+                maxItems={selectedPortfolio === "Featured" ? 8 : 6}
+              />
             </div>
+            
+            {app.complexity && (
+              <div className="project-complexity">
+                <span className="complexity-label text text--sm">Complexity:</span>
+                <span className={`complexity-badge complexity-badge--${app.complexity}`}>
+                  {app.complexity === 'low' && <CheckCircle size={12} className="complexity-icon" />}
+                  {app.complexity === 'medium' && <AlertCircle size={12} className="complexity-icon" />}
+                  {app.complexity === 'high' && <XCircle size={12} className="complexity-icon" />}
+                  {app.complexity}
+                </span>
+              </div>
+            )}
           </div>
         </article>
-      ))}
+        );
+      })}
     </section>
   );
 }

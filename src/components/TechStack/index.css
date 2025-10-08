@@ -1,0 +1,66 @@
+/* Tech Stack Component */
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tech-stack-header {
+  margin-bottom: var(--space-sm);
+}
+
+.tech-stack-title {
+  font-weight: 600;
+  color: var(--dark-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--font-size-sm);
+}
+
+.tech-more {
+  font-style: italic;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* Compact variant for project cards */
+.tech-stack--compact {
+  gap: 0.25rem;
+}
+
+.tech-stack--compact .tech-stack-header {
+  margin-bottom: 0.25rem;
+}
+
+.tech-stack--compact .tech-stack-title {
+  font-size: 0.75rem;
+}
+
+/* Inline variant for horizontal layout */
+.tech-stack--inline {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.tech-stack--inline .tech-stack-header {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.tech-stack--inline .tech-badges {
+  flex: 1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .tech-stack--inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+  
+  .tech-stack--inline .tech-stack-header {
+    margin-bottom: var(--space-xs);
+  }
+}

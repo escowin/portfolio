@@ -16,6 +16,62 @@
   --dark-accent: rgb(145, 145, 145);
   --red: rgb(179, 24, 24);
   
+  /* Tech Badge Color System */
+  /* Frontend - Blue Theme */
+  --tech-frontend-bg: rgba(59, 130, 246, 0.149);
+  --tech-frontend-text: hsl(226, 71%, 64%);
+  --tech-frontend-border: rgba(59, 130, 246, 0.3);
+  --tech-frontend-bg-hover: rgba(59, 130, 246, 0.25);
+  --tech-frontend-border-hover: rgba(59, 130, 246, 0.5);
+  
+  /* Backend - Green Theme */
+  --tech-backend-bg: rgba(34, 197, 94, 0.15);
+  --tech-backend-text: hsl(143, 64%, 64%);
+  --tech-backend-border: rgba(34, 197, 94, 0.3);
+  --tech-backend-bg-hover: rgba(34, 197, 94, 0.25);
+  --tech-backend-border-hover: rgba(34, 197, 94, 0.5);
+  
+  /* Database - Orange Theme */
+  --tech-database-bg: rgba(249, 115, 22, 0.15);
+  --tech-database-text: hsl(15, 79%, 64%);
+  --tech-database-border: rgba(249, 115, 22, 0.3);
+  --tech-database-bg-hover: rgba(249, 115, 22, 0.25);
+  --tech-database-border-hover: rgba(249, 115, 22, 0.5);
+  
+  /* Tools - Purple Theme */
+  --tech-tools-bg: rgba(147, 51, 234, 0.15);
+  --tech-tools-text: hsl(274, 66%, 64%);
+  --tech-tools-border: rgba(147, 51, 234, 0.3);
+  --tech-tools-bg-hover: rgba(147, 51, 234, 0.25);
+  --tech-tools-border-hover: rgba(147, 51, 234, 0.5);
+  
+  /* Cloud - Yellow Theme */
+  --tech-cloud-bg: rgba(251, 191, 36, 0.15);
+  --tech-cloud-text: hsl(23, 83%, 64%);
+  --tech-cloud-border: rgba(251, 191, 36, 0.3);
+  --tech-cloud-bg-hover: rgba(251, 191, 36, 0.25);
+  --tech-cloud-border-hover: rgba(251, 191, 36, 0.5);
+  
+  /* Language - Red Theme */
+  --tech-language-bg: rgba(239, 68, 68, 0.15);
+  --tech-language-text: hsl(0, 70%, 64%);
+  --tech-language-border: rgba(239, 68, 68, 0.3);
+  --tech-language-bg-hover: rgba(239, 68, 68, 0.25);
+  --tech-language-border-hover: rgba(239, 68, 68, 0.5);
+  
+  /* Complexity Badge Color System */
+  /* Low Complexity - Green Theme */
+  --complexity-low-bg: rgba(34, 197, 94, 0.1);
+  --complexity-low-text: hsl(143, 64%, 64%);
+  
+  /* Medium Complexity - Yellow Theme */
+  --complexity-medium-bg: rgba(251, 191, 36, 0.1);
+  --complexity-medium-text: hsl(23, 83%, 64%);
+  
+  /* High Complexity - Red Theme */
+  --complexity-high-bg: rgba(239, 68, 68, 0.1);
+  --complexity-high-text: hsl(0, 74%, 64%);
+  
   /* Spacing Scale */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -91,6 +147,11 @@ nav {
 #navigation {
   display: flex;
   justify-content: space-between;
+}
+
+.nav-icon {
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 /* footer */
@@ -208,7 +269,7 @@ li:hover {
 .card {
   background: var(--overlay);
   border-radius: var(--radius-md);
-  padding: var(--space-md);
+  /* padding: var(--space-md); */
   box-shadow: var(--shadow-md);
 }
 

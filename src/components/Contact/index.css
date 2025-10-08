@@ -15,6 +15,12 @@
 .icon-symbol {
     font-size: 1.25rem;
     margin-right: 0.5rem;
+    color: var(--dark-accent);
+    transition: color 0.2s ease;
+}
+
+.icon:hover .icon-symbol {
+    color: var(--red);
 }
 
 @media screen and (min-width: 1024px) {

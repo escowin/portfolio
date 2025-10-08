@@ -75,6 +75,17 @@
     margin-bottom: var(--space-sm);
 }
 
+.project-title-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-type-icon {
+    color: var(--dark-accent);
+    opacity: 0.7;
+}
+
 .project-year {
     background: var(--red);
     color: var(--offwhite);
@@ -89,16 +100,56 @@
     color: var(--gray);
 }
 
-.tech-stack {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
+/* Project links with icons */
+.app-links .inline-icon {
+    margin-right: 0.25rem;
+    vertical-align: middle;
 }
 
-.tech-category {
+/* Project complexity badge */
+.project-complexity {
     display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+    padding-top: var(--space-sm);
+    border-top: 1px solid rgba(230, 230, 230, 0.3);
+}
+
+.complexity-label {
+    font-weight: 600;
+    color: var(--dark-accent);
+}
+
+.complexity-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.complexity-icon {
+    flex-shrink: 0;
+}
+
+.complexity-badge--low {
+    background-color: var(--complexity-low-bg);
+    color: var(--complexity-low-text);
+}
+
+.complexity-badge--medium {
+    background-color: var(--complexity-medium-bg);
+    color: var(--complexity-medium-text);
+}
+
+.complexity-badge--high {
+    background-color: var(--complexity-high-bg);
+    color: var(--complexity-high-text);
 }
 
 .featured-project {

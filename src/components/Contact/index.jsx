@@ -1,5 +1,6 @@
 import "./index.css";
 import portfolioData from "../../assets/data";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 function Contact() {
   let modifiedContacts = [];
@@ -7,18 +8,18 @@ function Contact() {
   const contacts = portfolioData.info.links.filter((link) =>
     link.string.includes(".com")
   );
-  
-  // Map the original icon names to Unicode symbols
+
+  // Map the original icon names to Lucide React components
   const iconMap = {
-    'faInbox': '📧',
-    'faGithub': '🐙', 
-    'faLinkedin': '💼'
+    'faInbox': Mail,
+    'faGithub': Github, 
+    'faLinkedin': Linkedin
   };
 
   // `modifiedContacts` is now composed of objects that retain properties of `contacts` objects, but with a modified `icon` property using the icon variable.
   for (let i = 0; i < contacts.length; i++) {
-    const iconSymbol = iconMap[contacts[i].icon] || '📧'; // fallback to email
-    const updatedContact = { ...contacts[i], icon: iconSymbol };
+    const IconComponent = iconMap[contacts[i].icon] || Mail; // fallback to Mail
+    const updatedContact = { ...contacts[i], icon: IconComponent };
     modifiedContacts.push(updatedContact);
   }
 
@@ -40,18 +41,21 @@ function Contact() {
   // mapping the array's objects reduces the need to write repeating code
   return (
     <ul id="contact-links" className="flex flex--center">
-      {modifiedContacts.map((contact, i) => (
-        <li
-          key={i}
-          className="icon link link--hover"
-          onClick={() => {
-            handleClick(contact.string);
-          }}
-        >
-          <span className="icon-symbol">{contact.icon}</span>
-          <span className="text text--sm"> {formatLink(contact.string)}</span>
-        </li>
-      ))}
+      {modifiedContacts.map((contact, i) => {
+        const IconComponent = contact.icon;
+        return (
+          <li
+            key={i}
+            className="icon link link--hover"
+            onClick={() => {
+              handleClick(contact.string);
+            }}
+          >
+            <IconComponent className="icon-symbol" size={18} />
+            <span className="text text--sm"> {formatLink(contact.string)}</span>
+          </li>
+        );
+      })}
     </ul>
   );
 }
