@@ -13,13 +13,13 @@ function Portfolio({ selectedPortfolio }) {
   // For other sections, maintain the existing highlight logic
   let modifiedPortfolio;
   if (selectedPortfolio === "Featured") {
-    // Collect all highlighted projects from all categories
+    // Collect all highlighted projects from all categories with their category info
     const allHighlightedProjects = [];
-    Object.values(portfolio).forEach(category => {
+    Object.entries(portfolio).forEach(([categoryName, category]) => {
       if (Array.isArray(category)) {
         category.forEach(project => {
           if (project.highlight === true) {
-            allHighlightedProjects.push(project);
+            allHighlightedProjects.push({ ...project, category: categoryName });
           }
         });
       }
@@ -48,7 +48,9 @@ function Portfolio({ selectedPortfolio }) {
   return (
     <section className={`portfolio grid ${selectedPortfolio === "Featured" ? "grid--auto-fit" : "grid--2-col"}`}>
       {modifiedPortfolio.map((app, index) => {
-        const ProjectTypeIcon = selectedPortfolio !== "Featured" ? projectTypeIcons[selectedPortfolio] : null;
+        // For Featured section, use the project's category; for others, use the selected portfolio
+        const projectCategory = selectedPortfolio === "Featured" ? app.category : selectedPortfolio;
+        const ProjectTypeIcon = projectTypeIcons[projectCategory];
         return (
           <article
             key={index}
@@ -58,7 +60,7 @@ function Portfolio({ selectedPortfolio }) {
             <div className="app-details overlay">
               <div className="project-header">
                 <div className="project-title-section">
-                  {selectedPortfolio !== "Featured" && ProjectTypeIcon && (
+                  {ProjectTypeIcon && (
                     <ProjectTypeIcon size={24} className="project-type-icon" />
                   )}
                   <h2 className="heading heading--secondary">{formatName(app.id)}</h2>

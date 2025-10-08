@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import portfolioData from "../../assets/data";
 import { User, Star, Monitor, Server, Layers } from "lucide-react";
 
 function Header(props) {
   const { name, occupation } = portfolioData.info;
   const portfolios = ["Featured", "Frontend", "Backend", "Fullstack"];
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(props.selectedPortfolio || "About");
 
   // Icon mapping for navigation items
   const iconMap = {
@@ -16,9 +16,17 @@ function Header(props) {
     "Fullstack": Layers
   };
 
+  // Sync selected state with props changes
+  useEffect(() => {
+    setSelected(props.selectedPortfolio || "About");
+  }, [props.selectedPortfolio]);
+
   function handleClick(portfolio) {
     props.setSelectedPortfolio(portfolio);
     setSelected(portfolio);
+    
+    // Smooth scroll to top when navigating
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   return (

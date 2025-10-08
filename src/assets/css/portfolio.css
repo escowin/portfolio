@@ -145,17 +145,14 @@
 }
 
 .complexity-badge--low {
-    background-color: var(--complexity-low-bg);
     color: var(--complexity-low-text);
 }
 
 .complexity-badge--medium {
-    background-color: var(--complexity-medium-bg);
     color: var(--complexity-medium-text);
 }
 
 .complexity-badge--high {
-    background-color: var(--complexity-high-bg);
     color: var(--complexity-high-text);
 }
 

@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Color System */
   --offwhite: rgb(230, 230, 230);
@@ -60,16 +64,8 @@
   --tech-language-border-hover: rgba(239, 68, 68, 0.5);
   
   /* Complexity Badge Color System */
-  /* Low Complexity - Green Theme */
-  --complexity-low-bg: rgba(34, 197, 94, 0.1);
   --complexity-low-text: hsl(143, 64%, 64%);
-  
-  /* Medium Complexity - Yellow Theme */
-  --complexity-medium-bg: rgba(251, 191, 36, 0.1);
   --complexity-medium-text: hsl(23, 83%, 64%);
-  
-  /* High Complexity - Red Theme */
-  --complexity-high-bg: rgba(239, 68, 68, 0.1);
   --complexity-high-text: hsl(0, 74%, 64%);
   
   /* Spacing Scale */
@@ -147,11 +143,59 @@ nav {
 #navigation {
   display: flex;
   justify-content: space-between;
+  gap: var(--space-sm);
 }
 
 .nav-icon {
   margin-right: 0.5rem;
   vertical-align: middle;
+}
+
+/* Enhanced navigation link styles */
+#navigation li {
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-sm);
+}
+
+#navigation li:hover {
+  transform: translateY(-1px);
+}
+
+#navigation li.selected {
+  color: var(--red);
+  font-weight: 600;
+}
+
+#navigation li.selected::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background-color: var(--red);
+  border-radius: 1px;
+}
+
+/* Mobile navigation improvements */
+@media screen and (max-width: 768px) {
+  #navigation {
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    justify-content: center;
+  }
+  
+  #navigation li {
+    font-size: 0.9rem;
+    padding: var(--space-xs);
+  }
+  
+  .nav-icon {
+    margin-right: 0.25rem;
+  }
 }
 
 /* footer */

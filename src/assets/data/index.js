@@ -28,19 +28,6 @@ const portfolioData = {
         // year: "2025"
       },
       {
-        id: "crewssignment",
-        repo: "https://github.com/escowin/crewssignment",
-        liveUrl: "https://crewssignment.com",
-        languages: "typescript javascript",
-        libraries: "react axios zustand googleapis",
-        database: "google-sheets",
-        highlight: true,
-        collaboration: false,
-        description: "Smart lineup generation platform for rowing coaches with Google Sheets integration",
-        complexity: "high",
-        // year: "2025"
-      },
-      {
         id: "bluestrawberry",
         repo: "https://github.com/escowin/bluestrawberry",
         liveUrl: "https://escowin.github.io/bluestrawberry",
