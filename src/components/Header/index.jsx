@@ -30,18 +30,22 @@ function Header(props) {
   }
 
   return (
-    <header>
+    <header role="banner">
       <article id="header">
         <h1 className="heading heading--primary">{name}</h1>
         <p className="text text--muted">{occupation}</p>
       </article>
-      <nav>
-        <ul id="navigation" className="flex flex--between">
+      <nav role="navigation" aria-label="Main navigation">
+        <ul id="navigation" className="flex flex--between" role="menubar">
           <li
             onClick={() => handleClick("About")}
             className={`link link--hover ${"About" === selected ? "selected" : ""}`}
+            role="menuitem"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && handleClick("About")}
+            aria-current={selected === "About" ? "page" : undefined}
           >
-            <User size={20} className="nav-icon" />
+            <User size={20} className="nav-icon" aria-hidden="true" />
             About
           </li>
           {portfolios.map((portfolio, index) => {
@@ -51,8 +55,12 @@ function Header(props) {
                 key={index}
                 onClick={() => handleClick(portfolio)}
                 className={`link link--hover ${portfolio === selected ? "selected" : ""}`}
+                role="menuitem"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === 'Enter' && handleClick(portfolio)}
+                aria-current={selected === portfolio ? "page" : undefined}
               >
-                <IconComponent size={20} className="nav-icon" />
+                <IconComponent size={20} className="nav-icon" aria-hidden="true" />
                 {portfolio}
               </li>
             );

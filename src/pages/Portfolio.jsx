@@ -114,7 +114,11 @@ function Portfolio({ selectedPortfolio }) {
         totalProjects={modifiedPortfolio.length}
         filteredCount={filteredAndSortedPortfolio.length}
       />
-      <section className={`portfolio grid ${selectedPortfolio === "Featured" ? "grid--auto-fit" : "grid--2-col"}`}>
+      <section 
+        className={`portfolio grid ${selectedPortfolio === "Featured" ? "grid--auto-fit" : "grid--2-col"}`}
+        role="region"
+        aria-label={`${selectedPortfolio} Projects`}
+      >
         {filteredAndSortedPortfolio.map((app, index) => {
         // For Featured section, use the project's category; for others, use the selected portfolio
         const projectCategory = selectedPortfolio === "Featured" ? app.category : selectedPortfolio;
@@ -125,6 +129,10 @@ function Portfolio({ selectedPortfolio }) {
             id={app.id}
             className={`app card ${app.highlight ? "highlight" : ""} ${selectedPortfolio === "Featured" ? "featured-project" : ""} clickable`}
             onClick={() => handleProjectClick(app)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && handleProjectClick(app)}
+            aria-label={`View details for ${formatName(app.id)} project`}
           >
             <div className="app-details overlay">
               <div className="project-header">

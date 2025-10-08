@@ -15,7 +15,7 @@ html {
   /* Color System */
   --offwhite: rgb(230, 230, 230);
   --gray: rgba(230, 230, 230, .75);
-  --offblack: rgb(40, 40, 44);
+  --offblack: rgb(30, 30, 30);
   --overlay: rgba(40, 40, 40, .9);
   --dark-accent: rgb(145, 145, 145);
   --red: rgb(179, 24, 24);
@@ -367,6 +367,26 @@ li:hover {
 
 .text--center {
   text-align: center;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  color: var(--gray);
+  font-size: 1.1rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 /* Interactive Utilities */
