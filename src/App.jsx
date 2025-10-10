@@ -13,7 +13,8 @@ function App() {
   return (
     <div className="body">
       <Header setSelectedPortfolio={setSelectedPortfolio} />
-      <main>
+      {/* id changes based on navigation link */}
+      <main id={selectedPortfolio.toLowerCase()}>
         <Suspense fallback={<div className="loading-spinner">Loading...</div>}>
           {(() => {
             switch(selectedPortfolio) {

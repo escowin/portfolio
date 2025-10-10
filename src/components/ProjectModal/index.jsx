@@ -55,15 +55,66 @@ function ProjectModal({ project, isOpen, onClose, category }) {
   const getKeyFeatures = () => {
     const features = [];
     
+    // Project status features
     if (project.liveUrl) features.push("Live Demo Available");
     if (project.collaboration) features.push("Collaborative Project");
     if (project.highlight) features.push("Featured Project");
     if (project.complexity === "high") features.push("Advanced Implementation");
+    
+    // Frontend framework features
     if (techBreakdown.libraries.includes("react")) features.push("React Application");
+    if (techBreakdown.libraries.includes("react-router-dom")) features.push("Client-Side Routing");
+    if (techBreakdown.libraries.includes("apollo-client")) features.push("GraphQL Client");
+    
+    // 3D and visualization features
     if (techBreakdown.libraries.includes("three.js")) features.push("3D Visualization");
+    if (techBreakdown.libraries.includes("webgl")) features.push("WebGL Rendering");
+    
+    // State management and data features
     if (techBreakdown.libraries.includes("zustand")) features.push("State Management");
+    if (techBreakdown.libraries.includes("express-session")) features.push("Session Management");
+    if (techBreakdown.libraries.some(lib => ["bcrypt", "jwt"].includes(lib))) {
+      features.push("Secure Authentication");
+    }
+    
+    // Build tools and development features
+    if (techBreakdown.libraries.includes("webpack")) features.push("Webpack Build System");
+    if (techBreakdown.libraries.includes("webpack-pwa-manifest")) features.push("Progressive Web App");
+    if (techBreakdown.libraries.includes("jest")) features.push("Comprehensive Testing");
+    if (techBreakdown.libraries.includes("nodemon")) features.push("Development Hot Reload");
+    
+    // Database and storage features
     if (techBreakdown.database.includes("indexeddb")) features.push("Offline Capability");
     if (techBreakdown.database.includes("google-sheets")) features.push("Google Sheets Integration");
+    if (techBreakdown.database.includes("mongodb")) features.push("NoSQL Database");
+    if (techBreakdown.database.some(db => ["postgresql", "mysql", "sqlite3"].includes(db))) {
+      features.push("SQL Database");
+    }
+    
+    // Backend framework features
+    if (techBreakdown.libraries.some(lib => ["express", "fastapi"].includes(lib))) {
+      features.push("Backend API");
+    }
+    if (techBreakdown.libraries.some(lib => ["sequelize", "mongoose"].includes(lib))) {
+      features.push("Database ORM");
+    }
+    if (techBreakdown.libraries.includes("graphql")) features.push("GraphQL API");
+    
+    // UI and styling features
+    if (techBreakdown.libraries.includes("fontawesome")) features.push("Icon Library");
+    if (techBreakdown.libraries.includes("react-horizontal-scrolling-menu")) features.push("Custom UI Components");
+    if (techBreakdown.libraries.includes("express-handlebars")) features.push("Server-Side Rendering");
+    
+    // Utility and tool features
+    if (techBreakdown.libraries.includes("inquirer")) features.push("Interactive CLI");
+    if (techBreakdown.libraries.includes("dayjs")) features.push("Date/Time Processing");
+    if (techBreakdown.libraries.includes("jquery")) features.push("DOM Manipulation");
+    if (techBreakdown.libraries.includes("gh-pages")) features.push("GitHub Pages Deployment");
+    
+    // Containerization and deployment
+    if (techBreakdown.libraries.includes("docker")) features.push("Docker Containerization");
+    if (techBreakdown.libraries.includes("nginx")) features.push("Nginx Web Server");
+    if (techBreakdown.libraries.includes("ollama")) features.push("AI/ML Integration");
     
     return features;
   };

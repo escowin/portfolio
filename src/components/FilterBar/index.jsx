@@ -70,8 +70,8 @@ function FilterBar({ onFilterChange, onSortChange, onSearchChange, totalProjects
   const hasActiveFilters = searchTerm || selectedTech || selectedComplexity || sortBy;
 
   return (
-    <div className="filter-bar">
-      <div className="filter-header">
+    <section className="filter-bar">
+      <article className="filter-header">
         <h3 className="filter-title">
           <Filter size={18} className="filter-icon" />
           Filter & Search Projects
@@ -79,9 +79,9 @@ function FilterBar({ onFilterChange, onSortChange, onSearchChange, totalProjects
         <div className="project-count">
           Showing {filteredCount} of {totalProjects} projects
         </div>
-      </div>
+      </article>
 
-      <div className="filter-controls">
+      <article className="filter-controls">
         {/* Search Bar */}
         <div className="search-container">
           <Search size={18} className="search-icon" />
@@ -158,8 +158,8 @@ function FilterBar({ onFilterChange, onSortChange, onSearchChange, totalProjects
             Clear All Filters
           </button>
         )}
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
 

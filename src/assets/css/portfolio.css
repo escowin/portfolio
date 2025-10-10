@@ -1,11 +1,11 @@
 .portfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: var(--space-md);
 }
 
 .highlight {
-    grid-column: span 2;
+    grid-column: 1 / -1;
 }
 
 .app {
@@ -58,13 +58,13 @@
 
 @media screen and (min-width: 768px) {
     .portfolio {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 1024px) {
     .portfolio {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -100,7 +100,6 @@
 }
 
 .project-year {
-    background: var(--red);
     color: var(--offwhite);
     padding: var(--space-xs) var(--space-sm);
     border-radius: var(--radius-sm);

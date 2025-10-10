@@ -118,7 +118,7 @@ function Portfolio({ selectedPortfolio }) {
         filteredCount={filteredAndSortedPortfolio.length}
       />
       <section 
-        className={`portfolio grid ${selectedPortfolio === "Featured" ? "grid--auto-fit" : "grid--2-col"}`}
+        className={`portfolio grid`}
         role="region"
         aria-label={`${selectedPortfolio} Projects`}
       >

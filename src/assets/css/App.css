@@ -16,7 +16,7 @@ html {
   --offwhite: rgb(230, 230, 230);
   --gray: rgba(230, 230, 230, .75);
   --offblack: rgb(10, 10, 10);
-  --overlay: rgba(40, 40, 40, .9);
+  --overlay: rgba(24, 24, 24, 0.9);
   --dark-accent: rgb(145, 145, 145);
   --red: rgb(179, 24, 24);
   
@@ -128,7 +128,7 @@ header {
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 800;
 }
 
 #header,
