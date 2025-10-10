@@ -180,6 +180,36 @@ const portfolioData = {
         // year: "2025"
       },
       {
+        id: "dev-ai",
+        title: "DevAI - Full-Stack AI Deployment",
+        subtitle: "Raspberry Pi Infrastructure Case Study",
+        repo: "https://github.com/escowin/dev-ai",
+        liveUrl: "https://github.com/escowin/dev-ai",
+        languages: "python javascript typescript css",
+        libraries: "fastapi react docker nginx ollama",
+        database: "indexeddb",
+        highlight: true,
+        collaboration: false,
+        description: "Deployed complete full-stack AI chat application on Raspberry Pi 4B, demonstrating Docker containerization, Nginx reverse proxy, SSL termination, and systematic performance analysis. Identified hardware limitations through 42-second response time analysis, showcasing engineering judgment and infrastructure expertise.",
+        complexity: "high",
+        year: "2025",
+        technologies: ["React", "FastAPI", "Docker", "Nginx", "SSL", "Raspberry Pi", "Performance Analysis"],
+        category: "Infrastructure & DevOps",
+        status: "Complete",
+        links: {
+          repository: "https://github.com/escowin/dev-ai",
+          documentation: "https://github.com/escowin/dev-ai/tree/main/docs",
+          caseStudy: "https://github.com/escowin/dev-ai/blob/main/docs/portfolio/dev-ai-portfolio-case-study.md"
+        },
+        highlights: [
+          "Full-stack deployment on embedded hardware",
+          "Centralized Docker Compose management",
+          "SSL certificate automation with Let's Encrypt",
+          "Systematic performance bottleneck identification",
+          "Comprehensive technical documentation"
+        ]
+      },
+      {
         id: "job-tracker",
         repo: "https://github.com/escowin/job-tracker",
         liveUrl: "https://escowinart.duckdns.org/job-tracker",
