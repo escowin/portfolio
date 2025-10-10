@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from "react";
 import portfolioData from "../assets/data";
 import "../assets/css/portfolio.css";
-import "../assets/css/applications.css";
 import { formatName } from "../utils/helpers";
+import { getProjectBackgroundStyle } from "../utils/imageUtils";
 import TechStack from "../components/TechStack";
 import FilterBar from "../components/FilterBar";
 import ProjectModal from "../components/ProjectModal";
@@ -80,6 +80,9 @@ function Portfolio({ selectedPortfolio }) {
     return processedPortfolio;
   }, [modifiedPortfolio, filters, sortOptions]);
 
+  // Note: Resize handling can be added later if needed
+  // For now, images will load with the appropriate size based on initial screen size
+
   // Filter change handlers
   const handleFilterChange = (newFilters) => {
     setFilters(prev => ({ ...prev, ...newFilters }));
@@ -128,6 +131,7 @@ function Portfolio({ selectedPortfolio }) {
             key={index}
             id={app.id}
             className={`app card ${app.highlight ? "highlight" : ""} ${selectedPortfolio === "Featured" ? "featured-project" : ""} clickable`}
+            style={getProjectBackgroundStyle(app.id)}
             onClick={() => handleProjectClick(app)}
             role="button"
             tabIndex={0}
