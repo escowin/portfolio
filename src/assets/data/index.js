@@ -82,7 +82,7 @@ const portfolioData = {
         languages: "typescript javascript css",
         libraries: "react vite vite-plugin-pwa",
         database: "localstorage",
-        highlight: true,
+        highlight: false,
         collaboration: false,
         description: "Advanced Progressive Web App featuring a Korean keyboard with archaic letter support (옛한글). Implements sophisticated Unicode composition algorithms, complex medial/final consonant handling, and long-press character variants. Built with TypeScript and React for optimal performance and type safety.",
         complexity: "high",
