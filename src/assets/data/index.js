@@ -39,18 +39,18 @@ const portfolioData = {
         complexity: "medium",
         year: "2023"
       },
-      {
-        id: "caesar-cipher",
-        repo: "https://github.com/escowin/caesar-cipher",
-        liveUrl: "https://escowin.github.io/caesar-cipher/",
-        languages: "javascript css html",
-        libraries: "webpack jest css-loader file-loader webpack-pwa-manifest",
-        highlight: false,
-        collaboration: false,
-        description: "Cryptographic tool implementing the Caesar cipher algorithm with modern web technologies. Features real-time encryption/decryption, clipboard integration, and comprehensive testing with Jest framework.",
-        complexity: "low",
-        year: "2023"
-      },
+      // {
+      //   id: "caesar-cipher",
+      //   repo: "https://github.com/escowin/caesar-cipher",
+      //   liveUrl: "https://escowin.github.io/caesar-cipher/",
+      //   languages: "javascript css html",
+      //   libraries: "webpack jest css-loader file-loader webpack-pwa-manifest",
+      //   highlight: false,
+      //   collaboration: false,
+      //   description: "Cryptographic tool implementing the Caesar cipher algorithm with modern web technologies. Features real-time encryption/decryption, clipboard integration, and comprehensive testing with Jest framework.",
+      //   complexity: "low",
+      //   year: "2023"
+      // },
       {
         id: "escowinart",
         repo: "https://github.com/escowin/escowinart",
@@ -74,6 +74,19 @@ const portfolioData = {
         description: "Mathematical utility application for calculating and converting ratios with precision. Features local data persistence using IndexedDB, modern build tools with Webpack, and comprehensive testing with Jest framework.",
         complexity: "low",
         year: "2023"
+      },
+      {
+        id: "korean-keyboard",
+        repo: "https://github.com/escowin/korean-keyboard",
+        liveUrl: "https://escowin.github.io/korean-keyboard",
+        languages: "typescript javascript css",
+        libraries: "react vite vite-plugin-pwa",
+        database: "localstorage",
+        highlight: true,
+        collaboration: false,
+        description: "Advanced Progressive Web App featuring a Korean keyboard with archaic letter support (옛한글). Implements sophisticated Unicode composition algorithms, complex medial/final consonant handling, and long-press character variants. Built with TypeScript and React for optimal performance and type safety.",
+        complexity: "high",
+        year: "2025"
       },
       {
         id: "sun-tracker",
