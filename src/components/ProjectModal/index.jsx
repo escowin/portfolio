@@ -1,30 +1,30 @@
-import React, { useEffect } from "react";
-import { X, ExternalLink, Github, Calendar, Code, Layers, Database, Wrench, CheckCircle, AlertCircle, XCircle } from "lucide-react";
+import React, { useEffect, useRef } from "react";
+import { X, ExternalLink, Github, Code, Layers, Database, CheckCircle, AlertCircle, XCircle } from "lucide-react";
 import { formatName } from "../../utils/helpers";
 import TechStack from "../TechStack";
 import "./index.css";
 
 function ProjectModal({ project, isOpen, onClose, category }) {
-  // Close modal on Escape key
+  const dialogRef = useRef(null);
+
   useEffect(() => {
-    const handleEscape = (e) => {
-      if (e.key === "Escape") {
-        onClose();
+    const el = dialogRef.current;
+    if (!el) return;
+
+    if (isOpen && project) {
+      if (!el.open) {
+        el.showModal();
       }
-    };
-
-    if (isOpen) {
-      document.addEventListener("keydown", handleEscape);
-      document.body.style.overflow = "hidden"; // Prevent background scrolling
+    } else if (el.open) {
+      el.close();
     }
+  }, [isOpen, project]);
 
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-      document.body.style.overflow = "unset";
-    };
-  }, [isOpen, onClose]);
+  if (!project) return null;
 
-  if (!isOpen || !project) return null;
+  const handleDialogClose = () => {
+    onClose();
+  };
 
   // Project type icon mapping
   const projectTypeIcons = {
@@ -122,22 +122,26 @@ function ProjectModal({ project, isOpen, onClose, category }) {
   const keyFeatures = getKeyFeatures();
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        {/* Modal Header */}
+    <dialog
+      ref={dialogRef}
+      className="project-dialog"
+      closedby="any"
+      onClose={handleDialogClose}
+      aria-labelledby="project-dialog-title"
+    >
+      <div className="modal-content">
         <div className="modal-header">
           <div className="project-title-section">
             {ProjectTypeIcon && (
               <ProjectTypeIcon size={24} className="project-type-icon" />
             )}
-            <h2 className="modal-title">{formatName(project.id)}</h2>
+            <h2 className="modal-title" id="project-dialog-title">{formatName(project.id)}</h2>
           </div>
-          <button className="modal-close" onClick={onClose}>
+          <button type="button" className="modal-close" onClick={() => dialogRef.current?.close()} aria-label="Close project details">
             <X size={24} />
           </button>
         </div>
 
-        {/* Project Description */}
         {project.description && (
           <div className="modal-section">
             <h3 className="section-title">Description</h3>
@@ -145,7 +149,6 @@ function ProjectModal({ project, isOpen, onClose, category }) {
           </div>
         )}
 
-        {/* Key Features */}
         {keyFeatures.length > 0 && (
           <div className="modal-section">
             <h3 className="section-title">Key Features</h3>
@@ -160,7 +163,6 @@ function ProjectModal({ project, isOpen, onClose, category }) {
           </div>
         )}
 
-        {/* Technology Stack Breakdown */}
         <div className="modal-section">
           <h3 className="section-title">Technology Stack</h3>
           <div className="tech-breakdown">
@@ -208,7 +210,6 @@ function ProjectModal({ project, isOpen, onClose, category }) {
           </div>
         </div>
 
-        {/* Project Details */}
         <div className="modal-section">
           <h3 className="section-title">Project Details</h3>
           <div className="project-details-grid">
@@ -245,7 +246,6 @@ function ProjectModal({ project, isOpen, onClose, category }) {
           </div>
         </div>
 
-        {/* Action Links */}
         <div className="modal-section">
           <h3 className="section-title">Links</h3>
           <div className="action-links">
@@ -273,7 +273,7 @@ function ProjectModal({ project, isOpen, onClose, category }) {
           </div>
         </div>
       </div>
-    </div>
+    </dialog>
   );
 }
 

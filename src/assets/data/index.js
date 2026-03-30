@@ -104,6 +104,19 @@ const portfolioData = {
     ],
     Backend: [
       {
+        id: "boathouse-etl",
+        repo: "https://github.com/escowin/boathouse-etl",
+        liveUrl: null,
+        languages: "typescript javascript",
+        libraries: "node sequelize googleapis winston dotenv ts-node",
+        database: "postgresql",
+        highlight: true,
+        collaboration: false,
+        description: "Comprehensive ETL pipeline for rowing club data management with TypeScript, PostgreSQL, and Google Sheets integration. Features competitive ranking systems (Gauntlet & Ladder), athlete tracking, practice session management, and automated data synchronization with comprehensive database migrations.",
+        complexity: "high",
+        year: "2025"
+      },
+      {
         id: "pi-server",
         repo: "https://github.com/escowin/pi-server",
         liveUrl: "https://escowin.github.io/pi-server",
@@ -182,14 +195,16 @@ const portfolioData = {
       },
       {
         id: "rowcalibur",
+        title: "Rowcalibur - Rowing Competition Platform",
+        subtitle: "Progressive Web App with Advanced Gauntlet System",
         repo: "https://github.com/escowin/rowcalibur",
-        liveUrl: "https://escowinart.duckdns.org/rowcalibur",
+        liveUrl: "https://escowinart.duckdns.org/rowcalibur-demo",
         languages: "typescript javascript",
-        libraries: "react vite sass googleapis express",
+        libraries: "react vite sass googleapis express react-router",
         database: "google-sheets indexeddb",
         highlight: true,
         collaboration: false,
-        description: "Comprehensive Progressive Web App for rowing club competition tracking and management, featuring Google Sheets API integration, real-time data synchronization, and advanced analytics. Built with TypeScript and modern web technologies for optimal performance and offline capability.",
+        description: "Advanced Progressive Web App for rowing club competition management featuring a complete gauntlet system with drag-and-drop lineup management, ladder progression tracking, multi-boat support (1x, 2x, 2-, 4+, 8+), match history logging, and attendance tracking. Built with TypeScript, React Router v6, and modern state management for optimal performance and offline capability.",
         complexity: "high",
         year: "2025"
       },
