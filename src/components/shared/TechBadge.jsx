@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 
 function TechBadge({ technology, category, size = 'medium' }) {
   return (

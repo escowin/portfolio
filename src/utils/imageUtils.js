@@ -92,8 +92,7 @@ export const getProjectBackgroundStyle = (projectId) => {
   const imagePath = getResponsiveProjectImage(projectId);
   
   return {
-    '--project-bg-image': `url('${imagePath}')`,
-    backgroundImage: `var(--project-bg-image)`
+    backgroundImage: `linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,.25)), url('${imagePath}')`
   };
 };
 

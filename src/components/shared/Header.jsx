@@ -30,24 +30,14 @@ function Header(props) {
   }
 
   return (
-    <header role="banner">
-      <article id="header">
+    <header role="banner" className="portfolio-header">
+      <article id="header" className="portfolio-heading-wrapper">
         <h1 className="heading heading--primary">{name}</h1>
         <p className="text text--muted">{occupation}</p>
       </article>
       <nav role="navigation" aria-label="Main navigation">
-        <ul id="navigation" className="flex flex--between" role="menubar">
-          <li
-            onClick={() => handleClick("About")}
-            className={`link link--hover ${"About" === selected ? "selected" : ""}`}
-            role="menuitem"
-            tabIndex={0}
-            onKeyDown={(e) => e.key === 'Enter' && handleClick("About")}
-            aria-current={selected === "About" ? "page" : undefined}
-          >
-            <User size={20} className="nav-icon" aria-hidden="true" />
-            About
-          </li>
+        <ul id="navigation" role="menubar">
+
           {portfolios.map((portfolio, index) => {
             const IconComponent = iconMap[portfolio];
             return (
@@ -65,6 +55,17 @@ function Header(props) {
               </li>
             );
           })}
+          <li
+            onClick={() => handleClick("About")}
+            className={`link link--hover ${"About" === selected ? "selected" : ""}`}
+            role="menuitem"
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 'Enter' && handleClick("About")}
+            aria-current={selected === "About" ? "page" : undefined}
+          >
+            <User size={20} className="nav-icon" aria-hidden="true" />
+            About
+          </li>
           <li
             onClick={() => handleClick("Resume")}
             className={`link link--hover ${"Resume" === selected ? "selected" : ""}`}

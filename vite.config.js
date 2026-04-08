@@ -17,9 +17,8 @@ export default defineConfig({
           icons: ['lucide-react'],
           // Separate chunk for large components
           components: [
-            './src/components/FilterBar/index.jsx',
-            './src/components/ProjectModal/index.jsx',
-            './src/components/TechStack/index.jsx'
+            './src/components/portfolio/FilterBar.jsx',
+            './src/components/shared/TechStack.jsx'
           ]
         }
       }

@@ -1,6 +1,6 @@
 import "../assets/css/about.css";
 import profilePic from "../assets/img/profile-pic.jpg";
-import Contact from "../components/Contact";
+import Contact from "../components/about/Contact";
 import portfolioData from "../assets/data";
 
 function About() {

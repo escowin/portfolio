@@ -1,7 +1,6 @@
 import React from 'react';
-import TechBadge from '../TechBadge';
+import TechBadge from './TechBadge';
 import { parseTechnologies } from '../../utils/techCategories';
-import './index.css';
 
 function TechStack({ 
   languages, 

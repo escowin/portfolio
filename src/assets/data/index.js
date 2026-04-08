@@ -267,8 +267,8 @@ const portfolioData = {
     ],
   },
   info: {
-    name: "Edwin M. Escobar",
-    occupation: "Software Engineer - IoT, AI, & Full-Stack Development",
+    name: "Edwin m. escobar",
+    occupation: "Software engineer",
     links: [
       { icon: "faLocationDot", string: "Austin, TX" },
       { icon: "faInbox", string: "edwin@escowinart.com" },

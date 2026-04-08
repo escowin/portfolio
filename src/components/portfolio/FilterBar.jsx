@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Search, Filter, X, SortAsc, SortDesc } from "lucide-react";
-import "./index.css";
 
 function FilterBar({ onFilterChange, onSortChange, onSearchChange, totalProjects, filteredCount }) {
   const [searchTerm, setSearchTerm] = useState("");
